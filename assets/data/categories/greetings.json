@@ -1,0 +1,57 @@
+[
+    {
+        "en": "Hello",
+        "ar": "مرحبا",
+        "tr": "Marhaban",
+        "id": "Halo"
+    },
+    {
+        "en": "Peace be upon you",
+        "ar": "السلام عليكم",
+        "tr": "Assalāmu ʿalaykum",
+        "id": "Salam sejahtera"
+    },
+    {
+        "en": "Good morning",
+        "ar": "صباح الخير",
+        "tr": "Ṣabāḥ al-khayr",
+        "id": "Selamat pagi"
+    },
+    {
+        "en": "Good evening",
+        "ar": "مساء الخير",
+        "tr": "Masāʾ al-khayr",
+        "id": "Selamat malam"
+    },
+    {
+        "en": "How are you?",
+        "ar": "كيف حالك؟",
+        "tr": "Kayfa ḥāluka/ki?",
+        "id": "Apa kabar?"
+    },
+    {
+        "en": "I am fine",
+        "ar": "أنا بخير",
+        "tr": "Anā bikhayr",
+        "id": "Saya baik"
+    },
+    {
+        "en": "Thank you",
+        "ar": "شكرا",
+        "tr": "Shukran",
+        "id": "Terima kasih"
+    },
+    {
+        "en": "You're welcome",
+        "ar": "عفوا",
+        "tr": "ʿAfwan",
+        "id": "Sama-sama"
+    },
+    {
+        "en": "Goodbye",
+        "ar": "مع السلامة",
+        "tr": "Maʿa as-salāmah",
+        "id": "Sampai jumpa"
+    }
+]
+

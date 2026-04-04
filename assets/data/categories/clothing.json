@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Shirt",
+        "ar": "قميص",
+        "tr": "Qamīṣ",
+        "id": "Kemeja"
+    },
+    {
+        "en": "Pants",
+        "ar": "بنطال",
+        "tr": "Binṭāl",
+        "id": "Celana"
+    },
+    {
+        "en": "Dress",
+        "ar": "فستان",
+        "tr": "Fustān",
+        "id": "Gaun"
+    },
+    {
+        "en": "Shoes",
+        "ar": "حذاء",
+        "tr": "Ḥidhāʾ",
+        "id": "Sepatu"
+    },
+    {
+        "en": "Hat",
+        "ar": "قبعة",
+        "tr": "Qubbaʿah",
+        "id": "Topi"
+    },
+    {
+        "en": "Coat",
+        "ar": "معطف",
+        "tr": "Miʿṭaf",
+        "id": "Mantel"
+    },
+    {
+        "en": "Socks",
+        "ar": "جوارب",
+        "tr": "Jawārib",
+        "id": "Kaos kaki"
+    },
+    {
+        "en": "Scarf",
+        "ar": "وشاح",
+        "tr": "Wishāḥ",
+        "id": "Syal"
+    },
+    {
+        "en": "Skirt",
+        "ar": "تنورة",
+        "tr": "Tanūrah",
+        "id": "Rok"
+    },
+    {
+        "en": "Jacket",
+        "ar": "سترة",
+        "tr": "Sutrah",
+        "id": "Jaket"
+    }
+]
+

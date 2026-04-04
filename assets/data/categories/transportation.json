@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Car",
+        "ar": "سيارة",
+        "tr": "Sayyārah",
+        "id": "Mobil"
+    },
+    {
+        "en": "Bicycle",
+        "ar": "دراجة",
+        "tr": "Darājah",
+        "id": "Sepeda"
+    },
+    {
+        "en": "Motorcycle",
+        "ar": "دراجة نارية",
+        "tr": "Darājah nāriyyah",
+        "id": "Sepeda motor"
+    },
+    {
+        "en": "Train",
+        "ar": "قطار",
+        "tr": "Qiṭār",
+        "id": "Kereta"
+    },
+    {
+        "en": "Bus",
+        "ar": "حافلة",
+        "tr": "Ḥāfilah",
+        "id": "Bus"
+    },
+    {
+        "en": "Airplane",
+        "ar": "طائرة",
+        "tr": "Ṭāʾirah",
+        "id": "Pesawat"
+    },
+    {
+        "en": "Ship",
+        "ar": "سفينة",
+        "tr": "Safīnah",
+        "id": "Kapal"
+    },
+    {
+        "en": "Taxi",
+        "ar": "تاكسي",
+        "tr": "Taksī",
+        "id": "Taksi"
+    },
+    {
+        "en": "Station",
+        "ar": "محطة",
+        "tr": "Maḥaṭṭah",
+        "id": "Stasiun"
+    },
+    {
+        "en": "Road",
+        "ar": "طريق",
+        "tr": "Ṭarīq",
+        "id": "Jalan"
+    }
+]
+

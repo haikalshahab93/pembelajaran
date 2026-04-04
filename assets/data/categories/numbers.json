@@ -1,0 +1,69 @@
+[
+    {
+        "en": "Zero",
+        "ar": "صفر",
+        "tr": "Ṣifr",
+        "id": "Nol"
+    },
+    {
+        "en": "One",
+        "ar": "واحد",
+        "tr": "Wāḥid",
+        "id": "Satu"
+    },
+    {
+        "en": "Two",
+        "ar": "اثنان",
+        "tr": "Ithnān",
+        "id": "Dua"
+    },
+    {
+        "en": "Three",
+        "ar": "ثلاثة",
+        "tr": "Thalātha",
+        "id": "Tiga"
+    },
+    {
+        "en": "Four",
+        "ar": "أربعة",
+        "tr": "Arbaʿa",
+        "id": "Empat"
+    },
+    {
+        "en": "Five",
+        "ar": "خمسة",
+        "tr": "Khamsa",
+        "id": "Lima"
+    },
+    {
+        "en": "Six",
+        "ar": "ستة",
+        "tr": "Sitta",
+        "id": "Enam"
+    },
+    {
+        "en": "Seven",
+        "ar": "سبعة",
+        "tr": "Sabʿa",
+        "id": "Tujuh"
+    },
+    {
+        "en": "Eight",
+        "ar": "ثمانية",
+        "tr": "Thamāniya",
+        "id": "Delapan"
+    },
+    {
+        "en": "Nine",
+        "ar": "تسعة",
+        "tr": "Tisʿa",
+        "id": "Sembilan"
+    },
+    {
+        "en": "Ten",
+        "ar": "عشرة",
+        "tr": "ʿAshara",
+        "id": "Sepuluh"
+    }
+]
+

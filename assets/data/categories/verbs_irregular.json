@@ -1,0 +1,516 @@
+[
+    {
+        "en":  "Be",
+        "ar":  "يكون",
+        "tr":  "Yakūn",
+        "v1":  "be",
+        "v2":  "was/were",
+        "v3":  "been",
+        "id":  ""
+    },
+    {
+        "en":  "Begin",
+        "ar":  "يبدأ",
+        "tr":  "Yabdaʾ",
+        "v1":  "begin",
+        "v2":  "began",
+        "v3":  "begun",
+        "id":  ""
+    },
+    {
+        "en":  "Break",
+        "ar":  "يكسر",
+        "tr":  "Yaksir",
+        "v1":  "break",
+        "v2":  "broke",
+        "v3":  "broken",
+        "id":  ""
+    },
+    {
+        "en":  "Bring",
+        "ar":  "يجلب",
+        "tr":  "Yajlub",
+        "v1":  "bring",
+        "v2":  "brought",
+        "v3":  "brought",
+        "id":  ""
+    },
+    {
+        "en":  "Buy",
+        "ar":  "يشتري",
+        "tr":  "Yashtarī",
+        "v1":  "buy",
+        "v2":  "bought",
+        "v3":  "bought",
+        "id":  ""
+    },
+    {
+        "en":  "Choose",
+        "ar":  "يختار",
+        "tr":  "Yakhtār",
+        "v1":  "choose",
+        "v2":  "chose",
+        "v3":  "chosen",
+        "id":  ""
+    },
+    {
+        "en":  "Come",
+        "ar":  "يأتي",
+        "tr":  "Yaʾtī",
+        "v1":  "come",
+        "v2":  "came",
+        "v3":  "come",
+        "id":  "Datang"
+    },
+    {
+        "en":  "Do",
+        "ar":  "يفعل",
+        "tr":  "Yafʿal",
+        "v1":  "do",
+        "v2":  "did",
+        "v3":  "done",
+        "id":  ""
+    },
+    {
+        "en":  "Draw",
+        "ar":  "يرسم",
+        "tr":  "Yarsum",
+        "v1":  "draw",
+        "v2":  "drew",
+        "v3":  "drawn",
+        "id":  ""
+    },
+    {
+        "en":  "Drink",
+        "ar":  "يشرب",
+        "tr":  "Yashrab",
+        "v1":  "drink",
+        "v2":  "drank",
+        "v3":  "drunk",
+        "id":  "Minum"
+    },
+    {
+        "en":  "Drive",
+        "ar":  "يقود",
+        "tr":  "Yaqūd",
+        "v1":  "drive",
+        "v2":  "drove",
+        "v3":  "driven",
+        "id":  ""
+    },
+    {
+        "en":  "Eat",
+        "ar":  "يأكل",
+        "tr":  "Yaʾkul",
+        "v1":  "eat",
+        "v2":  "ate",
+        "v3":  "eaten",
+        "id":  "Makan"
+    },
+    {
+        "en":  "Fall",
+        "ar":  "يسقط",
+        "tr":  "Yasquṭ",
+        "v1":  "fall",
+        "v2":  "fell",
+        "v3":  "fallen",
+        "id":  ""
+    },
+    {
+        "en":  "Feel",
+        "ar":  "يشعر",
+        "tr":  "Yashʿur",
+        "v1":  "feel",
+        "v2":  "felt",
+        "v3":  "felt",
+        "id":  ""
+    },
+    {
+        "en":  "Find",
+        "ar":  "يجد",
+        "tr":  "Yajid",
+        "v1":  "find",
+        "v2":  "found",
+        "v3":  "found",
+        "id":  ""
+    },
+    {
+        "en":  "Fly",
+        "ar":  "يطير",
+        "tr":  "Yaṭīr",
+        "v1":  "fly",
+        "v2":  "flew",
+        "v3":  "flown",
+        "id":  ""
+    },
+    {
+        "en":  "Forget",
+        "ar":  "ينسى",
+        "tr":  "Yansā",
+        "v1":  "forget",
+        "v2":  "forgot",
+        "v3":  "forgotten",
+        "id":  ""
+    },
+    {
+        "en":  "Get",
+        "ar":  "يحصل",
+        "tr":  "Yaḥṣul",
+        "v1":  "get",
+        "v2":  "got",
+        "v3":  "got/gotten",
+        "id":  ""
+    },
+    {
+        "en":  "Give",
+        "ar":  "يعطي",
+        "tr":  "Yuʿṭī",
+        "v1":  "give",
+        "v2":  "gave",
+        "v3":  "given",
+        "id":  ""
+    },
+    {
+        "en":  "Go",
+        "ar":  "يذهب",
+        "tr":  "Yadhhab",
+        "v1":  "go",
+        "v2":  "went",
+        "v3":  "gone",
+        "id":  "Pergi"
+    },
+    {
+        "en":  "Grow",
+        "ar":  "ينمو",
+        "tr":  "Yanmu",
+        "v1":  "grow",
+        "v2":  "grew",
+        "v3":  "grown",
+        "id":  ""
+    },
+    {
+        "en":  "Have",
+        "ar":  "يملك",
+        "tr":  "Yamlik",
+        "v1":  "have",
+        "v2":  "had",
+        "v3":  "had",
+        "id":  ""
+    },
+    {
+        "en":  "Hear",
+        "ar":  "يسمع",
+        "tr":  "Yasmaʿ",
+        "v1":  "hear",
+        "v2":  "heard",
+        "v3":  "heard",
+        "id":  ""
+    },
+    {
+        "en":  "Hold",
+        "ar":  "يمسك",
+        "tr":  "Yumsik",
+        "v1":  "hold",
+        "v2":  "held",
+        "v3":  "held",
+        "id":  ""
+    },
+    {
+        "en":  "Keep",
+        "ar":  "يحفظ",
+        "tr":  "Yaḥfaẓ",
+        "v1":  "keep",
+        "v2":  "kept",
+        "v3":  "kept",
+        "id":  ""
+    },
+    {
+        "en":  "Know",
+        "ar":  "يعرف",
+        "tr":  "Yaʿrif",
+        "v1":  "know",
+        "v2":  "knew",
+        "v3":  "known",
+        "id":  ""
+    },
+    {
+        "en":  "Leave",
+        "ar":  "يغادر",
+        "tr":  "Yughādir",
+        "v1":  "leave",
+        "v2":  "left",
+        "v3":  "left",
+        "id":  ""
+    },
+    {
+        "en":  "Lose",
+        "ar":  "يخسر",
+        "tr":  "Yakhsar",
+        "v1":  "lose",
+        "v2":  "lost",
+        "v3":  "lost",
+        "id":  ""
+    },
+    {
+        "en":  "Make",
+        "ar":  "يصنع",
+        "tr":  "Yaṣnaʿ",
+        "v1":  "make",
+        "v2":  "made",
+        "v3":  "made",
+        "id":  ""
+    },
+    {
+        "en":  "Meet",
+        "ar":  "يلتقي",
+        "tr":  "Yaltaqī",
+        "v1":  "meet",
+        "v2":  "met",
+        "v3":  "met",
+        "id":  ""
+    },
+    {
+        "en":  "Pay",
+        "ar":  "يدفع",
+        "tr":  "Yadfaʿ",
+        "v1":  "pay",
+        "v2":  "paid",
+        "v3":  "paid",
+        "id":  ""
+    },
+    {
+        "en":  "Put",
+        "ar":  "يضع",
+        "tr":  "Yaḍaʿ",
+        "v1":  "put",
+        "v2":  "put",
+        "v3":  "put",
+        "id":  ""
+    },
+    {
+        "en":  "Read",
+        "ar":  "يقرأ",
+        "tr":  "Yaqraʾ",
+        "v1":  "read",
+        "v2":  "read",
+        "v3":  "read",
+        "id":  "Membaca"
+    },
+    {
+        "en":  "Ride",
+        "ar":  "يركب",
+        "tr":  "Yarkab",
+        "v1":  "ride",
+        "v2":  "rode",
+        "v3":  "ridden",
+        "id":  ""
+    },
+    {
+        "en":  "Ring",
+        "ar":  "يرن",
+        "tr":  "Yarinn",
+        "v1":  "ring",
+        "v2":  "rang",
+        "v3":  "rung",
+        "id":  ""
+    },
+    {
+        "en":  "Run",
+        "ar":  "يجري",
+        "tr":  "Yajri",
+        "v1":  "run",
+        "v2":  "ran",
+        "v3":  "run",
+        "id":  ""
+    },
+    {
+        "en":  "Say",
+        "ar":  "يقول",
+        "tr":  "Yaqūl",
+        "v1":  "say",
+        "v2":  "said",
+        "v3":  "said",
+        "id":  ""
+    },
+    {
+        "en":  "See",
+        "ar":  "يرى",
+        "tr":  "Yarā",
+        "v1":  "see",
+        "v2":  "saw",
+        "v3":  "seen",
+        "id":  "Melihat"
+    },
+    {
+        "en":  "Sell",
+        "ar":  "يبيع",
+        "tr":  "Yabīʿ",
+        "v1":  "sell",
+        "v2":  "sold",
+        "v3":  "sold",
+        "id":  ""
+    },
+    {
+        "en":  "Send",
+        "ar":  "يرسل",
+        "tr":  "Yursil",
+        "v1":  "send",
+        "v2":  "sent",
+        "v3":  "sent",
+        "id":  ""
+    },
+    {
+        "en":  "Set",
+        "ar":  "يضع/يحدد",
+        "tr":  "Yaḍaʿ/Yuḥaddid",
+        "v1":  "set",
+        "v2":  "set",
+        "v3":  "set",
+        "id":  ""
+    },
+    {
+        "en":  "Sing",
+        "ar":  "يغني",
+        "tr":  "Yughannī",
+        "v1":  "sing",
+        "v2":  "sang",
+        "v3":  "sung",
+        "id":  ""
+    },
+    {
+        "en":  "Sit",
+        "ar":  "يجلس",
+        "tr":  "Yajlis",
+        "v1":  "sit",
+        "v2":  "sat",
+        "v3":  "sat",
+        "id":  ""
+    },
+    {
+        "en":  "Sleep",
+        "ar":  "ينام",
+        "tr":  "Yanām",
+        "v1":  "sleep",
+        "v2":  "slept",
+        "v3":  "slept",
+        "id":  ""
+    },
+    {
+        "en":  "Speak",
+        "ar":  "يتكلم",
+        "tr":  "Yatakallam",
+        "v1":  "speak",
+        "v2":  "spoke",
+        "v3":  "spoken",
+        "id":  "Berbicara"
+    },
+    {
+        "en":  "Spend",
+        "ar":  "ينفق",
+        "tr":  "Yunfiq",
+        "v1":  "spend",
+        "v2":  "spent",
+        "v3":  "spent",
+        "id":  ""
+    },
+    {
+        "en":  "Stand",
+        "ar":  "يقف",
+        "tr":  "Yaqif",
+        "v1":  "stand",
+        "v2":  "stood",
+        "v3":  "stood",
+        "id":  ""
+    },
+    {
+        "en":  "Swim",
+        "ar":  "يسبح",
+        "tr":  "Yasbaḥ",
+        "v1":  "swim",
+        "v2":  "swam",
+        "v3":  "swum",
+        "id":  ""
+    },
+    {
+        "en":  "Take",
+        "ar":  "يأخذ",
+        "tr":  "Yaʾkhudh",
+        "v1":  "take",
+        "v2":  "took",
+        "v3":  "taken",
+        "id":  ""
+    },
+    {
+        "en":  "Teach",
+        "ar":  "يعلم",
+        "tr":  "Yuʿallim",
+        "v1":  "teach",
+        "v2":  "taught",
+        "v3":  "taught",
+        "id":  "Mengajar"
+    },
+    {
+        "en":  "Tell",
+        "ar":  "يخبر",
+        "tr":  "Yukhbir",
+        "v1":  "tell",
+        "v2":  "told",
+        "v3":  "told",
+        "id":  ""
+    },
+    {
+        "en":  "Think",
+        "ar":  "يفكر",
+        "tr":  "Yufakkir",
+        "v1":  "think",
+        "v2":  "thought",
+        "v3":  "thought",
+        "id":  ""
+    },
+    {
+        "en":  "Throw",
+        "ar":  "يرمي",
+        "tr":  "Yarmī",
+        "v1":  "throw",
+        "v2":  "threw",
+        "v3":  "thrown",
+        "id":  ""
+    },
+    {
+        "en":  "Understand",
+        "ar":  "يفهم",
+        "tr":  "Yafham",
+        "v1":  "understand",
+        "v2":  "understood",
+        "v3":  "understood",
+        "id":  ""
+    },
+    {
+        "en":  "Wear",
+        "ar":  "يرتدي",
+        "tr":  "Yartadī",
+        "v1":  "wear",
+        "v2":  "wore",
+        "v3":  "worn",
+        "id":  ""
+    },
+    {
+        "en":  "Win",
+        "ar":  "يفوز",
+        "tr":  "Yafūz",
+        "v1":  "win",
+        "v2":  "won",
+        "v3":  "won",
+        "id":  ""
+    },
+    {
+        "en":  "Write",
+        "ar":  "يكتب",
+        "tr":  "Yaktub",
+        "v1":  "write",
+        "v2":  "wrote",
+        "v3":  "written",
+        "id":  "Menulis"
+    }
+]
+

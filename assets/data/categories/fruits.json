@@ -1,0 +1,208 @@
+[
+    {
+        "en": "Apple",
+        "ar": "تفاح",
+        "id": "apel",
+        "emoji": "🍎"
+    },
+    {
+        "en": "Banana",
+        "ar": "موز",
+        "id": "pisang",
+        "emoji": "🍌"
+    },
+    {
+        "en": "Orange",
+        "ar": "برتقال",
+        "id": "jeruk",
+        "emoji": "🍊"
+    },
+    {
+        "en": "Grape",
+        "ar": "عنب",
+        "id": "anggur",
+        "emoji": "🍇"
+    },
+    {
+        "en": "Mango",
+        "ar": "مانجو",
+        "id": "mangga",
+        "emoji": "🥭"
+    },
+    {
+        "en": "Pineapple",
+        "ar": "أناناس",
+        "id": "nanas",
+        "emoji": "🍍"
+    },
+    {
+        "en": "Watermelon",
+        "ar": "بطيخ",
+        "id": "semangka",
+        "emoji": "🍉"
+    },
+    {
+        "en": "Papaya",
+        "ar": "بابايا",
+        "id": "pepaya"
+    },
+    {
+        "en": "Strawberry",
+        "ar": "فراولة",
+        "id": "stroberi",
+        "emoji": "🍓"
+    },
+    {
+        "en": "Blueberry",
+        "ar": "توت أزرق",
+        "id": "bluberi",
+        "emoji": "🫐"
+    },
+    {
+        "en": "Raspberry",
+        "ar": "توت العليق",
+        "id": "raspberi"
+    },
+    {
+        "en": "Cherry",
+        "ar": "كرز",
+        "id": "ceri",
+        "emoji": "🍒"
+    },
+    {
+        "en": "Peach",
+        "ar": "خوخ",
+        "id": "persik",
+        "emoji": "🍑"
+    },
+    {
+        "en": "Pear",
+        "ar": "كمثرى",
+        "id": "pir",
+        "emoji": "🍐"
+    },
+    {
+        "en": "Plum",
+        "ar": "برقوق",
+        "id": "prem"
+    },
+    {
+        "en": "Apricot",
+        "ar": "مشمش",
+        "id": "aprikot"
+    },
+    {
+        "en": "Kiwi",
+        "ar": "كيوي",
+        "id": "kiwi"
+    },
+    {
+        "en": "Lemon",
+        "ar": "ليمون",
+        "id": "lemon",
+        "emoji": "🍋"
+    },
+    {
+        "en": "Lime",
+        "ar": "ليمون أخضر",
+        "id": "limau"
+    },
+    {
+        "en": "Coconut",
+        "ar": "جوز الهند",
+        "id": "kelapa",
+        "emoji": "🥥"
+    },
+    {
+        "en": "Pomegranate",
+        "ar": "رمان",
+        "id": "delima"
+    },
+    {
+        "en": "Date",
+        "ar": "تمر",
+        "id": "kurma"
+    },
+    {
+        "en": "Fig",
+        "ar": "تين",
+        "id": "ara"
+    },
+    {
+        "en": "Guava",
+        "ar": "جوافة",
+        "id": "jambu biji"
+    },
+    {
+        "en": "Dragon fruit",
+        "ar": "بيتايا",
+        "id": "buah naga"
+    },
+    {
+        "en": "Durian",
+        "ar": "دوريان",
+        "id": "durian"
+    },
+    {
+        "en": "Jackfruit",
+        "ar": "جاك فروت",
+        "id": "nangka"
+    },
+    {
+        "en": "Starfruit",
+        "ar": "فاكهة النجمة",
+        "id": "belimbing"
+    },
+    {
+        "en": "Soursop",
+        "ar": "قشطة",
+        "id": "sirsak"
+    },
+    {
+        "en": "Longan",
+        "ar": "لونجان",
+        "id": "lengkeng"
+    },
+    {
+        "en": "Lychee",
+        "ar": "ليتشي",
+        "id": "leci"
+    },
+    {
+        "en": "Rambutan",
+        "ar": "رامبوتان",
+        "id": "rambutan"
+    },
+    {
+        "en": "Mangosteen",
+        "ar": "مانغوستين",
+        "id": "manggis"
+    },
+    {
+        "en": "Sugar apple",
+        "ar": "تفاح السكر",
+        "id": "srikaya"
+    },
+    {
+        "en": "Snake fruit",
+        "ar": "سالاك",
+        "id": "salak"
+    },
+    {
+        "en": "Langsat",
+        "ar": "لانسات",
+        "id": "langsat"
+    },
+    {
+        "en": "Tamarind",
+        "ar": "تمر هندي",
+        "id": "asam jawa"
+    },
+    {
+        "en": "Avocado",
+        "ar": "أفوكادو",
+        "id": "alpukat",
+        "emoji": "🥑"
+    }
+]
+

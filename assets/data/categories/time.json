@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Today",
+        "ar": "اليوم",
+        "tr": "Al-yawm",
+        "id": "Hari ini"
+    },
+    {
+        "en": "Tomorrow",
+        "ar": "غدا",
+        "tr": "Ghadan",
+        "id": "Besok"
+    },
+    {
+        "en": "Yesterday",
+        "ar": "أمس",
+        "tr": "Ams",
+        "id": "Kemarin"
+    },
+    {
+        "en": "Morning",
+        "ar": "صباح",
+        "tr": "Ṣabāḥ",
+        "id": "Pagi"
+    },
+    {
+        "en": "Evening",
+        "ar": "مساء",
+        "tr": "Masāʾ",
+        "id": "Sore"
+    },
+    {
+        "en": "Night",
+        "ar": "ليل",
+        "tr": "Layl",
+        "id": "Malam"
+    },
+    {
+        "en": "Hour",
+        "ar": "ساعة",
+        "tr": "Sāʿah",
+        "id": "Jam"
+    },
+    {
+        "en": "Minute",
+        "ar": "دقيقة",
+        "tr": "Daqīqah",
+        "id": "Menit"
+    },
+    {
+        "en": "Second",
+        "ar": "ثانية",
+        "tr": "Thāniyah",
+        "id": "Detik"
+    },
+    {
+        "en": "Week",
+        "ar": "أسبوع",
+        "tr": "Usbūʿ",
+        "id": "Minggu"
+    }
+]
+

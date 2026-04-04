@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Happy",
+        "ar": "سعيد",
+        "tr": "Saʿīd",
+        "id": "Bahagia"
+    },
+    {
+        "en": "Sad",
+        "ar": "حزين",
+        "tr": "Ḥazīn",
+        "id": "Sedih"
+    },
+    {
+        "en": "Angry",
+        "ar": "غاضب",
+        "tr": "Ghāḍib",
+        "id": "Marah"
+    },
+    {
+        "en": "Tired",
+        "ar": "تعبان",
+        "tr": "Taʿbān",
+        "id": "Lelah"
+    },
+    {
+        "en": "Scared",
+        "ar": "خائف",
+        "tr": "Khāʾif",
+        "id": "Takut"
+    },
+    {
+        "en": "Excited",
+        "ar": "متحمس",
+        "tr": "Mutaḥammis",
+        "id": "Bersemangat"
+    },
+    {
+        "en": "Calm",
+        "ar": "هادئ",
+        "tr": "Hādiʾ",
+        "id": "Tenang"
+    },
+    {
+        "en": "Surprised",
+        "ar": "مندهش",
+        "tr": "Mundahish",
+        "id": "Terkejut"
+    },
+    {
+        "en": "Nervous",
+        "ar": "متوتر",
+        "tr": "Mutawattar",
+        "id": "Gugup"
+    },
+    {
+        "en": "Love",
+        "ar": "حب",
+        "tr": "Ḥubb",
+        "id": "Cinta"
+    }
+]
+

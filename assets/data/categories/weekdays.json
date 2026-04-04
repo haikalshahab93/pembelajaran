@@ -1,0 +1,45 @@
+[
+    {
+        "en": "Monday",
+        "ar": "الاثنين",
+        "tr": "Al-Ithnayn",
+        "id": "Senin"
+    },
+    {
+        "en": "Tuesday",
+        "ar": "الثلاثاء",
+        "tr": "Ath-Thulāthāʾ",
+        "id": "Selasa"
+    },
+    {
+        "en": "Wednesday",
+        "ar": "الأربعاء",
+        "tr": "Al-Arbiʿāʾ",
+        "id": "Rabu"
+    },
+    {
+        "en": "Thursday",
+        "ar": "الخميس",
+        "tr": "Al-Khamīs",
+        "id": "Kamis"
+    },
+    {
+        "en": "Friday",
+        "ar": "الجمعة",
+        "tr": "Al-Jumʿah",
+        "id": "Jumat"
+    },
+    {
+        "en": "Saturday",
+        "ar": "السبت",
+        "tr": "As-Sabt",
+        "id": "Sabtu"
+    },
+    {
+        "en": "Sunday",
+        "ar": "الأحد",
+        "tr": "Al-Aḥad",
+        "id": "Minggu"
+    }
+]
+

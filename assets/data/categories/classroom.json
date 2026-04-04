@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Book",
+        "ar": "كتاب",
+        "tr": "Kitāb",
+        "id": "Buku"
+    },
+    {
+        "en": "Pen",
+        "ar": "قلم",
+        "tr": "Qalam",
+        "id": "Pulpen"
+    },
+    {
+        "en": "Notebook",
+        "ar": "دفتر",
+        "tr": "Daftar",
+        "id": "Buku catatan"
+    },
+    {
+        "en": "Teacher",
+        "ar": "معلم",
+        "tr": "Muʿallim",
+        "id": "Guru"
+    },
+    {
+        "en": "Student",
+        "ar": "طالب",
+        "tr": "Ṭālib",
+        "id": "Siswa"
+    },
+    {
+        "en": "Lesson",
+        "ar": "درس",
+        "tr": "Dars",
+        "id": "Pelajaran"
+    },
+    {
+        "en": "Exam",
+        "ar": "امتحان",
+        "tr": "Imtiḥān",
+        "id": "Ujian"
+    },
+    {
+        "en": "Homework",
+        "ar": "واجب",
+        "tr": "Wājib",
+        "id": "PR"
+    },
+    {
+        "en": "Board",
+        "ar": "سبورة",
+        "tr": "Sabūrah",
+        "id": "Papan tulis"
+    },
+    {
+        "en": "Desk",
+        "ar": "طاولة",
+        "tr": "Ṭāwilah",
+        "id": "Meja"
+    }
+]
+

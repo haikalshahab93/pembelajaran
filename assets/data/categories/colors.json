@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Red",
+        "ar": "أحمر",
+        "tr": "Aḥmar",
+        "id": "Merah"
+    },
+    {
+        "en": "Blue",
+        "ar": "أزرق",
+        "tr": "Azraq",
+        "id": "Biru"
+    },
+    {
+        "en": "Green",
+        "ar": "أخضر",
+        "tr": "Akhdar",
+        "id": "Hijau"
+    },
+    {
+        "en": "Yellow",
+        "ar": "أصفر",
+        "tr": "Aṣfar",
+        "id": "Kuning"
+    },
+    {
+        "en": "Black",
+        "ar": "أسود",
+        "tr": "Aswad",
+        "id": "Hitam"
+    },
+    {
+        "en": "White",
+        "ar": "أبيض",
+        "tr": "Abyad",
+        "id": "Putih"
+    },
+    {
+        "en": "Orange",
+        "ar": "برتقالي",
+        "tr": "Burtuqālī",
+        "id": "Oranye"
+    },
+    {
+        "en": "Purple",
+        "ar": "بنفسجي",
+        "tr": "Banafsajī",
+        "id": "Ungu"
+    },
+    {
+        "en": "Brown",
+        "ar": "بني",
+        "tr": "Bunnī",
+        "id": "Cokelat"
+    },
+    {
+        "en": "Pink",
+        "ar": "وردي",
+        "tr": "Wardī",
+        "id": "Merah muda"
+    }
+]
+

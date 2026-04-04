@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Water",
+        "ar": "ماء",
+        "tr": "Māʾ",
+        "id": "Air"
+    },
+    {
+        "en": "Tea",
+        "ar": "شاي",
+        "tr": "Shāy",
+        "id": "Teh"
+    },
+    {
+        "en": "Coffee",
+        "ar": "قهوة",
+        "tr": "Qahwah",
+        "id": "Kopi"
+    },
+    {
+        "en": "Bread",
+        "ar": "خبز",
+        "tr": "Khubz",
+        "id": "Roti"
+    },
+    {
+        "en": "Rice",
+        "ar": "أرز",
+        "tr": "Aruzz",
+        "id": "Nasi"
+    },
+    {
+        "en": "Chicken",
+        "ar": "دجاج",
+        "tr": "Dajāj",
+        "id": "Ayam"
+    },
+    {
+        "en": "Meat",
+        "ar": "لحم",
+        "tr": "Laḥm",
+        "id": "Daging"
+    },
+    {
+        "en": "Fish",
+        "ar": "سمك",
+        "tr": "Samak",
+        "id": "Ikan"
+    },
+    {
+        "en": "Fruit",
+        "ar": "فاكهة",
+        "tr": "Fākihah",
+        "id": "Buah"
+    },
+    {
+        "en": "Vegetables",
+        "ar": "خضروات",
+        "tr": "Khaḍrawāt",
+        "id": "Sayuran"
+    }
+]
+

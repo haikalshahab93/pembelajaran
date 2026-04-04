@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Hot",
+        "ar": "حار",
+        "tr": "Ḥār",
+        "id": "Panas"
+    },
+    {
+        "en": "Cold",
+        "ar": "بارد",
+        "tr": "Bārid",
+        "id": "Dingin"
+    },
+    {
+        "en": "Rain",
+        "ar": "مطر",
+        "tr": "Maṭar",
+        "id": "Hujan"
+    },
+    {
+        "en": "Windy",
+        "ar": "رياح",
+        "tr": "Riyāḥ",
+        "id": "Berangin"
+    },
+    {
+        "en": "Snow",
+        "ar": "ثلج",
+        "tr": "Thalj",
+        "id": "Salju"
+    },
+    {
+        "en": "Cloudy",
+        "ar": "غائم",
+        "tr": "Ghāʾim",
+        "id": "Berawan"
+    },
+    {
+        "en": "Sunny",
+        "ar": "مشمس",
+        "tr": "Mushmis",
+        "id": "Cerah"
+    },
+    {
+        "en": "Storm",
+        "ar": "عاصفة",
+        "tr": "ʿĀṣifah",
+        "id": "Badai"
+    },
+    {
+        "en": "Temperature",
+        "ar": "درجة الحرارة",
+        "tr": "Darajat al-ḥarārah",
+        "id": "Suhu"
+    },
+    {
+        "en": "Season",
+        "ar": "فصل",
+        "tr": "Faṣl",
+        "id": "Musim"
+    }
+]
+

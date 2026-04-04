@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Ticket",
+        "ar": "تذكرة",
+        "tr": "Tadhkira",
+        "id": "Tiket"
+    },
+    {
+        "en": "Airport",
+        "ar": "مطار",
+        "tr": "Maṭār",
+        "id": "Bandara"
+    },
+    {
+        "en": "Train",
+        "ar": "قطار",
+        "tr": "Qiṭār",
+        "id": "Kereta"
+    },
+    {
+        "en": "Bus",
+        "ar": "حافلة",
+        "tr": "Ḥāfilah",
+        "id": "Bus"
+    },
+    {
+        "en": "Station",
+        "ar": "محطة",
+        "tr": "Maḥaṭṭah",
+        "id": "Stasiun"
+    },
+    {
+        "en": "Hotel",
+        "ar": "فندق",
+        "tr": "Funduq",
+        "id": "Hotel"
+    },
+    {
+        "en": "Passport",
+        "ar": "جواز سفر",
+        "tr": "Jawāz safar",
+        "id": "Paspor"
+    },
+    {
+        "en": "Baggage",
+        "ar": "أمتعة",
+        "tr": "Amtiʿah",
+        "id": "Bagasi"
+    },
+    {
+        "en": "Taxi",
+        "ar": "تاكسي",
+        "tr": "Taksī",
+        "id": "Taksi"
+    },
+    {
+        "en": "Map",
+        "ar": "خريطة",
+        "tr": "Kharīṭah",
+        "id": "Peta"
+    }
+]
+

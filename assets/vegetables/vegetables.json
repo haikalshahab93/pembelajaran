@@ -1,0 +1,660 @@
+[
+  {
+    "en": "Carrot",
+    "ar": "جزر",
+    "tr": "Jazar",
+    "id": "wortel",
+    "emoji": "🥕"
+  },
+  {
+    "en": "Potato",
+    "ar": "بطاطس",
+    "tr": "Batatis",
+    "id": "kentang",
+    "emoji": "🥔"
+  },
+  {
+    "en": "Tomato",
+    "ar": "طماطم",
+    "tr": "Tamatim",
+    "id": "tomat",
+    "emoji": "🍅"
+  },
+  {
+    "en": "Onion",
+    "ar": "بصل",
+    "tr": "Basal",
+    "id": "bawang bombai",
+    "emoji": "🧅"
+  },
+  {
+    "en": "Garlic",
+    "ar": "ثوم",
+    "tr": "Thum",
+    "id": "bawang putih",
+    "emoji": "🧄"
+  },
+  {
+    "en": "Shallot",
+    "ar": "كراث",
+    "tr": "Kurrath",
+    "id": "bawang merah"
+  },
+  {
+    "en": "Green Onion",
+    "ar": "بصل أخضر",
+    "tr": "Basal Akhdar",
+    "id": "daun bawang"
+  },
+  {
+    "en": "Cabbage",
+    "ar": "كرنب",
+    "tr": "Karanb",
+    "id": "kubis",
+    "emoji": "🥬"
+  },
+  {
+    "en": "Chinese Cabbage",
+    "ar": "كرنب صيني",
+    "tr": "Karanb Sini",
+    "id": "sawi putih",
+    "emoji": "🥬"
+  },
+  {
+    "en": "Lettuce",
+    "ar": "خس",
+    "tr": "Khass",
+    "id": "selada",
+    "emoji": "🥬"
+  },
+  {
+    "en": "Spinach",
+    "ar": "سبانخ",
+    "tr": "Sabanikh",
+    "id": "bayam",
+    "emoji": "🥬"
+  },
+  {
+    "en": "Kale",
+    "ar": "كرنب مجعد",
+    "tr": "Karanb Muja'ad",
+    "id": "kale",
+    "emoji": "🥬"
+  },
+  {
+    "en": "Mustard Greens",
+    "ar": "خردل أخضر",
+    "tr": "Kharadl Akhdar",
+    "id": "sawi hijau",
+    "emoji": "🥬"
+  },
+  {
+    "en": "Broccoli",
+    "ar": "بروكلي",
+    "tr": "Brokoli",
+    "id": "brokoli",
+    "emoji": "🥦"
+  },
+  {
+    "en": "Cauliflower",
+    "ar": "قرنبيط",
+    "tr": "Qarnabit",
+    "id": "kembang kol",
+    "emoji": "🥦"
+  },
+  {
+    "en": "Cucumber",
+    "ar": "خيار",
+    "tr": "Khiyar",
+    "id": "mentimun",
+    "emoji": "🥒"
+  },
+  {
+    "en": "Zucchini",
+    "ar": "كوسة",
+    "tr": "Kusah",
+    "id": "zukini",
+    "emoji": "🥒"
+  },
+  {
+    "en": "Eggplant",
+    "ar": "باذنجان",
+    "tr": "Badhinjan",
+    "id": "terong",
+    "emoji": "🍆"
+  },
+  {
+    "en": "Bell Pepper",
+    "ar": "فلفل رومي",
+    "tr": "Filfil Rumi",
+    "id": "paprika",
+    "emoji": "🫑"
+  },
+  {
+    "en": "Chili Pepper",
+    "ar": "فلفل حار",
+    "tr": "Filfil Harr",
+    "id": "cabai",
+    "emoji": "🌶️"
+  },
+  {
+    "en": "Sweet Corn",
+    "ar": "ذرة حلوة",
+    "tr": "Dhurah Hulwah",
+    "id": "jagung manis",
+    "emoji": "🌽"
+  },
+  {
+    "en": "Baby Corn",
+    "ar": "ذرة صغيرة",
+    "tr": "Dharah Saghirah",
+    "id": "jagung muda",
+    "emoji": "🌽"
+  },
+  {
+    "en": "Okra",
+    "ar": "بامية",
+    "tr": "Bamyah",
+    "id": "okra"
+  },
+  {
+    "en": "Bitter Melon",
+    "ar": "قرع مر",
+    "tr": "Qar' Murr",
+    "id": "pare"
+  },
+  {
+    "en": "Winter Melon",
+    "ar": "قرع شتوي",
+    "tr": "Qar' Shitawi",
+    "id": "labu air"
+  },
+  {
+    "en": "Pumpkin",
+    "ar": "يقطين",
+    "tr": "Yaqtin",
+    "id": "labu kuning",
+    "emoji": "🎃"
+  },
+  {
+    "en": "Butternut Squash",
+    "ar": "قرع الجوز",
+    "tr": "Qura' al-Jawz",
+    "id": "labu butternut"
+  },
+  {
+    "en": "Chayote",
+    "ar": "شايوتي",
+    "tr": "Shiti",
+    "id": "labu siam"
+  },
+  {
+    "en": "Yam",
+    "ar": "يام",
+    "tr": "Yam",
+    "id": "ubi"
+  },
+  {
+    "en": "Cassava",
+    "ar": "كسافا",
+    "tr": "Kasafa",
+    "id": "singkong"
+  },
+  {
+    "en": "Sweet Potato",
+    "ar": "بطاطا حلوة",
+    "tr": "Batata Hulwah",
+    "id": "ubi jalar",
+    "emoji": "🍠"
+  },
+  {
+    "en": "Taro",
+    "ar": "قلقاس",
+    "tr": "Qulqas",
+    "id": "talas"
+  },
+  {
+    "en": "Jicama",
+    "ar": "سيبوه",
+    "tr": "Sibuh",
+    "id": "bengkuang"
+  },
+  {
+    "en": "Ginger",
+    "ar": "زنجبيل",
+    "tr": "Zanjabil",
+    "id": "jahe"
+  },
+  {
+    "en": "Galangal",
+    "ar": "خولنجان",
+    "tr": "Khulanajan",
+    "id": "lengkuas"
+  },
+  {
+    "en": "Turmeric",
+    "ar": "كركم",
+    "tr": "Kurkum",
+    "id": "kunyit"
+  },
+  {
+    "en": "Lemongrass",
+    "ar": "عشب الليمون",
+    "tr": "Ushb al-Laimun",
+    "id": "serai"
+  },
+  {
+    "en": "Water Spinach",
+    "ar": "سبانخ مائي",
+    "tr": "Sabankh Ma'i",
+    "id": "kangkung"
+  },
+  {
+    "en": "Morning Glory",
+    "ar": "زهرة الصباح",
+    "tr": "Zaharah as-Sabah",
+    "id": "genjer"
+  },
+  {
+    "en": "Pea",
+    "ar": "بازلاء",
+    "tr": "Bazala'",
+    "id": "kacang polong"
+  },
+  {
+    "en": "Snow Pea",
+    "ar": "بازلاء الثلج",
+    "tr": "Bazala' ath-Thalj",
+    "id": "kapri"
+  },
+  {
+    "en": "Green Bean",
+    "ar": "فاصوليا خضراء",
+    "tr": "Fasulya Khadra",
+    "id": "buncis"
+  },
+  {
+    "en": "Long Bean",
+    "ar": "فاصوليا طويلة",
+    "tr": "Fasuli Tawilah",
+    "id": "kacang panjang"
+  },
+  {
+    "en": "Soybean",
+    "ar": "فول الصويا",
+    "tr": "Ful as-Suya",
+    "id": "kedelai"
+  },
+  {
+    "en": "Edamame",
+    "ar": "إدامامي",
+    "tr": "Idamami",
+    "id": "edamame"
+  },
+  {
+    "en": "Chickpea",
+    "ar": "حمص",
+    "tr": "Hummus",
+    "id": "kacang arab"
+  },
+  {
+    "en": "Lentil",
+    "ar": "عدس",
+    "tr": "Adas",
+    "id": "lentil"
+  },
+  {
+    "en": "Mung Bean",
+    "ar": "الماش",
+    "tr": "Al-Mash",
+    "id": "kacang hijau"
+  },
+  {
+    "en": "Black Soybean",
+    "ar": "صويا سوداء",
+    "tr": "Su Sawda",
+    "id": "kedelai hitam"
+  },
+  {
+    "en": "Seaweed",
+    "ar": "طحالب بحرية",
+    "tr": "Tahalb Bahriyyah",
+    "id": "rumput laut"
+  },
+  {
+    "en": "Nori",
+    "ar": "نوري",
+    "tr": "Nuri",
+    "id": "nori"
+  },
+  {
+    "en": "Wakame",
+    "ar": "واكامي",
+    "tr": "Wakami",
+    "id": "wakame"
+  },
+  {
+    "en": "Enoki Mushroom",
+    "ar": "فطر إينوكي",
+    "tr": "Fatr Inuki",
+    "id": "jamur enoki"
+  },
+  {
+    "en": "Shiitake Mushroom",
+    "ar": "فطر شيتاكي",
+    "tr": "Fatr Shitaki",
+    "id": "jamur shiitake"
+  },
+  {
+    "en": "Button Mushroom",
+    "ar": "فطر أبيض",
+    "tr": "Fatr Abyadh",
+    "id": "jamur kancing"
+  },
+  {
+    "en": "Oyster Mushroom",
+    "ar": "فطر محاري",
+    "tr": "Fatr Mahari",
+    "id": "jamur tiram"
+  },
+  {
+    "en": "King Oyster Mushroom",
+    "ar": "فطر ملكي",
+    "tr": "Fatr Malaki",
+    "id": "jamur tiram raja"
+  },
+  {
+    "en": "Parsley",
+    "ar": "بقدونس",
+    "tr": "Baqdunis",
+    "id": "peterseli"
+  },
+  {
+    "en": "Cilantro",
+    "ar": "كزبرة",
+    "tr": "Kuzbarah",
+    "id": "ketumbar"
+  },
+  {
+    "en": "Basil",
+    "ar": "ريحان",
+    "tr": "Raihan",
+    "id": "kemangi"
+  },
+  {
+    "en": "Mint",
+    "ar": "نعناع",
+    "tr": "Na'na'",
+    "id": "mint"
+  },
+  {
+    "en": "Dill",
+    "ar": "شبث",
+    "tr": "Shabth",
+    "id": "adas"
+  },
+  {
+    "en": "Rosemary",
+    "ar": "إكليل الجبل",
+    "tr": "Iklil al-Jabal",
+    "id": "rosemary"
+  },
+  {
+    "en": "Thyme",
+    "ar": "زعتر",
+    "tr": "Za'tar",
+    "id": "thyme"
+  },
+  {
+    "en": "Bay Leaf",
+    "ar": "ورق الغار",
+    "tr": "Waraq al-Ghar",
+    "id": "daun salam"
+  },
+  {
+    "en": "Celery",
+    "ar": "كرفس",
+    "tr": "Karafs",
+    "id": "seledri"
+  },
+  {
+    "en": "Fennel",
+    "ar": "شمر",
+    "tr": "Shamar",
+    "id": "adas manis"
+  },
+  {
+    "en": "Leek",
+    "ar": "كراث",
+    "tr": "Kurrath",
+    "id": "leek"
+  },
+  {
+    "en": "Radish",
+    "ar": "فجل",
+    "tr": "Fijl",
+    "id": "lobak"
+  },
+  {
+    "en": "Daikon",
+    "ar": "دايكون",
+    "tr": "Dikun",
+    "id": "daikon"
+  },
+  {
+    "en": "Beetroot",
+    "ar": "شمندر",
+    "tr": "Shamandar",
+    "id": "bit"
+  },
+  {
+    "en": "Turnip",
+    "ar": "لفت",
+    "tr": "Lift",
+    "id": "lobak putih"
+  },
+  {
+    "en": "Rutabaga",
+    "ar": "روتاباجا",
+    "tr": "Rutabaja",
+    "id": "rutabaga"
+  },
+  {
+    "en": "Artichoke",
+    "ar": "خرشوف",
+    "tr": "Kharashuf",
+    "id": "artichoke"
+  },
+  {
+    "en": "Asparagus",
+    "ar": "هليون",
+    "tr": "Halyun",
+    "id": "asparagus"
+  },
+  {
+    "en": "Brussels Sprout",
+    "ar": "كرنب بروكسل",
+    "tr": "Karanb Barukasl",
+    "id": "kubis brussel"
+  },
+  {
+    "en": "Arugula",
+    "ar": "جرجير",
+    "tr": "Jarjir",
+    "id": "arugula"
+  },
+  {
+    "en": "Endive",
+    "ar": "هندباء",
+    "tr": "Hindiba'",
+    "id": "endive"
+  },
+  {
+    "en": "Radicchio",
+    "ar": "راديكيو",
+    "tr": "Radiki",
+    "id": "radicchio"
+  },
+  {
+    "en": "Watercress",
+    "ar": "جرجير مائي",
+    "tr": "Jarajir Ma'i",
+    "id": "selada air"
+  },
+  {
+    "en": "Bok Choy",
+    "ar": "بوك تشوي",
+    "tr": "Bok Choy",
+    "id": "sawi sendok"
+  },
+  {
+    "en": "Napa Cabbage",
+    "ar": "كرنب نابا",
+    "tr": "Karanb Napa",
+    "id": "kol napa"
+  },
+  {
+    "en": "Gourd",
+    "ar": "قرع",
+    "tr": "Qar'",
+    "id": "labu"
+  },
+  {
+    "en": "Celeriac",
+    "ar": "كرفس جذري",
+    "tr": "Karafs Jadhri",
+    "id": "seledri akar"
+  },
+  {
+    "en": "Parsnip",
+    "ar": "جزر أبيض",
+    "tr": "Jazr Abyadh",
+    "id": "parsnip"
+  },
+  {
+    "en": "Horseradish",
+    "ar": "فجل حار",
+    "tr": "Fajl Harr",
+    "id": "horseradish"
+  },
+  {
+    "en": "Kohlrabi",
+    "ar": "كرنب سويقي",
+    "tr": "Karanb Suwaiqi",
+    "id": "kolrabi"
+  },
+  {
+    "en": "Sea Asparagus",
+    "ar": "هليون بحري",
+    "tr": "Halin Bahri",
+    "id": "samphire"
+  },
+  {
+    "en": "Sea Kale",
+    "ar": "كرنب بحري",
+    "tr": "Karanb Bahri",
+    "id": "sea kale"
+  },
+  {
+    "en": "Malabar Spinach",
+    "ar": "سبانخ مالابار",
+    "tr": "Sabankh Malabar",
+    "id": "binahong"
+  },
+  {
+    "en": "Purslane",
+    "ar": "رجلة",
+    "tr": "Rijlah",
+    "id": "krokot"
+  },
+  {
+    "en": "Amaranth Greens",
+    "ar": "قطيفة",
+    "tr": "Qatifah",
+    "id": "bayam merah"
+  },
+  {
+    "en": "Mizuna",
+    "ar": "ميزونا",
+    "tr": "Mizuna",
+    "id": "mizuna"
+  },
+  {
+    "en": "Sorrel",
+    "ar": "حميض",
+    "tr": "Hamid",
+    "id": "daun asam"
+  },
+  {
+    "en": "Lotus Root",
+    "ar": "جذر اللوتس",
+    "tr": "Jadhr al-Lotus",
+    "id": "akar teratai"
+  },
+  {
+    "en": "Bamboo Shoot",
+    "ar": "براعم الخيزران",
+    "tr": "Bara'im al-Khaizaran",
+    "id": "rebung"
+  },
+  {
+    "en": "Seaweed Kelp",
+    "ar": "عشب بحري كيلب",
+    "tr": "'ashb Bahri Kilb",
+    "id": "kelp"
+  },
+  {
+    "en": "Napa Sprouts",
+    "ar": "براعم نابا",
+    "tr": "Bara'm Napa",
+    "id": "toge kol"
+  },
+  {
+    "en": "Bean Sprout",
+    "ar": "براعم الفاصوليا",
+    "tr": "Bara'im al-Fasulya",
+    "id": "toge"
+  },
+  {
+    "en": "Green Papaya",
+    "ar": "بابايا خضراء",
+    "tr": "Babi Khadra",
+    "id": "pepaya muda"
+  },
+  {
+    "en": "Tomatillo",
+    "ar": "توماتيلو",
+    "tr": "Tumatilu",
+    "id": "tomatillo"
+  },
+  {
+    "en": "Celariac Leaf",
+    "ar": "ورق الكرفس",
+    "tr": "Waraq al-Karafs",
+    "id": "daun seledri"
+  },
+  {
+    "en": "Scallion",
+    "ar": "كراث أخضر",
+    "tr": "Karath Akhdar",
+    "id": "lokio"
+  },
+  {
+    "en": "Leunca",
+    "ar": "لِنكا",
+    "tr": "Lanaka",
+    "id": "leunca"
+  },
+  {
+    "en": "Pak Choi",
+    "ar": "باك تشوي",
+    "tr": "Pak Choy",
+    "id": "pakcoy"
+  },
+  {
+    "en": "Sichuan Pepper Leaf",
+    "ar": "ورق الفلفل السيشوان",
+    "tr": "Waraq al-Filfil as-Sichwan",
+    "id": "daun andaliman"
+  }
+]

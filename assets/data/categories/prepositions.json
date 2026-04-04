@@ -1,0 +1,63 @@
+[
+    {
+        "en": "In",
+        "ar": "في",
+        "tr": "Fī",
+        "id": "Di dalam"
+    },
+    {
+        "en": "On",
+        "ar": "على",
+        "tr": "ʿAlā",
+        "id": "Di atas"
+    },
+    {
+        "en": "Under",
+        "ar": "تحت",
+        "tr": "Taḥt",
+        "id": "Di bawah"
+    },
+    {
+        "en": "Behind",
+        "ar": "خلف",
+        "tr": "Khalf",
+        "id": "Di belakang"
+    },
+    {
+        "en": "Between",
+        "ar": "بين",
+        "tr": "Bayna",
+        "id": "Di antara"
+    },
+    {
+        "en": "Before",
+        "ar": "قبل",
+        "tr": "Qabla",
+        "id": "Sebelum"
+    },
+    {
+        "en": "After",
+        "ar": "بعد",
+        "tr": "Baʿda",
+        "id": "Sesudah"
+    },
+    {
+        "en": "With",
+        "ar": "مع",
+        "tr": "Maʿa",
+        "id": "Dengan"
+    },
+    {
+        "en": "Without",
+        "ar": "بدون",
+        "tr": "Bidūn",
+        "id": "Tanpa"
+    },
+    {
+        "en": "Near",
+        "ar": "قريب",
+        "tr": "Qarīb",
+        "id": "Dekat"
+    }
+]
+

@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Father",
+        "ar": "أب",
+        "tr": "Ab",
+        "id": "Ayah"
+    },
+    {
+        "en": "Mother",
+        "ar": "أم",
+        "tr": "Umm",
+        "id": "Ibu"
+    },
+    {
+        "en": "Son",
+        "ar": "ابن",
+        "tr": "Ibn",
+        "id": "Anak laki-laki"
+    },
+    {
+        "en": "Daughter",
+        "ar": "بنت",
+        "tr": "Bint",
+        "id": "Anak perempuan"
+    },
+    {
+        "en": "Brother",
+        "ar": "أخ",
+        "tr": "Akh",
+        "id": "Saudara laki-laki"
+    },
+    {
+        "en": "Sister",
+        "ar": "أخت",
+        "tr": "Ukht",
+        "id": "Saudara perempuan"
+    },
+    {
+        "en": "Husband",
+        "ar": "زوج",
+        "tr": "Zawj",
+        "id": "Suami"
+    },
+    {
+        "en": "Wife",
+        "ar": "زوجة",
+        "tr": "Zawjah",
+        "id": "Istri"
+    },
+    {
+        "en": "Family",
+        "ar": "عائلة",
+        "tr": "ʿĀʾilah",
+        "id": "Keluarga"
+    },
+    {
+        "en": "Child",
+        "ar": "طفل",
+        "tr": "Ṭifl",
+        "id": "Anak"
+    }
+]
+

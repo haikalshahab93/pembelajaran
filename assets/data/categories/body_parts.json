@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Head",
+        "ar": "رأس",
+        "tr": "Raʾs",
+        "id": "Kepala"
+    },
+    {
+        "en": "Face",
+        "ar": "وجه",
+        "tr": "Wajh",
+        "id": "Wajah"
+    },
+    {
+        "en": "Eye",
+        "ar": "عين",
+        "tr": "ʿAyn",
+        "id": "Mata"
+    },
+    {
+        "en": "Ear",
+        "ar": "أذن",
+        "tr": "Udhun",
+        "id": "Telinga"
+    },
+    {
+        "en": "Nose",
+        "ar": "أنف",
+        "tr": "Anf",
+        "id": "Hidung"
+    },
+    {
+        "en": "Mouth",
+        "ar": "فم",
+        "tr": "Fam",
+        "id": "Mulut"
+    },
+    {
+        "en": "Hand",
+        "ar": "يد",
+        "tr": "Yad",
+        "id": "Tangan"
+    },
+    {
+        "en": "Foot",
+        "ar": "قدم",
+        "tr": "Qadam",
+        "id": "Kaki"
+    },
+    {
+        "en": "Leg",
+        "ar": "ساق",
+        "tr": "Sāq",
+        "id": "Tungkai"
+    },
+    {
+        "en": "Arm",
+        "ar": "ذراع",
+        "tr": "Dhirāʿ",
+        "id": "Lengan"
+    }
+]
+

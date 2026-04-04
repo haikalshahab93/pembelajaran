@@ -1,0 +1,63 @@
+[
+    {
+        "en": "I",
+        "ar": "أنا",
+        "tr": "Anā",
+        "id": "Saya"
+    },
+    {
+        "en": "You (masc.)",
+        "ar": "أنتَ",
+        "tr": "Anta",
+        "id": "Kamu"
+    },
+    {
+        "en": "You (fem.)",
+        "ar": "أنتِ",
+        "tr": "Anti",
+        "id": "Kamu"
+    },
+    {
+        "en": "He",
+        "ar": "هو",
+        "tr": "Huwa",
+        "id": "Dia"
+    },
+    {
+        "en": "She",
+        "ar": "هي",
+        "tr": "Hiya",
+        "id": "Dia"
+    },
+    {
+        "en": "We",
+        "ar": "نحن",
+        "tr": "Naḥnu",
+        "id": "Kami/Kita"
+    },
+    {
+        "en": "You (plural)",
+        "ar": "أنتم",
+        "tr": "Antum",
+        "id": "Kalian"
+    },
+    {
+        "en": "They",
+        "ar": "هم",
+        "tr": "Hum",
+        "id": "Mereka"
+    },
+    {
+        "en": "Mine",
+        "ar": "لي",
+        "tr": "Lī",
+        "id": "Milik saya"
+    },
+    {
+        "en": "Yours",
+        "ar": "لكَ/لكِ",
+        "tr": "Laka/Laki",
+        "id": "Milikmu"
+    }
+]
+

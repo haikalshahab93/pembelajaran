@@ -1,0 +1,63 @@
+[
+    {
+        "en": "House",
+        "ar": "بيت",
+        "tr": "Bayt",
+        "id": "Rumah"
+    },
+    {
+        "en": "School",
+        "ar": "مدرسة",
+        "tr": "Madrasah",
+        "id": "Sekolah"
+    },
+    {
+        "en": "Mosque",
+        "ar": "مسجد",
+        "tr": "Masjid",
+        "id": "Masjid"
+    },
+    {
+        "en": "Market",
+        "ar": "سوق",
+        "tr": "Sūq",
+        "id": "Pasar"
+    },
+    {
+        "en": "City",
+        "ar": "مدينة",
+        "tr": "Madīnah",
+        "id": "Kota"
+    },
+    {
+        "en": "Village",
+        "ar": "قرية",
+        "tr": "Qaryah",
+        "id": "Desa"
+    },
+    {
+        "en": "Street",
+        "ar": "شارع",
+        "tr": "Shāriʿ",
+        "id": "Jalan"
+    },
+    {
+        "en": "Hospital",
+        "ar": "مستشفى",
+        "tr": "Mustashfā",
+        "id": "Rumah sakit"
+    },
+    {
+        "en": "Office",
+        "ar": "مكتب",
+        "tr": "Maktab",
+        "id": "Kantor"
+    },
+    {
+        "en": "Library",
+        "ar": "مكتبة",
+        "tr": "Maktabah",
+        "id": "Perpustakaan"
+    }
+]
+

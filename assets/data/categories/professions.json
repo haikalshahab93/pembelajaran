@@ -1,0 +1,63 @@
+[
+    {
+        "en": "Teacher",
+        "ar": "معلم",
+        "tr": "Muʿallim",
+        "id": "Guru"
+    },
+    {
+        "en": "Doctor",
+        "ar": "طبيب",
+        "tr": "Ṭabīb",
+        "id": "Dokter"
+    },
+    {
+        "en": "Engineer",
+        "ar": "مهندس",
+        "tr": "Muhandis",
+        "id": "Insinyur"
+    },
+    {
+        "en": "Student",
+        "ar": "طالب",
+        "tr": "Ṭālib",
+        "id": "Siswa"
+    },
+    {
+        "en": "Driver",
+        "ar": "سائق",
+        "tr": "Sāʾiq",
+        "id": "Sopir"
+    },
+    {
+        "en": "Farmer",
+        "ar": "مزارع",
+        "tr": "Muzāriʿ",
+        "id": "Petani"
+    },
+    {
+        "en": "Nurse",
+        "ar": "ممرضة",
+        "tr": "Mumarriḍah",
+        "id": "Perawat"
+    },
+    {
+        "en": "Police officer",
+        "ar": "شرطي",
+        "tr": "Shurṭī",
+        "id": "Polisi"
+    },
+    {
+        "en": "Cook",
+        "ar": "طباخ",
+        "tr": "Ṭabbākh",
+        "id": "Juru masak"
+    },
+    {
+        "en": "Seller",
+        "ar": "بائع",
+        "tr": "Bāʾiʿ",
+        "id": "Penjual"
+    }
+]
+

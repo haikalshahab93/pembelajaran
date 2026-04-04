@@ -1,0 +1,63 @@
+﻿[
+    {
+        "en": "Yes",
+        "ar": "نعم",
+        "tr": "Naʿam",
+        "id": "Ya"
+    },
+    {
+        "en": "No",
+        "ar": "لا",
+        "tr": "Lā",
+        "id": "Tidak"
+    },
+    {
+        "en": "Please",
+        "ar": "من فضلك",
+        "tr": "Min faḍlik",
+        "id": "Tolong"
+    },
+    {
+        "en": "Excuse me",
+        "ar": "عذرا",
+        "tr": "ʿUdhran",
+        "id": "Permisi"
+    },
+    {
+        "en": "I don't understand",
+        "ar": "لا أفهم",
+        "tr": "Lā afham",
+        "id": "Saya tidak mengerti"
+    },
+    {
+        "en": "Where is the bathroom?",
+        "ar": "أين الحمام؟",
+        "tr": "Ayna al-ḥammām?",
+        "id": "Di mana kamar mandi?"
+    },
+    {
+        "en": "What is your name?",
+        "ar": "ما اسمك؟",
+        "tr": "Mā ismuka/ki?",
+        "id": "Siapa namamu?"
+    },
+    {
+        "en": "My name is ...",
+        "ar": "اسمي ...",
+        "tr": "Ismī ...",
+        "id": "Nama saya ..."
+    },
+    {
+        "en": "Help!",
+        "ar": "مساعدة!",
+        "tr": "Musāʿadah!",
+        "id": "Tolong!"
+    },
+    {
+        "en": "Food",
+        "ar": "طعام",
+        "tr": "Ṭaʿām",
+        "id": "Makanan"
+    }
+]
+

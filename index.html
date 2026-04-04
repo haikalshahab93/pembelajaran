@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelajar EN↔AR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Pembelajar Bahasa Inggris & Arab</h1>
+    <div class="controls">
+      <label class="control">
+        Arah
+        <select id="direction">
+          <option value="en-ar">Inggris → Arab</option>
+          <option value="ar-en">Arab → Inggris</option>
+        </select>
+      </label>
+      <label class="control">
+        Kategori
+        <select id="category"></select>
+      </label>
+      <button id="speak" class="primary">Audio</button>
+      <button id="listen" class="ghost">Ucapkan</button>
+      <button id="go-home" class="ghost" aria-label="Kembali ke halaman utama">Beranda</button>
+      <button id="focus-mode" class="ghost" aria-pressed="false" aria-label="Mode fokus belajar">Fokus Belajar</button>
+      <input id="search" type="search" placeholder="Cari kata (EN/AR/ID)" aria-label="Cari" />
+      <button id="contrast" class="ghost" aria-pressed="false">Kontras Tinggi</button>
+      <button id="media" class="ghost" aria-pressed="true">Tampilkan Gambar</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="cards">Kartu</button>
+    <button class="tab" data-tab="quiz">Kuis</button>
+    <button class="tab" data-tab="phrases">Frasa</button>
+    <button class="tab" data-tab="translate">Terjemah</button>
+  </nav>
+
+  <main class="tab-content">
+    <section id="tab-cards" class="panel active">
+      <div class="card" id="flashcard">
+        <div class="face front" id="card-front"></div>
+        <div class="face back" id="card-back"></div>
+      </div>
+      <div class="card-actions">
+        <button id="prev" class="ghost">Sebelumnya</button>
+        <button id="flip" class="primary">Balik</button>
+        <button id="next" class="ghost">Berikutnya</button>
+      </div>
+      <div class="progress">
+        <div id="progress-text"></div>
+      </div>
+      <div id="voice-result" class="voice-result"></div>
+    </section>
+
+    <section id="tab-quiz" class="panel">
+      <div class="quiz-wrap">
+        <div id="quiz-question" class="quiz-question"></div>
+        <div id="quiz-options" class="quiz-options"></div>
+        <div class="quiz-actions">
+          <button id="quiz-next" class="primary">Soal Berikutnya</button>
+        </div>
+        <div class="quiz-progress" id="quiz-progress"></div>
+      </div>
+    </section>
+
+    <section id="tab-phrases" class="panel">
+      <div id="phrases-list" class="phrases-list"></div>
+    </section>
+    <section id="tab-translate" class="panel">
+      <div class="translate-wrap">
+        <textarea id="translate-input" class="translate-input" rows="3" placeholder="Tulis kalimat EN/AR/ID untuk diterjemahkan"></textarea>
+        <div id="translate-info" class="translate-info"></div>
+        <div id="translate-output" class="translate-output">
+          <div class="translate-row">
+            <span class="chip"><span class="chip-tag">EN</span><span id="translate-en"></span></span>
+            <button id="translate-speak-en" class="ghost">Dengar EN</button>
+          </div>
+          <div class="translate-row">
+            <span class="chip"><span class="chip-tag">AR</span><span id="translate-ar"></span></span>
+            <button id="translate-speak-ar" class="ghost">Dengar AR</button>
+          </div>
+          <div class="translate-row">
+            <span class="chip"><span class="chip-tag">ID</span><span id="translate-id"></span></span>
+            <button id="translate-speak-id" class="ghost">Dengar ID</button>
+          </div>
+        </div>
+        <div class="translate-row">
+          <button id="translate-copy" class="primary">Salin Hasil</button>
+          <button id="translate-save" class="ghost">Simpan ke Riwayat</button>
+          <button id="translate-space" class="ghost" aria-pressed="false">Spasi Kata</button>
+        </div>
+        <div id="translate-add" class="add-lexicon"></div>
+        <div class="translate-row">
+          <div class="translate-info">Riwayat Terjemah</div>
+          <button id="translate-clear" class="ghost">Bersihkan</button>
+        </div>
+        <div id="translate-history" class="translate-history"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div id="streak">Target Harian: 10 kartu • Hari beruntun: 0</div>
+  </footer>
+  <div id="image-viewer" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-body">
+      <img id="viewer-img" class="viewer-image" src="" alt="">
+      <div class="modal-actions">
+        <button id="viewer-edit" class="ghost">Ganti Gambar</button>
+        <button id="viewer-close" class="ghost">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

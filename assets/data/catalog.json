@@ -1,0 +1,182 @@
+﻿{
+    "categories":  [
+                       {
+                           "id":  "greetings",
+                           "name":  "Sapaan"
+                       },
+                       {
+                           "id":  "numbers",
+                           "name":  "Angka 0-10"
+                       },
+                       {
+                           "id":  "weekdays",
+                           "name":  "Hari"
+                       },
+                       {
+                           "id":  "basics",
+                           "name":  "Dasar"
+                       },
+                       {
+                           "id":  "colors",
+                           "name":  "Warna"
+                       },
+                       {
+                           "id":  "family",
+                           "name":  "Keluarga"
+                       },
+                       {
+                           "id":  "professions",
+                           "name":  "Profesi"
+                       },
+                       {
+                           "id":  "verbs_common",
+                           "name":  "Verba Umum"
+                       },
+                       {
+                           "id":  "travel",
+                           "name":  "Perjalanan"
+                       },
+                       {
+                           "id":  "food_drinks",
+                           "name":  "Makanan \u0026 Minuman"
+                       },
+                       {
+                           "id":  "fruits",
+                           "name":  "Buah-buahan"
+                       },
+                       {
+                           "id":  "pronouns",
+                           "name":  "Pronomina"
+                       },
+                       {
+                           "id":  "prepositions",
+                           "name":  "Preposisi"
+                       },
+                       {
+                           "id":  "time",
+                           "name":  "Waktu"
+                       },
+                       {
+                           "id":  "places",
+                           "name":  "Tempat"
+                       },
+                       {
+                           "id":  "classroom",
+                           "name":  "Kelas"
+                       },
+                       {
+                           "id":  "emotions",
+                           "name":  "Emosi"
+                       },
+                       {
+                           "id":  "weather",
+                           "name":  "Cuaca"
+                       },
+                       {
+                           "id":  "clothing",
+                           "name":  "Pakaian"
+                       },
+                       {
+                           "id":  "body_parts",
+                           "name":  "Bagian Tubuh"
+                       },
+                       {
+                           "id":  "animals",
+                           "name":  "Hewan"
+                       },
+                       {
+                           "id":  "vegetables",
+                           "name":  "Sayur"
+                       },
+                       {
+                           "id":  "transportation",
+                           "name":  "Transportasi"
+                       },
+                       {
+                           "id":  "nouns",
+                           "name":  "Kata Benda"
+                       },
+                       {
+                           "id":  "adjectives",
+                           "name":  "Kata Sifat"
+                       },
+                       {
+                           "id":  "verbs_regular",
+                           "name":  "Verba Reguler"
+                       },
+                       {
+                           "id":  "verbs_irregular",
+                           "name":  "Verba Irreguler"
+                       },
+                       {
+                           "id":  "verbs_irregular_full",
+                           "name":  "Verba Irreguler Lengkap"
+                       },
+                       {
+                           "id":  "verbs_2000_examples",
+                           "name":  "Verba 2000 + Kalimat"
+                       }
+                   ],
+    "entries":  {
+                    "greetings":  [],
+                    "numbers":  [],
+                    "weekdays":  [],
+                    "basics":  [],
+                    "colors":  [],
+                    "family":  [],
+                    "professions":  [],
+                    "verbs_common":  [],
+                    "travel":  [],
+                    "food_drinks":  [],
+                    "fruits":  [],
+                    "pronouns":  [],
+                    "prepositions":  [],
+                    "time":  [],
+                    "places":  [],
+                    "classroom":  [],
+                    "emotions":  [],
+                    "weather":  [],
+                    "clothing":  [],
+                    "body_parts":  [],
+                    "animals":  [],
+                    "vegetables":  [],
+                    "transportation":  [],
+                    "nouns":  [],
+                    "adjectives":  [],
+                    "verbs_regular":  [],
+                    "verbs_irregular":  [],
+                    "verbs_irregular_full":  [],
+                    "verbs_2000_examples":  []
+                },
+    "entry_files":  {
+                        "greetings":  "assets/data/categories/greetings.json",
+                        "numbers":  "assets/data/categories/numbers.json",
+                        "weekdays":  "assets/data/categories/weekdays.json",
+                        "basics":  "assets/data/categories/basics.json",
+                        "colors":  "assets/data/categories/colors.json",
+                        "family":  "assets/data/categories/family.json",
+                        "professions":  "assets/data/categories/professions.json",
+                        "verbs_common":  "assets/data/categories/verbs_common.json",
+                        "travel":  "assets/data/categories/travel.json",
+                        "food_drinks":  "assets/data/categories/food_drinks.json",
+                        "fruits":  "assets/data/categories/fruits.json",
+                        "pronouns":  "assets/data/categories/pronouns.json",
+                        "prepositions":  "assets/data/categories/prepositions.json",
+                        "time":  "assets/data/categories/time.json",
+                        "places":  "assets/data/categories/places.json",
+                        "classroom":  "assets/data/categories/classroom.json",
+                        "emotions":  "assets/data/categories/emotions.json",
+                        "weather":  "assets/data/categories/weather.json",
+                        "clothing":  "assets/data/categories/clothing.json",
+                        "body_parts":  "assets/data/categories/body_parts.json",
+                        "animals":  "assets/animals/animals.json",
+                        "vegetables":  "assets/vegetables/vegetables.json",
+                        "transportation":  "assets/data/categories/transportation.json",
+                        "nouns":  "assets/data/categories/nouns.json",
+                        "adjectives":  "assets/data/categories/adjectives.json",
+                        "verbs_regular":  "assets/data/categories/verbs_regular.json",
+                        "verbs_irregular":  "assets/data/categories/verbs_irregular.json",
+                        "verbs_irregular_full":  "assets/data/categories/verbs_irregular_full.json",
+                        "verbs_2000_examples":  "assets/data/categories/verbs_2000_examples.json"
+                    }
+}
