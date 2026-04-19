@@ -1,0 +1,30 @@
+[
+    {
+        "en": "Crocodile",
+        "ar": "تمساح",
+        "tr": "Tamasah",
+        "id": "buaya",
+        "emoji": "🐊"
+    },
+    {
+        "en": "Alligator",
+        "ar": "التمساح الأمريكي",
+        "tr": "at-Tamasah al-Amriki",
+        "id": "aligator",
+        "emoji": "🐊"
+    },
+    {
+        "en": "Caiman",
+        "ar": "كايمان",
+        "tr": "Kiman",
+        "id": "kaiman",
+        "emoji": "🐊"
+    },
+    {
+        "en": "Gharial",
+        "ar": "غريال",
+        "tr": "Gharil",
+        "id": "gharial",
+        "emoji": "🐊"
+    }
+]

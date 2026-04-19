@@ -1,0 +1,58 @@
+[
+    {
+        "en": "Lobster",
+        "ar": "سرطان البحر",
+        "tr": "Sartan al-Bahr",
+        "id": "lobster",
+        "emoji": "🦞"
+    },
+    {
+        "en": "Crab",
+        "ar": "سلطعون",
+        "tr": "Salta'un",
+        "id": "kepiting",
+        "emoji": "🦀"
+    },
+    {
+        "en": "Shrimp",
+        "ar": "روبيان",
+        "tr": "Rubin",
+        "id": "udang",
+        "emoji": "🦐"
+    },
+    {
+        "en": "Starfish",
+        "ar": "نجم البحر",
+        "tr": "Najm al-Bahr",
+        "id": "bintang laut",
+        "emoji": "⭐"
+    },
+    {
+        "en": "Sea Urchin",
+        "ar": "قنفذ البحر",
+        "tr": "Qunfudh al-Bahr",
+        "id": "landak laut",
+        "emoji": "🌊"
+    },
+    {
+        "en": "Giant Clam",
+        "ar": "محار عملاق",
+        "tr": "Mihar 'Imlaq",
+        "id": "kerang raksasa",
+        "emoji": "🐚"
+    },
+    {
+        "en": "Oyster",
+        "ar": "محار",
+        "tr": "Mihar",
+        "id": "tiram",
+        "emoji": "🐚"
+    },
+    {
+        "en": "Mussel",
+        "ar": "بلح البحر",
+        "tr": "Balah al-Bahr",
+        "id": "kerang hijau",
+        "emoji": "🐚"
+    }
+]

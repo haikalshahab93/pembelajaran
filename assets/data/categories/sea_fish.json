@@ -1,0 +1,58 @@
+[
+    {
+        "en": "Swordfish",
+        "ar": "سمكة أبو سيف",
+        "tr": "Samakah Abu Saif",
+        "id": "ikan pedang",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Tuna",
+        "ar": "تونا",
+        "tr": "Tuna",
+        "id": "tuna",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Salmon",
+        "ar": "سلمون",
+        "tr": "Salamun",
+        "id": "salmon",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Trout",
+        "ar": "تراوت",
+        "tr": "Tarut",
+        "id": "trout",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Carp",
+        "ar": "شبوط",
+        "tr": "Shabut",
+        "id": "ikan mas",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Catfish",
+        "ar": "قرموط",
+        "tr": "Qaramut",
+        "id": "lele",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Eel",
+        "ar": "ثعبان البحر",
+        "tr": "Tha'aban al-Bahr",
+        "id": "belut",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Seahorse",
+        "ar": "فرس البحر",
+        "tr": "Faras al-Bahr",
+        "id": "kuda laut",
+        "emoji": "🦄"
+    }
+]

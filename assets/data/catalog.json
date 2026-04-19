@@ -1,4 +1,4 @@
-﻿{
+{
     "categories":  [
                        {
                            "id":  "greetings",
@@ -115,6 +115,218 @@
                        {
                            "id":  "verbs_2000_examples",
                            "name":  "Verba 2000 + Kalimat"
+                       },
+                       {
+                           "id":  "home_objects",
+                           "name":  "Benda di Rumah"
+                       },
+                       {
+                           "id":  "health",
+                           "name":  "Kesehatan"
+                       },
+                       {
+                           "id":  "daily_activities",
+                           "name":  "Aktivitas Harian"
+                       },
+                       {
+                           "id":  "shopping",
+                           "name":  "Belanja"
+                       },
+                       {
+                           "id":  "school_office",
+                           "name":  "Sekolah & Kantor"
+                       },
+                       {
+                           "id":  "worship",
+                           "name":  "Ibadah"
+                       },
+                       {
+                           "id":  "daily_conversation",
+                           "name":  "Percakapan Harian"
+                       },
+                       {
+                           "id":  "question_words",
+                           "name":  "Kata Tanya"
+                       },
+                       {
+                           "id":  "classroom_phrases",
+                           "name":  "Frasa Kelas"
+                       },
+                       {
+                           "id":  "market_conversation",
+                           "name":  "Percakapan Pasar"
+                       },
+                       {
+                           "id":  "daily_foods",
+                           "name":  "Makanan Harian"
+                       },
+                       {
+                           "id":  "personal_information",
+                           "name":  "Identitas Diri"
+                       },
+                       {
+                           "id":  "polite_expressions",
+                           "name":  "Ungkapan Sopan"
+                       },
+                       {
+                           "id":  "directions",
+                           "name":  "Arah & Petunjuk"
+                       },
+                       {
+                           "id":  "restaurant",
+                           "name":  "Restoran"
+                       },
+                       {
+                           "id":  "farm_animals",
+                           "name":  "Hewan Ternak"
+                       },
+                       {
+                           "id":  "wild_animals",
+                           "name":  "Hewan Liar"
+                       },
+                       {
+                           "id":  "birds",
+                           "name":  "Burung"
+                       },
+                       {
+                           "id":  "reptiles_amphibians",
+                           "name":  "Reptil & Amfibi"
+                       },
+                       {
+                           "id":  "sea_animals",
+                           "name":  "Hewan Laut"
+                       },
+                       {
+                           "id":  "insects_small_animals",
+                           "name":  "Serangga & Hewan Kecil"
+                       },
+                       {
+                           "id":  "root_vegetables",
+                           "name":  "Sayuran Umbi"
+                       },
+                       {
+                           "id":  "leafy_green_vegetables",
+                           "name":  "Sayuran Hijau"
+                       },
+                       {
+                           "id":  "legumes_mushrooms",
+                           "name":  "Kacang & Jamur"
+                       },
+                       {
+                           "id":  "herbs_spices",
+                           "name":  "Herbal & Bumbu"
+                       },
+                       {
+                           "id":  "citrus_fruits",
+                           "name":  "Buah Sitrus"
+                       },
+                       {
+                           "id":  "berries_grapes",
+                           "name":  "Beri & Anggur"
+                       },
+                       {
+                           "id":  "orchard_fruits",
+                           "name":  "Buah Kebun"
+                       },
+                       {
+                           "id":  "tropical_fruits",
+                           "name":  "Buah Tropis"
+                       },
+                       {
+                           "id":  "exotic_fruits",
+                           "name":  "Buah Eksotis"
+                       },
+                       {
+                           "id":  "small_mammals",
+                           "name":  "Mamalia Kecil"
+                       },
+                       {
+                           "id":  "primates",
+                           "name":  "Primata"
+                       },
+                       {
+                           "id":  "birds_of_prey",
+                           "name":  "Burung Pemangsa"
+                       },
+                       {
+                           "id":  "pet_city_birds",
+                           "name":  "Burung Peliharaan & Kota"
+                       },
+                       {
+                           "id":  "water_birds",
+                           "name":  "Burung Air"
+                       },
+                       {
+                           "id":  "domestic_birds",
+                           "name":  "Unggas Ternak"
+                       },
+                       {
+                           "id":  "wetland_birds",
+                           "name":  "Burung Rawa"
+                       },
+                       {
+                           "id":  "unique_birds",
+                           "name":  "Burung Unik"
+                       },
+                       {
+                           "id":  "giant_mammals",
+                           "name":  "Mamalia Raksasa"
+                       },
+                       {
+                           "id":  "big_cats",
+                           "name":  "Kucing Besar"
+                       },
+                       {
+                           "id":  "hoofed_mammals",
+                           "name":  "Mamalia Berkuku"
+                       },
+                       {
+                           "id":  "marsupials",
+                           "name":  "Marsupial"
+                       },
+                       {
+                           "id":  "unique_mammals",
+                           "name":  "Mamalia Unik"
+                       },
+                       {
+                           "id":  "marine_mammals",
+                           "name":  "Mamalia Laut"
+                       },
+                       {
+                           "id":  "sharks_rays",
+                           "name":  "Hiu & Pari"
+                       },
+                       {
+                           "id":  "sea_fish",
+                           "name":  "Ikan Laut"
+                       },
+                       {
+                           "id":  "cephalopods_jellyfish",
+                           "name":  "Gurita, Cumi & Ubur-Ubur"
+                       },
+                       {
+                           "id":  "shellfish_seafloor",
+                           "name":  "Kerang & Dasar Laut"
+                       },
+                       {
+                           "id":  "crocodilians",
+                           "name":  "Buaya & Kerabatnya"
+                       },
+                       {
+                           "id":  "lizards",
+                           "name":  "Kadal & Tokek"
+                       },
+                       {
+                           "id":  "snakes",
+                           "name":  "Ular"
+                       },
+                       {
+                           "id":  "turtles_tortoises",
+                           "name":  "Kura-Kura & Penyu"
+                       },
+                       {
+                           "id":  "amphibians",
+                           "name":  "Amfibi"
                        }
                    ],
     "entries":  {
@@ -146,7 +358,60 @@
                     "verbs_regular":  [],
                     "verbs_irregular":  [],
                     "verbs_irregular_full":  [],
-                    "verbs_2000_examples":  []
+                    "verbs_2000_examples":  [],
+                    "home_objects":  [],
+                    "health":  [],
+                    "daily_activities":  [],
+                    "shopping":  [],
+                    "school_office":  [],
+                    "worship":  [],
+                    "daily_conversation":  [],
+                    "question_words":  [],
+                    "classroom_phrases":  [],
+                    "market_conversation":  [],
+                    "daily_foods":  [],
+                    "personal_information":  [],
+                    "polite_expressions":  [],
+                    "directions":  [],
+                    "restaurant":  [],
+                    "farm_animals":  [],
+                    "wild_animals":  [],
+                    "birds":  [],
+                    "reptiles_amphibians":  [],
+                    "sea_animals":  [],
+                    "insects_small_animals":  [],
+                    "root_vegetables":  [],
+                    "leafy_green_vegetables":  [],
+                    "legumes_mushrooms":  [],
+                    "herbs_spices":  [],
+                    "citrus_fruits":  [],
+                    "berries_grapes":  [],
+                    "orchard_fruits":  [],
+                    "tropical_fruits":  [],
+                    "exotic_fruits":  [],
+                    "small_mammals":  [],
+                    "primates":  [],
+                    "birds_of_prey":  [],
+                    "pet_city_birds":  [],
+                    "water_birds":  [],
+                    "domestic_birds":  [],
+                    "wetland_birds":  [],
+                    "unique_birds":  [],
+                    "giant_mammals":  [],
+                    "big_cats":  [],
+                    "hoofed_mammals":  [],
+                    "marsupials":  [],
+                    "unique_mammals":  [],
+                    "marine_mammals":  [],
+                    "sharks_rays":  [],
+                    "sea_fish":  [],
+                    "cephalopods_jellyfish":  [],
+                    "shellfish_seafloor":  [],
+                    "crocodilians":  [],
+                    "lizards":  [],
+                    "snakes":  [],
+                    "turtles_tortoises":  [],
+                    "amphibians":  []
                 },
     "entry_files":  {
                         "greetings":  "assets/data/categories/greetings.json",
@@ -177,6 +442,59 @@
                         "verbs_regular":  "assets/data/categories/verbs_regular.json",
                         "verbs_irregular":  "assets/data/categories/verbs_irregular.json",
                         "verbs_irregular_full":  "assets/data/categories/verbs_irregular_full.json",
-                        "verbs_2000_examples":  "assets/data/categories/verbs_2000_examples.json"
+                        "verbs_2000_examples":  "assets/data/categories/verbs_2000_examples.json",
+                        "home_objects":  "assets/data/categories/home_objects.json",
+                        "health":  "assets/data/categories/health.json",
+                        "daily_activities":  "assets/data/categories/daily_activities.json",
+                        "shopping":  "assets/data/categories/shopping.json",
+                        "school_office":  "assets/data/categories/school_office.json",
+                        "worship":  "assets/data/categories/worship.json",
+                        "daily_conversation":  "assets/data/categories/daily_conversation.json",
+                        "question_words":  "assets/data/categories/question_words.json",
+                        "classroom_phrases":  "assets/data/categories/classroom_phrases.json",
+                        "market_conversation":  "assets/data/categories/market_conversation.json",
+                        "daily_foods":  "assets/data/categories/daily_foods.json",
+                        "personal_information":  "assets/data/categories/personal_information.json",
+                        "polite_expressions":  "assets/data/categories/polite_expressions.json",
+                        "directions":  "assets/data/categories/directions.json",
+                        "restaurant":  "assets/data/categories/restaurant.json",
+                        "farm_animals":  "assets/data/categories/farm_animals.json",
+                        "wild_animals":  "assets/data/categories/wild_animals.json",
+                        "birds":  "assets/data/categories/birds.json",
+                        "reptiles_amphibians":  "assets/data/categories/reptiles_amphibians.json",
+                        "sea_animals":  "assets/data/categories/sea_animals.json",
+                        "insects_small_animals":  "assets/data/categories/insects_small_animals.json",
+                        "root_vegetables":  "assets/data/categories/root_vegetables.json",
+                        "leafy_green_vegetables":  "assets/data/categories/leafy_green_vegetables.json",
+                        "legumes_mushrooms":  "assets/data/categories/legumes_mushrooms.json",
+                        "herbs_spices":  "assets/data/categories/herbs_spices.json",
+                        "citrus_fruits":  "assets/data/categories/citrus_fruits.json",
+                        "berries_grapes":  "assets/data/categories/berries_grapes.json",
+                        "orchard_fruits":  "assets/data/categories/orchard_fruits.json",
+                        "tropical_fruits":  "assets/data/categories/tropical_fruits.json",
+                        "exotic_fruits":  "assets/data/categories/exotic_fruits.json",
+                        "small_mammals":  "assets/data/categories/small_mammals.json",
+                        "primates":  "assets/data/categories/primates.json",
+                        "birds_of_prey":  "assets/data/categories/birds_of_prey.json",
+                        "pet_city_birds":  "assets/data/categories/pet_city_birds.json",
+                        "water_birds":  "assets/data/categories/water_birds.json",
+                        "domestic_birds":  "assets/data/categories/domestic_birds.json",
+                        "wetland_birds":  "assets/data/categories/wetland_birds.json",
+                        "unique_birds":  "assets/data/categories/unique_birds.json",
+                        "giant_mammals":  "assets/data/categories/giant_mammals.json",
+                        "big_cats":  "assets/data/categories/big_cats.json",
+                        "hoofed_mammals":  "assets/data/categories/hoofed_mammals.json",
+                        "marsupials":  "assets/data/categories/marsupials.json",
+                        "unique_mammals":  "assets/data/categories/unique_mammals.json",
+                        "marine_mammals":  "assets/data/categories/marine_mammals.json",
+                        "sharks_rays":  "assets/data/categories/sharks_rays.json",
+                        "sea_fish":  "assets/data/categories/sea_fish.json",
+                        "cephalopods_jellyfish":  "assets/data/categories/cephalopods_jellyfish.json",
+                        "shellfish_seafloor":  "assets/data/categories/shellfish_seafloor.json",
+                        "crocodilians":  "assets/data/categories/crocodilians.json",
+                        "lizards":  "assets/data/categories/lizards.json",
+                        "snakes":  "assets/data/categories/snakes.json",
+                        "turtles_tortoises":  "assets/data/categories/turtles_tortoises.json",
+                        "amphibians":  "assets/data/categories/amphibians.json"
                     }
 }

@@ -1,0 +1,45 @@
+[
+    {
+        "en": "Parrot",
+        "ar": "ببغاء",
+        "tr": "Babagha'",
+        "id": "burung beo",
+        "emoji": "🦜"
+    },
+    {
+        "en": "Macaw",
+        "ar": "ببغاء مقو",
+        "tr": "Babagha' Maqu",
+        "id": "macaw",
+        "emoji": "🦜"
+    },
+    {
+        "en": "Cockatoo",
+        "ar": "كوكاتو",
+        "tr": "Kukatu",
+        "id": "kakatua",
+        "emoji": "🦜"
+    },
+    {
+        "en": "Sparrow",
+        "ar": "عصفور",
+        "tr": "'asafur",
+        "id": "burung gereja",
+        "emoji": "🐦"
+    },
+    {
+        "en": "Pigeon",
+        "ar": "حمامة",
+        "tr": "Hamamah",
+        "id": "merpati",
+        "emoji": "🕊️"
+    },
+    {
+        "en": "Dove",
+        "ar": "يمامة",
+        "tr": "Ymamah",
+        "id": "merpati putih",
+        "emoji": "🕊️",
+        "img": "assets/user-images/dove-1774961212-d2a931.png"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "en": "Koala",
+        "ar": "كوالا",
+        "tr": "Kula",
+        "id": "koala",
+        "emoji": "🐨"
+    },
+    {
+        "en": "Kangaroo",
+        "ar": "كنغر",
+        "tr": "Kanaghr",
+        "id": "kanguru",
+        "emoji": "🦘"
+    },
+    {
+        "en": "Wallaby",
+        "ar": "ولابي",
+        "tr": "Wlabi",
+        "id": "wallaby",
+        "emoji": "🦘"
+    },
+    {
+        "en": "Wombat",
+        "ar": "ومبت",
+        "tr": "Wmabt",
+        "id": "wombat",
+        "emoji": "🐻"
+    },
+    {
+        "en": "Tasmanian Devil",
+        "ar": "شيطان تسمانيا",
+        "tr": "Shaitan Tasmania",
+        "id": "setan tasmania",
+        "emoji": "🦘"
+    }
+]

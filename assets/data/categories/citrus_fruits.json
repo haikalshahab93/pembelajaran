@@ -1,0 +1,20 @@
+[
+    {
+        "en": "Orange",
+        "ar": "برتقال",
+        "id": "jeruk",
+        "emoji": "🍊"
+    },
+    {
+        "en": "Lemon",
+        "ar": "ليمون",
+        "id": "lemon",
+        "emoji": "🍋"
+    },
+    {
+        "en": "Lime",
+        "ar": "ليمون أخضر",
+        "id": "limau",
+        "img": "assets/user-images/lime-1774958050-6e57b1.png"
+    }
+]

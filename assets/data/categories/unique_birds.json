@@ -1,0 +1,26 @@
+[
+    {
+        "en": "Peacock",
+        "ar": "طاووس",
+        "tr": "Tus",
+        "id": "merak",
+        "emoji": "🦚",
+        "img": "assets/user-images/peacock-1774961229-5f6f0a.png"
+    },
+    {
+        "en": "Woodpecker",
+        "ar": "نقار الخشب",
+        "tr": "Naqar al-Khashab",
+        "id": "pelatuk",
+        "emoji": "🐦",
+        "img": "assets/user-images/woodpecker-1774961489-7de095.png"
+    },
+    {
+        "en": "Hummingbird",
+        "ar": "طائر الطنان",
+        "tr": "Ta'ir at-Tannan",
+        "id": "burung kolibri",
+        "emoji": "🐦",
+        "img": "assets/user-images/hummingbird-1774961508-cc4b4e.png"
+    }
+]

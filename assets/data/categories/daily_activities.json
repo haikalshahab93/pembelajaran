@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Wake up",
+        "ar": "يستيقظ",
+        "tr": "Yastayqiẓ",
+        "id": "Bangun tidur"
+    },
+    {
+        "en": "Eat",
+        "ar": "يأكل",
+        "tr": "Yaʾkul",
+        "id": "Makan"
+    },
+    {
+        "en": "Drink",
+        "ar": "يشرب",
+        "tr": "Yashrab",
+        "id": "Minum"
+    },
+    {
+        "en": "Study",
+        "ar": "يدرس",
+        "tr": "Yadrus",
+        "id": "Belajar"
+    },
+    {
+        "en": "Write",
+        "ar": "يكتب",
+        "tr": "Yaktub",
+        "id": "Menulis"
+    },
+    {
+        "en": "Read",
+        "ar": "يقرأ",
+        "tr": "Yaqraʾ",
+        "id": "Membaca"
+    },
+    {
+        "en": "Work",
+        "ar": "يعمل",
+        "tr": "Yaʿmal",
+        "id": "Bekerja"
+    },
+    {
+        "en": "Walk",
+        "ar": "يمشي",
+        "tr": "Yamshī",
+        "id": "Berjalan"
+    },
+    {
+        "en": "Sleep",
+        "ar": "ينام",
+        "tr": "Yanām",
+        "id": "Tidur"
+    },
+    {
+        "en": "Cook",
+        "ar": "يطبخ",
+        "tr": "Yaṭbukh",
+        "id": "Memasak"
+    },
+    {
+        "en": "Clean",
+        "ar": "ينظف",
+        "tr": "Yunaẓẓif",
+        "id": "Membersihkan"
+    },
+    {
+        "en": "Pray",
+        "ar": "يصلي",
+        "tr": "Yuṣallī",
+        "id": "Salat"
+    }
+]

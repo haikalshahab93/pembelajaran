@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Teacher",
+        "ar": "معلم",
+        "tr": "Muʿallim",
+        "id": "Guru"
+    },
+    {
+        "en": "Student",
+        "ar": "طالب",
+        "tr": "Ṭālib",
+        "id": "Siswa"
+    },
+    {
+        "en": "Principal",
+        "ar": "مدير",
+        "tr": "Mudīr",
+        "id": "Kepala sekolah"
+    },
+    {
+        "en": "Meeting",
+        "ar": "اجتماع",
+        "tr": "Ijtimāʿ",
+        "id": "Rapat"
+    },
+    {
+        "en": "Computer",
+        "ar": "حاسوب",
+        "tr": "Ḥāsūb",
+        "id": "Komputer"
+    },
+    {
+        "en": "Notebook",
+        "ar": "دفتر",
+        "tr": "Daftar",
+        "id": "Buku catatan"
+    },
+    {
+        "en": "Pen",
+        "ar": "قلم",
+        "tr": "Qalam",
+        "id": "Pulpen"
+    },
+    {
+        "en": "Paper",
+        "ar": "ورقة",
+        "tr": "Waraqah",
+        "id": "Kertas"
+    },
+    {
+        "en": "Homework",
+        "ar": "واجب",
+        "tr": "Wājib",
+        "id": "Pekerjaan rumah"
+    },
+    {
+        "en": "Exam",
+        "ar": "امتحان",
+        "tr": "Imtiḥān",
+        "id": "Ujian"
+    },
+    {
+        "en": "Manager",
+        "ar": "مدير",
+        "tr": "Mudīr",
+        "id": "Manajer"
+    },
+    {
+        "en": "Employee",
+        "ar": "موظف",
+        "tr": "Muwazzaf",
+        "id": "Karyawan"
+    }
+]

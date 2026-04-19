@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Price",
+        "ar": "سعر",
+        "tr": "Siʿr",
+        "id": "Harga"
+    },
+    {
+        "en": "Cheap",
+        "ar": "رخيص",
+        "tr": "Rakhīṣ",
+        "id": "Murah"
+    },
+    {
+        "en": "Expensive",
+        "ar": "غالي",
+        "tr": "Ghālī",
+        "id": "Mahal"
+    },
+    {
+        "en": "Store",
+        "ar": "متجر",
+        "tr": "Matjar",
+        "id": "Toko"
+    },
+    {
+        "en": "Customer",
+        "ar": "زبون",
+        "tr": "Zabūn",
+        "id": "Pelanggan"
+    },
+    {
+        "en": "Seller",
+        "ar": "بائع",
+        "tr": "Bāʾiʿ",
+        "id": "Penjual"
+    },
+    {
+        "en": "Cash",
+        "ar": "نقد",
+        "tr": "Naqd",
+        "id": "Tunai"
+    },
+    {
+        "en": "Card",
+        "ar": "بطاقة",
+        "tr": "Biṭāqah",
+        "id": "Kartu"
+    },
+    {
+        "en": "Discount",
+        "ar": "خصم",
+        "tr": "Khaṣm",
+        "id": "Diskon"
+    },
+    {
+        "en": "Receipt",
+        "ar": "إيصال",
+        "tr": "Īṣāl",
+        "id": "Struk"
+    },
+    {
+        "en": "Buy",
+        "ar": "يشتري",
+        "tr": "Yashtarī",
+        "id": "Membeli"
+    },
+    {
+        "en": "Sell",
+        "ar": "يبيع",
+        "tr": "Yabīʿ",
+        "id": "Menjual"
+    }
+]

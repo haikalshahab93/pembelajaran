@@ -1,0 +1,37 @@
+[
+    {
+        "en": "Lizard",
+        "ar": "سحلية",
+        "tr": "Sahaliah",
+        "id": "cicak",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Gecko",
+        "ar": "وزغة",
+        "tr": "Wzaghah",
+        "id": "tokek",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Iguana",
+        "ar": "إغوانا",
+        "tr": "Ighuna",
+        "id": "iguana",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Chameleon",
+        "ar": "حرباء",
+        "tr": "Haraba'",
+        "id": "bunglon",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Komodo Dragon",
+        "ar": "تنين كومودو",
+        "tr": "Tanin Kumudu",
+        "id": "komodo",
+        "emoji": "🦎"
+    }
+]

@@ -5,7 +5,6 @@
   }
   const directionSel = document.getElementById("direction")
   const categorySel = document.getElementById("category")
-  const speakBtn = document.getElementById("speak")
   const tabs = Array.from(document.querySelectorAll(".tab"))
   const panels = {
     cards: document.getElementById("tab-cards"),
@@ -47,6 +46,10 @@
   const viewerImg = document.getElementById("viewer-img")
   const viewerEdit = document.getElementById("viewer-edit")
   const viewerClose = document.getElementById("viewer-close")
+  const openSettingsBtn = document.getElementById("open-settings")
+  const settingsModal = document.getElementById("settings-modal")
+  const settingsPanel = document.getElementById("settings-panel")
+  const settingsClose = document.getElementById("settings-close")
   let viewerItem = null
 
   const LSKEY = "pembelajar_state"
@@ -82,6 +85,34 @@
     audioPitch: 1,
     dailyGoal: 10
   }
+  const CATEGORY_GROUPS = {
+    animals: {
+      id: "animals",
+      name: "Hewan",
+      members: [
+        "animals", "farm_animals", "wild_animals", "birds", "reptiles_amphibians", "sea_animals",
+        "insects_small_animals", "small_mammals", "primates", "birds_of_prey", "pet_city_birds",
+        "water_birds", "domestic_birds", "wetland_birds", "unique_birds", "giant_mammals",
+        "big_cats", "hoofed_mammals", "marsupials", "unique_mammals", "marine_mammals",
+        "sharks_rays", "sea_fish", "cephalopods_jellyfish", "shellfish_seafloor", "crocodilians",
+        "lizards", "snakes", "turtles_tortoises", "amphibians"
+      ]
+    },
+    vegetables: {
+      id: "vegetables",
+      name: "Sayur",
+      members: ["vegetables", "root_vegetables", "leafy_green_vegetables", "legumes_mushrooms", "herbs_spices"]
+    },
+    fruits: {
+      id: "fruits",
+      name: "Buah",
+      members: ["fruits", "citrus_fruits", "berries_grapes", "orchard_fruits", "tropical_fruits", "exotic_fruits"]
+    }
+  }
+  const CATEGORY_GROUP_BY_MEMBER = Object.values(CATEGORY_GROUPS).reduce((acc, group) => {
+    group.members.forEach(memberId => { acc[memberId] = group.id })
+    return acc
+  }, {})
   let state = loadState()
   let STUDY_SCOPE_MODE = "all"
   let STUDY_SCOPE_KEYS = null
@@ -134,7 +165,19 @@
   }
   function registerServiceWorker() {
     if (!("serviceWorker" in navigator)) return
+    const isLocalHost = ["localhost", "127.0.0.1"].includes(window.location.hostname)
     window.addEventListener("load", () => {
+      if (isLocalHost) {
+        navigator.serviceWorker.getRegistrations()
+          .then(list => Promise.all(list.map(reg => reg.unregister())))
+          .catch(() => {})
+        if ("caches" in window) {
+          caches.keys()
+            .then(keys => Promise.all(keys.filter(key => key.startsWith("pembelajaran-")).map(key => caches.delete(key))))
+            .catch(() => {})
+        }
+        return
+      }
       navigator.serviceWorker.register(appUrl("sw.js"), { scope: APP_BASE_PATH }).catch(() => {})
     })
   }
@@ -437,7 +480,7 @@
     })
   }
   function parsePossiblyBrokenJsonText(raw) {
-    const text = String(raw || "")
+    const text = String(raw || "").replace(/^\uFEFF/, "")
     try {
       return JSON.parse(text)
     } catch {
@@ -740,8 +783,7 @@
     renderHeaderStudyStatus()
   }
   function getItems() {
-    let items = DATA.entries[state.category]
-    return items || []
+    return getItemsByCategoryId(state.category)
   }
   function currentItem() {
     const items = getStudyItems()
@@ -1606,6 +1648,28 @@ self.onmessage = function (e) {
       tHistory.appendChild(div)
     })
   }
+  function getDisplayCategoryId(categoryId) {
+    return CATEGORY_GROUP_BY_MEMBER[categoryId] || categoryId || ""
+  }
+  function getCategoryMemberIds(categoryId) {
+    const group = CATEGORY_GROUPS[categoryId]
+    return group ? group.members.slice() : [categoryId]
+  }
+  function getDisplayCategories() {
+    const out = []
+    const added = new Set()
+    ;(Array.isArray(DATA.categories) ? DATA.categories : []).forEach(category => {
+      const displayId = getDisplayCategoryId(category && category.id)
+      if (!displayId || added.has(displayId)) return
+      if (CATEGORY_GROUPS[displayId]) {
+        out.push({ id: displayId, name: CATEGORY_GROUPS[displayId].name })
+      } else {
+        out.push(category)
+      }
+      added.add(displayId)
+    })
+    return out
+  }
   function renderCategoryOptions() {
     categorySel.innerHTML = ""
     const allOpt = document.createElement("option")
@@ -1613,7 +1677,7 @@ self.onmessage = function (e) {
     allOpt.textContent = "Semua Kategori"
     if (state.category === "__all") allOpt.selected = true
     categorySel.appendChild(allOpt)
-    DATA.categories.forEach(c => {
+    getDisplayCategories().forEach(c => {
       const opt = document.createElement("option")
       opt.value = c.id
       opt.textContent = c.name
@@ -1629,12 +1693,16 @@ self.onmessage = function (e) {
     })
     return all
   }
+  function getItemsByCategoryId(categoryId) {
+    if (!categoryId || categoryId === "__all") return flattenAllItems()
+    return getCategoryMemberIds(categoryId).flatMap(id => DATA.entries[id] || [])
+  }
   function getStudyItems() {
     return applyStudyFilter(getStudyItemsBase())
   }
   function getCategoryLabel() {
     if (state.category === "__all") return "Semua Kategori"
-    const found = DATA.categories.find(c => c.id === state.category)
+    const found = getDisplayCategories().find(c => c.id === state.category)
     return found ? found.name : state.category
   }
   function hasStudyScope() {
@@ -1714,7 +1782,7 @@ self.onmessage = function (e) {
   function getCategoryNameById(categoryId) {
     if (!categoryId) return "Lainnya"
     if (categoryId === "__all") return "Semua Kategori"
-    const found = DATA.categories.find(c => c.id === categoryId)
+    const found = getDisplayCategories().find(c => c.id === categoryId)
     return found ? found.name : categoryId
   }
   function getStudyCategorySummary(items) {
@@ -1832,11 +1900,6 @@ self.onmessage = function (e) {
         accuracyAvg: entry.sessions ? Math.round(entry.accuracyTotal / entry.sessions) : 0
       }))
       .sort((a, b) => a.accuracyAvg - b.accuracyAvg || b.wrong - a.wrong || b.sessions - a.sessions)
-  }
-  function getItemsByCategoryId(categoryId) {
-    if (!categoryId || categoryId === "__all") return flattenAllItems()
-    let items = DATA.entries[categoryId]
-    return items || []
   }
   function getUrgentStudyItems(limit, categoryId) {
     const now = Date.now()
@@ -2429,7 +2492,7 @@ self.onmessage = function (e) {
       const arr = DATA.entries[cat] || []
       return arr.some(it => it === item || srsKey(it) === targetKey)
     })
-    return found || ""
+    return getDisplayCategoryId(found || "")
   }
   function openStudyItem(item) {
     if (!item) return
@@ -2451,7 +2514,7 @@ self.onmessage = function (e) {
     const firstError = (recentErrors || []).find(it => it && it.category)
     const firstUrgent = (urgentItems || []).length ? urgentItems[0].item : null
     const targetCategory = state.category === "__all"
-      ? (firstError && firstError.category) || getItemCategoryId(firstUrgent) || DATA.categories[0].id
+      ? (firstError && getDisplayCategoryId(firstError.category)) || getItemCategoryId(firstUrgent) || ((getDisplayCategories()[0] || {}).id)
       : state.category
     state.quiz.reviewOnly = true
     clearStudyScope()
@@ -2894,6 +2957,22 @@ self.onmessage = function (e) {
       if ((text || "").trim()) row.appendChild(createCardSoundButton(title, text, lang))
       return row
     }
+    function createExampleAudioRow(label, text, dir, lang, title) {
+      const row = document.createElement("div")
+      row.className = "example-audio-row"
+      row.dataset.dir = dir
+      const tag = document.createElement("span")
+      tag.className = "example-audio-label"
+      tag.textContent = label
+      const value = document.createElement("span")
+      value.className = "example-audio-text"
+      value.dir = dir
+      value.textContent = text
+      row.appendChild(tag)
+      row.appendChild(value)
+      if ((text || "").trim()) row.appendChild(createCardSoundButton(title, text, lang))
+      return row
+    }
     function appendCardMetaLine(host, text, className) {
       if (!text) return
       const line = document.createElement("div")
@@ -2919,20 +2998,18 @@ self.onmessage = function (e) {
       exAR = dot >= 0 ? exAR.slice(0, dot + 1) : exAR
     }
     const exID = item.ex_id || ""
-    const parts = []
-    if (exEN) parts.push(`<span class="chip"><span class="chip-tag">EN</span>${clip(exEN, 80)}</span>`)
-    if (exAR) parts.push(`<span class="chip"><span class="chip-tag">AR</span>${clip(exAR, 60)}</span>`)
-    if (exID) parts.push(`<span class="chip"><span class="chip-tag">ID</span>${clip(exID, 80)}</span>`)
     cardBack.innerHTML = ""
     appendCardMedia(cardBack, media)
     cardBack.appendChild(createCardTextRow(backA, cardBack.dir, backLang, "Dengar teks kartu belakang"))
     appendCardMetaLine(cardBack, backT || "", "card-meta-line")
     appendCardMetaLine(cardBack, item.id ? `ID: ${item.id}` : "", "card-meta-line")
     appendCardMetaLine(cardBack, item.v1 ? `v1: ${item.v1} • v2: ${item.v2} • v3: ${item.v3}` : "", "card-meta-line")
-    if (parts.length) {
+    if (exEN || exAR || exID) {
       const exBlock = document.createElement("div")
       exBlock.className = "example-row"
-      exBlock.innerHTML = parts.join(" · ")
+      if (exEN) exBlock.appendChild(createExampleAudioRow("EN", exEN, "ltr", "en-US", "Dengar contoh English"))
+      if (exAR) exBlock.appendChild(createExampleAudioRow("AR", exAR, "rtl", "ar-SA", "Dengar contoh Arab"))
+      if (exID) exBlock.appendChild(createExampleAudioRow("ID", exID, "ltr", "id-ID", "Dengar contoh Indonesia"))
       cardBack.appendChild(exBlock)
     }
     const cardSrs = createSrsBadge(item, false)
@@ -3566,40 +3643,35 @@ self.onmessage = function (e) {
   }
   let PHRASE_RENDER_JOB = 0
   function speakPhraseText(text, lang) {
-    if (!window.speechSynthesis) return
-    const u = new SpeechSynthesisUtterance(text || "")
-    u.lang = lang
-    speechSynthesis.cancel()
-    speechSynthesis.speak(u)
+    speakLangText(text, lang)
   }
-  function appendPhraseSubtitle(sub, it) {
-    const baseText = document.createElement("span")
-    baseText.textContent = `${it.en} • ${it.tr || ""}${it.id ? ` • ID:${it.id}` : ""}${it.v1 ? ` • v1:${it.v1} v2:${it.v2} v3:${it.v3}` : ""}`
-    sub.appendChild(baseText)
-    if (it.ex_en) {
-      const chip = document.createElement("span")
-      chip.className = "chip"
-      const tag = document.createElement("span")
-      tag.className = "chip-tag"
-      tag.textContent = "EN"
-      chip.appendChild(tag)
-      chip.appendChild(document.createTextNode(clip(it.ex_en, 60)))
-      sub.appendChild(document.createTextNode(" • "))
-      sub.appendChild(chip)
+  function createPhraseAudioRow(label, text, dir, lang, title, displayText) {
+    const row = document.createElement("div")
+    row.className = "phrase-audio-row"
+    row.dataset.dir = dir
+    const tag = document.createElement("span")
+    tag.className = "phrase-audio-label"
+    tag.textContent = label
+    const value = document.createElement("span")
+    value.className = "phrase-audio-text"
+    value.dir = dir
+    value.textContent = displayText || text || "-"
+    row.appendChild(tag)
+    row.appendChild(value)
+    if ((text || "").trim()) {
+      const btn = document.createElement("button")
+      btn.type = "button"
+      btn.className = "card-sound-button"
+      btn.setAttribute("aria-label", title)
+      btn.title = title
+      btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 00-3-4.243v8.486a4.5 4.5 0 003-4.243zm2.5 0a7 7 0 01-4.666 6.6l-.834-1.8A5 5 0 0020 12a5 5 0 00-6.5-4.8l.834-1.8A7 7 0 0120 12z"/></svg>`
+      btn.onclick = e => {
+        e.stopPropagation()
+        speakPhraseText(text, lang)
+      }
+      row.appendChild(btn)
     }
-    if (it.ex_ar) {
-      const dot = it.ex_ar.indexOf(".")
-      const firstSent = dot >= 0 ? it.ex_ar.slice(0, dot + 1) : it.ex_ar
-      const chip = document.createElement("span")
-      chip.className = "chip"
-      const tag = document.createElement("span")
-      tag.className = "chip-tag"
-      tag.textContent = "AR"
-      chip.appendChild(tag)
-      chip.appendChild(document.createTextNode(clip(firstSent, 50)))
-      sub.appendChild(document.createTextNode(" • "))
-      sub.appendChild(chip)
-    }
+    return row
   }
   function createPhraseMedia(it, userImg, mediaOn) {
     if (!mediaOn) return null
@@ -3635,22 +3707,25 @@ self.onmessage = function (e) {
     const media = createPhraseMedia(it, userImg, mediaOn)
     if (media) main.appendChild(media)
     if (media && media.tagName === "IMG") media.onclick = () => openViewer(it)
-    const arSpan = document.createElement("span")
-    arSpan.textContent = it.ar
-    main.appendChild(arSpan)
+    main.appendChild(createPhraseAudioRow("AR", it.ar, "rtl", "ar-SA", "Dengar teks Arab"))
     const sub = document.createElement("div")
     sub.className = "phrase-sub"
-    appendPhraseSubtitle(sub, it)
+    sub.appendChild(createPhraseAudioRow("EN", it.en || "", "ltr", "en-US", "Dengar teks English"))
+    if (it.id) sub.appendChild(createPhraseAudioRow("ID", it.id || "", "ltr", "id-ID", "Dengar teks Indonesia"))
+    const meta = document.createElement("div")
+    meta.className = "phrase-meta"
+    meta.textContent = `${it.tr || ""}${it.v1 ? `${it.tr ? " • " : ""}v1:${it.v1} v2:${it.v2} v3:${it.v3}` : ""}`
+    if (meta.textContent) sub.appendChild(meta)
+    if (it.ex_en || it.ex_ar || it.ex_id) {
+      const exBlock = document.createElement("div")
+      exBlock.className = "phrase-example-block"
+      if (it.ex_en) exBlock.appendChild(createPhraseAudioRow("EN", it.ex_en, "ltr", "en-US", "Dengar contoh English", clip(it.ex_en, 80)))
+      if (it.ex_ar) exBlock.appendChild(createPhraseAudioRow("AR", it.ex_ar, "rtl", "ar-SA", "Dengar contoh Arab", clip(it.ex_ar, 70)))
+      if (it.ex_id) exBlock.appendChild(createPhraseAudioRow("ID", it.ex_id, "ltr", "id-ID", "Dengar contoh Indonesia", clip(it.ex_id, 80)))
+      sub.appendChild(exBlock)
+    }
     const act = document.createElement("div")
     act.className = "phrase-actions"
-    const b1 = document.createElement("button")
-    b1.className = "ghost"
-    b1.textContent = "Dengar AR"
-    b1.onclick = () => speakPhraseText(it.ar, "ar-SA")
-    const b2 = document.createElement("button")
-    b2.className = "ghost"
-    b2.textContent = "Dengar EN"
-    b2.onclick = () => speakPhraseText(it.en, "en-US")
     const favBtn = document.createElement("button")
     favBtn.className = isFavoriteItem(it) ? "primary favorite-toggle" : "ghost favorite-toggle"
     favBtn.textContent = isFavoriteItem(it) ? "Favorit ✓" : "Favorit"
@@ -3658,8 +3733,6 @@ self.onmessage = function (e) {
       const next = toggleFavoriteItem(it)
       notify(next ? "Item ditambahkan ke favorit" : "Item dihapus dari favorit", "success")
     }
-    act.appendChild(b1)
-    act.appendChild(b2)
     act.appendChild(favBtn)
     const editBtn = document.createElement("button")
     editBtn.className = "ghost"
@@ -4004,48 +4077,88 @@ self.onmessage = function (e) {
       }
     }
   }
+  function ensureSettingsSection(sectionId, title) {
+    if (!settingsPanel) return null
+    let section = document.getElementById(sectionId)
+    if (!section) {
+      section = document.createElement("section")
+      section.id = sectionId
+      section.className = "settings-section"
+      const heading = document.createElement("div")
+      heading.className = "settings-section-title"
+      heading.textContent = title
+      const grid = document.createElement("div")
+      grid.className = "settings-grid"
+      grid.id = `${sectionId}-grid`
+      section.appendChild(heading)
+      section.appendChild(grid)
+      settingsPanel.appendChild(section)
+    }
+    return document.getElementById(`${sectionId}-grid`)
+  }
+  function closeSettingsModal() {
+    if (settingsModal) settingsModal.hidden = true
+  }
+  function openSettingsModal() {
+    if (settingsModal) settingsModal.hidden = false
+  }
+  function initSettingsModalControls() {
+    if (openSettingsBtn) openSettingsBtn.onclick = () => openSettingsModal()
+    if (settingsClose) settingsClose.onclick = () => closeSettingsModal()
+    if (settingsModal) {
+      settingsModal.addEventListener("click", e => {
+        if (e.target && e.target.classList && e.target.classList.contains("modal-backdrop")) closeSettingsModal()
+      })
+    }
+  }
   function initHeaderControls() {
-    const hdr = document.querySelector(".controls")
-    if (!hdr) return
-    const searchField = document.getElementById("search")
-    const homeBtn = ensureButton(hdr, {
+    const quickGrid = ensureSettingsSection("settings-quick", "Aksi Cepat")
+    const displayGrid = ensureSettingsSection("settings-display", "Audio & Tampilan")
+    const studyGrid = ensureSettingsSection("settings-study", "Belajar")
+    const dataGrid = ensureSettingsSection("settings-data", "Data")
+    if (!quickGrid || !displayGrid || !studyGrid || !dataGrid) return
+    const speakBtn = ensureButton(quickGrid, {
+      id: "speak",
+      text: "Audio Kartu",
+      ariaLabel: "Dengar kartu aktif",
+      className: "primary"
+    })
+    const listenBtn = ensureButton(quickGrid, {
+      id: "listen",
+      text: "Ucapkan",
+      ariaLabel: "Latihan pengucapan"
+    })
+    const homeBtn = ensureButton(quickGrid, {
       id: "go-home",
       text: "Beranda",
-      ariaLabel: "Kembali ke halaman utama",
-      prepend: true
+      ariaLabel: "Kembali ke halaman utama"
     })
-    const focusBtn = ensureButton(hdr, {
+    const focusBtn = ensureButton(quickGrid, {
       id: "focus-mode",
       text: "Fokus Belajar",
       ariaLabel: "Mode fokus belajar"
     })
-    const exportBtn = ensureButton(hdr, {
-      id: "export-data",
-      text: "Ekspor Data",
-      ariaLabel: "Ekspor data kustom"
+    const contrastBtn = ensureButton(displayGrid, {
+      id: "contrast",
+      text: "Kontras Tinggi",
+      ariaLabel: "Aktifkan kontras tinggi"
     })
-    const exportCsvBtn = ensureButton(hdr, {
-      id: "export-csv",
-      text: "Ekspor CSV",
-      ariaLabel: "Ekspor data ke CSV"
+    const mediaBtn = ensureButton(displayGrid, {
+      id: "media",
+      text: "Tampilkan Gambar",
+      ariaLabel: "Tampilkan atau sembunyikan gambar"
     })
-    const importDataBtn = ensureButton(hdr, {
-      id: "import-data",
-      text: "Impor Data",
-      ariaLabel: "Impor data lokal"
-    })
-    const rateSel = ensureSelect(hdr, {
+    const rateSel = ensureSelect(displayGrid, {
       id: "audio-rate",
       options: ["0.8","1.0","1.2"].map(v => ({ value: v, label: `Kecepatan ${v}x` }))
     })
-    const pitchSel = ensureSelect(hdr, {
+    const pitchSel = ensureSelect(displayGrid, {
       id: "audio-pitch",
       options: ["0.9","1.0","1.1"].map(v => ({ value: v, label: `Pitch ${v}` }))
     })
-    const filterSel = ensureSelect(hdr, {
+    const filterSel = ensureSelect(studyGrid, {
       id: "study-filter",
       ariaLabel: "Filter belajar aktif",
-      insertBefore: searchField || null,
       options: [
         { value: "all", label: "Filter: Semua" },
         { value: "favorites", label: "Filter: Favorit" },
@@ -4054,11 +4167,28 @@ self.onmessage = function (e) {
         { value: "strong", label: "Filter: Kuat" }
       ]
     })
-    const goalSel = ensureSelect(hdr, {
+    const goalSel = ensureSelect(studyGrid, {
       id: "daily-goal",
       ariaLabel: "Target harian kartu",
       options: ["5", "10", "15", "20", "30"].map(v => ({ value: v, label: `Target ${v}` }))
     })
+    const exportBtn = ensureButton(dataGrid, {
+      id: "export-data",
+      text: "Ekspor Data",
+      ariaLabel: "Ekspor data kustom"
+    })
+    const exportCsvBtn = ensureButton(dataGrid, {
+      id: "export-csv",
+      text: "Ekspor CSV",
+      ariaLabel: "Ekspor data ke CSV"
+    })
+    const importDataBtn = ensureButton(dataGrid, {
+      id: "import-data",
+      text: "Impor Data",
+      ariaLabel: "Impor data lokal"
+    })
+    if (speakBtn) speakBtn.onclick = speakCurrent
+    if (listenBtn) listenBtn.onclick = listenPronounce
     if (homeBtn) homeBtn.onclick = goHome
     if (exportBtn) exportBtn.onclick = exportLocalData
     if (exportCsvBtn) exportCsvBtn.onclick = exportCsvData
@@ -4106,7 +4236,8 @@ self.onmessage = function (e) {
     updateStreak()
   }
   function ensureValidCategory() {
-    const validCat = DATA.categories.some(c => c.id === state.category)
+    state.category = getDisplayCategoryId(state.category)
+    const validCat = getDisplayCategories().some(c => c.id === state.category)
     if (!validCat) {
       if (state.category === "animals_all" || state.category === "animals_extra") state.category = "animals"
       else state.category = "__all"
@@ -4270,7 +4401,9 @@ self.onmessage = function (e) {
     prevBtn.onclick = prevCard
     nextBtn.onclick = nextCard
     flipBtn.onclick = flipCard
-    speakBtn.onclick = speakCurrent
+    const speakBtn = document.getElementById("speak")
+    const listenBtn = document.getElementById("listen")
+    if (speakBtn) speakBtn.onclick = speakCurrent
     if (listenBtn) listenBtn.onclick = listenPronounce
     quizNext.onclick = nextQuiz
   }
@@ -4280,6 +4413,7 @@ self.onmessage = function (e) {
     renderCategoryOptions()
     refreshMainViews()
     bindPrimaryControls()
+    initSettingsModalControls()
     initQuizControls()
     initHeaderControls()
     initSearchControls()
@@ -4302,6 +4436,7 @@ self.onmessage = function (e) {
     const key = "pembelajar_hc"
     const enabled = localStorage.getItem(key) === "1"
     document.body.classList.toggle("hc", !!enabled)
+    const contrastBtn = document.getElementById("contrast")
     if (contrastBtn) {
       contrastBtn.setAttribute("aria-pressed", enabled ? "true" : "false")
       contrastBtn.onclick = () => {
@@ -4315,6 +4450,7 @@ self.onmessage = function (e) {
     const key = "pembelajar_media"
     if (localStorage.getItem(key) === null) localStorage.setItem(key, "1")
     const on = localStorage.getItem(key) !== "0"
+    const mediaBtn = document.getElementById("media")
     if (mediaBtn) {
       mediaBtn.setAttribute("aria-pressed", on ? "true" : "false")
       mediaBtn.onclick = () => {

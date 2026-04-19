@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Parsley",
+        "ar": "بقدونس",
+        "tr": "Baqdunis",
+        "id": "peterseli"
+    },
+    {
+        "en": "Cilantro",
+        "ar": "كسبرة",
+        "tr": "Kuzbara",
+        "id": "ketumbar"
+    },
+    {
+        "en": "Basil",
+        "ar": "ريحان",
+        "tr": "Rayhan",
+        "id": "kemangi"
+    },
+    {
+        "en": "Mint",
+        "ar": "نعناع",
+        "tr": "Na'na'",
+        "id": "mint"
+    },
+    {
+        "en": "Dill",
+        "ar": "شبت",
+        "tr": "Shibt",
+        "id": "dill"
+    },
+    {
+        "en": "Rosemary",
+        "ar": "إكليل الجبل",
+        "tr": "Iklil al-Jabal",
+        "id": "rosemary"
+    },
+    {
+        "en": "Thyme",
+        "ar": "زعتر",
+        "tr": "Za'tar",
+        "id": "thyme"
+    },
+    {
+        "en": "Bay Leaf",
+        "ar": "ورق الغار",
+        "tr": "Waraq al-Ghar",
+        "id": "daun salam"
+    },
+    {
+        "en": "Lemongrass",
+        "ar": "عشب الليمون",
+        "tr": "Ushb al-Laymun",
+        "id": "serai"
+    },
+    {
+        "en": "Fennel",
+        "ar": "شمر",
+        "tr": "Shamr",
+        "id": "adas"
+    },
+    {
+        "en": "Leek",
+        "ar": "كراث",
+        "tr": "Kurath",
+        "id": "daun bawang"
+    },
+    {
+        "en": "Chili Pepper",
+        "ar": "فلفل حار",
+        "tr": "Filfil Harr",
+        "id": "cabai"
+    }
+]

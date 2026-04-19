@@ -1,0 +1,95 @@
+[
+    {
+        "en": "Date",
+        "ar": "تمر",
+        "id": "kurma",
+        "img": "assets/user-images/date-1774957988-e692e0.png"
+    },
+    {
+        "en": "Guava",
+        "ar": "جوافة",
+        "id": "jambu biji",
+        "img": "assets/user-images/guava-1774958095-da8d68.png"
+    },
+    {
+        "en": "Dragon fruit",
+        "ar": "بيتايا",
+        "id": "buah naga",
+        "img": "assets/user-images/dragon-fruit-1774958115-46daad.png"
+    },
+    {
+        "en": "Durian",
+        "ar": "دوريان",
+        "id": "durian",
+        "img": "assets/user-images/durian-1774958155-e21eea.png"
+    },
+    {
+        "en": "Jackfruit",
+        "ar": "جاك فروت",
+        "id": "nangka",
+        "img": "assets/user-images/jackfruit-1774958161-8fc879.png"
+    },
+    {
+        "en": "Starfruit",
+        "ar": "فاكهة النجمة",
+        "id": "belimbing",
+        "img": "assets/user-images/starfruit-1774958170-e5df1a.webp"
+    },
+    {
+        "en": "Soursop",
+        "ar": "قشطة",
+        "id": "sirsak"
+    },
+    {
+        "en": "Longan",
+        "ar": "لونجان",
+        "id": "lengkeng",
+        "img": "assets/user-images/longan-1774958201-30c908.png"
+    },
+    {
+        "en": "Lychee",
+        "ar": "ليتشي",
+        "id": "leci",
+        "img": "assets/user-images/lychee-1774958207-a5d96b.png"
+    },
+    {
+        "en": "Rambutan",
+        "ar": "رامبوتان",
+        "id": "rambutan",
+        "img": "assets/user-images/rambutan-1774958212-2d3bfc.png"
+    },
+    {
+        "en": "Mangosteen",
+        "ar": "مانغوستين",
+        "id": "manggis",
+        "img": "assets/user-images/mangosteen-1774958223-235c55.png"
+    },
+    {
+        "en": "Sugar apple",
+        "ar": "تفاح السكر",
+        "id": "srikaya"
+    },
+    {
+        "en": "Snake fruit",
+        "ar": "سالاك",
+        "id": "salak",
+        "img": "assets/user-images/snake-fruit-1774958239-b64053.png"
+    },
+    {
+        "en": "Langsat",
+        "ar": "لانسات",
+        "id": "langsat"
+    },
+    {
+        "en": "Tamarind",
+        "ar": "تمر هندي",
+        "id": "asam jawa",
+        "img": "assets/user-images/tamarind-1774958247-50f089.png"
+    },
+    {
+        "en": "Kiwi",
+        "ar": "كيوي",
+        "id": "kiwi",
+        "img": "assets/user-images/kiwi-1774958318-6febb2.png"
+    }
+]

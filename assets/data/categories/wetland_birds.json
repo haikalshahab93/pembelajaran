@@ -1,0 +1,34 @@
+[
+    {
+        "en": "Crane",
+        "ar": "كركي",
+        "tr": "Kurki",
+        "id": "bangau crane",
+        "emoji": "🐦",
+        "img": "assets/user-images/crane-1774961410-0edef7.png"
+    },
+    {
+        "en": "Stork",
+        "ar": "لقلق",
+        "tr": "Laqlaq",
+        "id": "bangau",
+        "emoji": "🐦",
+        "img": "assets/user-images/stork-1774961430-0b069e.png"
+    },
+    {
+        "en": "Heron",
+        "ar": "مالك الحزين",
+        "tr": "Malik al-Hazin",
+        "id": "kuntul",
+        "emoji": "🐦",
+        "img": "assets/user-images/heron-1774961450-45a98f.png"
+    },
+    {
+        "en": "Kingfisher",
+        "ar": "رفراف",
+        "tr": "Rafraf",
+        "id": "raja udang",
+        "emoji": "🐦",
+        "img": "assets/user-images/kingfisher-1774961474-11ab84.png"
+    }
+]

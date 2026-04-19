@@ -1,0 +1,33 @@
+[
+    {
+        "en": "Grape",
+        "ar": "عنب",
+        "id": "anggur",
+        "emoji": "🍇"
+    },
+    {
+        "en": "Strawberry",
+        "ar": "فراولة",
+        "id": "stroberi",
+        "emoji": "🍓"
+    },
+    {
+        "en": "Blueberry",
+        "ar": "توت أزرق",
+        "id": "bluberi",
+        "emoji": "🫐",
+        "img": "assets/user-images/blueberry-1774963701-9e49bf.png"
+    },
+    {
+        "en": "Raspberry",
+        "ar": "توت العليق",
+        "id": "raspberi",
+        "img": "assets/user-images/raspberry-1774958303-1f94cd.png"
+    },
+    {
+        "en": "Cherry",
+        "ar": "كرز",
+        "id": "ceri",
+        "emoji": "🍒"
+    }
+]

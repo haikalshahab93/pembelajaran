@@ -1,0 +1,74 @@
+[
+    {
+        "en": "What",
+        "ar": "ماذا",
+        "tr": "Mādhā",
+        "id": "Apa"
+    },
+    {
+        "en": "Who",
+        "ar": "من",
+        "tr": "Man",
+        "id": "Siapa"
+    },
+    {
+        "en": "Where",
+        "ar": "أين",
+        "tr": "Ayna",
+        "id": "Di mana"
+    },
+    {
+        "en": "When",
+        "ar": "متى",
+        "tr": "Matā",
+        "id": "Kapan"
+    },
+    {
+        "en": "Why",
+        "ar": "لماذا",
+        "tr": "Limādhā",
+        "id": "Mengapa"
+    },
+    {
+        "en": "How",
+        "ar": "كيف",
+        "tr": "Kayfa",
+        "id": "Bagaimana"
+    },
+    {
+        "en": "How much",
+        "ar": "بكم",
+        "tr": "Bikam",
+        "id": "Berapa harga"
+    },
+    {
+        "en": "How many",
+        "ar": "كم",
+        "tr": "Kam",
+        "id": "Berapa jumlah"
+    },
+    {
+        "en": "Which",
+        "ar": "أي",
+        "tr": "Ayy",
+        "id": "Yang mana"
+    },
+    {
+        "en": "From where",
+        "ar": "من أين",
+        "tr": "Min ayna",
+        "id": "Dari mana"
+    },
+    {
+        "en": "To where",
+        "ar": "إلى أين",
+        "tr": "Ilā ayna",
+        "id": "Ke mana"
+    },
+    {
+        "en": "For whom",
+        "ar": "لمن",
+        "tr": "Liman",
+        "id": "Untuk siapa"
+    }
+]

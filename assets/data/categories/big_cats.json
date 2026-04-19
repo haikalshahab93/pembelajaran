@@ -1,0 +1,53 @@
+[
+    {
+        "en": "Lion",
+        "ar": "أسد",
+        "tr": "Asad",
+        "id": "singa",
+        "emoji": "🦁",
+        "img": "assets/user-images/lion-1774958857-b3e097.png"
+    },
+    {
+        "en": "Tiger",
+        "ar": "نمر",
+        "tr": "Nimr",
+        "id": "harimau",
+        "emoji": "🐯",
+        "img": "assets/user-images/tiger-1774958875-ee88c1.png"
+    },
+    {
+        "en": "Leopard",
+        "ar": "فهد مرقط",
+        "tr": "Fahd Maraqt",
+        "id": "macan tutul",
+        "emoji": "🐆"
+    },
+    {
+        "en": "Cheetah",
+        "ar": "فهد",
+        "tr": "Fahd",
+        "id": "cheetah",
+        "emoji": "🐆"
+    },
+    {
+        "en": "Jaguar",
+        "ar": "جاغوار",
+        "tr": "Jaghur",
+        "id": "jaguar",
+        "emoji": "🐆"
+    },
+    {
+        "en": "Snow Leopard",
+        "ar": "فهد ثلجي",
+        "tr": "Fahd Thalji",
+        "id": "macan tutul salju",
+        "emoji": "🐆"
+    },
+    {
+        "en": "Lynx",
+        "ar": "وشق",
+        "tr": "Wshq",
+        "id": "lynx",
+        "emoji": "🐈"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "en": "Banana",
+        "ar": "موز",
+        "id": "pisang",
+        "emoji": "🍌"
+    },
+    {
+        "en": "Mango",
+        "ar": "مانجو",
+        "id": "mangga",
+        "emoji": "🥭"
+    },
+    {
+        "en": "Pineapple",
+        "ar": "أناناس",
+        "id": "nanas",
+        "emoji": "🍍"
+    },
+    {
+        "en": "Watermelon",
+        "ar": "بطيخ",
+        "id": "semangka",
+        "emoji": "🍉"
+    },
+    {
+        "en": "Papaya",
+        "ar": "بابايا",
+        "id": "pepaya",
+        "img": "assets/user-images/papaya-1774958258-7c274b.png"
+    },
+    {
+        "en": "Coconut",
+        "ar": "جوز الهند",
+        "id": "kelapa",
+        "emoji": "🥥"
+    },
+    {
+        "en": "Avocado",
+        "ar": "أفوكادو",
+        "id": "alpukat",
+        "emoji": "🥑"
+    }
+]

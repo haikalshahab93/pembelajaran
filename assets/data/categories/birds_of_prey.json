@@ -1,0 +1,41 @@
+[
+    {
+        "en": "Eagle",
+        "ar": "نسر",
+        "tr": "Nasr",
+        "id": "elang",
+        "emoji": "🦅",
+        "img": "assets/user-images/eagle-1774960465-a9f27d.png"
+    },
+    {
+        "en": "Hawk",
+        "ar": "صقر",
+        "tr": "Saqr",
+        "id": "elang",
+        "emoji": "🦅",
+        "img": "assets/user-images/hawk-1774960482-dcf434.png"
+    },
+    {
+        "en": "Falcon",
+        "ar": "شاهين",
+        "tr": "Shahin",
+        "id": "elang peregrine",
+        "emoji": "🦅",
+        "img": "assets/user-images/falcon-1774960502-18e36f.png"
+    },
+    {
+        "en": "Owl",
+        "ar": "بومة",
+        "tr": "Bumah",
+        "id": "burung hantu",
+        "emoji": "🦉",
+        "img": "assets/user-images/owl-1774960519-cfdc7b.png"
+    },
+    {
+        "en": "Vulture",
+        "ar": "نسر جارح",
+        "tr": "Nasr Jarh",
+        "id": "burung nasar",
+        "emoji": "🦅"
+    }
+]

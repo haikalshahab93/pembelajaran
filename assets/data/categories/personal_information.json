@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Name",
+        "ar": "اسم",
+        "tr": "Ism",
+        "id": "Nama"
+    },
+    {
+        "en": "Age",
+        "ar": "عمر",
+        "tr": "ʿUmr",
+        "id": "Umur"
+    },
+    {
+        "en": "Address",
+        "ar": "عنوان",
+        "tr": "ʿUnwān",
+        "id": "Alamat"
+    },
+    {
+        "en": "Phone number",
+        "ar": "رقم الهاتف",
+        "tr": "Raqm al-hātif",
+        "id": "Nomor telepon"
+    },
+    {
+        "en": "Nationality",
+        "ar": "جنسية",
+        "tr": "Jinsiyyah",
+        "id": "Kebangsaan"
+    },
+    {
+        "en": "Occupation",
+        "ar": "مهنة",
+        "tr": "Mihnah",
+        "id": "Pekerjaan"
+    },
+    {
+        "en": "Married",
+        "ar": "متزوج",
+        "tr": "Mutazawwij",
+        "id": "Menikah"
+    },
+    {
+        "en": "Single",
+        "ar": "أعزب",
+        "tr": "Aʿzab",
+        "id": "Lajang"
+    },
+    {
+        "en": "Male",
+        "ar": "ذكر",
+        "tr": "Dhakar",
+        "id": "Laki-laki"
+    },
+    {
+        "en": "Female",
+        "ar": "أنثى",
+        "tr": "Unthā",
+        "id": "Perempuan"
+    },
+    {
+        "en": "Country",
+        "ar": "بلد",
+        "tr": "Balad",
+        "id": "Negara"
+    },
+    {
+        "en": "City",
+        "ar": "مدينة",
+        "tr": "Madīnah",
+        "id": "Kota"
+    }
+]

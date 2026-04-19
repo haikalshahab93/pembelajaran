@@ -401,13 +401,33 @@ input[type="search"] {
   color: var(--muted);
 }
 .example-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 8px;
   margin-top: 6px;
   color: var(--text);
   font-size: 14px;
+}
+.example-audio-row,
+.phrase-audio-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.example-audio-row[data-dir="rtl"],
+.phrase-audio-row[data-dir="rtl"] {
+  flex-direction: row-reverse;
+}
+.example-audio-label,
+.phrase-audio-label {
+  min-width: 32px;
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.example-audio-text,
+.phrase-audio-text {
+  word-break: break-word;
 }
 .chip {
   display: inline-flex;
@@ -476,6 +496,8 @@ input[type="search"] {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px;
+  display: grid;
+  gap: 10px;
 }
 .phrase-main {
   font-size: 18px;
@@ -483,8 +505,18 @@ input[type="search"] {
   text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 .phrase-sub {
+  display: grid;
+  gap: 8px;
   color: var(--muted);
   font-size: 14px;
+}
+.phrase-meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+.phrase-example-block {
+  display: grid;
+  gap: 6px;
 }
 .phrase-actions {
   margin-top: 8px;
@@ -725,6 +757,56 @@ input[type="search"] {
   display: grid;
   gap: 12px;
 }
+.settings-modal-body {
+  width: min(760px, calc(100vw - 24px));
+  max-width: min(760px, calc(100vw - 24px));
+}
+.settings-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.settings-title {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+}
+.settings-subtitle {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.settings-panel {
+  display: grid;
+  gap: 14px;
+}
+.settings-section {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--ghost);
+}
+.settings-section-title {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+}
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.settings-grid > .ghost,
+.settings-grid > .primary,
+.settings-grid > select {
+  width: 100%;
+}
+.settings-grid > select {
+  min-height: 42px;
+}
 .viewer-image {
   max-width: 76vw;
   max-height: 64vh;
@@ -787,4 +869,9 @@ input[type="search"] {
 }
 .toast.error {
   border-color: #ef4444;
+}
+@media (max-width: 720px) {
+  .settings-modal-head {
+    flex-direction: column;
+  }
 }

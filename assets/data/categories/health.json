@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Doctor",
+        "ar": "طبيب",
+        "tr": "Ṭabīb",
+        "id": "Dokter"
+    },
+    {
+        "en": "Nurse",
+        "ar": "ممرض",
+        "tr": "Mumarriḍ",
+        "id": "Perawat"
+    },
+    {
+        "en": "Medicine",
+        "ar": "دواء",
+        "tr": "Dawāʾ",
+        "id": "Obat"
+    },
+    {
+        "en": "Pharmacy",
+        "ar": "صيدلية",
+        "tr": "Ṣaydaliyyah",
+        "id": "Apotek"
+    },
+    {
+        "en": "Pain",
+        "ar": "ألم",
+        "tr": "Alam",
+        "id": "Nyeri"
+    },
+    {
+        "en": "Fever",
+        "ar": "حمى",
+        "tr": "Ḥummā",
+        "id": "Demam"
+    },
+    {
+        "en": "Cough",
+        "ar": "سعال",
+        "tr": "Suʿāl",
+        "id": "Batuk"
+    },
+    {
+        "en": "Clinic",
+        "ar": "عيادة",
+        "tr": "ʿIyādah",
+        "id": "Klinik"
+    },
+    {
+        "en": "Healthy",
+        "ar": "صحي",
+        "tr": "Ṣiḥḥī",
+        "id": "Sehat"
+    },
+    {
+        "en": "Sick",
+        "ar": "مريض",
+        "tr": "Marīḍ",
+        "id": "Sakit"
+    },
+    {
+        "en": "Appointment",
+        "ar": "موعد",
+        "tr": "Mawʿid",
+        "id": "Janji"
+    },
+    {
+        "en": "Emergency",
+        "ar": "طوارئ",
+        "tr": "Ṭawāriʾ",
+        "id": "Darurat"
+    }
+]

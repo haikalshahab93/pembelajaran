@@ -1,0 +1,58 @@
+[
+    {
+        "en": "Deer",
+        "ar": "غزال",
+        "tr": "Ghazal",
+        "id": "rusa",
+        "emoji": "🦌"
+    },
+    {
+        "en": "Moose",
+        "ar": "موظ",
+        "tr": "Muz",
+        "id": "moose",
+        "emoji": "🫎"
+    },
+    {
+        "en": "Elk",
+        "ar": "أيل",
+        "tr": "Il",
+        "id": "rusa besar",
+        "emoji": "🫎"
+    },
+    {
+        "en": "Reindeer",
+        "ar": "الرنة",
+        "tr": "ar-Ranah",
+        "id": "rusa kutub",
+        "emoji": "🦌"
+    },
+    {
+        "en": "Antelope",
+        "ar": "ظبي",
+        "tr": "Zabi",
+        "id": "antelope",
+        "emoji": "🦌"
+    },
+    {
+        "en": "Gazelle",
+        "ar": "غزال",
+        "tr": "Ghazal",
+        "id": "gazel",
+        "emoji": "🦌"
+    },
+    {
+        "en": "Wildebeest",
+        "ar": "النو",
+        "tr": "An-Nu",
+        "id": "gnu",
+        "emoji": "🦌"
+    },
+    {
+        "en": "Okapi",
+        "ar": "أوكابي",
+        "tr": "Ukabi",
+        "id": "okapi",
+        "emoji": "🦒"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "en": "Crocodile",
+        "ar": "تمساح",
+        "tr": "Tamasah",
+        "id": "buaya",
+        "emoji": "🐊"
+    },
+    {
+        "en": "Alligator",
+        "ar": "التمساح الأمريكي",
+        "tr": "at-Tamasah al-Amriki",
+        "id": "aligator",
+        "emoji": "🐊"
+    },
+    {
+        "en": "Gecko",
+        "ar": "وزغة",
+        "tr": "Wzaghah",
+        "id": "tokek",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Chameleon",
+        "ar": "حرباء",
+        "tr": "Haraba'",
+        "id": "bunglon",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Komodo Dragon",
+        "ar": "تنين كومودو",
+        "tr": "Tanin Kumudu",
+        "id": "komodo",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Snake",
+        "ar": "ثعبان",
+        "tr": "Tha'aban",
+        "id": "ular",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Cobra",
+        "ar": "كوبرا",
+        "tr": "Kubara",
+        "id": "kobra",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Python",
+        "ar": "بايثون",
+        "tr": "Bithun",
+        "id": "piton",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Turtle",
+        "ar": "سلحفاة",
+        "tr": "Sulhafah",
+        "id": "kura-kura",
+        "emoji": "🐢"
+    },
+    {
+        "en": "Frog",
+        "ar": "ضفدع",
+        "tr": "Difda'",
+        "id": "katak",
+        "emoji": "🐸"
+    },
+    {
+        "en": "Salamander",
+        "ar": "سمندر",
+        "tr": "Samandar",
+        "id": "salamander",
+        "emoji": "🦎"
+    },
+    {
+        "en": "Axolotl",
+        "ar": "أكسولوتل",
+        "tr": "Aksulutl",
+        "id": "axolotl",
+        "emoji": "🦎"
+    }
+]

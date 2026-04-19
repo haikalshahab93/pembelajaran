@@ -1,0 +1,72 @@
+[
+    {
+        "en": "Whale",
+        "ar": "حوت",
+        "tr": "Hut",
+        "id": "paus",
+        "emoji": "🐋"
+    },
+    {
+        "en": "Blue Whale",
+        "ar": "حوت أزرق",
+        "tr": "Hut Azarq",
+        "id": "paus biru",
+        "emoji": "🐋"
+    },
+    {
+        "en": "Humpback Whale",
+        "ar": "حوت أحدب",
+        "tr": "Hut Ahdab",
+        "id": "paus bungkuk",
+        "emoji": "🐋"
+    },
+    {
+        "en": "Dolphin",
+        "ar": "دلفين",
+        "tr": "Dulfin",
+        "id": "lumba-lumba",
+        "emoji": "🐬"
+    },
+    {
+        "en": "Orca",
+        "ar": "أوركا",
+        "tr": "Uraka",
+        "id": "paus pembunuh",
+        "emoji": "🐬"
+    },
+    {
+        "en": "Walrus",
+        "ar": "فظ",
+        "tr": "Fazz",
+        "id": "walrus",
+        "emoji": "🦭"
+    },
+    {
+        "en": "Seal",
+        "ar": "فقمة",
+        "tr": "Faqamah",
+        "id": "anjing laut",
+        "emoji": "🦭"
+    },
+    {
+        "en": "Sea Lion",
+        "ar": "أسد البحر",
+        "tr": "Asad al-Bahr",
+        "id": "singa laut",
+        "emoji": "🦭"
+    },
+    {
+        "en": "Narwhal",
+        "ar": "ناروال",
+        "tr": "Narul",
+        "id": "narwal",
+        "emoji": "🐋"
+    },
+    {
+        "en": "Manatee",
+        "ar": "خروف البحر",
+        "tr": "Kharuf al-Bahr",
+        "id": "dugong/manatee",
+        "emoji": "🐋"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "en": "Jellyfish",
+        "ar": "قنديل البحر",
+        "tr": "Qindil al-Bahr",
+        "id": "ubur-ubur",
+        "emoji": "🎐"
+    },
+    {
+        "en": "Octopus",
+        "ar": "أخطبوط",
+        "tr": "Ukhtubut",
+        "id": "gurita",
+        "emoji": "🐙"
+    },
+    {
+        "en": "Squid",
+        "ar": "حبار",
+        "tr": "Hibar",
+        "id": "cumi-cumi",
+        "emoji": "🦑"
+    },
+    {
+        "en": "Squid (Giant)",
+        "ar": "حبار عملاق",
+        "tr": "Hibar 'Imlaq",
+        "id": "cumi raksasa",
+        "emoji": "🦑"
+    }
+]

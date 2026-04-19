@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Menu",
+        "ar": "قائمة الطعام",
+        "tr": "Qāʾimat aṭ-ṭaʿām",
+        "id": "Menu"
+    },
+    {
+        "en": "Table for two",
+        "ar": "طاولة لشخصين",
+        "tr": "Ṭāwilah li shakhsayn",
+        "id": "Meja untuk dua orang"
+    },
+    {
+        "en": "Water",
+        "ar": "ماء",
+        "tr": "Māʾ",
+        "id": "Air"
+    },
+    {
+        "en": "Juice",
+        "ar": "عصير",
+        "tr": "ʿAṣīr",
+        "id": "Jus"
+    },
+    {
+        "en": "Waiter",
+        "ar": "نادل",
+        "tr": "Nādil",
+        "id": "Pelayan"
+    },
+    {
+        "en": "Order",
+        "ar": "طلب",
+        "tr": "Ṭalab",
+        "id": "Pesanan"
+    },
+    {
+        "en": "I would like to order",
+        "ar": "أود أن أطلب",
+        "tr": "Uwaddu an aṭlub",
+        "id": "Saya ingin memesan"
+    },
+    {
+        "en": "Delicious",
+        "ar": "لذيذ",
+        "tr": "Ladhīdh",
+        "id": "Lezat"
+    },
+    {
+        "en": "Spicy",
+        "ar": "حار",
+        "tr": "Ḥārr",
+        "id": "Pedas"
+    },
+    {
+        "en": "Bill",
+        "ar": "فاتورة",
+        "tr": "Fātūrah",
+        "id": "Tagihan"
+    },
+    {
+        "en": "Please bring the bill",
+        "ar": "أحضر الفاتورة من فضلك",
+        "tr": "Aḥḍir al-fātūrah min faḍlik",
+        "id": "Tolong bawa tagihannya"
+    },
+    {
+        "en": "Enjoy your meal",
+        "ar": "بالهناء والشفاء",
+        "tr": "Bil-hanāʾ wa ash-shifāʾ",
+        "id": "Selamat makan"
+    }
+]

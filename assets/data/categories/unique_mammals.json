@@ -1,0 +1,99 @@
+[
+    {
+        "en": "Sloth",
+        "ar": "كسلان",
+        "tr": "Kasalan",
+        "id": "kukang",
+        "emoji": "🦥"
+    },
+    {
+        "en": "Armadillo",
+        "ar": "أرماديلو",
+        "tr": "Aramadilu",
+        "id": "armadillo",
+        "img": "assets/user-images/armadillo-1774960030-2fd636.png"
+    },
+    {
+        "en": "Anteater",
+        "ar": "آكل النمل",
+        "tr": "Akl an-Naml",
+        "id": "pemakan semut",
+        "img": "assets/user-images/anteater-1774960053-6093fb.png"
+    },
+    {
+        "en": "Raccoon",
+        "ar": "راكون",
+        "tr": "Rakun",
+        "id": "rakun",
+        "emoji": "🦝"
+    },
+    {
+        "en": "Skunk",
+        "ar": "ظربان",
+        "tr": "Zaraban",
+        "id": "sigung",
+        "emoji": "🦨"
+    },
+    {
+        "en": "Beaver",
+        "ar": "قندس",
+        "tr": "Qundus",
+        "id": "berang-berang",
+        "emoji": "🦫",
+        "img": "assets/user-images/beaver-1774960128-340778.png"
+    },
+    {
+        "en": "Otter",
+        "ar": "ثعلب الماء",
+        "tr": "Tha'lab al-Ma'",
+        "id": "berang laut",
+        "emoji": "🦦",
+        "img": "assets/user-images/otter-1774960155-8ec18b.png"
+    },
+    {
+        "en": "Weasel",
+        "ar": "ابن عرس",
+        "tr": "Abn 'ars",
+        "id": "musang",
+        "emoji": "🐾",
+        "img": "assets/user-images/weasel-1774960177-6bfd07.png"
+    },
+    {
+        "en": "Badger",
+        "ar": "غرير",
+        "tr": "Gharir",
+        "id": "luwak",
+        "emoji": "🐾",
+        "img": "assets/user-images/badger-1774960201-5a458f.png"
+    },
+    {
+        "en": "Hedgehog",
+        "ar": "قنفذ",
+        "tr": "Qunfudh",
+        "id": "landak",
+        "emoji": "🦔",
+        "img": "assets/user-images/hedgehog-1774960217-8d99bf.png"
+    },
+    {
+        "en": "Porcupine",
+        "ar": "نيص",
+        "tr": "Nis",
+        "id": "landak berduri",
+        "emoji": "🦔",
+        "img": "assets/user-images/porcupine-1774960235-8a2c62.png"
+    },
+    {
+        "en": "Tapir",
+        "ar": "تابير",
+        "tr": "Tabir",
+        "id": "tapir",
+        "emoji": "🐗"
+    },
+    {
+        "en": "Capybara",
+        "ar": "كابيبارا",
+        "tr": "Kabibara",
+        "id": "kapibara",
+        "emoji": "🦫"
+    }
+]

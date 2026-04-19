@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Door",
+        "ar": "باب",
+        "tr": "Bāb",
+        "id": "Pintu"
+    },
+    {
+        "en": "Window",
+        "ar": "نافذة",
+        "tr": "Nāfidhah",
+        "id": "Jendela"
+    },
+    {
+        "en": "Table",
+        "ar": "طاولة",
+        "tr": "Ṭāwilah",
+        "id": "Meja"
+    },
+    {
+        "en": "Chair",
+        "ar": "كرسي",
+        "tr": "Kursī",
+        "id": "Kursi"
+    },
+    {
+        "en": "Bed",
+        "ar": "سرير",
+        "tr": "Sarīr",
+        "id": "Tempat tidur"
+    },
+    {
+        "en": "Kitchen",
+        "ar": "مطبخ",
+        "tr": "Maṭbakh",
+        "id": "Dapur"
+    },
+    {
+        "en": "Bathroom",
+        "ar": "حمام",
+        "tr": "Ḥammām",
+        "id": "Kamar mandi"
+    },
+    {
+        "en": "Key",
+        "ar": "مفتاح",
+        "tr": "Miftāḥ",
+        "id": "Kunci"
+    },
+    {
+        "en": "Lamp",
+        "ar": "مصباح",
+        "tr": "Miṣbāḥ",
+        "id": "Lampu"
+    },
+    {
+        "en": "Wall",
+        "ar": "جدار",
+        "tr": "Jidār",
+        "id": "Dinding"
+    },
+    {
+        "en": "Floor",
+        "ar": "أرضية",
+        "tr": "Arḍiyyah",
+        "id": "Lantai"
+    },
+    {
+        "en": "Roof",
+        "ar": "سقف",
+        "tr": "Saqf",
+        "id": "Atap"
+    }
+]

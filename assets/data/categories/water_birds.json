@@ -1,0 +1,58 @@
+[
+    {
+        "en": "Flamingo",
+        "ar": "فلامنغو",
+        "tr": "Falamanaghu",
+        "id": "flamingo",
+        "emoji": "🦩",
+        "img": "assets/user-images/flamingo-1774961246-215754.png"
+    },
+    {
+        "en": "Swan",
+        "ar": "بجعة",
+        "tr": "Baja'ah",
+        "id": "angsa",
+        "emoji": "🦢",
+        "img": "assets/user-images/swan-1774961261-db36f5.png"
+    },
+    {
+        "en": "Goose",
+        "ar": "أوز",
+        "tr": "Uz",
+        "id": "angsa liar",
+        "emoji": "🪿",
+        "img": "assets/user-images/goose-1774961277-09b7de.png"
+    },
+    {
+        "en": "Duck",
+        "ar": "بطة",
+        "tr": "Battah",
+        "id": "bebek",
+        "emoji": "🦆",
+        "img": "assets/user-images/duck-1774961297-5d3096.png"
+    },
+    {
+        "en": "Penguin",
+        "ar": "بطريق",
+        "tr": "Bitriq",
+        "id": "penguin",
+        "emoji": "🐧",
+        "img": "assets/user-images/penguin-1774961527-4e1b88.png"
+    },
+    {
+        "en": "Albatross",
+        "ar": "القطرس",
+        "tr": "Al-Qutrus",
+        "id": "albatros",
+        "emoji": "🐦",
+        "img": "assets/user-images/albatross-1774961546-c917d7.png"
+    },
+    {
+        "en": "Pelican",
+        "ar": "البجع",
+        "tr": "Al-Baja'",
+        "id": "pelikan",
+        "emoji": "🐦",
+        "img": "assets/user-images/pelican-1774961563-7282bc.png"
+    }
+]

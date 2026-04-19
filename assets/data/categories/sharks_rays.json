@@ -1,0 +1,37 @@
+[
+    {
+        "en": "Shark",
+        "ar": "قرش",
+        "tr": "Qirsh",
+        "id": "hiu",
+        "emoji": "🦈"
+    },
+    {
+        "en": "Great White Shark",
+        "ar": "قرش أبيض",
+        "tr": "Qarsh Abyadh",
+        "id": "hiu putih",
+        "emoji": "🦈"
+    },
+    {
+        "en": "Hammerhead Shark",
+        "ar": "قرش مطرقة",
+        "tr": "Qarsh Mataraqah",
+        "id": "hiu martil",
+        "emoji": "🦈"
+    },
+    {
+        "en": "Manta Ray",
+        "ar": "سمكة مانتا",
+        "tr": "Samakah Manata",
+        "id": "pari manta",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Stingray",
+        "ar": "سمكة الراي",
+        "tr": "Samakat ar-Ray",
+        "id": "ikan pari",
+        "emoji": "🐟"
+    }
+]

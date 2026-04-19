@@ -1,0 +1,86 @@
+[
+    {
+        "en": "Deer",
+        "ar": "غزال",
+        "tr": "Ghazal",
+        "id": "rusa",
+        "emoji": "🦌"
+    },
+    {
+        "en": "Elephant",
+        "ar": "فيل",
+        "tr": "Fil",
+        "id": "gajah",
+        "emoji": "🐘"
+    },
+    {
+        "en": "Rhinoceros",
+        "ar": "وحيد القرن",
+        "tr": "Wahid al-Qarn",
+        "id": "badak",
+        "emoji": "🦏"
+    },
+    {
+        "en": "Hippopotamus",
+        "ar": "فرس النهر",
+        "tr": "Faras an-Nahr",
+        "id": "kuda nil",
+        "emoji": "🦛"
+    },
+    {
+        "en": "Lion",
+        "ar": "أسد",
+        "tr": "Asad",
+        "id": "singa",
+        "emoji": "🦁"
+    },
+    {
+        "en": "Tiger",
+        "ar": "نمر",
+        "tr": "Nimr",
+        "id": "harimau",
+        "emoji": "🐯"
+    },
+    {
+        "en": "Fox",
+        "ar": "ثعلب",
+        "tr": "Tha'lab",
+        "id": "rubah",
+        "emoji": "🦊"
+    },
+    {
+        "en": "Wolf",
+        "ar": "ذئب",
+        "tr": "Dhi'b",
+        "id": "serigala",
+        "emoji": "🐺"
+    },
+    {
+        "en": "Bear",
+        "ar": "دب",
+        "tr": "Dubb",
+        "id": "beruang",
+        "emoji": "🐻"
+    },
+    {
+        "en": "Panda",
+        "ar": "باندا",
+        "tr": "Banada",
+        "id": "panda",
+        "emoji": "🐼"
+    },
+    {
+        "en": "Koala",
+        "ar": "كوالا",
+        "tr": "Kula",
+        "id": "koala",
+        "emoji": "🐨"
+    },
+    {
+        "en": "Kangaroo",
+        "ar": "كنغر",
+        "tr": "Kanaghr",
+        "id": "kanguru",
+        "emoji": "🦘"
+    }
+]

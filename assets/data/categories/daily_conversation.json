@@ -1,0 +1,74 @@
+[
+    {
+        "en": "How are you?",
+        "ar": "كيف حالك؟",
+        "tr": "Kayfa ḥāluka?",
+        "id": "Apa kabar?"
+    },
+    {
+        "en": "I am fine",
+        "ar": "أنا بخير",
+        "tr": "Anā bikhayr",
+        "id": "Saya baik"
+    },
+    {
+        "en": "What is your name?",
+        "ar": "ما اسمك؟",
+        "tr": "Mā ismuka?",
+        "id": "Siapa namamu?"
+    },
+    {
+        "en": "My name is...",
+        "ar": "اسمي...",
+        "tr": "Ismī...",
+        "id": "Nama saya..."
+    },
+    {
+        "en": "Where are you from?",
+        "ar": "من أين أنت؟",
+        "tr": "Min ayna anta?",
+        "id": "Kamu dari mana?"
+    },
+    {
+        "en": "I am from Indonesia",
+        "ar": "أنا من إندونيسيا",
+        "tr": "Anā min Indūnīsiyā",
+        "id": "Saya dari Indonesia"
+    },
+    {
+        "en": "Please repeat",
+        "ar": "أعد من فضلك",
+        "tr": "Aʿid min faḍlik",
+        "id": "Tolong ulangi"
+    },
+    {
+        "en": "I understand",
+        "ar": "أنا أفهم",
+        "tr": "Anā afham",
+        "id": "Saya paham"
+    },
+    {
+        "en": "I do not understand",
+        "ar": "أنا لا أفهم",
+        "tr": "Anā lā afham",
+        "id": "Saya tidak paham"
+    },
+    {
+        "en": "Thank you very much",
+        "ar": "شكرا جزيلا",
+        "tr": "Shukran jazīlan",
+        "id": "Terima kasih banyak"
+    },
+    {
+        "en": "You are welcome",
+        "ar": "على الرحب والسعة",
+        "tr": "ʿAlā ar-raḥb wa as-siʿah",
+        "id": "Sama-sama"
+    },
+    {
+        "en": "See you later",
+        "ar": "أراك لاحقا",
+        "tr": "Arāka lāḥiqan",
+        "id": "Sampai jumpa"
+    }
+]

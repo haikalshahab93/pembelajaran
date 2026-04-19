@@ -1,0 +1,82 @@
+[
+    {
+        "en": "Cabbage",
+        "ar": "كرنب",
+        "tr": "Karanb",
+        "id": "kubis",
+        "emoji": "🥬"
+    },
+    {
+        "en": "Chinese Cabbage",
+        "ar": "كرنب صيني",
+        "tr": "Karanb Sini",
+        "id": "sawi putih",
+        "emoji": "🥬"
+    },
+    {
+        "en": "Lettuce",
+        "ar": "خس",
+        "tr": "Khass",
+        "id": "selada",
+        "emoji": "🥬"
+    },
+    {
+        "en": "Spinach",
+        "ar": "سبانخ",
+        "tr": "Sabanikh",
+        "id": "bayam",
+        "emoji": "🥬"
+    },
+    {
+        "en": "Kale",
+        "ar": "كرنب مجعد",
+        "tr": "Karanb Muja'ad",
+        "id": "kale",
+        "emoji": "🥬"
+    },
+    {
+        "en": "Mustard Greens",
+        "ar": "خردل أخضر",
+        "tr": "Kharadl Akhdar",
+        "id": "sawi hijau",
+        "emoji": "🥬"
+    },
+    {
+        "en": "Water Spinach",
+        "ar": "سبانخ مائي",
+        "tr": "Sabankh Ma'i",
+        "id": "kangkung"
+    },
+    {
+        "en": "Celery",
+        "ar": "كرفس",
+        "tr": "Karafs",
+        "id": "seledri"
+    },
+    {
+        "en": "Bok Choy",
+        "ar": "بوك تشوي",
+        "tr": "Bok Choy",
+        "id": "sawi sendok"
+    },
+    {
+        "en": "Napa Cabbage",
+        "ar": "كرنب نابا",
+        "tr": "Karanb Napa",
+        "id": "kol napa"
+    },
+    {
+        "en": "Broccoli",
+        "ar": "بروكلي",
+        "tr": "Brokoli",
+        "id": "brokoli",
+        "emoji": "🥦"
+    },
+    {
+        "en": "Cauliflower",
+        "ar": "قرنبيط",
+        "tr": "Qarnabit",
+        "id": "kembang kol",
+        "emoji": "🥦"
+    }
+]

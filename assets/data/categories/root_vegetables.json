@@ -1,0 +1,79 @@
+[
+    {
+        "en": "Carrot",
+        "ar": "جزر",
+        "tr": "Jazar",
+        "id": "wortel",
+        "emoji": "🥕"
+    },
+    {
+        "en": "Potato",
+        "ar": "بطاطس",
+        "tr": "Batatis",
+        "id": "kentang",
+        "emoji": "🥔"
+    },
+    {
+        "en": "Onion",
+        "ar": "بصل",
+        "tr": "Basal",
+        "id": "bawang bombai",
+        "emoji": "🧅"
+    },
+    {
+        "en": "Garlic",
+        "ar": "ثوم",
+        "tr": "Thum",
+        "id": "bawang putih",
+        "emoji": "🧄"
+    },
+    {
+        "en": "Shallot",
+        "ar": "كراث",
+        "tr": "Kurrath",
+        "id": "bawang merah"
+    },
+    {
+        "en": "Sweet Potato",
+        "ar": "بطاطا حلوة",
+        "tr": "Batata Hulwah",
+        "id": "ubi jalar",
+        "emoji": "🍠"
+    },
+    {
+        "en": "Cassava",
+        "ar": "كسافا",
+        "tr": "Kasafa",
+        "id": "singkong"
+    },
+    {
+        "en": "Taro",
+        "ar": "قلقاس",
+        "tr": "Qulqas",
+        "id": "talas"
+    },
+    {
+        "en": "Jicama",
+        "ar": "سيبوه",
+        "tr": "Sibuh",
+        "id": "bengkuang"
+    },
+    {
+        "en": "Ginger",
+        "ar": "زنجبيل",
+        "tr": "Zanjabil",
+        "id": "jahe"
+    },
+    {
+        "en": "Galangal",
+        "ar": "خولنجان",
+        "tr": "Khulanajan",
+        "id": "lengkuas"
+    },
+    {
+        "en": "Turmeric",
+        "ar": "كركم",
+        "tr": "Kurkum",
+        "id": "kunyit"
+    }
+]

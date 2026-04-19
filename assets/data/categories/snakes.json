@@ -1,0 +1,37 @@
+[
+    {
+        "en": "Snake",
+        "ar": "ثعبان",
+        "tr": "Tha'aban",
+        "id": "ular",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Cobra",
+        "ar": "كوبرا",
+        "tr": "Kubara",
+        "id": "kobra",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Python",
+        "ar": "بايثون",
+        "tr": "Bithun",
+        "id": "piton",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Viper",
+        "ar": "أفعى",
+        "tr": "Afa'a",
+        "id": "viper",
+        "emoji": "🐍"
+    },
+    {
+        "en": "Rattlesnake",
+        "ar": "أفعى الجرس",
+        "tr": "Af'a al-Jaras",
+        "id": "ular derik",
+        "emoji": "🐍"
+    }
+]

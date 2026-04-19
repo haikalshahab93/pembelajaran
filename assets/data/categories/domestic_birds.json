@@ -1,0 +1,26 @@
+[
+    {
+        "en": "Turkey",
+        "ar": "ديك رومي",
+        "tr": "Dik Rumi",
+        "id": "kalkun",
+        "emoji": "🦃",
+        "img": "assets/user-images/turkey-1774961314-78c59a.png"
+    },
+    {
+        "en": "Chicken",
+        "ar": "دجاجة",
+        "tr": "Dajajah",
+        "id": "ayam",
+        "emoji": "🐔",
+        "img": "assets/user-images/chicken-1774961350-e23c21.png"
+    },
+    {
+        "en": "Rooster",
+        "ar": "ديك",
+        "tr": "Dik",
+        "id": "ayam jantan",
+        "emoji": "🐓",
+        "img": "assets/user-images/rooster-1774961368-7732c0.png"
+    }
+]

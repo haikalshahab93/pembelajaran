@@ -22,15 +22,12 @@
       </label>
       <label class="control">
         Kategori
-        <select id="category"></select>
+        <select id="category">
+          <option value="__loading">Memuat kategori...</option>
+        </select>
       </label>
-      <button id="speak" class="primary">Audio</button>
-      <button id="listen" class="ghost">Ucapkan</button>
-      <button id="go-home" class="ghost" aria-label="Kembali ke halaman utama">Beranda</button>
-      <button id="focus-mode" class="ghost" aria-pressed="false" aria-label="Mode fokus belajar">Fokus Belajar</button>
       <input id="search" type="search" placeholder="Cari kata (EN/AR/ID)" aria-label="Cari" />
-      <button id="contrast" class="ghost" aria-pressed="false">Kontras Tinggi</button>
-      <button id="media" class="ghost" aria-pressed="true">Tampilkan Gambar</button>
+      <button id="open-settings" class="ghost" aria-label="Buka pengaturan">Pengaturan</button>
     </div>
   </header>
 
@@ -116,6 +113,19 @@
         <button id="viewer-edit" class="ghost">Ganti Gambar</button>
         <button id="viewer-close" class="ghost">Tutup</button>
       </div>
+    </div>
+  </div>
+  <div id="settings-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-body settings-modal-body">
+      <div class="settings-modal-head">
+        <div>
+          <div class="settings-title">Pengaturan</div>
+          <div class="settings-subtitle">Kontrol audio, tampilan, data, dan mode belajar</div>
+        </div>
+        <button id="settings-close" class="ghost">Tutup</button>
+      </div>
+      <div id="settings-panel" class="settings-panel"></div>
     </div>
   </div>
 

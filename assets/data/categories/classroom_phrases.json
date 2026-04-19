@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Open the book",
+        "ar": "افتح الكتاب",
+        "tr": "Iftaḥ al-kitāb",
+        "id": "Buka buku"
+    },
+    {
+        "en": "Close the book",
+        "ar": "أغلق الكتاب",
+        "tr": "Aghliq al-kitāb",
+        "id": "Tutup buku"
+    },
+    {
+        "en": "Listen carefully",
+        "ar": "استمع جيدا",
+        "tr": "Istamiʿ jayyidan",
+        "id": "Dengarkan baik-baik"
+    },
+    {
+        "en": "Read aloud",
+        "ar": "اقرأ بصوت عال",
+        "tr": "Iqraʾ biṣawt ʿāl",
+        "id": "Bacalah dengan suara keras"
+    },
+    {
+        "en": "Write this",
+        "ar": "اكتب هذا",
+        "tr": "Uktub hādhā",
+        "id": "Tulis ini"
+    },
+    {
+        "en": "Repeat after me",
+        "ar": "ردد خلفي",
+        "tr": "Raddid khalfī",
+        "id": "Ulangi setelah saya"
+    },
+    {
+        "en": "Do you understand?",
+        "ar": "هل فهمت؟",
+        "tr": "Hal fahimta?",
+        "id": "Apakah kamu paham?"
+    },
+    {
+        "en": "I have a question",
+        "ar": "عندي سؤال",
+        "tr": "ʿIndī suʾāl",
+        "id": "Saya punya pertanyaan"
+    },
+    {
+        "en": "Please be quiet",
+        "ar": "من فضلك كن هادئا",
+        "tr": "Min faḍlik kun hādiʾan",
+        "id": "Tolong tenang"
+    },
+    {
+        "en": "Sit down",
+        "ar": "اجلس",
+        "tr": "Ijlis",
+        "id": "Duduk"
+    },
+    {
+        "en": "Stand up",
+        "ar": "قف",
+        "tr": "Qif",
+        "id": "Berdiri"
+    },
+    {
+        "en": "Come to the front",
+        "ar": "تعال إلى الأمام",
+        "tr": "Taʿāl ilā al-amām",
+        "id": "Maju ke depan"
+    }
+]

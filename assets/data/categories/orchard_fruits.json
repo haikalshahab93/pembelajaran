@@ -1,0 +1,41 @@
+[
+    {
+        "en": "Apple",
+        "ar": "تفاح",
+        "id": "apel",
+        "emoji": "🍎"
+    },
+    {
+        "en": "Pear",
+        "ar": "كمثرى",
+        "id": "pir",
+        "emoji": "🍐"
+    },
+    {
+        "en": "Peach",
+        "ar": "خوخ",
+        "id": "persik",
+        "emoji": "🍑"
+    },
+    {
+        "en": "Plum",
+        "ar": "برقوق",
+        "id": "prem"
+    },
+    {
+        "en": "Apricot",
+        "ar": "مشمش",
+        "id": "aprikot"
+    },
+    {
+        "en": "Pomegranate",
+        "ar": "رمان",
+        "id": "delima",
+        "img": "assets/user-images/pomegranate-1774958328-729b5e.png"
+    },
+    {
+        "en": "Fig",
+        "ar": "تين",
+        "id": "ara"
+    }
+]

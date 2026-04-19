@@ -1,0 +1,41 @@
+[
+    {
+        "en": "Monkey",
+        "ar": "قرد",
+        "tr": "Qird",
+        "id": "monyet",
+        "emoji": "🐒",
+        "img": "assets/user-images/monkey-1774960380-828a11.png"
+    },
+    {
+        "en": "Chimpanzee",
+        "ar": "شمبانزي",
+        "tr": "Shamabanazi",
+        "id": "simpanse",
+        "emoji": "🦍",
+        "img": "assets/user-images/chimpanzee-1774960397-b240e7.png"
+    },
+    {
+        "en": "Gorilla",
+        "ar": "غوريلا",
+        "tr": "Ghurila",
+        "id": "gorila",
+        "emoji": "🦍",
+        "img": "assets/user-images/gorilla-1774960412-de26d8.png"
+    },
+    {
+        "en": "Orangutan",
+        "ar": "أورانغوتان",
+        "tr": "Uranaghutan",
+        "id": "orangutan",
+        "emoji": "🦧",
+        "img": "assets/user-images/orangutan-1774960432-179199.png"
+    },
+    {
+        "en": "Lemur",
+        "ar": "ليمور",
+        "tr": "Limur",
+        "id": "lemur",
+        "img": "assets/user-images/lemur-1774960450-34c057.png"
+    }
+]
