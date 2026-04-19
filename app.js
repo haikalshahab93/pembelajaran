@@ -215,17 +215,19 @@
     return APP_BASE_URL.toString()
   }
   function getApiBaseUrl() {
+    const configured = normalizeBaseUrl(window.PEMBELAJAR_CONFIG && window.PEMBELAJAR_CONFIG.apiBase || "")
     let stored = ""
     try {
       stored = localStorage.getItem(API_BASE_STORAGE_KEY) || ""
     } catch {}
-    return normalizeBaseUrl(stored) || defaultApiBase()
+    return normalizeBaseUrl(stored) || configured || defaultApiBase()
   }
   function getStoredApiBaseUrl() {
+    const configured = normalizeBaseUrl(window.PEMBELAJAR_CONFIG && window.PEMBELAJAR_CONFIG.apiBase || "")
     try {
-      return normalizeBaseUrl(localStorage.getItem(API_BASE_STORAGE_KEY) || "")
+      return normalizeBaseUrl(localStorage.getItem(API_BASE_STORAGE_KEY) || "") || configured
     } catch {
-      return ""
+      return configured
     }
   }
   function setStoredApiBaseUrl(value) {

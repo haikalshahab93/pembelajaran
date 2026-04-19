@@ -1,0 +1,7 @@
+tunnel: pembelajaran-api
+credentials-file: /home/ubuntu/.cloudflared/<tunnel-id>.json
+
+ingress:
+  - hostname: api.example.com
+    service: http://localhost:8020
+  - service: http_status:404
