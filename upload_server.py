@@ -16,6 +16,8 @@ ANIMALS_DIR = os.path.join(ROOT, "assets", "animals")
 ANIMALS_PATH = os.path.join(ANIMALS_DIR, "animals.json")
 VEGETABLES_DIR = os.path.join(ROOT, "assets", "vegetables")
 VEGETABLES_PATH = os.path.join(VEGETABLES_DIR, "vegetables.json")
+DATA_DIR = os.path.join(ROOT, "assets", "data")
+WORD_SUGGESTIONS_PATH = os.path.join(DATA_DIR, "word_suggestions.json")
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 if not os.path.exists(MAP_PATH):
@@ -28,6 +30,10 @@ if not os.path.exists(ANIMALS_PATH):
 os.makedirs(VEGETABLES_DIR, exist_ok=True)
 if not os.path.exists(VEGETABLES_PATH):
     with open(VEGETABLES_PATH, "w", encoding="utf-8") as f:
+        json.dump([], f, ensure_ascii=False, indent=2)
+os.makedirs(DATA_DIR, exist_ok=True)
+if not os.path.exists(WORD_SUGGESTIONS_PATH):
+    with open(WORD_SUGGESTIONS_PATH, "w", encoding="utf-8") as f:
         json.dump([], f, ensure_ascii=False, indent=2)
 
 
@@ -43,6 +49,69 @@ def log_event(kind: str, detail: str):
     print(f"[{stamp}] {kind}: {detail}")
 
 
+def read_json_file(path: str, fallback):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return fallback
+
+
+def write_json_file(path: str, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def normalize_word_suggestion(entry):
+    source = entry if isinstance(entry, dict) else {}
+    now = int(time.time() * 1000)
+    status = str(source.get("status", "pending") or "pending").strip().lower()
+    if status not in ("pending", "updated"):
+        status = "pending"
+    return {
+        "id": str(source.get("id") or uuid.uuid4().hex[:12]),
+        "kind": str(source.get("kind", "word") or "word").strip().lower(),
+        "request": str(source.get("request", "") or "").strip(),
+        "meaning": str(source.get("meaning", "") or "").strip(),
+        "category": str(source.get("category", "") or "").strip(),
+        "note": str(source.get("note", "") or "").strip(),
+        "status": status,
+        "ts": int(source.get("ts") or now),
+        "updated_at": int(source.get("updated_at") or 0),
+    }
+
+
+def load_word_suggestions():
+    raw = read_json_file(WORD_SUGGESTIONS_PATH, [])
+    if not isinstance(raw, list):
+        return []
+    out = []
+    seen = set()
+    for item in raw:
+        normalized = normalize_word_suggestion(item)
+        if not normalized["request"]:
+            continue
+        if normalized["id"] in seen:
+            continue
+        seen.add(normalized["id"])
+        out.append(normalized)
+    return out
+
+
+def save_word_suggestions(items):
+    write_json_file(WORD_SUGGESTIONS_PATH, items)
+
+
+def send_json(handler, payload, status=200):
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    handler.send_response(status)
+    handler.send_header("Content-Type", "application/json; charset=utf-8")
+    handler.send_header("Cache-Control", "no-store")
+    handler.send_header("Content-Length", str(len(body)))
+    handler.end_headers()
+    handler.wfile.write(body)
+
+
 TTS_RATE = {}
 def allow_tts(ip: str) -> bool:
     now = time.time()
@@ -56,6 +125,15 @@ def allow_tts(ip: str) -> bool:
     return True
 class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
+        if self.path.startswith("/word-suggestions"):
+            try:
+                items = sorted(load_word_suggestions(), key=lambda x: int(x.get("ts") or 0), reverse=True)
+                send_json(self, {"items": items, "total": len(items)})
+                return
+            except Exception:
+                log_event("word_suggestions_get_error", self.path)
+                self.send_error(500, "Failed to load word suggestions")
+                return
         if self.path.startswith("/tts"):
             try:
                 ip = self.client_address[0] if hasattr(self, "client_address") else "0.0.0.0"
@@ -100,10 +178,60 @@ class Handler(SimpleHTTPRequestHandler):
                 return
         return super().do_GET()
     def do_POST(self):
+        ctype = self.headers.get("Content-Type", "")
+        if self.path in ("/word-suggestions", "/word-suggestions-status"):
+            if "application/json" not in ctype:
+                self.send_error(400, "Expect application/json")
+                return
+            try:
+                size = int(self.headers.get("Content-Length", "0") or "0")
+            except Exception:
+                size = 0
+            raw = self.rfile.read(size) if size > 0 else b"{}"
+            try:
+                payload = json.loads(raw.decode("utf-8") or "{}")
+            except Exception:
+                self.send_error(400, "Invalid JSON")
+                return
+            if self.path == "/word-suggestions":
+                entry = normalize_word_suggestion(payload)
+                if not entry["request"]:
+                    self.send_error(400, "Request is required")
+                    return
+                items = load_word_suggestions()
+                items = [item for item in items if item.get("id") != entry["id"]]
+                items.insert(0, entry)
+                save_word_suggestions(items[:500])
+                send_json(self, {"ok": True, "item": entry, "total": len(items[:500])})
+                log_event("word_suggestions_add_ok", entry["request"][:80])
+                return
+            if self.path == "/word-suggestions-status":
+                item_id = str(payload.get("id", "") or "").strip()
+                status = str(payload.get("status", "pending") or "pending").strip().lower()
+                if not item_id:
+                    self.send_error(400, "id is required")
+                    return
+                if status not in ("pending", "updated"):
+                    self.send_error(400, "status must be pending or updated")
+                    return
+                items = load_word_suggestions()
+                updated = None
+                for item in items:
+                    if item.get("id") == item_id:
+                        item["status"] = status
+                        item["updated_at"] = int(time.time() * 1000) if status == "updated" else 0
+                        updated = item
+                        break
+                if not updated:
+                    self.send_error(404, "Suggestion not found")
+                    return
+                save_word_suggestions(items)
+                send_json(self, {"ok": True, "item": updated})
+                log_event("word_suggestions_status_ok", f"{item_id}:{status}")
+                return
         if self.path not in ("/upload", "/import-animals", "/import-vegetables"):
             self.send_error(404, "Not Found")
             return
-        ctype = self.headers.get("Content-Type", "")
         if "multipart/form-data" not in ctype:
             self.send_error(400, "Expect multipart/form-data")
             return

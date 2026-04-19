@@ -46,6 +46,10 @@
   const viewerImg = document.getElementById("viewer-img")
   const viewerEdit = document.getElementById("viewer-edit")
   const viewerClose = document.getElementById("viewer-close")
+  const openSuggestionsBtn = document.getElementById("open-suggestions")
+  const suggestionModal = document.getElementById("suggestion-modal")
+  const suggestionPanel = document.getElementById("suggestion-panel")
+  const suggestionClose = document.getElementById("suggestion-close")
   const openSettingsBtn = document.getElementById("open-settings")
   const settingsModal = document.getElementById("settings-modal")
   const settingsPanel = document.getElementById("settings-panel")
@@ -57,6 +61,7 @@
   const LAST_RECOVERY_KEY = "pembelajar_last_recovery"
   const LAST_SESSION_SUMMARY_KEY = "pembelajar_last_session_summary"
   const LAST_SESSION_HISTORY_KEY = "pembelajar_session_history"
+  const WORD_SUGGESTION_KEY = "pembelajar_word_suggestions"
   const defaultSrsEntry = {
     level: 1,
     streak: 0,
@@ -114,6 +119,8 @@
     return acc
   }, {})
   let state = loadState()
+  let WORD_SUGGESTIONS = []
+  let WORD_SUGGESTIONS_LOADED = false
   let STUDY_SCOPE_MODE = "all"
   let STUDY_SCOPE_KEYS = null
   let STUDY_SCOPE_LABEL = ""
@@ -214,13 +221,46 @@
     } catch {}
     return normalizeBaseUrl(stored) || defaultApiBase()
   }
+  function getStoredApiBaseUrl() {
+    try {
+      return normalizeBaseUrl(localStorage.getItem(API_BASE_STORAGE_KEY) || "")
+    } catch {
+      return ""
+    }
+  }
+  function setStoredApiBaseUrl(value) {
+    const normalized = normalizeBaseUrl(value)
+    try {
+      if (normalized) localStorage.setItem(API_BASE_STORAGE_KEY, normalized)
+      else localStorage.removeItem(API_BASE_STORAGE_KEY)
+    } catch {}
+    return normalized
+  }
   function apiUrl(path) {
     const base = getApiBaseUrl()
     if (!base) return ""
     return new URL(String(path || "").replace(/^\/+/, ""), base).toString()
   }
   function notifyApiUnavailable(label) {
-    notify(`${label} butuh server backend aktif`, "info")
+    notify(`${label} butuh server backend aktif. Atur URL Server Audio/API di Pengaturan.`, "info")
+  }
+  function getAudioSupportInfo() {
+    const speechReady = !!window.speechSynthesis
+    const arabicVoice = !!pickVoice("ar-SA")
+    const englishVoice = !!pickVoice("en-US")
+    const indonesianVoice = !!pickVoice("id-ID")
+    const storedBase = getStoredApiBaseUrl()
+    const activeBase = getApiBaseUrl()
+    const isGithubPages = /\.github\.io$/i.test(window.location.hostname || "")
+    return {
+      speechReady,
+      arabicVoice,
+      englishVoice,
+      indonesianVoice,
+      storedBase,
+      activeBase,
+      isGithubPages
+    }
   }
   let VOICES = []
   function initVoices() {
@@ -228,7 +268,9 @@
     VOICES = speechSynthesis.getVoices() || []
     speechSynthesis.onvoiceschanged = () => {
       VOICES = speechSynthesis.getVoices() || []
+      updateApiSettingsStatus()
     }
+    updateApiSettingsStatus()
   }
   function pickVoice(lang) {
     if (!window.speechSynthesis) return null
@@ -253,6 +295,9 @@
       const key = `${srvLang}|${text}`
       const ttsUrl = apiUrl(`tts?lang=${encodeURIComponent(srvLang)}&text=${encodeURIComponent(text)}`)
       if (!ttsUrl) {
+        if ((ll.startsWith("ar") && !voice) || ll.startsWith("id")) {
+          notify("Audio ini butuh voice browser yang cocok atau URL Server Audio/API di Pengaturan.", "info")
+        }
         if (!window.speechSynthesis) {
           notify("Audio belum tersedia di mode statis", "error")
           return
@@ -1110,6 +1155,219 @@ self.onmessage = function (e) {
       return {}
     }
   }
+  function getLocalWordSuggestionsFallback() {
+    try {
+      const raw = localStorage.getItem(WORD_SUGGESTION_KEY)
+      if (!raw) return []
+      const arr = JSON.parse(raw)
+      return Array.isArray(arr) ? arr : []
+    } catch {
+      return []
+    }
+  }
+  function getWordSuggestions() {
+    return WORD_SUGGESTIONS_LOADED ? WORD_SUGGESTIONS.slice() : getLocalWordSuggestionsFallback()
+  }
+  function setWordSuggestions(arr) {
+    const normalized = Array.isArray(arr) ? arr.slice(0, 500) : []
+    WORD_SUGGESTIONS = normalized
+    WORD_SUGGESTIONS_LOADED = true
+    try {
+      localStorage.setItem(WORD_SUGGESTION_KEY, JSON.stringify(normalized))
+    } catch {}
+  }
+  function updateSuggestionButtonLabel() {
+    if (!openSuggestionsBtn) return
+    const items = getWordSuggestions()
+    const pending = items.filter(item => String(item && item.status || "pending") !== "updated").length
+    openSuggestionsBtn.textContent = pending ? `Saran Kata • ${pending}` : "Saran Kata"
+  }
+  function wordSuggestionFingerprint(entry) {
+    return [
+      normalize((entry && entry.kind) || "", false),
+      normalize((entry && entry.request) || "", false),
+      normalize((entry && entry.meaning) || "", false),
+      normalize((entry && entry.category) || "", false),
+      normalize((entry && entry.note) || "", false)
+    ].join("|")
+  }
+  function mergeWordSuggestions(existing, incoming) {
+    const out = []
+    const seen = new Set()
+    ;[...(Array.isArray(incoming) ? incoming : []), ...(Array.isArray(existing) ? existing : [])].forEach(entry => {
+      if (!entry || typeof entry !== "object") return
+      const normalized = {
+        id: String(entry.id || `${Date.now()}-${Math.random().toString(16).slice(2, 8)}`),
+        kind: String(entry.kind || "word"),
+        request: String(entry.request || "").trim(),
+        meaning: String(entry.meaning || "").trim(),
+        category: String(entry.category || "").trim(),
+        note: String(entry.note || "").trim(),
+        status: String(entry.status || "pending").toLowerCase() === "updated" ? "updated" : "pending",
+        ts: Number(entry.ts || Date.now()) || Date.now(),
+        updated_at: Number(entry.updated_at || 0) || 0
+      }
+      if (!normalized.request) return
+      const fp = wordSuggestionFingerprint(normalized)
+      if (seen.has(fp)) return
+      seen.add(fp)
+      out.push(normalized)
+    })
+    return out.slice(0, 300)
+  }
+  function formatSuggestionTime(ts) {
+    try {
+      return new Date(ts || Date.now()).toLocaleString("id-ID", {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      })
+    } catch {
+      return "-"
+    }
+  }
+  function exportWordSuggestions() {
+    const list = getWordSuggestions()
+    const blob = new Blob([JSON.stringify(list, null, 2)], { type: "application/json" })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement("a")
+    a.href = url
+    a.download = "pembelajaran_saran_kata.json"
+    a.click()
+    setTimeout(() => URL.revokeObjectURL(url), 2000)
+  }
+  async function loadServerWordSuggestions() {
+    const endpoint = apiUrl("word-suggestions")
+    if (!endpoint) {
+      setWordSuggestions(getLocalWordSuggestionsFallback())
+      return getWordSuggestions()
+    }
+    try {
+      const res = await fetch(endpoint, { cache: "no-store" })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const raw = await res.json()
+      const items = mergeWordSuggestions([], Array.isArray(raw && raw.items) ? raw.items : [])
+      setWordSuggestions(items)
+      return items
+    } catch {
+      const fallback = getLocalWordSuggestionsFallback()
+      setWordSuggestions(fallback)
+      return fallback
+    }
+  }
+  async function submitWordSuggestion(entry) {
+    const normalized = mergeWordSuggestions([], [entry])[0]
+    if (!normalized) return false
+    const endpoint = apiUrl("word-suggestions")
+    if (!endpoint) {
+      setWordSuggestions(mergeWordSuggestions(getWordSuggestions(), [normalized]))
+      return true
+    }
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(normalized)
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      await loadServerWordSuggestions()
+      return true
+    } catch {
+      notify("Gagal mengirim saran ke server", "error")
+      return false
+    }
+  }
+  async function updateWordSuggestionStatus(itemId, status) {
+    const nextStatus = String(status || "pending").toLowerCase() === "updated" ? "updated" : "pending"
+    const endpoint = apiUrl("word-suggestions-status")
+    if (!endpoint) {
+      const items = getWordSuggestions().map(item => item.id === itemId ? Object.assign({}, item, {
+        status: nextStatus,
+        updated_at: nextStatus === "updated" ? Date.now() : 0
+      }) : item)
+      setWordSuggestions(items)
+      renderWordSuggestions()
+      return true
+    }
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: itemId, status: nextStatus })
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      await loadServerWordSuggestions()
+      renderWordSuggestions()
+      return true
+    } catch {
+      notify("Gagal memperbarui status saran kata", "error")
+      return false
+    }
+  }
+  function renderWordSuggestions() {
+    const listEl = document.getElementById("word-suggestion-list")
+    const infoEl = document.getElementById("word-suggestion-info")
+    const countEl = document.getElementById("word-suggestion-count")
+    if (!listEl || !infoEl) return
+    const items = getWordSuggestions()
+    const pending = items.filter(entry => entry.status !== "updated").length
+    if (countEl) countEl.textContent = `${items.length} item`
+    infoEl.textContent = items.length
+      ? `${pending} belum diproses atau belum dicentang selesai. Developer bisa menandai item yang sudah diupdate langsung dari daftar ini.`
+      : "Belum ada saran tersimpan di server. Form ini bisa dipakai user untuk meminta kata, frasa, atau tema baru."
+    listEl.innerHTML = ""
+    updateSuggestionButtonLabel()
+    if (!items.length) return
+    items.forEach(entry => {
+      const item = document.createElement("div")
+      item.className = "suggestion-item"
+      const head = document.createElement("div")
+      head.className = "suggestion-head"
+      const meta = document.createElement("div")
+      meta.className = "suggestion-meta"
+      meta.textContent = `${entry.kind === "topic" ? "Tema" : entry.kind === "phrase" ? "Frasa" : "Kata"} • ${entry.category || "Tanpa kategori"} • ${formatSuggestionTime(entry.ts)}`
+      const badge = document.createElement("span")
+      badge.className = `suggestion-badge ${entry.status === "updated" ? "is-updated" : "is-pending"}`
+      badge.textContent = entry.status === "updated" ? "Sudah diupdate" : "Belum diproses"
+      head.appendChild(meta)
+      head.appendChild(badge)
+      const body = document.createElement("div")
+      body.className = "suggestion-body"
+      body.textContent = entry.request
+      item.appendChild(head)
+      item.appendChild(body)
+      if (entry.meaning) {
+        const meaning = document.createElement("div")
+        meaning.className = "suggestion-extra"
+        meaning.textContent = `Arti/arah: ${entry.meaning}`
+        item.appendChild(meaning)
+      }
+      if (entry.note) {
+        const note = document.createElement("div")
+        note.className = "suggestion-extra"
+        note.textContent = `Catatan: ${entry.note}`
+        item.appendChild(note)
+      }
+      const actions = document.createElement("label")
+      actions.className = "suggestion-toggle"
+      const checkbox = document.createElement("input")
+      checkbox.type = "checkbox"
+      checkbox.checked = entry.status === "updated"
+      checkbox.onchange = () => {
+        checkbox.disabled = true
+        updateWordSuggestionStatus(entry.id, checkbox.checked ? "updated" : "pending")
+          .finally(() => { checkbox.disabled = false })
+      }
+      const labelText = document.createElement("span")
+      labelText.textContent = "Developer: tandai sudah diupdate"
+      actions.appendChild(checkbox)
+      actions.appendChild(labelText)
+      item.appendChild(actions)
+      listEl.appendChild(item)
+    })
+  }
   async function loadDataCatalog() {
     try {
       const res = await fetch(appUrl("assets/data/catalog.json"), { cache: "no-store" })
@@ -1246,10 +1504,12 @@ self.onmessage = function (e) {
       if (!raw || typeof raw !== "object") throw new Error("invalid")
       const edits = raw.edits && typeof raw.edits === "object" ? raw.edits : {}
       const images = raw.images && typeof raw.images === "object" ? raw.images : {}
+      const wordSuggestions = Array.isArray(raw.wordSuggestions) ? raw.wordSuggestions : []
       const favoriteKeys = raw.favoriteKeys && typeof raw.favoriteKeys === "object" ? raw.favoriteKeys : {}
       const importedSrs = raw.srs && typeof raw.srs === "object" ? raw.srs : {}
       saveEdits(Object.assign({}, getEdits(), edits))
       setUserImages(Object.assign({}, getUserImages(), images))
+      setWordSuggestions(mergeWordSuggestions(getWordSuggestions(), wordSuggestions))
       state.favoriteKeys = Object.assign({}, state.favoriteKeys || {}, favoriteKeys)
       Object.keys(importedSrs).forEach(k => {
         state.srs[k] = Object.assign({}, defaultSrsEntry, importedSrs[k] || {})
@@ -1288,6 +1548,7 @@ self.onmessage = function (e) {
       if (reviewBtn) reviewBtn.setAttribute("aria-pressed", state.quiz.reviewOnly ? "true" : "false")
       const timerSel = document.getElementById("quiz-timer-secs")
       if (timerSel) timerSel.value = String(state.quiz.timerSecs || 30)
+      renderWordSuggestions()
       applyUserEdits()
       await rebuildLexiconAsync()
       renderCard()
@@ -3948,10 +4209,51 @@ self.onmessage = function (e) {
     if (cfg.ariaLabel) el.setAttribute("aria-label", cfg.ariaLabel)
     return el
   }
+  function ensureTextInput(parent, cfg) {
+    if (!parent || !cfg || !cfg.id) return null
+    let el = document.getElementById(cfg.id)
+    if (!el) {
+      el = document.createElement("input")
+      el.type = cfg.type || "text"
+      el.id = cfg.id
+      el.className = cfg.className || "settings-text-input"
+      if (cfg.placeholder) el.placeholder = cfg.placeholder
+      if (cfg.insertBefore) parent.insertBefore(el, cfg.insertBefore)
+      else parent.appendChild(el)
+    }
+    if (cfg.ariaLabel) el.setAttribute("aria-label", cfg.ariaLabel)
+    return el
+  }
+  function ensureSettingsNote(parent, cfg) {
+    if (!parent || !cfg || !cfg.id) return null
+    let el = document.getElementById(cfg.id)
+    if (!el) {
+      el = document.createElement("div")
+      el.id = cfg.id
+      el.className = cfg.className || "settings-note"
+      parent.appendChild(el)
+    }
+    return el
+  }
+  function ensureTextarea(parent, cfg) {
+    if (!parent || !cfg || !cfg.id) return null
+    let el = document.getElementById(cfg.id)
+    if (!el) {
+      el = document.createElement("textarea")
+      el.id = cfg.id
+      el.className = cfg.className || "settings-textarea"
+      if (cfg.rows) el.rows = cfg.rows
+      if (cfg.placeholder) el.placeholder = cfg.placeholder
+      parent.appendChild(el)
+    }
+    if (cfg.ariaLabel) el.setAttribute("aria-label", cfg.ariaLabel)
+    return el
+  }
   function exportLocalData() {
     const data = {
       edits: getEdits(),
       images: getUserImages(),
+      wordSuggestions: getWordSuggestions(),
       favoriteKeys: state.favoriteKeys,
       srs: state.srs,
       prefs: {
@@ -4097,10 +4399,253 @@ self.onmessage = function (e) {
     return document.getElementById(`${sectionId}-grid`)
   }
   function closeSettingsModal() {
-    if (settingsModal) settingsModal.hidden = true
+    if (settingsModal) {
+      settingsModal.hidden = true
+      settingsModal.setAttribute("hidden", "")
+    }
   }
   function openSettingsModal() {
-    if (settingsModal) settingsModal.hidden = false
+    if (settingsModal) {
+      settingsModal.hidden = false
+      settingsModal.removeAttribute("hidden")
+    }
+  }
+  function updateApiSettingsStatus() {
+    const statusEl = document.getElementById("api-status")
+    if (!statusEl) return
+    const info = getAudioSupportInfo()
+    const lines = []
+    if (info.storedBase) lines.push(`Server aktif: ${info.storedBase}`)
+    else if (info.isGithubPages) lines.push("GitHub Pages statis: audio Arab perlu URL server audio/API atau voice Arab bawaan browser.")
+    else lines.push(`Server aktif: ${info.activeBase || "tidak tersedia"}`)
+    lines.push(info.arabicVoice ? "Voice Arab browser: tersedia." : "Voice Arab browser: tidak terdeteksi.")
+    lines.push(info.indonesianVoice ? "Voice Indonesia browser: tersedia." : "Voice Indonesia browser: tidak terdeteksi.")
+    statusEl.textContent = lines.join(" ")
+  }
+  function initApiSettingsControls(parent) {
+    if (!parent) return
+    const input = ensureTextInput(parent, {
+      id: "api-base-input",
+      ariaLabel: "URL Server Audio atau API",
+      placeholder: "https://server-audio-anda.example.com/"
+    })
+    const saveBtn = ensureButton(parent, {
+      id: "api-base-save",
+      text: "Simpan Server"
+    })
+    const resetBtn = ensureButton(parent, {
+      id: "api-base-reset",
+      text: "Reset Server"
+    })
+    const testBtn = ensureButton(parent, {
+      id: "api-base-test",
+      text: "Tes Audio Arab"
+    })
+    const hint = ensureSettingsNote(parent, {
+      id: "api-help",
+      className: "settings-note"
+    })
+    ensureSettingsNote(parent, {
+      id: "api-status",
+      className: "settings-note settings-note-strong"
+    })
+    if (input) input.value = getStoredApiBaseUrl()
+    if (hint) {
+      hint.textContent = "Isi alamat backend yang punya endpoint /tts. Di GitHub Pages, audio Arab biasanya butuh server ini jika browser tidak punya voice Arab bawaan."
+    }
+    if (saveBtn) {
+      saveBtn.onclick = () => {
+        const normalized = setStoredApiBaseUrl(input ? input.value : "")
+        if (input) input.value = normalized
+        updateApiSettingsStatus()
+        notify(normalized ? "Server audio/API disimpan" : "URL server tidak valid atau dikosongkan", normalized ? "success" : "error")
+      }
+    }
+    if (resetBtn) {
+      resetBtn.onclick = () => {
+        setStoredApiBaseUrl("")
+        if (input) input.value = ""
+        updateApiSettingsStatus()
+        notify("Server audio/API direset ke default", "info")
+      }
+    }
+    if (testBtn) {
+      testBtn.onclick = () => {
+        const sample = "مرحبا"
+        const ttsUrl = apiUrl(`tts?lang=ar&text=${encodeURIComponent(sample)}`)
+        if (ttsUrl) {
+          const audio = new Audio(ttsUrl)
+          audio.play()
+            .then(() => notify("Tes audio Arab dikirim ke server", "success"))
+            .catch(() => notify("Server audio belum merespons atau diblokir browser", "error"))
+          return
+        }
+        speakLangText(sample, "ar-SA")
+        notify("Mencoba voice Arab bawaan browser", "info")
+      }
+    }
+    updateApiSettingsStatus()
+  }
+  function initWordSuggestionControls(parent) {
+    if (!parent) return
+    parent.className = "suggestion-layout"
+    if (!document.getElementById("word-suggestion-form-card")) {
+      parent.innerHTML = `
+        <section id="word-suggestion-form-card" class="suggestion-card">
+          <div class="suggestion-section-title">Kirim Saran Baru</div>
+        </section>
+        <section id="word-suggestion-list-card" class="suggestion-card">
+          <div class="suggestion-list-head">
+            <div class="suggestion-section-title">Daftar Saran Server</div>
+            <div id="word-suggestion-count" class="suggestion-count">0 item</div>
+          </div>
+        </section>
+      `
+    }
+    const formCard = document.getElementById("word-suggestion-form-card")
+    const listCard = document.getElementById("word-suggestion-list-card")
+    const typeSel = ensureSelect(formCard, {
+      id: "word-suggestion-kind",
+      ariaLabel: "Jenis saran",
+      options: [
+        { value: "word", label: "Saran: Kata" },
+        { value: "phrase", label: "Saran: Frasa" },
+        { value: "topic", label: "Saran: Tema" }
+      ]
+    })
+    const requestInput = ensureTextInput(formCard, {
+      id: "word-suggestion-request",
+      ariaLabel: "Kata, frasa, atau tema yang diminta",
+      placeholder: "Contoh: kendaraan darurat, percakapan di bandara"
+    })
+    const meaningInput = ensureTextInput(formCard, {
+      id: "word-suggestion-meaning",
+      ariaLabel: "Arti atau tujuan belajar",
+      placeholder: "Arti, arah terjemah, atau kebutuhan user"
+    })
+    const categoryInput = ensureTextInput(formCard, {
+      id: "word-suggestion-category",
+      ariaLabel: "Kategori target",
+      placeholder: "Contoh: transportasi, profesi, percakapan"
+    })
+    const noteInput = ensureTextarea(formCard, {
+      id: "word-suggestion-note",
+      rows: 3,
+      ariaLabel: "Catatan tambahan saran",
+      placeholder: "Tambahkan konteks, contoh kalimat, atau alasan kenapa kata ini dibutuhkan"
+    })
+    const saveBtn = ensureButton(formCard, {
+      id: "word-suggestion-save",
+      text: "Simpan Saran"
+    })
+    const exportBtn = ensureButton(formCard, {
+      id: "word-suggestion-export",
+      text: "Ekspor Saran"
+    })
+    const clearBtn = ensureButton(formCard, {
+      id: "word-suggestion-clear",
+      text: "Hapus Semua Saran"
+    })
+    const info = ensureSettingsNote(listCard, {
+      id: "word-suggestion-info",
+      className: "settings-note settings-note-strong"
+    })
+    let list = document.getElementById("word-suggestion-list")
+    if (!list) {
+      list = document.createElement("div")
+      list.id = "word-suggestion-list"
+      list.className = "suggestion-list"
+      listCard.appendChild(list)
+    }
+    if (typeSel && !typeSel.value) typeSel.value = "word"
+    if (categoryInput && !categoryInput.value) categoryInput.value = getCategoryLabel()
+    if (saveBtn) {
+      saveBtn.onclick = async () => {
+        const request = String(requestInput && requestInput.value || "").trim()
+        const meaning = String(meaningInput && meaningInput.value || "").trim()
+        const category = String(categoryInput && categoryInput.value || "").trim()
+        const note = String(noteInput && noteInput.value || "").trim()
+        const kind = String(typeSel && typeSel.value || "word")
+        if (!request) {
+          notify("Isi dulu kata, frasa, atau tema yang ingin disarankan", "error")
+          return
+        }
+        const ok = await submitWordSuggestion({
+          id: `${Date.now()}-${Math.random().toString(16).slice(2, 8)}`,
+          kind,
+          request,
+          meaning,
+          category: category || getCategoryLabel(),
+          note,
+          status: "pending",
+          ts: Date.now(),
+          updated_at: 0
+        })
+        if (!ok) return
+        if (requestInput) requestInput.value = ""
+        if (meaningInput) meaningInput.value = ""
+        if (noteInput) noteInput.value = ""
+        if (categoryInput) categoryInput.value = getCategoryLabel()
+        renderWordSuggestions()
+        notify("Saran kata berhasil disimpan", "success")
+      }
+    }
+    if (exportBtn) exportBtn.onclick = () => exportWordSuggestions()
+    if (clearBtn) {
+      clearBtn.onclick = () => {
+        const count = getWordSuggestions().length
+        if (!count) {
+          notify("Belum ada saran untuk dihapus", "info")
+          return
+        }
+        if (!window.confirm(`Hapus ${count} saran kata yang tersimpan?`)) return
+        setWordSuggestions([])
+        renderWordSuggestions()
+        notify("Cache lokal saran dibersihkan. File server tetap aman.", "info")
+      }
+    }
+    renderWordSuggestions()
+    if (info && !getWordSuggestions().length) {
+      info.textContent = "Belum ada saran di server. Gunakan form ini agar developer tahu kata, frasa, atau tema apa yang paling dibutuhkan user."
+    }
+  }
+  function ensureSuggestionModalShell() {
+    let modal = document.getElementById("suggestion-modal")
+    if (!modal) {
+      modal = document.createElement("div")
+      modal.id = "suggestion-modal"
+      modal.className = "modal"
+      modal.setAttribute("hidden", "")
+      modal.innerHTML = `
+        <div class="modal-backdrop"></div>
+        <div class="modal-body suggestion-modal-body">
+          <div class="settings-modal-head">
+            <div>
+              <div class="settings-title">Saran Kata</div>
+              <div class="settings-subtitle">Kirim permintaan kata, frasa, atau tema baru dan pantau status prosesnya</div>
+            </div>
+            <button id="suggestion-close" class="ghost">Tutup</button>
+          </div>
+          <div id="suggestion-panel" class="suggestion-panel"></div>
+        </div>
+      `
+      document.body.appendChild(modal)
+    }
+    return modal
+  }
+  function closeSuggestionModal() {
+    const modal = document.getElementById("suggestion-modal")
+    if (!modal) return
+    modal.hidden = true
+    modal.setAttribute("hidden", "")
+  }
+  function openSuggestionModal() {
+    const modal = ensureSuggestionModalShell()
+    const panel = document.getElementById("suggestion-panel")
+    if (panel && !document.getElementById("word-suggestion-form-card")) initWordSuggestionControls(panel)
+    modal.hidden = false
+    modal.removeAttribute("hidden")
+    loadServerWordSuggestions().then(() => renderWordSuggestions())
   }
   function initSettingsModalControls() {
     if (openSettingsBtn) openSettingsBtn.onclick = () => openSettingsModal()
@@ -4111,12 +4656,26 @@ self.onmessage = function (e) {
       })
     }
   }
+  function initSuggestionModalControls() {
+    ensureSuggestionModalShell()
+    if (openSuggestionsBtn) openSuggestionsBtn.onclick = () => openSuggestionModal()
+    const closeBtn = document.getElementById("suggestion-close")
+    const modal = document.getElementById("suggestion-modal")
+    if (closeBtn) closeBtn.onclick = () => closeSuggestionModal()
+    if (modal && !modal.dataset.boundClose) {
+      modal.dataset.boundClose = "1"
+      modal.addEventListener("click", e => {
+        if (e.target && e.target.classList && e.target.classList.contains("modal-backdrop")) closeSuggestionModal()
+      })
+    }
+  }
   function initHeaderControls() {
     const quickGrid = ensureSettingsSection("settings-quick", "Aksi Cepat")
     const displayGrid = ensureSettingsSection("settings-display", "Audio & Tampilan")
     const studyGrid = ensureSettingsSection("settings-study", "Belajar")
     const dataGrid = ensureSettingsSection("settings-data", "Data")
-    if (!quickGrid || !displayGrid || !studyGrid || !dataGrid) return
+    const apiGrid = ensureSettingsSection("settings-api", "Server Audio/API")
+    if (!quickGrid || !displayGrid || !studyGrid || !dataGrid || !apiGrid) return
     const speakBtn = ensureButton(quickGrid, {
       id: "speak",
       text: "Audio Kartu",
@@ -4193,6 +4752,7 @@ self.onmessage = function (e) {
     if (exportBtn) exportBtn.onclick = exportLocalData
     if (exportCsvBtn) exportCsvBtn.onclick = exportCsvData
     if (importDataBtn) importDataBtn.onclick = openImportDataDialog
+    initApiSettingsControls(apiGrid)
     const fm = localStorage.getItem("pembelajar_focus") === "1"
     syncFocusModeUI(fm)
     if (focusBtn) {
@@ -4414,8 +4974,10 @@ self.onmessage = function (e) {
     refreshMainViews()
     bindPrimaryControls()
     initSettingsModalControls()
+    initSuggestionModalControls()
     initQuizControls()
     initHeaderControls()
+    initWordSuggestionControls(document.getElementById("suggestion-panel"))
     initSearchControls()
     initTranslateControls()
     initViewerControls()
@@ -4512,6 +5074,7 @@ self.onmessage = function (e) {
     ensureDay()
     ensureCustomCategory()
     await bootstrapInitialData()
+    await loadServerWordSuggestions()
     initCoreUI()
   }
   init()

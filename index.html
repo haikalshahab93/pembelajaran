@@ -27,6 +27,7 @@
         </select>
       </label>
       <input id="search" type="search" placeholder="Cari kata (EN/AR/ID)" aria-label="Cari" />
+      <button id="open-suggestions" class="ghost" aria-label="Buka saran kata">Saran Kata</button>
       <button id="open-settings" class="ghost" aria-label="Buka pengaturan">Pengaturan</button>
     </div>
   </header>
@@ -126,6 +127,19 @@
         <button id="settings-close" class="ghost">Tutup</button>
       </div>
       <div id="settings-panel" class="settings-panel"></div>
+    </div>
+  </div>
+  <div id="suggestion-modal" class="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-body suggestion-modal-body">
+      <div class="settings-modal-head">
+        <div>
+          <div class="settings-title">Saran Kata</div>
+          <div class="settings-subtitle">Kirim permintaan kata, frasa, atau tema baru dan pantau status prosesnya</div>
+        </div>
+        <button id="suggestion-close" class="ghost">Tutup</button>
+      </div>
+      <div id="suggestion-panel" class="suggestion-panel"></div>
     </div>
   </div>
 
