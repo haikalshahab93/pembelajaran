@@ -1,74 +1,182 @@
 [
-    {
-        "en": "Door",
-        "ar": "باب",
-        "tr": "Bāb",
-        "id": "Pintu"
-    },
-    {
-        "en": "Window",
-        "ar": "نافذة",
-        "tr": "Nāfidhah",
-        "id": "Jendela"
-    },
-    {
-        "en": "Table",
-        "ar": "طاولة",
-        "tr": "Ṭāwilah",
-        "id": "Meja"
-    },
-    {
-        "en": "Chair",
-        "ar": "كرسي",
-        "tr": "Kursī",
-        "id": "Kursi"
-    },
-    {
-        "en": "Bed",
-        "ar": "سرير",
-        "tr": "Sarīr",
-        "id": "Tempat tidur"
-    },
-    {
-        "en": "Kitchen",
-        "ar": "مطبخ",
-        "tr": "Maṭbakh",
-        "id": "Dapur"
-    },
-    {
-        "en": "Bathroom",
-        "ar": "حمام",
-        "tr": "Ḥammām",
-        "id": "Kamar mandi"
-    },
-    {
-        "en": "Key",
-        "ar": "مفتاح",
-        "tr": "Miftāḥ",
-        "id": "Kunci"
-    },
-    {
-        "en": "Lamp",
-        "ar": "مصباح",
-        "tr": "Miṣbāḥ",
-        "id": "Lampu"
-    },
-    {
-        "en": "Wall",
-        "ar": "جدار",
-        "tr": "Jidār",
-        "id": "Dinding"
-    },
-    {
-        "en": "Floor",
-        "ar": "أرضية",
-        "tr": "Arḍiyyah",
-        "id": "Lantai"
-    },
-    {
-        "en": "Roof",
-        "ar": "سقف",
-        "tr": "Saqf",
-        "id": "Atap"
-    }
+  {
+    "en": "Door",
+    "ar": "باب",
+    "tr": "Bāb",
+    "id": "Pintu"
+  },
+  {
+    "en": "Window",
+    "ar": "نافذة",
+    "tr": "Nāfidhah",
+    "id": "Jendela"
+  },
+  {
+    "en": "Table",
+    "ar": "طاولة",
+    "tr": "Ṭāwilah",
+    "id": "Meja"
+  },
+  {
+    "en": "Chair",
+    "ar": "كرسي",
+    "tr": "Kursī",
+    "id": "Kursi"
+  },
+  {
+    "en": "Bed",
+    "ar": "سرير",
+    "tr": "Sarīr",
+    "id": "Tempat tidur"
+  },
+  {
+    "en": "Kitchen",
+    "ar": "مطبخ",
+    "tr": "Maṭbakh",
+    "id": "Dapur"
+  },
+  {
+    "en": "Bathroom",
+    "ar": "حمام",
+    "tr": "Ḥammām",
+    "id": "Kamar mandi"
+  },
+  {
+    "en": "Key",
+    "ar": "مفتاح",
+    "tr": "Miftāḥ",
+    "id": "Kunci"
+  },
+  {
+    "en": "Lamp",
+    "ar": "مصباح",
+    "tr": "Miṣbāḥ",
+    "id": "Lampu"
+  },
+  {
+    "en": "Wall",
+    "ar": "جدار",
+    "tr": "Jidār",
+    "id": "Dinding"
+  },
+  {
+    "en": "Floor",
+    "ar": "أرضية",
+    "tr": "Arḍiyyah",
+    "id": "Lantai"
+  },
+  {
+    "en": "Roof",
+    "ar": "سقف",
+    "tr": "Saqf",
+    "id": "Atap"
+  },
+  {
+    "en": "Sofa",
+    "ar": "أريكة",
+    "tr": "Arikah",
+    "id": "Sofa"
+  },
+  {
+    "en": "Cupboard",
+    "ar": "خزانة",
+    "tr": "Khizanah",
+    "id": "Lemari"
+  },
+  {
+    "en": "Pillow",
+    "ar": "وسادة",
+    "tr": "Wisadah",
+    "id": "Bantal"
+  },
+  {
+    "en": "Blanket",
+    "ar": "بطانية",
+    "tr": "Bitaniyyah",
+    "id": "Selimut"
+  },
+  {
+    "en": "Mirror",
+    "ar": "مرآة",
+    "tr": "Mir'ah",
+    "id": "Cermin"
+  },
+  {
+    "en": "Fan",
+    "ar": "مروحة",
+    "tr": "Marwahah",
+    "id": "Kipas"
+  },
+  {
+    "en": "Stove",
+    "ar": "موقد",
+    "tr": "Mawqid",
+    "id": "Kompor"
+  },
+  {
+    "en": "Refrigerator",
+    "ar": "ثلاجة",
+    "tr": "Thallajah",
+    "id": "Kulkas"
+  },
+  {
+    "en": "Clock",
+    "ar": "ساعة حائط",
+    "tr": "Sa'at ha'it",
+    "id": "Jam dinding"
+  },
+  {
+    "en": "Shelf",
+    "ar": "رف",
+    "tr": "Raff",
+    "id": "Rak"
+  },
+  {
+    "en": "Curtain",
+    "ar": "ستارة",
+    "tr": "Sitarah",
+    "id": "Gorden"
+  },
+  {
+    "en": "Carpet",
+    "ar": "سجادة",
+    "tr": "Sajjadah",
+    "id": "Karpet"
+  },
+  {
+    "en": "Bucket",
+    "ar": "دلو",
+    "tr": "Dalw",
+    "id": "Ember"
+  },
+  {
+    "en": "Broom",
+    "ar": "مكنسة",
+    "tr": "Miknasah",
+    "id": "Sapu"
+  },
+  {
+    "en": "Soap",
+    "ar": "صابون",
+    "tr": "Sabun",
+    "id": "Sabun"
+  },
+  {
+    "en": "Towel",
+    "ar": "منشفة",
+    "tr": "Minshafah",
+    "id": "Handuk"
+  },
+  {
+    "en": "Plate rack",
+    "ar": "رف الصحون",
+    "tr": "Raff as-suhun",
+    "id": "Rak piring"
+  },
+  {
+    "en": "Trash bin",
+    "ar": "سلة المهملات",
+    "tr": "Sallat al-muhmalat",
+    "id": "Tempat sampah"
+  }
 ]

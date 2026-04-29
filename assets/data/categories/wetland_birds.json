@@ -1,34 +1,70 @@
 [
-    {
-        "en": "Crane",
-        "ar": "كركي",
-        "tr": "Kurki",
-        "id": "bangau crane",
-        "emoji": "🐦",
-        "img": "assets/user-images/crane-1774961410-0edef7.png"
-    },
-    {
-        "en": "Stork",
-        "ar": "لقلق",
-        "tr": "Laqlaq",
-        "id": "bangau",
-        "emoji": "🐦",
-        "img": "assets/user-images/stork-1774961430-0b069e.png"
-    },
-    {
-        "en": "Heron",
-        "ar": "مالك الحزين",
-        "tr": "Malik al-Hazin",
-        "id": "kuntul",
-        "emoji": "🐦",
-        "img": "assets/user-images/heron-1774961450-45a98f.png"
-    },
-    {
-        "en": "Kingfisher",
-        "ar": "رفراف",
-        "tr": "Rafraf",
-        "id": "raja udang",
-        "emoji": "🐦",
-        "img": "assets/user-images/kingfisher-1774961474-11ab84.png"
-    }
+  {
+    "en": "Crane",
+    "ar": "كركي",
+    "tr": "Kurki",
+    "id": "bangau crane",
+    "emoji": "🐦",
+    "img": "assets/user-images/crane-1774961410-0edef7.png"
+  },
+  {
+    "en": "Stork",
+    "ar": "لقلق",
+    "tr": "Laqlaq",
+    "id": "bangau",
+    "emoji": "🐦",
+    "img": "assets/user-images/stork-1774961430-0b069e.png"
+  },
+  {
+    "en": "Heron",
+    "ar": "مالك الحزين",
+    "tr": "Malik al-Hazin",
+    "id": "kuntul",
+    "emoji": "🐦",
+    "img": "assets/user-images/heron-1774961450-45a98f.png"
+  },
+  {
+    "en": "Kingfisher",
+    "ar": "رفراف",
+    "tr": "Rafraf",
+    "id": "raja udang",
+    "emoji": "🐦",
+    "img": "assets/user-images/kingfisher-1774961474-11ab84.png"
+  },
+  {
+    "en": "Heron",
+    "ar": "مالك الحزين",
+    "id": "burung kuntul besar",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Egret",
+    "ar": "بلشون",
+    "id": "kuntul",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Ibis",
+    "ar": "أبو منجل",
+    "id": "ibis",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Spoonbill",
+    "ar": "أبو ملعقة",
+    "id": "burung paruh sendok",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Moorhen",
+    "ar": "دجاجة الماء",
+    "id": "mandar rawa",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Bittern",
+    "ar": "واق",
+    "id": "burung blongkeng",
+    "emoji": "🐦"
+  }
 ]

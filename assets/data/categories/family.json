@@ -1,63 +1,182 @@
 [
-    {
-        "en": "Father",
-        "ar": "أب",
-        "tr": "Ab",
-        "id": "Ayah"
-    },
-    {
-        "en": "Mother",
-        "ar": "أم",
-        "tr": "Umm",
-        "id": "Ibu"
-    },
-    {
-        "en": "Son",
-        "ar": "ابن",
-        "tr": "Ibn",
-        "id": "Anak laki-laki"
-    },
-    {
-        "en": "Daughter",
-        "ar": "بنت",
-        "tr": "Bint",
-        "id": "Anak perempuan"
-    },
-    {
-        "en": "Brother",
-        "ar": "أخ",
-        "tr": "Akh",
-        "id": "Saudara laki-laki"
-    },
-    {
-        "en": "Sister",
-        "ar": "أخت",
-        "tr": "Ukht",
-        "id": "Saudara perempuan"
-    },
-    {
-        "en": "Husband",
-        "ar": "زوج",
-        "tr": "Zawj",
-        "id": "Suami"
-    },
-    {
-        "en": "Wife",
-        "ar": "زوجة",
-        "tr": "Zawjah",
-        "id": "Istri"
-    },
-    {
-        "en": "Family",
-        "ar": "عائلة",
-        "tr": "ʿĀʾilah",
-        "id": "Keluarga"
-    },
-    {
-        "en": "Child",
-        "ar": "طفل",
-        "tr": "Ṭifl",
-        "id": "Anak"
-    }
+  {
+    "en": "Father",
+    "ar": "أب",
+    "tr": "Ab",
+    "id": "Ayah"
+  },
+  {
+    "en": "Mother",
+    "ar": "أم",
+    "tr": "Umm",
+    "id": "Ibu"
+  },
+  {
+    "en": "Son",
+    "ar": "ابن",
+    "tr": "Ibn",
+    "id": "Anak laki-laki"
+  },
+  {
+    "en": "Daughter",
+    "ar": "بنت",
+    "tr": "Bint",
+    "id": "Anak perempuan"
+  },
+  {
+    "en": "Brother",
+    "ar": "أخ",
+    "tr": "Akh",
+    "id": "Saudara laki-laki"
+  },
+  {
+    "en": "Sister",
+    "ar": "أخت",
+    "tr": "Ukht",
+    "id": "Saudara perempuan"
+  },
+  {
+    "en": "Husband",
+    "ar": "زوج",
+    "tr": "Zawj",
+    "id": "Suami"
+  },
+  {
+    "en": "Wife",
+    "ar": "زوجة",
+    "tr": "Zawjah",
+    "id": "Istri"
+  },
+  {
+    "en": "Family",
+    "ar": "عائلة",
+    "tr": "ʿĀʾilah",
+    "id": "Keluarga"
+  },
+  {
+    "en": "Child",
+    "ar": "طفل",
+    "tr": "Ṭifl",
+    "id": "Anak"
+  },
+  {
+    "en": "Grandfather",
+    "ar": "جد",
+    "tr": "Jadd",
+    "id": "Kakek"
+  },
+  {
+    "en": "Grandmother",
+    "ar": "جدة",
+    "tr": "Jaddah",
+    "id": "Nenek"
+  },
+  {
+    "en": "Uncle",
+    "ar": "عم",
+    "tr": "'Amm",
+    "id": "Paman"
+  },
+  {
+    "en": "Aunt",
+    "ar": "عمة",
+    "tr": "'Ammah",
+    "id": "Bibi"
+  },
+  {
+    "en": "Cousin",
+    "ar": "ابن العم",
+    "tr": "Ibn al-'amm",
+    "id": "Sepupu"
+  },
+  {
+    "en": "Parents",
+    "ar": "والدان",
+    "tr": "Walidan",
+    "id": "Orang tua"
+  },
+  {
+    "en": "Relative",
+    "ar": "قريب",
+    "tr": "Qarib",
+    "id": "Kerabat"
+  },
+  {
+    "en": "Baby",
+    "ar": "رضيع",
+    "tr": "Radi'",
+    "id": "Bayi"
+  },
+  {
+    "en": "Nephew",
+    "ar": "ابن الأخ",
+    "tr": "Ibn al-akh",
+    "id": "Keponakan laki-laki"
+  },
+  {
+    "en": "Niece",
+    "ar": "ابنة الأخت",
+    "tr": "Ibnah al-ukht",
+    "id": "Keponakan perempuan"
+  },
+  {
+    "en": "Father-in-law",
+    "ar": "حمو",
+    "tr": "Hamu",
+    "id": "Mertua laki-laki"
+  },
+  {
+    "en": "Mother-in-law",
+    "ar": "حماة",
+    "tr": "Hamat",
+    "id": "Mertua perempuan"
+  },
+  {
+    "en": "Brother-in-law",
+    "ar": "صهر",
+    "tr": "Sihr",
+    "id": "Ipar laki-laki"
+  },
+  {
+    "en": "Sister-in-law",
+    "ar": "سلفة",
+    "tr": "Silfah",
+    "id": "Ipar perempuan"
+  },
+  {
+    "en": "Grandson",
+    "ar": "حفيد",
+    "tr": "Hafid",
+    "id": "Cucu laki-laki"
+  },
+  {
+    "en": "Granddaughter",
+    "ar": "حفيدة",
+    "tr": "Hafidah",
+    "id": "Cucu perempuan"
+  },
+  {
+    "en": "Twin",
+    "ar": "توأم",
+    "tr": "Taw'am",
+    "id": "Anak kembar"
+  },
+  {
+    "en": "Guardian",
+    "ar": "ولي",
+    "tr": "Waliyy",
+    "id": "Wali"
+  },
+  {
+    "en": "Ancestor",
+    "ar": "سلف",
+    "tr": "Salaf",
+    "id": "Leluhur"
+  },
+  {
+    "en": "Descendant",
+    "ar": "نسل",
+    "tr": "Nasl",
+    "id": "Keturunan"
+  }
 ]
-

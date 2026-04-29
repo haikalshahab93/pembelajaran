@@ -1,74 +1,182 @@
 [
-    {
-        "en": "Teacher",
-        "ar": "معلم",
-        "tr": "Muʿallim",
-        "id": "Guru"
-    },
-    {
-        "en": "Student",
-        "ar": "طالب",
-        "tr": "Ṭālib",
-        "id": "Siswa"
-    },
-    {
-        "en": "Principal",
-        "ar": "مدير",
-        "tr": "Mudīr",
-        "id": "Kepala sekolah"
-    },
-    {
-        "en": "Meeting",
-        "ar": "اجتماع",
-        "tr": "Ijtimāʿ",
-        "id": "Rapat"
-    },
-    {
-        "en": "Computer",
-        "ar": "حاسوب",
-        "tr": "Ḥāsūb",
-        "id": "Komputer"
-    },
-    {
-        "en": "Notebook",
-        "ar": "دفتر",
-        "tr": "Daftar",
-        "id": "Buku catatan"
-    },
-    {
-        "en": "Pen",
-        "ar": "قلم",
-        "tr": "Qalam",
-        "id": "Pulpen"
-    },
-    {
-        "en": "Paper",
-        "ar": "ورقة",
-        "tr": "Waraqah",
-        "id": "Kertas"
-    },
-    {
-        "en": "Homework",
-        "ar": "واجب",
-        "tr": "Wājib",
-        "id": "Pekerjaan rumah"
-    },
-    {
-        "en": "Exam",
-        "ar": "امتحان",
-        "tr": "Imtiḥān",
-        "id": "Ujian"
-    },
-    {
-        "en": "Manager",
-        "ar": "مدير",
-        "tr": "Mudīr",
-        "id": "Manajer"
-    },
-    {
-        "en": "Employee",
-        "ar": "موظف",
-        "tr": "Muwazzaf",
-        "id": "Karyawan"
-    }
+  {
+    "en": "Teacher",
+    "ar": "معلم",
+    "tr": "Muʿallim",
+    "id": "Guru"
+  },
+  {
+    "en": "Student",
+    "ar": "طالب",
+    "tr": "Ṭālib",
+    "id": "Siswa"
+  },
+  {
+    "en": "Principal",
+    "ar": "مدير",
+    "tr": "Mudīr",
+    "id": "Kepala sekolah"
+  },
+  {
+    "en": "Meeting",
+    "ar": "اجتماع",
+    "tr": "Ijtimāʿ",
+    "id": "Rapat"
+  },
+  {
+    "en": "Computer",
+    "ar": "حاسوب",
+    "tr": "Ḥāsūb",
+    "id": "Komputer"
+  },
+  {
+    "en": "Notebook",
+    "ar": "دفتر",
+    "tr": "Daftar",
+    "id": "Buku catatan"
+  },
+  {
+    "en": "Pen",
+    "ar": "قلم",
+    "tr": "Qalam",
+    "id": "Pulpen"
+  },
+  {
+    "en": "Paper",
+    "ar": "ورقة",
+    "tr": "Waraqah",
+    "id": "Kertas"
+  },
+  {
+    "en": "Homework",
+    "ar": "واجب",
+    "tr": "Wājib",
+    "id": "Pekerjaan rumah"
+  },
+  {
+    "en": "Exam",
+    "ar": "امتحان",
+    "tr": "Imtiḥān",
+    "id": "Ujian"
+  },
+  {
+    "en": "Manager",
+    "ar": "مدير",
+    "tr": "Mudīr",
+    "id": "Manajer"
+  },
+  {
+    "en": "Employee",
+    "ar": "موظف",
+    "tr": "Muwazzaf",
+    "id": "Karyawan"
+  },
+  {
+    "en": "Classroom",
+    "ar": "فصل دراسي",
+    "tr": "Fasl dirasi",
+    "id": "Ruang kelas"
+  },
+  {
+    "en": "Office",
+    "ar": "مكتب",
+    "tr": "Maktab",
+    "id": "Kantor"
+  },
+  {
+    "en": "Lesson",
+    "ar": "درس",
+    "tr": "Dars",
+    "id": "Pelajaran"
+  },
+  {
+    "en": "Schedule",
+    "ar": "جدول",
+    "tr": "Jadwal",
+    "id": "Jadwal"
+  },
+  {
+    "en": "Projector",
+    "ar": "جهاز عرض",
+    "tr": "Jihaz 'ard",
+    "id": "Proyektor"
+  },
+  {
+    "en": "Whiteboard",
+    "ar": "سبورة بيضاء",
+    "tr": "Saburah bayda'",
+    "id": "Papan tulis putih"
+  },
+  {
+    "en": "Marker",
+    "ar": "قلم تحديد",
+    "tr": "Qalam tahdid",
+    "id": "Spidol"
+  },
+  {
+    "en": "Desk",
+    "ar": "مكتب",
+    "tr": "Maktab",
+    "id": "Meja kerja"
+  },
+  {
+    "en": "Printer",
+    "ar": "طابعة",
+    "tr": "Tabi'ah",
+    "id": "Printer"
+  },
+  {
+    "en": "Document",
+    "ar": "مستند",
+    "tr": "Mustanad",
+    "id": "Dokumen"
+  },
+  {
+    "en": "Attendance",
+    "ar": "حضور",
+    "tr": "Hudur",
+    "id": "Kehadiran"
+  },
+  {
+    "en": "Assignment",
+    "ar": "مهمة",
+    "tr": "Muhimmah",
+    "id": "Tugas"
+  },
+  {
+    "en": "Presentation",
+    "ar": "عرض",
+    "tr": "Ard",
+    "id": "Presentasi"
+  },
+  {
+    "en": "Colleague",
+    "ar": "زميل",
+    "tr": "Zamil",
+    "id": "Rekan kerja"
+  },
+  {
+    "en": "Supervisor",
+    "ar": "مشرف",
+    "tr": "Mushrif",
+    "id": "Supervisor"
+  },
+  {
+    "en": "Intern",
+    "ar": "متدرب",
+    "tr": "Mutadarrib",
+    "id": "Magang"
+  },
+  {
+    "en": "Deadline",
+    "ar": "موعد نهائي",
+    "tr": "Maw'id naha'i",
+    "id": "Batas waktu"
+  },
+  {
+    "en": "Meeting room",
+    "ar": "غرفة الاجتماعات",
+    "tr": "Ghurfat al-ijtima'at",
+    "id": "Ruang rapat"
+  }
 ]

@@ -1,37 +1,67 @@
 [
-    {
-        "en": "Frog",
-        "ar": "ضفدع",
-        "tr": "Difda'",
-        "id": "katak",
-        "emoji": "🐸"
-    },
-    {
-        "en": "Toad",
-        "ar": "علجوم",
-        "tr": "'alajum",
-        "id": "katak puru",
-        "emoji": "🐸"
-    },
-    {
-        "en": "Salamander",
-        "ar": "سمندر",
-        "tr": "Samandar",
-        "id": "salamander",
-        "emoji": "🦎"
-    },
-    {
-        "en": "Newt",
-        "ar": "سمندر",
-        "tr": "Samandar",
-        "id": "newt",
-        "emoji": "🦎"
-    },
-    {
-        "en": "Axolotl",
-        "ar": "أكسولوتل",
-        "tr": "Aksulutl",
-        "id": "axolotl",
-        "emoji": "🦎"
-    }
+  {
+    "en": "Frog",
+    "ar": "ضفدع",
+    "tr": "Difda'",
+    "id": "katak",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Toad",
+    "ar": "علجوم",
+    "tr": "'alajum",
+    "id": "katak puru",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Salamander",
+    "ar": "سمندر",
+    "tr": "Samandar",
+    "id": "salamander",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Newt",
+    "ar": "سمندر",
+    "tr": "Samandar",
+    "id": "newt",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Axolotl",
+    "ar": "أكسولوتل",
+    "tr": "Aksulutl",
+    "id": "axolotl",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Tree Frog",
+    "ar": "ضفدع الشجر",
+    "id": "katak pohon",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Bullfrog",
+    "ar": "ضفدع ثور",
+    "id": "katak banteng",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Poison Dart Frog",
+    "ar": "ضفدع السهم السام",
+    "id": "katak panah beracun",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Tadpole",
+    "ar": "شرغوف",
+    "id": "kecebong",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Giant Salamander",
+    "ar": "سمندر عملاق",
+    "id": "salamander raksasa",
+    "emoji": "🦎"
+  }
 ]

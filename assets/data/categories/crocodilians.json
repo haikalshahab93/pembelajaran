@@ -1,30 +1,66 @@
 [
-    {
-        "en": "Crocodile",
-        "ar": "تمساح",
-        "tr": "Tamasah",
-        "id": "buaya",
-        "emoji": "🐊"
-    },
-    {
-        "en": "Alligator",
-        "ar": "التمساح الأمريكي",
-        "tr": "at-Tamasah al-Amriki",
-        "id": "aligator",
-        "emoji": "🐊"
-    },
-    {
-        "en": "Caiman",
-        "ar": "كايمان",
-        "tr": "Kiman",
-        "id": "kaiman",
-        "emoji": "🐊"
-    },
-    {
-        "en": "Gharial",
-        "ar": "غريال",
-        "tr": "Gharil",
-        "id": "gharial",
-        "emoji": "🐊"
-    }
+  {
+    "en": "Crocodile",
+    "ar": "تمساح",
+    "tr": "Tamasah",
+    "id": "buaya",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Alligator",
+    "ar": "التمساح الأمريكي",
+    "tr": "at-Tamasah al-Amriki",
+    "id": "aligator",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Caiman",
+    "ar": "كايمان",
+    "tr": "Kiman",
+    "id": "kaiman",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Gharial",
+    "ar": "غريال",
+    "tr": "Gharil",
+    "id": "gharial",
+    "emoji": "🐊"
+  },
+  {
+    "en": "American Alligator",
+    "ar": "التمساح الأمريكي",
+    "id": "aligato amerika",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Nile Crocodile",
+    "ar": "تمساح النيل",
+    "id": "buaya nil",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Saltwater Crocodile",
+    "ar": "تمساح المياه المالحة",
+    "id": "buaya muara",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Black Caiman",
+    "ar": "كايمان أسود",
+    "id": "kaiman hitam",
+    "emoji": "🐊"
+  },
+  {
+    "en": "False Gharial",
+    "ar": "غريال كاذب",
+    "id": "buaya senyulong",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Dwarf Crocodile",
+    "ar": "تمساح قزم",
+    "id": "buaya kerdil",
+    "emoji": "🐊"
+  }
 ]

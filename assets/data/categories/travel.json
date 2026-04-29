@@ -1,63 +1,182 @@
 [
-    {
-        "en": "Ticket",
-        "ar": "تذكرة",
-        "tr": "Tadhkira",
-        "id": "Tiket"
-    },
-    {
-        "en": "Airport",
-        "ar": "مطار",
-        "tr": "Maṭār",
-        "id": "Bandara"
-    },
-    {
-        "en": "Train",
-        "ar": "قطار",
-        "tr": "Qiṭār",
-        "id": "Kereta"
-    },
-    {
-        "en": "Bus",
-        "ar": "حافلة",
-        "tr": "Ḥāfilah",
-        "id": "Bus"
-    },
-    {
-        "en": "Station",
-        "ar": "محطة",
-        "tr": "Maḥaṭṭah",
-        "id": "Stasiun"
-    },
-    {
-        "en": "Hotel",
-        "ar": "فندق",
-        "tr": "Funduq",
-        "id": "Hotel"
-    },
-    {
-        "en": "Passport",
-        "ar": "جواز سفر",
-        "tr": "Jawāz safar",
-        "id": "Paspor"
-    },
-    {
-        "en": "Baggage",
-        "ar": "أمتعة",
-        "tr": "Amtiʿah",
-        "id": "Bagasi"
-    },
-    {
-        "en": "Taxi",
-        "ar": "تاكسي",
-        "tr": "Taksī",
-        "id": "Taksi"
-    },
-    {
-        "en": "Map",
-        "ar": "خريطة",
-        "tr": "Kharīṭah",
-        "id": "Peta"
-    }
+  {
+    "en": "Ticket",
+    "ar": "تذكرة",
+    "tr": "Tadhkira",
+    "id": "Tiket"
+  },
+  {
+    "en": "Airport",
+    "ar": "مطار",
+    "tr": "Maṭār",
+    "id": "Bandara"
+  },
+  {
+    "en": "Train",
+    "ar": "قطار",
+    "tr": "Qiṭār",
+    "id": "Kereta"
+  },
+  {
+    "en": "Bus",
+    "ar": "حافلة",
+    "tr": "Ḥāfilah",
+    "id": "Bus"
+  },
+  {
+    "en": "Station",
+    "ar": "محطة",
+    "tr": "Maḥaṭṭah",
+    "id": "Stasiun"
+  },
+  {
+    "en": "Hotel",
+    "ar": "فندق",
+    "tr": "Funduq",
+    "id": "Hotel"
+  },
+  {
+    "en": "Passport",
+    "ar": "جواز سفر",
+    "tr": "Jawāz safar",
+    "id": "Paspor"
+  },
+  {
+    "en": "Baggage",
+    "ar": "أمتعة",
+    "tr": "Amtiʿah",
+    "id": "Bagasi"
+  },
+  {
+    "en": "Taxi",
+    "ar": "تاكسي",
+    "tr": "Taksī",
+    "id": "Taksi"
+  },
+  {
+    "en": "Map",
+    "ar": "خريطة",
+    "tr": "Kharīṭah",
+    "id": "Peta"
+  },
+  {
+    "en": "Boarding pass",
+    "ar": "بطاقة الصعود",
+    "tr": "Bitaqat as-su'ud",
+    "id": "Kartu naik"
+  },
+  {
+    "en": "Departure",
+    "ar": "مغادرة",
+    "tr": "Mughadarah",
+    "id": "Keberangkatan"
+  },
+  {
+    "en": "Arrival",
+    "ar": "وصول",
+    "tr": "Wusul",
+    "id": "Kedatangan"
+  },
+  {
+    "en": "Reservation",
+    "ar": "حجز",
+    "tr": "Hajz",
+    "id": "Reservasi"
+  },
+  {
+    "en": "Journey",
+    "ar": "رحلة",
+    "tr": "Rihlah",
+    "id": "Perjalanan"
+  },
+  {
+    "en": "Tourist",
+    "ar": "سائح",
+    "tr": "Sa'ih",
+    "id": "Turis"
+  },
+  {
+    "en": "Suitcase",
+    "ar": "حقيبة سفر",
+    "tr": "Haqibat safar",
+    "id": "Koper"
+  },
+  {
+    "en": "Gate",
+    "ar": "بوابة",
+    "tr": "Bawwabah",
+    "id": "Gerbang"
+  },
+  {
+    "en": "Visa",
+    "ar": "تأشيرة",
+    "tr": "Ta'shirah",
+    "id": "Visa"
+  },
+  {
+    "en": "Tour guide",
+    "ar": "مرشد سياحي",
+    "tr": "Murshid siyahi",
+    "id": "Pemandu wisata"
+  },
+  {
+    "en": "Customs",
+    "ar": "الجمارك",
+    "tr": "Al-jamaarik",
+    "id": "Bea cukai"
+  },
+  {
+    "en": "Immigration",
+    "ar": "الهجرة",
+    "tr": "Al-hijrah",
+    "id": "Imigrasi"
+  },
+  {
+    "en": "Platform",
+    "ar": "رصيف",
+    "tr": "Rasif",
+    "id": "Peron"
+  },
+  {
+    "en": "One-way ticket",
+    "ar": "تذكرة ذهاب",
+    "tr": "Tadhkirat dhahab",
+    "id": "Tiket sekali jalan"
+  },
+  {
+    "en": "Round-trip ticket",
+    "ar": "تذكرة ذهاب وإياب",
+    "tr": "Tadhkirat dhahab wa iyab",
+    "id": "Tiket pulang pergi"
+  },
+  {
+    "en": "Luggage claim",
+    "ar": "استلام الأمتعة",
+    "tr": "Istilam al-amti'ah",
+    "id": "Pengambilan bagasi"
+  },
+  {
+    "en": "Delay",
+    "ar": "تأخير",
+    "tr": "Ta'khir",
+    "id": "Keterlambatan"
+  },
+  {
+    "en": "Cancel",
+    "ar": "إلغاء",
+    "tr": "Ilgha'",
+    "id": "Membatalkan"
+  },
+  {
+    "en": "Hostel",
+    "ar": "نزل",
+    "tr": "Nuzul",
+    "id": "Hostel"
+  },
+  {
+    "en": "Destination",
+    "ar": "وجهة",
+    "tr": "Wijhah",
+    "id": "Tujuan"
+  }
 ]
-

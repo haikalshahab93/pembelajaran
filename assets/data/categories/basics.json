@@ -1,63 +1,182 @@
-﻿[
-    {
-        "en": "Yes",
-        "ar": "نعم",
-        "tr": "Naʿam",
-        "id": "Ya"
-    },
-    {
-        "en": "No",
-        "ar": "لا",
-        "tr": "Lā",
-        "id": "Tidak"
-    },
-    {
-        "en": "Please",
-        "ar": "من فضلك",
-        "tr": "Min faḍlik",
-        "id": "Tolong"
-    },
-    {
-        "en": "Excuse me",
-        "ar": "عذرا",
-        "tr": "ʿUdhran",
-        "id": "Permisi"
-    },
-    {
-        "en": "I don't understand",
-        "ar": "لا أفهم",
-        "tr": "Lā afham",
-        "id": "Saya tidak mengerti"
-    },
-    {
-        "en": "Where is the bathroom?",
-        "ar": "أين الحمام؟",
-        "tr": "Ayna al-ḥammām?",
-        "id": "Di mana kamar mandi?"
-    },
-    {
-        "en": "What is your name?",
-        "ar": "ما اسمك؟",
-        "tr": "Mā ismuka/ki?",
-        "id": "Siapa namamu?"
-    },
-    {
-        "en": "My name is ...",
-        "ar": "اسمي ...",
-        "tr": "Ismī ...",
-        "id": "Nama saya ..."
-    },
-    {
-        "en": "Help!",
-        "ar": "مساعدة!",
-        "tr": "Musāʿadah!",
-        "id": "Tolong!"
-    },
-    {
-        "en": "Food",
-        "ar": "طعام",
-        "tr": "Ṭaʿām",
-        "id": "Makanan"
-    }
+[
+  {
+    "en": "Yes",
+    "ar": "نعم",
+    "tr": "Naʿam",
+    "id": "Ya"
+  },
+  {
+    "en": "No",
+    "ar": "لا",
+    "tr": "Lā",
+    "id": "Tidak"
+  },
+  {
+    "en": "Please",
+    "ar": "من فضلك",
+    "tr": "Min faḍlik",
+    "id": "Tolong"
+  },
+  {
+    "en": "Excuse me",
+    "ar": "عذرا",
+    "tr": "ʿUdhran",
+    "id": "Permisi"
+  },
+  {
+    "en": "I don't understand",
+    "ar": "لا أفهم",
+    "tr": "Lā afham",
+    "id": "Saya tidak mengerti"
+  },
+  {
+    "en": "Where is the bathroom?",
+    "ar": "أين الحمام؟",
+    "tr": "Ayna al-ḥammām?",
+    "id": "Di mana kamar mandi?"
+  },
+  {
+    "en": "What is your name?",
+    "ar": "ما اسمك؟",
+    "tr": "Mā ismuka/ki?",
+    "id": "Siapa namamu?"
+  },
+  {
+    "en": "My name is ...",
+    "ar": "اسمي ...",
+    "tr": "Ismī ...",
+    "id": "Nama saya ..."
+  },
+  {
+    "en": "Help!",
+    "ar": "مساعدة!",
+    "tr": "Musāʿadah!",
+    "id": "Tolong!"
+  },
+  {
+    "en": "Food",
+    "ar": "طعام",
+    "tr": "Ṭaʿām",
+    "id": "Makanan"
+  },
+  {
+    "en": "Sorry",
+    "ar": "آسف",
+    "tr": "Asif",
+    "id": "Maaf"
+  },
+  {
+    "en": "Welcome",
+    "ar": "أهلا وسهلا",
+    "tr": "Ahlan wa sahlan",
+    "id": "Selamat datang"
+  },
+  {
+    "en": "Maybe",
+    "ar": "ربما",
+    "tr": "Rubbama",
+    "id": "Mungkin"
+  },
+  {
+    "en": "Of course",
+    "ar": "بالطبع",
+    "tr": "Bit-tab'",
+    "id": "Tentu saja"
+  },
+  {
+    "en": "I agree",
+    "ar": "أوافق",
+    "tr": "Uwafiq",
+    "id": "Saya setuju"
+  },
+  {
+    "en": "I do not know",
+    "ar": "لا أعرف",
+    "tr": "La a'rif",
+    "id": "Saya tidak tahu"
+  },
+  {
+    "en": "Wait",
+    "ar": "انتظر",
+    "tr": "Intazir",
+    "id": "Tunggu"
+  },
+  {
+    "en": "Come here",
+    "ar": "تعال إلى هنا",
+    "tr": "Ta'al ila huna",
+    "id": "Kemari"
+  },
+  {
+    "en": "Go ahead",
+    "ar": "تفضل",
+    "tr": "Tafaddal",
+    "id": "Silakan"
+  },
+  {
+    "en": "Be careful",
+    "ar": "كن حذرا",
+    "tr": "Kun hadhiran",
+    "id": "Hati-hati"
+  },
+  {
+    "en": "Stop",
+    "ar": "توقف",
+    "tr": "Tawaqqaf",
+    "id": "Berhenti"
+  },
+  {
+    "en": "Open",
+    "ar": "افتح",
+    "tr": "Iftah",
+    "id": "Buka"
+  },
+  {
+    "en": "Close",
+    "ar": "أغلق",
+    "tr": "Aghliq",
+    "id": "Tutup"
+  },
+  {
+    "en": "Again",
+    "ar": "مرة أخرى",
+    "tr": "Marrah ukhrah",
+    "id": "Lagi"
+  },
+  {
+    "en": "Enough",
+    "ar": "يكفي",
+    "tr": "Yakfi",
+    "id": "Cukup"
+  },
+  {
+    "en": "Ready",
+    "ar": "جاهز",
+    "tr": "Jahiz",
+    "id": "Siap"
+  },
+  {
+    "en": "Slowly",
+    "ar": "ببطء",
+    "tr": "Bubt'",
+    "id": "Pelan-pelan"
+  },
+  {
+    "en": "Quickly",
+    "ar": "بسرعة",
+    "tr": "Bisur'ah",
+    "id": "Cepat"
+  },
+  {
+    "en": "Together",
+    "ar": "معا",
+    "tr": "Ma'an",
+    "id": "Bersama"
+  },
+  {
+    "en": "Alone",
+    "ar": "وحدي",
+    "tr": "Wahdi",
+    "id": "Sendiri"
+  }
 ]
-

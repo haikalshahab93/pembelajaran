@@ -1,63 +1,122 @@
 [
-    {
-        "en": "Shirt",
-        "ar": "قميص",
-        "tr": "Qamīṣ",
-        "id": "Kemeja"
-    },
-    {
-        "en": "Pants",
-        "ar": "بنطال",
-        "tr": "Binṭāl",
-        "id": "Celana"
-    },
-    {
-        "en": "Dress",
-        "ar": "فستان",
-        "tr": "Fustān",
-        "id": "Gaun"
-    },
-    {
-        "en": "Shoes",
-        "ar": "حذاء",
-        "tr": "Ḥidhāʾ",
-        "id": "Sepatu"
-    },
-    {
-        "en": "Hat",
-        "ar": "قبعة",
-        "tr": "Qubbaʿah",
-        "id": "Topi"
-    },
-    {
-        "en": "Coat",
-        "ar": "معطف",
-        "tr": "Miʿṭaf",
-        "id": "Mantel"
-    },
-    {
-        "en": "Socks",
-        "ar": "جوارب",
-        "tr": "Jawārib",
-        "id": "Kaos kaki"
-    },
-    {
-        "en": "Scarf",
-        "ar": "وشاح",
-        "tr": "Wishāḥ",
-        "id": "Syal"
-    },
-    {
-        "en": "Skirt",
-        "ar": "تنورة",
-        "tr": "Tanūrah",
-        "id": "Rok"
-    },
-    {
-        "en": "Jacket",
-        "ar": "سترة",
-        "tr": "Sutrah",
-        "id": "Jaket"
-    }
+  {
+    "en": "Shirt",
+    "ar": "قميص",
+    "tr": "Qamīṣ",
+    "id": "Kemeja"
+  },
+  {
+    "en": "Pants",
+    "ar": "بنطال",
+    "tr": "Binṭāl",
+    "id": "Celana"
+  },
+  {
+    "en": "Dress",
+    "ar": "فستان",
+    "tr": "Fustān",
+    "id": "Gaun"
+  },
+  {
+    "en": "Shoes",
+    "ar": "حذاء",
+    "tr": "Ḥidhāʾ",
+    "id": "Sepatu"
+  },
+  {
+    "en": "Hat",
+    "ar": "قبعة",
+    "tr": "Qubbaʿah",
+    "id": "Topi"
+  },
+  {
+    "en": "Coat",
+    "ar": "معطف",
+    "tr": "Miʿṭaf",
+    "id": "Mantel"
+  },
+  {
+    "en": "Socks",
+    "ar": "جوارب",
+    "tr": "Jawārib",
+    "id": "Kaos kaki"
+  },
+  {
+    "en": "Scarf",
+    "ar": "وشاح",
+    "tr": "Wishāḥ",
+    "id": "Syal"
+  },
+  {
+    "en": "Skirt",
+    "ar": "تنورة",
+    "tr": "Tanūrah",
+    "id": "Rok"
+  },
+  {
+    "en": "Jacket",
+    "ar": "سترة",
+    "tr": "Sutrah",
+    "id": "Jaket"
+  },
+  {
+    "en": "T-shirt",
+    "ar": "قميص قصير",
+    "tr": "Qamis qasir",
+    "id": "Kaos"
+  },
+  {
+    "en": "Sweater",
+    "ar": "كنزة",
+    "tr": "Kunzah",
+    "id": "Sweater"
+  },
+  {
+    "en": "Gloves",
+    "ar": "قفازات",
+    "tr": "Qaffazat",
+    "id": "Sarung tangan"
+  },
+  {
+    "en": "Belt",
+    "ar": "حزام",
+    "tr": "Hizam",
+    "id": "Ikat pinggang"
+  },
+  {
+    "en": "Sandals",
+    "ar": "صندل",
+    "tr": "Sandal",
+    "id": "Sandal"
+  },
+  {
+    "en": "Boots",
+    "ar": "جزمة",
+    "tr": "Jazmah",
+    "id": "Sepatu bot"
+  },
+  {
+    "en": "Tie",
+    "ar": "ربطة عنق",
+    "tr": "Ribtat 'unuq",
+    "id": "Dasi"
+  },
+  {
+    "en": "Uniform",
+    "ar": "زي موحد",
+    "tr": "Ziyy muwahhad",
+    "id": "Seragam"
+  },
+  {
+    "en": "Pocket",
+    "ar": "جيب",
+    "tr": "Jayb",
+    "id": "Saku"
+  },
+  {
+    "en": "Button",
+    "ar": "زر",
+    "tr": "Zirr",
+    "id": "Kancing"
+  }
 ]
-

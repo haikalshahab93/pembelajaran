@@ -1,23 +1,65 @@
 [
-    {
-        "en": "Tortoise",
-        "ar": "سلحفاة برية",
-        "tr": "Sulhafah Barriyyah",
-        "id": "kura darat",
-        "emoji": "🐢"
-    },
-    {
-        "en": "Turtle",
-        "ar": "سلحفاة",
-        "tr": "Sulhafah",
-        "id": "kura-kura",
-        "emoji": "🐢"
-    },
-    {
-        "en": "Sea Turtle",
-        "ar": "سلحفاة بحرية",
-        "tr": "Sulhafah Bahriyyah",
-        "id": "penyu",
-        "emoji": "🐢"
-    }
+  {
+    "en": "Tortoise",
+    "ar": "سلحفاة برية",
+    "tr": "Sulhafah Barriyyah",
+    "id": "kura darat",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Turtle",
+    "ar": "سلحفاة",
+    "tr": "Sulhafah",
+    "id": "kura-kura",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Sea Turtle",
+    "ar": "سلحفاة بحرية",
+    "tr": "Sulhafah Bahriyyah",
+    "id": "penyu",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Snapping Turtle",
+    "ar": "سلحفاة نهّاشة",
+    "id": "kura-kura penggigit",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Softshell Turtle",
+    "ar": "سلحفاة رخوة",
+    "id": "labi-labi",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Box Turtle",
+    "ar": "سلحفاة صندوقية",
+    "id": "kura-kura kotak",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Green Sea Turtle",
+    "ar": "سلحفاة بحرية خضراء",
+    "id": "penyu hijau",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Hawksbill Turtle",
+    "ar": "سلحفاة منقار الصقر",
+    "id": "penyu sisik",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Leatherback Turtle",
+    "ar": "سلحفاة جلدية الظهر",
+    "id": "penyu belimbing",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Red-eared Slider",
+    "ar": "سلحفاة حمراء الأذن",
+    "id": "kura-kura telinga merah",
+    "emoji": "🐢"
+  }
 ]

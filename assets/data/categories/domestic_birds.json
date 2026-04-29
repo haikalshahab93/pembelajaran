@@ -1,26 +1,68 @@
 [
-    {
-        "en": "Turkey",
-        "ar": "ديك رومي",
-        "tr": "Dik Rumi",
-        "id": "kalkun",
-        "emoji": "🦃",
-        "img": "assets/user-images/turkey-1774961314-78c59a.png"
-    },
-    {
-        "en": "Chicken",
-        "ar": "دجاجة",
-        "tr": "Dajajah",
-        "id": "ayam",
-        "emoji": "🐔",
-        "img": "assets/user-images/chicken-1774961350-e23c21.png"
-    },
-    {
-        "en": "Rooster",
-        "ar": "ديك",
-        "tr": "Dik",
-        "id": "ayam jantan",
-        "emoji": "🐓",
-        "img": "assets/user-images/rooster-1774961368-7732c0.png"
-    }
+  {
+    "en": "Turkey",
+    "ar": "ديك رومي",
+    "tr": "Dik Rumi",
+    "id": "kalkun",
+    "emoji": "🦃",
+    "img": "assets/user-images/turkey-1774961314-78c59a.png"
+  },
+  {
+    "en": "Chicken",
+    "ar": "دجاجة",
+    "tr": "Dajajah",
+    "id": "ayam",
+    "emoji": "🐔",
+    "img": "assets/user-images/chicken-1774961350-e23c21.png"
+  },
+  {
+    "en": "Rooster",
+    "ar": "ديك",
+    "tr": "Dik",
+    "id": "ayam jantan",
+    "emoji": "🐓",
+    "img": "assets/user-images/rooster-1774961368-7732c0.png"
+  },
+  {
+    "en": "Duck",
+    "ar": "بطة",
+    "id": "bebek",
+    "emoji": "🦆"
+  },
+  {
+    "en": "Goose",
+    "ar": "إوزة",
+    "id": "angsa",
+    "emoji": "🪿"
+  },
+  {
+    "en": "Quail",
+    "ar": "سمان",
+    "id": "burung puyuh",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Guinea Fowl",
+    "ar": "دجاج غينيا",
+    "id": "ayam mutiara",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Pigeon",
+    "ar": "حمامة",
+    "id": "merpati",
+    "emoji": "🕊️"
+  },
+  {
+    "en": "Muscovy Duck",
+    "ar": "بط مسكوفي",
+    "id": "entok",
+    "emoji": "🦆"
+  },
+  {
+    "en": "Hen",
+    "ar": "دجاجة بياضة",
+    "id": "ayam betina",
+    "emoji": "🐔"
+  }
 ]

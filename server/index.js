@@ -256,7 +256,8 @@ async function createApp() {
   app.use(express.urlencoded({ extended: true }))
 
   app.get("/admin/session", (req, res) => {
-    res.json({ ok: true, admin: isAdminAuthorized(req) })
+    const admin = isAdminAuthorized(req)
+    res.json({ ok: true, admin, username: admin ? ADMIN_USERNAME : "" })
   })
 
   app.post("/admin/login", (req, res) => {
@@ -467,6 +468,10 @@ async function createApp() {
   app.use(express.static(ROOT, {
     extensions: ["html"]
   }))
+
+  app.get("/admin", (_req, res) => {
+    res.sendFile(path.join(ROOT, "admin-login.html"))
+  })
 
   app.get("*", (req, res) => {
     if (req.path.startsWith("/api/")) {

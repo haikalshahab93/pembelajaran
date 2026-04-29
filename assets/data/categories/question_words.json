@@ -1,74 +1,122 @@
 [
-    {
-        "en": "What",
-        "ar": "ماذا",
-        "tr": "Mādhā",
-        "id": "Apa"
-    },
-    {
-        "en": "Who",
-        "ar": "من",
-        "tr": "Man",
-        "id": "Siapa"
-    },
-    {
-        "en": "Where",
-        "ar": "أين",
-        "tr": "Ayna",
-        "id": "Di mana"
-    },
-    {
-        "en": "When",
-        "ar": "متى",
-        "tr": "Matā",
-        "id": "Kapan"
-    },
-    {
-        "en": "Why",
-        "ar": "لماذا",
-        "tr": "Limādhā",
-        "id": "Mengapa"
-    },
-    {
-        "en": "How",
-        "ar": "كيف",
-        "tr": "Kayfa",
-        "id": "Bagaimana"
-    },
-    {
-        "en": "How much",
-        "ar": "بكم",
-        "tr": "Bikam",
-        "id": "Berapa harga"
-    },
-    {
-        "en": "How many",
-        "ar": "كم",
-        "tr": "Kam",
-        "id": "Berapa jumlah"
-    },
-    {
-        "en": "Which",
-        "ar": "أي",
-        "tr": "Ayy",
-        "id": "Yang mana"
-    },
-    {
-        "en": "From where",
-        "ar": "من أين",
-        "tr": "Min ayna",
-        "id": "Dari mana"
-    },
-    {
-        "en": "To where",
-        "ar": "إلى أين",
-        "tr": "Ilā ayna",
-        "id": "Ke mana"
-    },
-    {
-        "en": "For whom",
-        "ar": "لمن",
-        "tr": "Liman",
-        "id": "Untuk siapa"
-    }
+  {
+    "en": "What",
+    "ar": "ماذا",
+    "tr": "Mādhā",
+    "id": "Apa"
+  },
+  {
+    "en": "Who",
+    "ar": "من",
+    "tr": "Man",
+    "id": "Siapa"
+  },
+  {
+    "en": "Where",
+    "ar": "أين",
+    "tr": "Ayna",
+    "id": "Di mana"
+  },
+  {
+    "en": "When",
+    "ar": "متى",
+    "tr": "Matā",
+    "id": "Kapan"
+  },
+  {
+    "en": "Why",
+    "ar": "لماذا",
+    "tr": "Limādhā",
+    "id": "Mengapa"
+  },
+  {
+    "en": "How",
+    "ar": "كيف",
+    "tr": "Kayfa",
+    "id": "Bagaimana"
+  },
+  {
+    "en": "How much",
+    "ar": "بكم",
+    "tr": "Bikam",
+    "id": "Berapa harga"
+  },
+  {
+    "en": "How many",
+    "ar": "كم",
+    "tr": "Kam",
+    "id": "Berapa jumlah"
+  },
+  {
+    "en": "Which",
+    "ar": "أي",
+    "tr": "Ayy",
+    "id": "Yang mana"
+  },
+  {
+    "en": "From where",
+    "ar": "من أين",
+    "tr": "Min ayna",
+    "id": "Dari mana"
+  },
+  {
+    "en": "To where",
+    "ar": "إلى أين",
+    "tr": "Ilā ayna",
+    "id": "Ke mana"
+  },
+  {
+    "en": "For whom",
+    "ar": "لمن",
+    "tr": "Liman",
+    "id": "Untuk siapa"
+  },
+  {
+    "en": "With whom",
+    "ar": "مع من",
+    "tr": "Ma'a man",
+    "id": "Dengan siapa"
+  },
+  {
+    "en": "About what",
+    "ar": "عن ماذا",
+    "tr": "'An madha",
+    "id": "Tentang apa"
+  },
+  {
+    "en": "Since when",
+    "ar": "منذ متى",
+    "tr": "Mundhu mata",
+    "id": "Sejak kapan"
+  },
+  {
+    "en": "Until when",
+    "ar": "حتى متى",
+    "tr": "Hatta mata",
+    "id": "Sampai kapan"
+  },
+  {
+    "en": "Which one",
+    "ar": "أي واحد",
+    "tr": "Ayy wahid",
+    "id": "Yang mana satu"
+  },
+  {
+    "en": "How long",
+    "ar": "كم من الوقت",
+    "tr": "Kam min al-waqt",
+    "id": "Berapa lama"
+  },
+  {
+    "en": "How often",
+    "ar": "كم مرة",
+    "tr": "Kam marrah",
+    "id": "Seberapa sering"
+  },
+  {
+    "en": "At what time",
+    "ar": "في أي وقت",
+    "tr": "Fi ayyi waqt",
+    "id": "Jam berapa"
+  }
 ]

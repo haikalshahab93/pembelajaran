@@ -1,74 +1,182 @@
 [
-    {
-        "en": "Menu",
-        "ar": "قائمة الطعام",
-        "tr": "Qāʾimat aṭ-ṭaʿām",
-        "id": "Menu"
-    },
-    {
-        "en": "Table for two",
-        "ar": "طاولة لشخصين",
-        "tr": "Ṭāwilah li shakhsayn",
-        "id": "Meja untuk dua orang"
-    },
-    {
-        "en": "Water",
-        "ar": "ماء",
-        "tr": "Māʾ",
-        "id": "Air"
-    },
-    {
-        "en": "Juice",
-        "ar": "عصير",
-        "tr": "ʿAṣīr",
-        "id": "Jus"
-    },
-    {
-        "en": "Waiter",
-        "ar": "نادل",
-        "tr": "Nādil",
-        "id": "Pelayan"
-    },
-    {
-        "en": "Order",
-        "ar": "طلب",
-        "tr": "Ṭalab",
-        "id": "Pesanan"
-    },
-    {
-        "en": "I would like to order",
-        "ar": "أود أن أطلب",
-        "tr": "Uwaddu an aṭlub",
-        "id": "Saya ingin memesan"
-    },
-    {
-        "en": "Delicious",
-        "ar": "لذيذ",
-        "tr": "Ladhīdh",
-        "id": "Lezat"
-    },
-    {
-        "en": "Spicy",
-        "ar": "حار",
-        "tr": "Ḥārr",
-        "id": "Pedas"
-    },
-    {
-        "en": "Bill",
-        "ar": "فاتورة",
-        "tr": "Fātūrah",
-        "id": "Tagihan"
-    },
-    {
-        "en": "Please bring the bill",
-        "ar": "أحضر الفاتورة من فضلك",
-        "tr": "Aḥḍir al-fātūrah min faḍlik",
-        "id": "Tolong bawa tagihannya"
-    },
-    {
-        "en": "Enjoy your meal",
-        "ar": "بالهناء والشفاء",
-        "tr": "Bil-hanāʾ wa ash-shifāʾ",
-        "id": "Selamat makan"
-    }
+  {
+    "en": "Menu",
+    "ar": "قائمة الطعام",
+    "tr": "Qāʾimat aṭ-ṭaʿām",
+    "id": "Menu"
+  },
+  {
+    "en": "Table for two",
+    "ar": "طاولة لشخصين",
+    "tr": "Ṭāwilah li shakhsayn",
+    "id": "Meja untuk dua orang"
+  },
+  {
+    "en": "Water",
+    "ar": "ماء",
+    "tr": "Māʾ",
+    "id": "Air"
+  },
+  {
+    "en": "Juice",
+    "ar": "عصير",
+    "tr": "ʿAṣīr",
+    "id": "Jus"
+  },
+  {
+    "en": "Waiter",
+    "ar": "نادل",
+    "tr": "Nādil",
+    "id": "Pelayan"
+  },
+  {
+    "en": "Order",
+    "ar": "طلب",
+    "tr": "Ṭalab",
+    "id": "Pesanan"
+  },
+  {
+    "en": "I would like to order",
+    "ar": "أود أن أطلب",
+    "tr": "Uwaddu an aṭlub",
+    "id": "Saya ingin memesan"
+  },
+  {
+    "en": "Delicious",
+    "ar": "لذيذ",
+    "tr": "Ladhīdh",
+    "id": "Lezat"
+  },
+  {
+    "en": "Spicy",
+    "ar": "حار",
+    "tr": "Ḥārr",
+    "id": "Pedas"
+  },
+  {
+    "en": "Bill",
+    "ar": "فاتورة",
+    "tr": "Fātūrah",
+    "id": "Tagihan"
+  },
+  {
+    "en": "Please bring the bill",
+    "ar": "أحضر الفاتورة من فضلك",
+    "tr": "Aḥḍir al-fātūrah min faḍlik",
+    "id": "Tolong bawa tagihannya"
+  },
+  {
+    "en": "Enjoy your meal",
+    "ar": "بالهناء والشفاء",
+    "tr": "Bil-hanāʾ wa ash-shifāʾ",
+    "id": "Selamat makan"
+  },
+  {
+    "en": "Fork",
+    "ar": "شوكة",
+    "tr": "Shawkah",
+    "id": "Garpu"
+  },
+  {
+    "en": "Spoon",
+    "ar": "ملعقة",
+    "tr": "Mila'qah",
+    "id": "Sendok"
+  },
+  {
+    "en": "Plate",
+    "ar": "طبق",
+    "tr": "Tabaq",
+    "id": "Piring"
+  },
+  {
+    "en": "Cup",
+    "ar": "كوب",
+    "tr": "Kub",
+    "id": "Cangkir"
+  },
+  {
+    "en": "Dessert",
+    "ar": "حلوى",
+    "tr": "Halwa",
+    "id": "Makanan penutup"
+  },
+  {
+    "en": "Breakfast",
+    "ar": "فطور",
+    "tr": "Futur",
+    "id": "Sarapan"
+  },
+  {
+    "en": "Lunch",
+    "ar": "غداء",
+    "tr": "Ghada'",
+    "id": "Makan siang"
+  },
+  {
+    "en": "Dinner",
+    "ar": "عشاء",
+    "tr": "'Asha'",
+    "id": "Makan malam"
+  },
+  {
+    "en": "Salt",
+    "ar": "ملح",
+    "tr": "Milh",
+    "id": "Garam"
+  },
+  {
+    "en": "Pepper",
+    "ar": "فلفل",
+    "tr": "Filfil",
+    "id": "Lada"
+  },
+  {
+    "en": "Reservation",
+    "ar": "حجز",
+    "tr": "Hajz",
+    "id": "Reservasi"
+  },
+  {
+    "en": "Full",
+    "ar": "ممتلئ",
+    "tr": "Mumtali'",
+    "id": "Penuh"
+  },
+  {
+    "en": "Available",
+    "ar": "متاح",
+    "tr": "Mutah",
+    "id": "Tersedia"
+  },
+  {
+    "en": "Main course",
+    "ar": "الطبق الرئيسي",
+    "tr": "At-tabaq ar-ra'isi",
+    "id": "Hidangan utama"
+  },
+  {
+    "en": "Appetizer",
+    "ar": "مقبلات",
+    "tr": "Muqabbilat",
+    "id": "Makanan pembuka"
+  },
+  {
+    "en": "Vegetarian",
+    "ar": "نباتي",
+    "tr": "Nabati",
+    "id": "Vegetarian"
+  },
+  {
+    "en": "Hot drink",
+    "ar": "مشروب ساخن",
+    "tr": "Mashrub sakhin",
+    "id": "Minuman panas"
+  },
+  {
+    "en": "Cold drink",
+    "ar": "مشروب بارد",
+    "tr": "Mashrub barid",
+    "id": "Minuman dingin"
+  }
 ]

@@ -276,7 +276,9 @@
   function updateAdminUiState() {
     if (viewerEdit) viewerEdit.hidden = !isAdminActive()
     const openAdminBtn = document.getElementById("open-admin-login")
-    if (openAdminBtn) openAdminBtn.textContent = isAdminActive() ? "Logout Admin" : "Login Admin"
+    if (openAdminBtn) openAdminBtn.textContent = "Halaman Login Admin"
+    const logoutAdminBtn = document.getElementById("logout-admin")
+    if (logoutAdminBtn) logoutAdminBtn.hidden = !isAdminActive()
     const adminStatus = document.getElementById("admin-auth-status")
     if (adminStatus) {
       adminStatus.textContent = isAdminActive()
@@ -313,42 +315,9 @@
       return false
     }
   }
-  async function adminLogin() {
-    const endpoint = apiUrl("admin/login")
-    if (!endpoint) {
-      notifyApiUnavailable("Login admin")
-      return false
-    }
-    const username = window.prompt("Username admin:", "admin")
-    if (username === null) return false
-    const password = window.prompt("Password admin:")
-    if (password === null) return false
-    try {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password })
-      })
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const json = await res.json()
-      setAdminToken(json && json.token ? String(json.token) : "")
-      ADMIN_SESSION = {
-        active: true,
-        username: json && json.username ? String(json.username) : String(username || "")
-      }
-      updateAdminUiState()
-      refreshStudyViews()
-      renderTranslateHistory()
-      if (document.getElementById("word-suggestion-form-card")) renderWordSuggestions()
-      notify("Login admin berhasil", "success")
-      return true
-    } catch {
-      setAdminToken("")
-      ADMIN_SESSION = { active: false, username: "" }
-      updateAdminUiState()
-      notify("Login admin gagal", "error")
-      return false
-    }
+  function openAdminLoginPage() {
+    window.location.href = appUrl("admin-login.html")
+    return true
   }
   async function adminLogout() {
     const endpoint = apiUrl("admin/logout")
@@ -369,8 +338,7 @@
     notify("Mode admin dimatikan", "info")
   }
   async function toggleAdminSession() {
-    if (isAdminActive()) return adminLogout()
-    return adminLogin()
+    return openAdminLoginPage()
   }
   function getAudioSupportInfo() {
     const speechReady = !!window.speechSynthesis
@@ -1753,6 +1721,10 @@ self.onmessage = function (e) {
     }
   }
   function uploadImageFor(it, onSaved) {
+    if (!isAdminActive()) {
+      notify("Login admin diperlukan untuk unggah gambar", "info")
+      return
+    }
     const inp = document.createElement("input")
     inp.type = "file"
     inp.accept = "image/*"
@@ -3449,7 +3421,7 @@ self.onmessage = function (e) {
     if (imgB) imgB.onclick = () => openViewer(item)
     const hasUserImg = !!getUserImage(item)
     const hasBuiltinImg = !!item.img
-    if (!hasUserImg && !hasBuiltinImg) {
+    if (isAdminActive() && !hasUserImg && !hasBuiltinImg) {
       const up = document.createElement("button")
       up.className = "ghost"
       up.textContent = "Unggah Gambar"
@@ -4914,8 +4886,13 @@ self.onmessage = function (e) {
     })
     const adminBtn = ensureButton(adminGrid, {
       id: "open-admin-login",
-      text: "Login Admin",
-      ariaLabel: "Login atau logout admin"
+      text: "Halaman Login Admin",
+      ariaLabel: "Buka halaman login admin"
+    })
+    const adminLogoutBtn = ensureButton(adminGrid, {
+      id: "logout-admin",
+      text: "Logout Admin",
+      ariaLabel: "Logout admin"
     })
     if (speakBtn) speakBtn.onclick = speakCurrent
     if (listenBtn) listenBtn.onclick = listenPronounce
@@ -4924,9 +4901,11 @@ self.onmessage = function (e) {
     if (exportCsvBtn) exportCsvBtn.onclick = exportCsvData
     if (importDataBtn) importDataBtn.onclick = openImportDataDialog
     if (adminBtn) adminBtn.onclick = () => toggleAdminSession()
+    if (adminLogoutBtn) adminLogoutBtn.onclick = () => adminLogout()
     if (importDataBtn) importDataBtn.hidden = !isAdminActive()
     if (exportBtn) exportBtn.hidden = !isAdminActive()
     if (exportCsvBtn) exportCsvBtn.hidden = !isAdminActive()
+    if (adminLogoutBtn) adminLogoutBtn.hidden = !isAdminActive()
     if (adminStatus) {
       adminStatus.textContent = isAdminActive()
         ? `Mode admin aktif${ADMIN_SESSION.username ? `: ${ADMIN_SESSION.username}` : ""}`

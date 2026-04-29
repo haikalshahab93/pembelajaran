@@ -1,37 +1,67 @@
 [
-    {
-        "en": "Shark",
-        "ar": "قرش",
-        "tr": "Qirsh",
-        "id": "hiu",
-        "emoji": "🦈"
-    },
-    {
-        "en": "Great White Shark",
-        "ar": "قرش أبيض",
-        "tr": "Qarsh Abyadh",
-        "id": "hiu putih",
-        "emoji": "🦈"
-    },
-    {
-        "en": "Hammerhead Shark",
-        "ar": "قرش مطرقة",
-        "tr": "Qarsh Mataraqah",
-        "id": "hiu martil",
-        "emoji": "🦈"
-    },
-    {
-        "en": "Manta Ray",
-        "ar": "سمكة مانتا",
-        "tr": "Samakah Manata",
-        "id": "pari manta",
-        "emoji": "🐟"
-    },
-    {
-        "en": "Stingray",
-        "ar": "سمكة الراي",
-        "tr": "Samakat ar-Ray",
-        "id": "ikan pari",
-        "emoji": "🐟"
-    }
+  {
+    "en": "Shark",
+    "ar": "قرش",
+    "tr": "Qirsh",
+    "id": "hiu",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Great White Shark",
+    "ar": "قرش أبيض",
+    "tr": "Qarsh Abyadh",
+    "id": "hiu putih",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Hammerhead Shark",
+    "ar": "قرش مطرقة",
+    "tr": "Qarsh Mataraqah",
+    "id": "hiu martil",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Manta Ray",
+    "ar": "سمكة مانتا",
+    "tr": "Samakah Manata",
+    "id": "pari manta",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Stingray",
+    "ar": "سمكة الراي",
+    "tr": "Samakat ar-Ray",
+    "id": "ikan pari",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Whale Shark",
+    "ar": "قرش الحوت",
+    "id": "hiu paus",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Tiger Shark",
+    "ar": "قرش النمر",
+    "id": "hiu macan",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Bull Shark",
+    "ar": "قرش الثور",
+    "id": "hiu banteng",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Eagle Ray",
+    "ar": "شيطان البحر النسري",
+    "id": "pari elang",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Sawfish",
+    "ar": "سمك المنشار",
+    "id": "ikan gergaji",
+    "emoji": "🐟"
+  }
 ]

@@ -1,74 +1,182 @@
 [
-    {
-        "en": "Wake up",
-        "ar": "يستيقظ",
-        "tr": "Yastayqiẓ",
-        "id": "Bangun tidur"
-    },
-    {
-        "en": "Eat",
-        "ar": "يأكل",
-        "tr": "Yaʾkul",
-        "id": "Makan"
-    },
-    {
-        "en": "Drink",
-        "ar": "يشرب",
-        "tr": "Yashrab",
-        "id": "Minum"
-    },
-    {
-        "en": "Study",
-        "ar": "يدرس",
-        "tr": "Yadrus",
-        "id": "Belajar"
-    },
-    {
-        "en": "Write",
-        "ar": "يكتب",
-        "tr": "Yaktub",
-        "id": "Menulis"
-    },
-    {
-        "en": "Read",
-        "ar": "يقرأ",
-        "tr": "Yaqraʾ",
-        "id": "Membaca"
-    },
-    {
-        "en": "Work",
-        "ar": "يعمل",
-        "tr": "Yaʿmal",
-        "id": "Bekerja"
-    },
-    {
-        "en": "Walk",
-        "ar": "يمشي",
-        "tr": "Yamshī",
-        "id": "Berjalan"
-    },
-    {
-        "en": "Sleep",
-        "ar": "ينام",
-        "tr": "Yanām",
-        "id": "Tidur"
-    },
-    {
-        "en": "Cook",
-        "ar": "يطبخ",
-        "tr": "Yaṭbukh",
-        "id": "Memasak"
-    },
-    {
-        "en": "Clean",
-        "ar": "ينظف",
-        "tr": "Yunaẓẓif",
-        "id": "Membersihkan"
-    },
-    {
-        "en": "Pray",
-        "ar": "يصلي",
-        "tr": "Yuṣallī",
-        "id": "Salat"
-    }
+  {
+    "en": "Wake up",
+    "ar": "يستيقظ",
+    "tr": "Yastayqiẓ",
+    "id": "Bangun tidur"
+  },
+  {
+    "en": "Eat",
+    "ar": "يأكل",
+    "tr": "Yaʾkul",
+    "id": "Makan"
+  },
+  {
+    "en": "Drink",
+    "ar": "يشرب",
+    "tr": "Yashrab",
+    "id": "Minum"
+  },
+  {
+    "en": "Study",
+    "ar": "يدرس",
+    "tr": "Yadrus",
+    "id": "Belajar"
+  },
+  {
+    "en": "Write",
+    "ar": "يكتب",
+    "tr": "Yaktub",
+    "id": "Menulis"
+  },
+  {
+    "en": "Read",
+    "ar": "يقرأ",
+    "tr": "Yaqraʾ",
+    "id": "Membaca"
+  },
+  {
+    "en": "Work",
+    "ar": "يعمل",
+    "tr": "Yaʿmal",
+    "id": "Bekerja"
+  },
+  {
+    "en": "Walk",
+    "ar": "يمشي",
+    "tr": "Yamshī",
+    "id": "Berjalan"
+  },
+  {
+    "en": "Sleep",
+    "ar": "ينام",
+    "tr": "Yanām",
+    "id": "Tidur"
+  },
+  {
+    "en": "Cook",
+    "ar": "يطبخ",
+    "tr": "Yaṭbukh",
+    "id": "Memasak"
+  },
+  {
+    "en": "Clean",
+    "ar": "ينظف",
+    "tr": "Yunaẓẓif",
+    "id": "Membersihkan"
+  },
+  {
+    "en": "Pray",
+    "ar": "يصلي",
+    "tr": "Yuṣallī",
+    "id": "Salat"
+  },
+  {
+    "en": "Take a bath",
+    "ar": "يستحم",
+    "tr": "Yastahimm",
+    "id": "Mandi"
+  },
+  {
+    "en": "Brush teeth",
+    "ar": "يفرش أسنانه",
+    "tr": "Yafrush asnanahu",
+    "id": "Menyikat gigi"
+  },
+  {
+    "en": "Exercise",
+    "ar": "يمارس الرياضة",
+    "tr": "Yumaris ar-riyadah",
+    "id": "Berolahraga"
+  },
+  {
+    "en": "Drive",
+    "ar": "يقود",
+    "tr": "Yaqud",
+    "id": "Mengemudi"
+  },
+  {
+    "en": "Shop",
+    "ar": "يتسوق",
+    "tr": "Yatasawwaq",
+    "id": "Berbelanja"
+  },
+  {
+    "en": "Rest",
+    "ar": "يرتاح",
+    "tr": "Yartah",
+    "id": "Beristirahat"
+  },
+  {
+    "en": "Wash clothes",
+    "ar": "يغسل الملابس",
+    "tr": "Yaghsil al-malabis",
+    "id": "Mencuci pakaian"
+  },
+  {
+    "en": "Iron clothes",
+    "ar": "يكوي الملابس",
+    "tr": "Yakwi al-malabis",
+    "id": "Menyetrika pakaian"
+  },
+  {
+    "en": "Call",
+    "ar": "يتصل",
+    "tr": "Yattasil",
+    "id": "Menelepon"
+  },
+  {
+    "en": "Listen",
+    "ar": "يستمع",
+    "tr": "Yastami'",
+    "id": "Mendengarkan"
+  },
+  {
+    "en": "Jog",
+    "ar": "يركض",
+    "tr": "Yarkud",
+    "id": "Joging"
+  },
+  {
+    "en": "Commute",
+    "ar": "يتنقل",
+    "tr": "Yatanaqqal",
+    "id": "Berangkat pulang kerja"
+  },
+  {
+    "en": "Study online",
+    "ar": "يدرس عبر الإنترنت",
+    "tr": "Yadrus 'abr al-internet",
+    "id": "Belajar online"
+  },
+  {
+    "en": "Send message",
+    "ar": "يرسل رسالة",
+    "tr": "Yursil risalah",
+    "id": "Mengirim pesan"
+  },
+  {
+    "en": "Watch TV",
+    "ar": "يشاهد التلفاز",
+    "tr": "Yushahid at-tilfaz",
+    "id": "Menonton TV"
+  },
+  {
+    "en": "Wash dishes",
+    "ar": "يغسل الصحون",
+    "tr": "Yaghsil as-suhun",
+    "id": "Mencuci piring"
+  },
+  {
+    "en": "Water plants",
+    "ar": "يسقي النباتات",
+    "tr": "Yasqi an-nabatat",
+    "id": "Menyiram tanaman"
+  },
+  {
+    "en": "Take a nap",
+    "ar": "يأخذ قيلولة",
+    "tr": "Ya'khudh qaylulah",
+    "id": "Tidur siang"
+  }
 ]

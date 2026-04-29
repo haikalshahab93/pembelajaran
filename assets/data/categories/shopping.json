@@ -1,74 +1,182 @@
 [
-    {
-        "en": "Price",
-        "ar": "سعر",
-        "tr": "Siʿr",
-        "id": "Harga"
-    },
-    {
-        "en": "Cheap",
-        "ar": "رخيص",
-        "tr": "Rakhīṣ",
-        "id": "Murah"
-    },
-    {
-        "en": "Expensive",
-        "ar": "غالي",
-        "tr": "Ghālī",
-        "id": "Mahal"
-    },
-    {
-        "en": "Store",
-        "ar": "متجر",
-        "tr": "Matjar",
-        "id": "Toko"
-    },
-    {
-        "en": "Customer",
-        "ar": "زبون",
-        "tr": "Zabūn",
-        "id": "Pelanggan"
-    },
-    {
-        "en": "Seller",
-        "ar": "بائع",
-        "tr": "Bāʾiʿ",
-        "id": "Penjual"
-    },
-    {
-        "en": "Cash",
-        "ar": "نقد",
-        "tr": "Naqd",
-        "id": "Tunai"
-    },
-    {
-        "en": "Card",
-        "ar": "بطاقة",
-        "tr": "Biṭāqah",
-        "id": "Kartu"
-    },
-    {
-        "en": "Discount",
-        "ar": "خصم",
-        "tr": "Khaṣm",
-        "id": "Diskon"
-    },
-    {
-        "en": "Receipt",
-        "ar": "إيصال",
-        "tr": "Īṣāl",
-        "id": "Struk"
-    },
-    {
-        "en": "Buy",
-        "ar": "يشتري",
-        "tr": "Yashtarī",
-        "id": "Membeli"
-    },
-    {
-        "en": "Sell",
-        "ar": "يبيع",
-        "tr": "Yabīʿ",
-        "id": "Menjual"
-    }
+  {
+    "en": "Price",
+    "ar": "سعر",
+    "tr": "Siʿr",
+    "id": "Harga"
+  },
+  {
+    "en": "Cheap",
+    "ar": "رخيص",
+    "tr": "Rakhīṣ",
+    "id": "Murah"
+  },
+  {
+    "en": "Expensive",
+    "ar": "غالي",
+    "tr": "Ghālī",
+    "id": "Mahal"
+  },
+  {
+    "en": "Store",
+    "ar": "متجر",
+    "tr": "Matjar",
+    "id": "Toko"
+  },
+  {
+    "en": "Customer",
+    "ar": "زبون",
+    "tr": "Zabūn",
+    "id": "Pelanggan"
+  },
+  {
+    "en": "Seller",
+    "ar": "بائع",
+    "tr": "Bāʾiʿ",
+    "id": "Penjual"
+  },
+  {
+    "en": "Cash",
+    "ar": "نقد",
+    "tr": "Naqd",
+    "id": "Tunai"
+  },
+  {
+    "en": "Card",
+    "ar": "بطاقة",
+    "tr": "Biṭāqah",
+    "id": "Kartu"
+  },
+  {
+    "en": "Discount",
+    "ar": "خصم",
+    "tr": "Khaṣm",
+    "id": "Diskon"
+  },
+  {
+    "en": "Receipt",
+    "ar": "إيصال",
+    "tr": "Īṣāl",
+    "id": "Struk"
+  },
+  {
+    "en": "Buy",
+    "ar": "يشتري",
+    "tr": "Yashtarī",
+    "id": "Membeli"
+  },
+  {
+    "en": "Sell",
+    "ar": "يبيع",
+    "tr": "Yabīʿ",
+    "id": "Menjual"
+  },
+  {
+    "en": "Market",
+    "ar": "سوق",
+    "tr": "Suq",
+    "id": "Pasar"
+  },
+  {
+    "en": "Mall",
+    "ar": "مركز تجاري",
+    "tr": "Markaz tijari",
+    "id": "Mal"
+  },
+  {
+    "en": "Size",
+    "ar": "مقاس",
+    "tr": "Miqas",
+    "id": "Ukuran"
+  },
+  {
+    "en": "Fitting room",
+    "ar": "غرفة القياس",
+    "tr": "Ghurfat al-qiyas",
+    "id": "Kamar pas"
+  },
+  {
+    "en": "Refund",
+    "ar": "استرداد",
+    "tr": "Istirdad",
+    "id": "Pengembalian dana"
+  },
+  {
+    "en": "Exchange",
+    "ar": "استبدال",
+    "tr": "Istibdal",
+    "id": "Tukar barang"
+  },
+  {
+    "en": "Wallet",
+    "ar": "محفظة",
+    "tr": "Mahfazhah",
+    "id": "Dompet"
+  },
+  {
+    "en": "Coin",
+    "ar": "عملة معدنية",
+    "tr": "'Umlah ma'diniyyah",
+    "id": "Koin"
+  },
+  {
+    "en": "Basket",
+    "ar": "سلة",
+    "tr": "Sallah",
+    "id": "Keranjang"
+  },
+  {
+    "en": "Checkout",
+    "ar": "صندوق الدفع",
+    "tr": "Sunduq ad-daf'",
+    "id": "Kasir"
+  },
+  {
+    "en": "Barcode",
+    "ar": "باركود",
+    "tr": "Barkod",
+    "id": "Barcode"
+  },
+  {
+    "en": "Cashier",
+    "ar": "أمين الصندوق",
+    "tr": "Amin as-sunduq",
+    "id": "Kasir"
+  },
+  {
+    "en": "Wholesale",
+    "ar": "جملة",
+    "tr": "Jumlah",
+    "id": "Grosir"
+  },
+  {
+    "en": "Retail",
+    "ar": "تجزئة",
+    "tr": "Tajzi'ah",
+    "id": "Eceran"
+  },
+  {
+    "en": "In stock",
+    "ar": "متوفر",
+    "tr": "Mutawaffir",
+    "id": "Tersedia"
+  },
+  {
+    "en": "Out of stock",
+    "ar": "غير متوفر",
+    "tr": "Ghayr mutawaffir",
+    "id": "Stok habis"
+  },
+  {
+    "en": "Shopping bag",
+    "ar": "حقيبة تسوق",
+    "tr": "Haqibat tasawwuq",
+    "id": "Tas belanja"
+  },
+  {
+    "en": "Promotion",
+    "ar": "عرض ترويجي",
+    "tr": "Ard tarwiji",
+    "id": "Promosi"
+  }
 ]

@@ -1,45 +1,69 @@
 [
-    {
-        "en": "Elephant",
-        "ar": "فيل",
-        "tr": "Fil",
-        "id": "gajah",
-        "emoji": "🐘"
-    },
-    {
-        "en": "Rhinoceros",
-        "ar": "وحيد القرن",
-        "tr": "Wahid al-Qarn",
-        "id": "badak",
-        "emoji": "🦏"
-    },
-    {
-        "en": "Hippopotamus",
-        "ar": "فرس النهر",
-        "tr": "Faras an-Nahr",
-        "id": "kuda nil",
-        "emoji": "🦛"
-    },
-    {
-        "en": "Buffalo",
-        "ar": "جاموس",
-        "tr": "Jamus",
-        "id": "kerbau",
-        "emoji": "🐃"
-    },
-    {
-        "en": "Bison",
-        "ar": "بيسون",
-        "tr": "Bisun",
-        "id": "bison",
-        "emoji": "🦬"
-    },
-    {
-        "en": "Camel",
-        "ar": "جمل",
-        "tr": "Jamal",
-        "id": "unta",
-        "emoji": "🐫",
-        "img": "assets/user-images/camel-1774958831-7d351e.png"
-    }
+  {
+    "en": "Elephant",
+    "ar": "فيل",
+    "tr": "Fil",
+    "id": "gajah",
+    "emoji": "🐘"
+  },
+  {
+    "en": "Rhinoceros",
+    "ar": "وحيد القرن",
+    "tr": "Wahid al-Qarn",
+    "id": "badak",
+    "emoji": "🦏"
+  },
+  {
+    "en": "Hippopotamus",
+    "ar": "فرس النهر",
+    "tr": "Faras an-Nahr",
+    "id": "kuda nil",
+    "emoji": "🦛"
+  },
+  {
+    "en": "Buffalo",
+    "ar": "جاموس",
+    "tr": "Jamus",
+    "id": "kerbau",
+    "emoji": "🐃"
+  },
+  {
+    "en": "Bison",
+    "ar": "بيسون",
+    "tr": "Bisun",
+    "id": "bison",
+    "emoji": "🦬"
+  },
+  {
+    "en": "Camel",
+    "ar": "جمل",
+    "tr": "Jamal",
+    "id": "unta",
+    "emoji": "🐫",
+    "img": "assets/user-images/camel-1774958831-7d351e.png"
+  },
+  {
+    "en": "Giraffe",
+    "ar": "زرافة",
+    "id": "jerapah",
+    "emoji": "🦒"
+  },
+  {
+    "en": "Blue Whale",
+    "ar": "حوت أزرق",
+    "id": "paus biru",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Walrus",
+    "ar": "فظ",
+    "id": "walrus",
+    "emoji": "🦭"
+  },
+  {
+    "en": "Mammoth",
+    "ar": "ماموث",
+    "id": "mamut",
+    "emoji": "🐘"
+  }
 ]

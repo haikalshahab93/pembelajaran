@@ -1,30 +1,66 @@
 [
-    {
-        "en": "Jellyfish",
-        "ar": "قنديل البحر",
-        "tr": "Qindil al-Bahr",
-        "id": "ubur-ubur",
-        "emoji": "🎐"
-    },
-    {
-        "en": "Octopus",
-        "ar": "أخطبوط",
-        "tr": "Ukhtubut",
-        "id": "gurita",
-        "emoji": "🐙"
-    },
-    {
-        "en": "Squid",
-        "ar": "حبار",
-        "tr": "Hibar",
-        "id": "cumi-cumi",
-        "emoji": "🦑"
-    },
-    {
-        "en": "Squid (Giant)",
-        "ar": "حبار عملاق",
-        "tr": "Hibar 'Imlaq",
-        "id": "cumi raksasa",
-        "emoji": "🦑"
-    }
+  {
+    "en": "Jellyfish",
+    "ar": "قنديل البحر",
+    "tr": "Qindil al-Bahr",
+    "id": "ubur-ubur",
+    "emoji": "🎐"
+  },
+  {
+    "en": "Octopus",
+    "ar": "أخطبوط",
+    "tr": "Ukhtubut",
+    "id": "gurita",
+    "emoji": "🐙"
+  },
+  {
+    "en": "Squid",
+    "ar": "حبار",
+    "tr": "Hibar",
+    "id": "cumi-cumi",
+    "emoji": "🦑"
+  },
+  {
+    "en": "Squid (Giant)",
+    "ar": "حبار عملاق",
+    "tr": "Hibar 'Imlaq",
+    "id": "cumi raksasa",
+    "emoji": "🦑"
+  },
+  {
+    "en": "Cuttlefish",
+    "ar": "حبار",
+    "id": "sotong",
+    "emoji": "🦑"
+  },
+  {
+    "en": "Nautilus",
+    "ar": "نوتيلوس",
+    "id": "nautilus",
+    "emoji": "🐚"
+  },
+  {
+    "en": "Moon Jellyfish",
+    "ar": "قنديل القمر",
+    "id": "ubur-ubur bulan",
+    "emoji": "🎐"
+  },
+  {
+    "en": "Box Jellyfish",
+    "ar": "قنديل صندوقي",
+    "id": "ubur-ubur kotak",
+    "emoji": "🎐"
+  },
+  {
+    "en": "Blue Jellyfish",
+    "ar": "قنديل أزرق",
+    "id": "ubur-ubur biru",
+    "emoji": "🎐"
+  },
+  {
+    "en": "Vampire Squid",
+    "ar": "حبار مصاص الدماء",
+    "id": "cumi vampir",
+    "emoji": "🦑"
+  }
 ]

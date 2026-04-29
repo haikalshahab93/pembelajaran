@@ -1,63 +1,122 @@
 [
-    {
-        "en": "Car",
-        "ar": "سيارة",
-        "tr": "Sayyārah",
-        "id": "Mobil"
-    },
-    {
-        "en": "Bicycle",
-        "ar": "دراجة",
-        "tr": "Darājah",
-        "id": "Sepeda"
-    },
-    {
-        "en": "Motorcycle",
-        "ar": "دراجة نارية",
-        "tr": "Darājah nāriyyah",
-        "id": "Sepeda motor"
-    },
-    {
-        "en": "Train",
-        "ar": "قطار",
-        "tr": "Qiṭār",
-        "id": "Kereta"
-    },
-    {
-        "en": "Bus",
-        "ar": "حافلة",
-        "tr": "Ḥāfilah",
-        "id": "Bus"
-    },
-    {
-        "en": "Airplane",
-        "ar": "طائرة",
-        "tr": "Ṭāʾirah",
-        "id": "Pesawat"
-    },
-    {
-        "en": "Ship",
-        "ar": "سفينة",
-        "tr": "Safīnah",
-        "id": "Kapal"
-    },
-    {
-        "en": "Taxi",
-        "ar": "تاكسي",
-        "tr": "Taksī",
-        "id": "Taksi"
-    },
-    {
-        "en": "Station",
-        "ar": "محطة",
-        "tr": "Maḥaṭṭah",
-        "id": "Stasiun"
-    },
-    {
-        "en": "Road",
-        "ar": "طريق",
-        "tr": "Ṭarīq",
-        "id": "Jalan"
-    }
+  {
+    "en": "Car",
+    "ar": "سيارة",
+    "tr": "Sayyārah",
+    "id": "Mobil"
+  },
+  {
+    "en": "Bicycle",
+    "ar": "دراجة",
+    "tr": "Darājah",
+    "id": "Sepeda"
+  },
+  {
+    "en": "Motorcycle",
+    "ar": "دراجة نارية",
+    "tr": "Darājah nāriyyah",
+    "id": "Sepeda motor"
+  },
+  {
+    "en": "Train",
+    "ar": "قطار",
+    "tr": "Qiṭār",
+    "id": "Kereta"
+  },
+  {
+    "en": "Bus",
+    "ar": "حافلة",
+    "tr": "Ḥāfilah",
+    "id": "Bus"
+  },
+  {
+    "en": "Airplane",
+    "ar": "طائرة",
+    "tr": "Ṭāʾirah",
+    "id": "Pesawat"
+  },
+  {
+    "en": "Ship",
+    "ar": "سفينة",
+    "tr": "Safīnah",
+    "id": "Kapal"
+  },
+  {
+    "en": "Taxi",
+    "ar": "تاكسي",
+    "tr": "Taksī",
+    "id": "Taksi"
+  },
+  {
+    "en": "Station",
+    "ar": "محطة",
+    "tr": "Maḥaṭṭah",
+    "id": "Stasiun"
+  },
+  {
+    "en": "Road",
+    "ar": "طريق",
+    "tr": "Ṭarīq",
+    "id": "Jalan"
+  },
+  {
+    "en": "Truck",
+    "ar": "شاحنة",
+    "tr": "Shahinah",
+    "id": "Truk"
+  },
+  {
+    "en": "Van",
+    "ar": "شاحنة صغيرة",
+    "tr": "Shahinah saghirah",
+    "id": "Van"
+  },
+  {
+    "en": "Boat",
+    "ar": "قارب",
+    "tr": "Qarib",
+    "id": "Perahu"
+  },
+  {
+    "en": "Helicopter",
+    "ar": "مروحية",
+    "tr": "Marwahiyyah",
+    "id": "Helikopter"
+  },
+  {
+    "en": "Subway",
+    "ar": "مترو",
+    "tr": "Mitru",
+    "id": "Kereta bawah tanah"
+  },
+  {
+    "en": "Tram",
+    "ar": "ترام",
+    "tr": "Tram",
+    "id": "Trem"
+  },
+  {
+    "en": "Traffic light",
+    "ar": "إشارة المرور",
+    "tr": "Isharat al-murur",
+    "id": "Lampu lalu lintas"
+  },
+  {
+    "en": "Fuel",
+    "ar": "وقود",
+    "tr": "Wuqud",
+    "id": "Bahan bakar"
+  },
+  {
+    "en": "Driver",
+    "ar": "سائق",
+    "tr": "Sa'iq",
+    "id": "Pengemudi"
+  },
+  {
+    "en": "Passenger",
+    "ar": "راكب",
+    "tr": "Rakib",
+    "id": "Penumpang"
+  }
 ]
-
