@@ -62,6 +62,7 @@
   const LAST_SESSION_SUMMARY_KEY = "pembelajar_last_session_summary"
   const LAST_SESSION_HISTORY_KEY = "pembelajar_session_history"
   const WORD_SUGGESTION_KEY = "pembelajar_word_suggestions"
+  const ADMIN_TOKEN_KEY = "pembelajar_admin_token"
   const defaultSrsEntry = {
     level: 1,
     streak: 0,
@@ -130,6 +131,10 @@
   let QUIZ_SESSION_ITEMS = []
   let QUIZ_SESSION_WRONG_ITEMS = []
   let QUIZ_SESSION_ELAPSED_TOTAL = 0
+  let ADMIN_SESSION = {
+    active: false,
+    username: ""
+  }
 
   function loadState() {
     try {
@@ -245,6 +250,127 @@
   }
   function notifyApiUnavailable(label) {
     notify(`${label} butuh server backend aktif. Atur URL Server Audio/API di Pengaturan.`, "info")
+  }
+  function getAdminToken() {
+    try {
+      return localStorage.getItem(ADMIN_TOKEN_KEY) || ""
+    } catch {
+      return ""
+    }
+  }
+  function setAdminToken(token) {
+    try {
+      if (token) localStorage.setItem(ADMIN_TOKEN_KEY, token)
+      else localStorage.removeItem(ADMIN_TOKEN_KEY)
+    } catch {}
+  }
+  function buildAdminHeaders(base) {
+    const headers = Object.assign({}, base || {})
+    const token = getAdminToken()
+    if (token) headers.Authorization = `Bearer ${token}`
+    return headers
+  }
+  function isAdminActive() {
+    return !!ADMIN_SESSION.active
+  }
+  function updateAdminUiState() {
+    if (viewerEdit) viewerEdit.hidden = !isAdminActive()
+    const openAdminBtn = document.getElementById("open-admin-login")
+    if (openAdminBtn) openAdminBtn.textContent = isAdminActive() ? "Logout Admin" : "Login Admin"
+    const adminStatus = document.getElementById("admin-auth-status")
+    if (adminStatus) {
+      adminStatus.textContent = isAdminActive()
+        ? `Mode admin aktif${ADMIN_SESSION.username ? `: ${ADMIN_SESSION.username}` : ""}`
+        : "Mode user biasa aktif. Fitur edit disembunyikan."
+    }
+    const adminNote = document.getElementById("word-suggestion-admin-note")
+    if (adminNote) adminNote.hidden = isAdminActive()
+  }
+  async function syncAdminSession() {
+    const endpoint = apiUrl("admin/session")
+    if (!endpoint) {
+      ADMIN_SESSION = { active: false, username: "" }
+      updateAdminUiState()
+      return false
+    }
+    try {
+      const res = await fetch(endpoint, {
+        headers: buildAdminHeaders()
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const json = await res.json()
+      ADMIN_SESSION = {
+        active: !!(json && json.admin),
+        username: json && json.username ? String(json.username) : ""
+      }
+      if (!ADMIN_SESSION.active) setAdminToken("")
+      updateAdminUiState()
+      return ADMIN_SESSION.active
+    } catch {
+      ADMIN_SESSION = { active: false, username: "" }
+      setAdminToken("")
+      updateAdminUiState()
+      return false
+    }
+  }
+  async function adminLogin() {
+    const endpoint = apiUrl("admin/login")
+    if (!endpoint) {
+      notifyApiUnavailable("Login admin")
+      return false
+    }
+    const username = window.prompt("Username admin:", "admin")
+    if (username === null) return false
+    const password = window.prompt("Password admin:")
+    if (password === null) return false
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password })
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const json = await res.json()
+      setAdminToken(json && json.token ? String(json.token) : "")
+      ADMIN_SESSION = {
+        active: true,
+        username: json && json.username ? String(json.username) : String(username || "")
+      }
+      updateAdminUiState()
+      refreshStudyViews()
+      renderTranslateHistory()
+      if (document.getElementById("word-suggestion-form-card")) renderWordSuggestions()
+      notify("Login admin berhasil", "success")
+      return true
+    } catch {
+      setAdminToken("")
+      ADMIN_SESSION = { active: false, username: "" }
+      updateAdminUiState()
+      notify("Login admin gagal", "error")
+      return false
+    }
+  }
+  async function adminLogout() {
+    const endpoint = apiUrl("admin/logout")
+    try {
+      if (endpoint) {
+        await fetch(endpoint, {
+          method: "POST",
+          headers: buildAdminHeaders({ "Content-Type": "application/json" })
+        })
+      }
+    } catch {}
+    setAdminToken("")
+    ADMIN_SESSION = { active: false, username: "" }
+    updateAdminUiState()
+    refreshStudyViews()
+    renderTranslateHistory()
+    if (document.getElementById("word-suggestion-form-card")) renderWordSuggestions()
+    notify("Mode admin dimatikan", "info")
+  }
+  async function toggleAdminSession() {
+    if (isAdminActive()) return adminLogout()
+    return adminLogin()
   }
   function getAudioSupportInfo() {
     const speechReady = !!window.speechSynthesis
@@ -1282,6 +1408,10 @@ self.onmessage = function (e) {
     }
   }
   async function updateWordSuggestionStatus(itemId, status) {
+    if (!isAdminActive()) {
+      notify("Login admin diperlukan untuk mengubah status saran", "info")
+      return false
+    }
     const nextStatus = String(status || "pending").toLowerCase() === "updated" ? "updated" : "pending"
     const endpoint = apiUrl("word-suggestions-status")
     if (!endpoint) {
@@ -1296,7 +1426,7 @@ self.onmessage = function (e) {
     try {
       const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: buildAdminHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ id: itemId, status: nextStatus })
       })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
@@ -1317,7 +1447,9 @@ self.onmessage = function (e) {
     const pending = items.filter(entry => entry.status !== "updated").length
     if (countEl) countEl.textContent = `${items.length} item`
     infoEl.textContent = items.length
-      ? `${pending} belum diproses atau belum dicentang selesai. Developer bisa menandai item yang sudah diupdate langsung dari daftar ini.`
+      ? isAdminActive()
+        ? `${pending} belum diproses atau belum dicentang selesai. Mode admin bisa menandai item yang sudah diupdate.`
+        : `${pending} saran masih menunggu proses. Login admin diperlukan untuk menandai item sudah diupdate.`
       : "Belum ada saran tersimpan di server. Form ini bisa dipakai user untuk meminta kata, frasa, atau tema baru."
     listEl.innerHTML = ""
     updateSuggestionButtonLabel()
@@ -1352,21 +1484,23 @@ self.onmessage = function (e) {
         note.textContent = `Catatan: ${entry.note}`
         item.appendChild(note)
       }
-      const actions = document.createElement("label")
-      actions.className = "suggestion-toggle"
-      const checkbox = document.createElement("input")
-      checkbox.type = "checkbox"
-      checkbox.checked = entry.status === "updated"
-      checkbox.onchange = () => {
-        checkbox.disabled = true
-        updateWordSuggestionStatus(entry.id, checkbox.checked ? "updated" : "pending")
-          .finally(() => { checkbox.disabled = false })
+      if (isAdminActive()) {
+        const actions = document.createElement("label")
+        actions.className = "suggestion-toggle"
+        const checkbox = document.createElement("input")
+        checkbox.type = "checkbox"
+        checkbox.checked = entry.status === "updated"
+        checkbox.onchange = () => {
+          checkbox.disabled = true
+          updateWordSuggestionStatus(entry.id, checkbox.checked ? "updated" : "pending")
+            .finally(() => { checkbox.disabled = false })
+        }
+        const labelText = document.createElement("span")
+        labelText.textContent = "Developer: tandai sudah diupdate"
+        actions.appendChild(checkbox)
+        actions.appendChild(labelText)
+        item.appendChild(actions)
       }
-      const labelText = document.createElement("span")
-      labelText.textContent = "Developer: tandai sudah diupdate"
-      actions.appendChild(checkbox)
-      actions.appendChild(labelText)
-      item.appendChild(actions)
       listEl.appendChild(item)
     })
   }
@@ -1439,7 +1573,7 @@ self.onmessage = function (e) {
       }
       const fd = new FormData()
       fd.append("file", file)
-      const res = await fetch(endpoint, { method: "POST", body: fd })
+      const res = await fetch(endpoint, { method: "POST", body: fd, headers: buildAdminHeaders() })
       if (!res.ok) {
         notify("Impor hewan gagal di server", "error")
         return false
@@ -1485,7 +1619,7 @@ self.onmessage = function (e) {
       }
       const fd = new FormData()
       fd.append("file", file)
-      const res = await fetch(endpoint, { method: "POST", body: fd })
+      const res = await fetch(endpoint, { method: "POST", body: fd, headers: buildAdminHeaders() })
       if (!res.ok) {
         notify("Impor sayur gagal di server", "error")
         return false
@@ -1588,6 +1722,10 @@ self.onmessage = function (e) {
     window.USER_IMG_MAP[key] = url
   }
   async function uploadImageToServer(it, file, override) {
+    if (!isAdminActive()) {
+      notify("Login admin diperlukan untuk unggah gambar", "info")
+      return ""
+    }
     try {
       const fd = new FormData()
       fd.append("file", file)
@@ -1602,7 +1740,7 @@ self.onmessage = function (e) {
       if (prev) fd.append("prev", prev)
       const endpoint = apiUrl("upload")
       if (!endpoint) return ""
-      const res = await fetch(endpoint, { method: "POST", body: fd })
+      const res = await fetch(endpoint, { method: "POST", body: fd, headers: buildAdminHeaders() })
       if (!res.ok) {
         notify("Unggah gambar ditolak server", "error")
         return ""
@@ -1792,44 +1930,49 @@ self.onmessage = function (e) {
       enI.addEventListener("input", () => makeSuggest("en", enI.value, enSug, true))
       arI.addEventListener("input", () => makeSuggest("ar", arI.value, arSug, true))
       idI.addEventListener("input", () => makeSuggest("id", idI.value, idSug, true))
-      const del = document.createElement("button")
-      del.className = "ghost"
-      del.textContent = "Hapus"
-      del.onclick = () => {
-        row.remove()
+      let del = null
+      if (isAdminActive()) {
+        del = document.createElement("button")
+        del.className = "ghost"
+        del.textContent = "Hapus"
+        del.onclick = () => {
+          row.remove()
+        }
       }
       row.appendChild(enI)
       row.appendChild(arI)
       row.appendChild(idI)
       row.appendChild(imgI)
-      const upBtn = document.createElement("button")
-      upBtn.className = "ghost"
-      upBtn.textContent = "Upload"
-      upBtn.onclick = () => {
-        const inp = document.createElement("input")
-        inp.type = "file"
-        inp.accept = "image/*"
-        inp.onchange = e => {
-          const f = e.target.files && e.target.files[0]
-          if (!f) return
-          ;(async () => {
-            const url = await uploadImageToServer({ en: enI.value, ar: arI.value, id: idI.value }, f, { en: enI.value, ar: arI.value, id: idI.value })
-            if (url) {
-              imgI.value = url
-            } else {
-              const reader = new FileReader()
-              reader.onload = () => {
-                const dataUrl = reader.result
-                if (dataUrl) imgI.value = String(dataUrl)
+      if (isAdminActive()) {
+        const upBtn = document.createElement("button")
+        upBtn.className = "ghost"
+        upBtn.textContent = "Upload"
+        upBtn.onclick = () => {
+          const inp = document.createElement("input")
+          inp.type = "file"
+          inp.accept = "image/*"
+          inp.onchange = e => {
+            const f = e.target.files && e.target.files[0]
+            if (!f) return
+            ;(async () => {
+              const url = await uploadImageToServer({ en: enI.value, ar: arI.value, id: idI.value }, f, { en: enI.value, ar: arI.value, id: idI.value })
+              if (url) {
+                imgI.value = url
+              } else {
+                const reader = new FileReader()
+                reader.onload = () => {
+                  const dataUrl = reader.result
+                  if (dataUrl) imgI.value = String(dataUrl)
+                }
+                reader.readAsDataURL(f)
               }
-              reader.readAsDataURL(f)
-            }
-          })()
+            })()
+          }
+          inp.click()
         }
-        inp.click()
+        row.appendChild(upBtn)
       }
-      row.appendChild(upBtn)
-      row.appendChild(del)
+      if (del) row.appendChild(del)
       const sugWrap = document.createElement("div")
       sugWrap.style.gridColumn = "1 / -1"
       const label = document.createElement("div")
@@ -1850,33 +1993,40 @@ self.onmessage = function (e) {
     })
     const act = document.createElement("div")
     act.className = "translate-row"
-    const saveAll = document.createElement("button")
-    saveAll.className = "primary"
-    saveAll.textContent = "Simpan ke Kamus"
-    saveAll.onclick = () => {
-      const cur = getCustomEntries()
-      rows.forEach(r => {
-        const enV = r.enI.value.trim()
-        const arV = r.arI.value.trim()
-        const idV = r.idI.value.trim()
-        const imgV = r.imgI.value.trim()
-        if (enV || arV || idV) {
-          const entry = { en: enV, ar: arV, id: idV }
-          if (imgV) entry.img = imgV
-          cur.unshift(entry)
-        }
-      })
-      setCustomEntries(cur.slice(0, 500))
-      renderCategoryOptions()
-      if (tInput && tInput.value) translateText(tInput.value)
-      tAdd.innerHTML = ""
-      renderPhrases()
+    if (isAdminActive()) {
+      const saveAll = document.createElement("button")
+      saveAll.className = "primary"
+      saveAll.textContent = "Simpan ke Kamus"
+      saveAll.onclick = () => {
+        const cur = getCustomEntries()
+        rows.forEach(r => {
+          const enV = r.enI.value.trim()
+          const arV = r.arI.value.trim()
+          const idV = r.idI.value.trim()
+          const imgV = r.imgI.value.trim()
+          if (enV || arV || idV) {
+            const entry = { en: enV, ar: arV, id: idV }
+            if (imgV) entry.img = imgV
+            cur.unshift(entry)
+          }
+        })
+        setCustomEntries(cur.slice(0, 500))
+        renderCategoryOptions()
+        if (tInput && tInput.value) translateText(tInput.value)
+        tAdd.innerHTML = ""
+        renderPhrases()
+      }
+      act.appendChild(saveAll)
+    } else {
+      const info = document.createElement("div")
+      info.className = "translate-info"
+      info.textContent = "Login admin untuk menyimpan hasil edit ke kamus."
+      act.appendChild(info)
     }
     const clearBtn = document.createElement("button")
     clearBtn.className = "ghost"
     clearBtn.textContent = "Batal"
     clearBtn.onclick = () => { tAdd.innerHTML = "" }
-    act.appendChild(saveAll)
     act.appendChild(clearBtn)
     tAdd.appendChild(act)
   }
@@ -3997,28 +4147,30 @@ self.onmessage = function (e) {
       notify(next ? "Item ditambahkan ke favorit" : "Item dihapus dari favorit", "success")
     }
     act.appendChild(favBtn)
-    const editBtn = document.createElement("button")
-    editBtn.className = "ghost"
-    editBtn.textContent = "Edit"
-    editBtn.setAttribute("aria-label", "Edit item")
-    editBtn.onclick = () => {
-      const en = window.prompt("EN:", it.en || "")
-      if (en === null) return
-      const ar = window.prompt("AR:", it.ar || "")
-      if (ar === null) return
-      const idv = window.prompt("ID:", it.id || "")
-      if (idv === null) return
-      const emj = window.prompt("Emoji:", it.emoji || "")
-      const ov = { en, ar, id: idv, emoji: emj }
-      setEdit(it, ov)
-      applyUserEdits()
-      rebuildLexiconAsync()
-      renderPhrases()
-      renderCard()
-      notify("Perubahan item disimpan", "success")
+    if (isAdminActive()) {
+      const editBtn = document.createElement("button")
+      editBtn.className = "ghost"
+      editBtn.textContent = "Edit"
+      editBtn.setAttribute("aria-label", "Edit item")
+      editBtn.onclick = () => {
+        const en = window.prompt("EN:", it.en || "")
+        if (en === null) return
+        const ar = window.prompt("AR:", it.ar || "")
+        if (ar === null) return
+        const idv = window.prompt("ID:", it.id || "")
+        if (idv === null) return
+        const emj = window.prompt("Emoji:", it.emoji || "")
+        const ov = { en, ar, id: idv, emoji: emj }
+        setEdit(it, ov)
+        applyUserEdits()
+        rebuildLexiconAsync()
+        renderPhrases()
+        renderCard()
+        notify("Perubahan item disimpan", "success")
+      }
+      act.appendChild(editBtn)
     }
-    act.appendChild(editBtn)
-    if (!userImg && !it.img) {
+    if (isAdminActive() && !userImg && !it.img) {
       const b3 = document.createElement("button")
       b3.className = "ghost"
       b3.textContent = "Tambah Gambar"
@@ -4095,7 +4247,7 @@ self.onmessage = function (e) {
     info.textContent = `Halaman ${totalPages ? state.phrasesPage + 1 : 0}/${totalPages} • Menampilkan ${end - start} dari ${items.length}${filt}${scope}${recovery}`
     phrasesList.innerHTML = ""
     let importBtn = document.getElementById("phrases-import")
-    const canImport = !!apiUrl("import-animals")
+    const canImport = !!apiUrl("import-animals") && isAdminActive()
     const needImport = (state.category === "animals" || state.category === "vegetables") && canImport
     if (!needImport && importBtn) {
       importBtn.remove()
@@ -4552,6 +4704,10 @@ self.onmessage = function (e) {
       id: "word-suggestion-info",
       className: "settings-note settings-note-strong"
     })
+    const adminNote = ensureSettingsNote(listCard, {
+      id: "word-suggestion-admin-note",
+      className: "settings-note"
+    })
     let list = document.getElementById("word-suggestion-list")
     if (!list) {
       list = document.createElement("div")
@@ -4605,6 +4761,9 @@ self.onmessage = function (e) {
         renderWordSuggestions()
         notify("Cache lokal saran dibersihkan. File server tetap aman.", "info")
       }
+    }
+    if (adminNote) {
+      adminNote.textContent = "Mode user biasa hanya bisa melihat daftar saran. Login admin diperlukan untuk menandai status sudah diupdate."
     }
     renderWordSuggestions()
     if (info && !getWordSuggestions().length) {
@@ -4748,12 +4907,31 @@ self.onmessage = function (e) {
       text: "Impor Data",
       ariaLabel: "Impor data lokal"
     })
+    const adminGrid = ensureSettingsSection("settings-admin", "Admin")
+    const adminStatus = ensureSettingsNote(adminGrid, {
+      id: "admin-auth-status",
+      className: "settings-note settings-note-strong"
+    })
+    const adminBtn = ensureButton(adminGrid, {
+      id: "open-admin-login",
+      text: "Login Admin",
+      ariaLabel: "Login atau logout admin"
+    })
     if (speakBtn) speakBtn.onclick = speakCurrent
     if (listenBtn) listenBtn.onclick = listenPronounce
     if (homeBtn) homeBtn.onclick = goHome
     if (exportBtn) exportBtn.onclick = exportLocalData
     if (exportCsvBtn) exportCsvBtn.onclick = exportCsvData
     if (importDataBtn) importDataBtn.onclick = openImportDataDialog
+    if (adminBtn) adminBtn.onclick = () => toggleAdminSession()
+    if (importDataBtn) importDataBtn.hidden = !isAdminActive()
+    if (exportBtn) exportBtn.hidden = !isAdminActive()
+    if (exportCsvBtn) exportCsvBtn.hidden = !isAdminActive()
+    if (adminStatus) {
+      adminStatus.textContent = isAdminActive()
+        ? `Mode admin aktif${ADMIN_SESSION.username ? `: ${ADMIN_SESSION.username}` : ""}`
+        : "Mode user biasa aktif. Fitur edit, impor, dan upload disembunyikan."
+    }
     initApiSettingsControls(apiGrid)
     const fm = localStorage.getItem("pembelajar_focus") === "1"
     syncFocusModeUI(fm)
@@ -4792,6 +4970,7 @@ self.onmessage = function (e) {
       }
     }
     renderHeaderStudyStatus()
+    updateAdminUiState()
   }
   function refreshMainViews() {
     refreshStudyViews()
@@ -4933,7 +5112,12 @@ self.onmessage = function (e) {
       viewerClose.onclick = () => closeViewerModal()
     }
     if (viewer && viewerEdit) {
+      viewerEdit.hidden = !isAdminActive()
       viewerEdit.onclick = () => {
+        if (!isAdminActive()) {
+          notify("Login admin diperlukan untuk mengganti gambar", "info")
+          return
+        }
         if (!viewerItem) return
         uploadImageFor(viewerItem, () => {
           const src = getUserImage(viewerItem) || viewerItem.img || ""
@@ -4953,6 +5137,7 @@ self.onmessage = function (e) {
   }
   async function bootstrapInitialData() {
     await Promise.all([loadServerImagesMap(), loadCatalogEntryFiles()])
+    await syncAdminSession()
     applyUserEdits()
     await rebuildLexiconAsync()
     refreshStudyViews()

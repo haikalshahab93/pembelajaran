@@ -14,6 +14,8 @@ const ROOT = path.resolve(__dirname, "..")
 const PORT = Math.max(1, Number(process.env.PORT || 8020) || 8020)
 const HOST = process.env.HOST || "0.0.0.0"
 const API_BASE_URL = process.env.API_BASE_URL || ""
+const ADMIN_USERNAME = String(process.env.ADMIN_USERNAME || "admin").trim() || "admin"
+const ADMIN_PASSWORD = String(process.env.ADMIN_PASSWORD || "").trim()
 const CORS_ORIGINS = String(process.env.CORS_ORIGINS || "*")
   .split(",")
   .map(value => value.trim())
@@ -34,6 +36,7 @@ const upload = multer({
 })
 
 const ttsRate = new Map()
+const adminTokens = new Map()
 
 function logEvent(kind, detail) {
   const stamp = new Date().toISOString()
@@ -190,6 +193,45 @@ function sendError(res, status, message) {
   res.status(status).json({ ok: false, error: message })
 }
 
+function issueAdminToken() {
+  const token = crypto.randomUUID()
+  adminTokens.set(token, Date.now() + 1000 * 60 * 60 * 12)
+  return token
+}
+
+function cleanupAdminTokens() {
+  const now = Date.now()
+  for (const [token, expiresAt] of adminTokens.entries()) {
+    if (expiresAt <= now) adminTokens.delete(token)
+  }
+}
+
+function readAdminToken(req) {
+  const auth = String(req.headers.authorization || "").trim()
+  if (auth.toLowerCase().startsWith("bearer ")) return auth.slice(7).trim()
+  return String(req.headers["x-admin-token"] || "").trim()
+}
+
+function isAdminAuthorized(req) {
+  cleanupAdminTokens()
+  const token = readAdminToken(req)
+  if (!token) return false
+  const expiresAt = adminTokens.get(token)
+  if (!expiresAt || expiresAt <= Date.now()) {
+    adminTokens.delete(token)
+    return false
+  }
+  return true
+}
+
+function requireAdmin(req, res, next) {
+  if (!isAdminAuthorized(req)) {
+    sendError(res, 401, "Admin authorization required")
+    return
+  }
+  next()
+}
+
 function resolvePublicUrl(relativePath) {
   const normalized = String(relativePath || "").replace(/\\/g, "/")
   if (!API_BASE_URL) return normalized
@@ -213,8 +255,40 @@ async function createApp() {
   app.use(express.json({ limit: "2mb" }))
   app.use(express.urlencoded({ extended: true }))
 
+  app.get("/admin/session", (req, res) => {
+    res.json({ ok: true, admin: isAdminAuthorized(req) })
+  })
+
+  app.post("/admin/login", (req, res) => {
+    const username = String(req.body && req.body.username || "").trim()
+    const password = String(req.body && req.body.password || "")
+    if (!ADMIN_PASSWORD) {
+      sendError(res, 503, "Admin password is not configured")
+      return
+    }
+    if (username !== ADMIN_USERNAME || password !== ADMIN_PASSWORD) {
+      sendError(res, 401, "Username atau password admin salah")
+      return
+    }
+    const token = issueAdminToken()
+    logEvent("admin_login_ok", username)
+    res.json({ ok: true, admin: true, token, username: ADMIN_USERNAME })
+  })
+
+  app.post("/admin/logout", (req, res) => {
+    const token = readAdminToken(req)
+    if (token) adminTokens.delete(token)
+    res.json({ ok: true })
+  })
+
   app.get("/api/health", (_req, res) => {
-    res.json({ ok: true, service: "pembelajaran-backend", port: PORT })
+    res.json({
+      ok: true,
+      service: "pembelajaran-backend",
+      port: PORT,
+      storage: "json",
+      adminConfigured: !!ADMIN_PASSWORD
+    })
   })
 
   app.get("/word-suggestions", async (_req, res) => {
@@ -239,14 +313,14 @@ async function createApp() {
       const next = [entry, ...items.filter(item => item.id !== entry.id)].slice(0, 500)
       await saveWordSuggestions(next)
       logEvent("word_suggestions_add_ok", entry.request.slice(0, 80))
-      res.json({ ok: true, item: entry, total: next.length })
+      res.json({ ok: true, item: entry, total: next.length, storage: "json" })
     } catch (error) {
       logEvent("word_suggestions_add_error", error.message)
       sendError(res, 500, "Failed to save word suggestion")
     }
   })
 
-  app.post("/word-suggestions-status", async (req, res) => {
+  app.post("/word-suggestions-status", requireAdmin, async (req, res) => {
     try {
       const itemId = String(req.body && req.body.id || "").trim()
       const status = String(req.body && req.body.status || "pending").trim().toLowerCase()
@@ -274,7 +348,7 @@ async function createApp() {
       }
       await saveWordSuggestions(next)
       logEvent("word_suggestions_status_ok", `${itemId}:${status}`)
-      res.json({ ok: true, item: updated })
+      res.json({ ok: true, item: updated, storage: "json" })
     } catch (error) {
       logEvent("word_suggestions_status_error", error.message)
       sendError(res, 500, "Failed to update suggestion status")
@@ -315,7 +389,7 @@ async function createApp() {
     }
   })
 
-  app.post("/upload", upload.single("file"), async (req, res) => {
+  app.post("/upload", requireAdmin, upload.single("file"), async (req, res) => {
     try {
       const file = req.file
       if (!file || !file.buffer) {
@@ -358,7 +432,7 @@ async function createApp() {
     }
   })
 
-  app.post("/import-animals", upload.single("file"), async (req, res) => {
+  app.post("/import-animals", requireAdmin, upload.single("file"), async (req, res) => {
     try {
       if (!req.file || !req.file.buffer) {
         sendError(res, 400, "No file provided")
@@ -374,7 +448,7 @@ async function createApp() {
     }
   })
 
-  app.post("/import-vegetables", upload.single("file"), async (req, res) => {
+  app.post("/import-vegetables", requireAdmin, upload.single("file"), async (req, res) => {
     try {
       if (!req.file || !req.file.buffer) {
         sendError(res, 400, "No file provided")

@@ -18,6 +18,8 @@ Default port: `8020`
 - `HOST`: host bind, default `0.0.0.0`
 - `API_BASE_URL`: base URL publik untuk respons seperti upload image
 - `CORS_ORIGINS`: daftar origin dipisah koma, default `*`
+- `ADMIN_USERNAME`: username login admin backend
+- `ADMIN_PASSWORD`: password login admin backend
 
 ## Endpoint
 
@@ -52,6 +54,8 @@ PORT=8020
 HOST=0.0.0.0
 API_BASE_URL=https://api.example.com/
 CORS_ORIGINS=https://haikalshahab93.github.io
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=ganti-password-aman
 ```
 
 ## Frontend GitHub Pages
@@ -70,6 +74,7 @@ window.PEMBELAJAR_CONFIG = Object.assign({
 ## Catatan
 
 - Static frontend tetap di-root project dan disajikan oleh Express.
-- Data tetap memakai file JSON yang sudah dipakai aplikasi saat ini.
+- Data dinamis saat ini tetap memakai file JSON lokal di server.
 - Frontend tetap bisa override URL API lewat pengaturan `Server Audio/API` di browser.
 - Untuk produksi publik, sebaiknya jangan expose database langsung; cukup expose Express/Nginx.
+- Fitur edit server seperti upload gambar, impor data server, dan update status saran memerlukan login admin.
