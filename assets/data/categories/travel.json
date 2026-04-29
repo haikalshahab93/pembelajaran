@@ -178,5 +178,65 @@
     "ar": "وجهة",
     "tr": "Wijhah",
     "id": "Tujuan"
+  },
+  {
+    "en": "Travel insurance",
+    "ar": "تأمين السفر",
+    "tr": "Ta'min as-safar",
+    "id": "Asuransi perjalanan"
+  },
+  {
+    "en": "Checkpoint",
+    "ar": "نقطة تفتيش",
+    "tr": "Nuqtat taftish",
+    "id": "Pos pemeriksaan"
+  },
+  {
+    "en": "Terminal",
+    "ar": "مبنى الركاب",
+    "tr": "Mabna ar-rukkab",
+    "id": "Terminal"
+  },
+  {
+    "en": "Window seat",
+    "ar": "مقعد قرب النافذة",
+    "tr": "Maq'ad qurb an-nafidhah",
+    "id": "Kursi dekat jendela"
+  },
+  {
+    "en": "Aisle seat",
+    "ar": "مقعد قرب الممر",
+    "tr": "Maq'ad qurb al-mamarr",
+    "id": "Kursi dekat lorong"
+  },
+  {
+    "en": "Travel bag",
+    "ar": "حقيبة سفر",
+    "tr": "Haqibat safar",
+    "id": "Tas perjalanan"
+  },
+  {
+    "en": "Local guide",
+    "ar": "مرشد محلي",
+    "tr": "Murshid mahalli",
+    "id": "Pemandu lokal"
+  },
+  {
+    "en": "Landmark",
+    "ar": "معلم بارز",
+    "tr": "Ma'lam bariz",
+    "id": "Tempat ikonik"
+  },
+  {
+    "en": "Excursion",
+    "ar": "رحلة قصيرة",
+    "tr": "Rihlah qasirah",
+    "id": "Wisata singkat"
+  },
+  {
+    "en": "Travel plan",
+    "ar": "خطة سفر",
+    "tr": "Khuttat safar",
+    "id": "Rencana perjalanan"
   }
 ]

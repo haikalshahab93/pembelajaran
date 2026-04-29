@@ -118,5 +118,65 @@
     "ar": "ضجر",
     "tr": "Dajar",
     "id": "Bosan"
+  },
+  {
+    "en": "Grateful",
+    "ar": "ممتن",
+    "tr": "Mumtann",
+    "id": "Bersyukur"
+  },
+  {
+    "en": "Anxious",
+    "ar": "قلق",
+    "tr": "Qaliq",
+    "id": "Cemas"
+  },
+  {
+    "en": "Disappointed",
+    "ar": "محبط",
+    "tr": "Muhbat",
+    "id": "Kecewa"
+  },
+  {
+    "en": "Satisfied",
+    "ar": "راض",
+    "tr": "Radin",
+    "id": "Puas"
+  },
+  {
+    "en": "Motivated",
+    "ar": "متحفز",
+    "tr": "Mutahaffiz",
+    "id": "Termotivasi"
+  },
+  {
+    "en": "Shocked",
+    "ar": "مصدوم",
+    "tr": "Masdum",
+    "id": "Terkaget"
+  },
+  {
+    "en": "Peaceful",
+    "ar": "مطمئن",
+    "tr": "Mutma'inn",
+    "id": "Damai"
+  },
+  {
+    "en": "Frustrated",
+    "ar": "محبط",
+    "tr": "Muhbat",
+    "id": "Frustrasi"
+  },
+  {
+    "en": "Optimistic",
+    "ar": "متفائل",
+    "tr": "Mutafa'il",
+    "id": "Optimis"
+  },
+  {
+    "en": "Hopeful",
+    "ar": "راج",
+    "tr": "Rajin",
+    "id": "Berharap"
   }
 ]

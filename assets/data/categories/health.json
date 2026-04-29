@@ -178,5 +178,65 @@
     "ar": "دوخة",
     "tr": "Dawkhah",
     "id": "Pusing"
+  },
+  {
+    "en": "Sore throat",
+    "ar": "التهاب الحلق",
+    "tr": "Iltihab al-halq",
+    "id": "Sakit tenggorokan"
+  },
+  {
+    "en": "Flu",
+    "ar": "إنفلونزا",
+    "tr": "Influenza",
+    "id": "Flu"
+  },
+  {
+    "en": "Cold medicine",
+    "ar": "دواء البرد",
+    "tr": "Dawa' al-bard",
+    "id": "Obat flu"
+  },
+  {
+    "en": "Painkiller",
+    "ar": "مسكن ألم",
+    "tr": "Musakkin alam",
+    "id": "Obat pereda nyeri"
+  },
+  {
+    "en": "Recovery room",
+    "ar": "غرفة التعافي",
+    "tr": "Ghurfat at-ta'afi",
+    "id": "Ruang pemulihan"
+  },
+  {
+    "en": "Vaccination",
+    "ar": "تطعيم",
+    "tr": "Tat'im",
+    "id": "Vaksinasi"
+  },
+  {
+    "en": "Medical record",
+    "ar": "سجل طبي",
+    "tr": "Sijill tibbi",
+    "id": "Rekam medis"
+  },
+  {
+    "en": "Blood test",
+    "ar": "تحليل دم",
+    "tr": "Tahlil dam",
+    "id": "Tes darah"
+  },
+  {
+    "en": "Health insurance",
+    "ar": "تأمين صحي",
+    "tr": "Ta'min sihhi",
+    "id": "Asuransi kesehatan"
+  },
+  {
+    "en": "Patient",
+    "ar": "مريض",
+    "tr": "Marid",
+    "id": "Pasien"
   }
 ]

@@ -178,5 +178,65 @@
     "ar": "عرض ترويجي",
     "tr": "Ard tarwiji",
     "id": "Promosi"
+  },
+  {
+    "en": "Can I try this on?",
+    "ar": "هل يمكنني قياس هذا؟",
+    "tr": "Hal yumkinuni qiyas hatha?",
+    "id": "Boleh saya coba ini?"
+  },
+  {
+    "en": "Do you have a larger size?",
+    "ar": "هل لديك مقاس أكبر؟",
+    "tr": "Hal ladayka miqas akbar?",
+    "id": "Ada ukuran yang lebih besar?"
+  },
+  {
+    "en": "Do you have a smaller size?",
+    "ar": "هل لديك مقاس أصغر؟",
+    "tr": "Hal ladayka miqas asghar?",
+    "id": "Ada ukuran yang lebih kecil?"
+  },
+  {
+    "en": "Too expensive",
+    "ar": "غالي جدا",
+    "tr": "Ghali jiddan",
+    "id": "Terlalu mahal"
+  },
+  {
+    "en": "Can I pay by card?",
+    "ar": "هل يمكنني الدفع بالبطاقة؟",
+    "tr": "Hal yumkinuni ad-daf' bil-bitaqah?",
+    "id": "Bisa bayar pakai kartu?"
+  },
+  {
+    "en": "I am just looking",
+    "ar": "أنا فقط أنظر",
+    "tr": "Ana faqat anzur",
+    "id": "Saya hanya lihat-lihat"
+  },
+  {
+    "en": "Cashier counter",
+    "ar": "منضدة الدفع",
+    "tr": "Mindadat ad-daf'",
+    "id": "Meja kasir"
+  },
+  {
+    "en": "Shopping list",
+    "ar": "قائمة التسوق",
+    "tr": "Qa'imat at-tasawwuq",
+    "id": "Daftar belanja"
+  },
+  {
+    "en": "Brand",
+    "ar": "علامة تجارية",
+    "tr": "Allamah tijariyyah",
+    "id": "Merek"
+  },
+  {
+    "en": "Warranty",
+    "ar": "ضمان",
+    "tr": "Daman",
+    "id": "Garansi"
   }
 ]

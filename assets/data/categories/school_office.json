@@ -178,5 +178,65 @@
     "ar": "غرفة الاجتماعات",
     "tr": "Ghurfat al-ijtima'at",
     "id": "Ruang rapat"
+  },
+  {
+    "en": "Curriculum",
+    "ar": "منهج",
+    "tr": "Manhaj",
+    "id": "Kurikulum"
+  },
+  {
+    "en": "Certificate",
+    "ar": "شهادة",
+    "tr": "Shahadah",
+    "id": "Sertifikat"
+  },
+  {
+    "en": "File folder",
+    "ar": "ملف",
+    "tr": "Malaf",
+    "id": "Map berkas"
+  },
+  {
+    "en": "Spreadsheet",
+    "ar": "جدول بيانات",
+    "tr": "Jadwal bayanat",
+    "id": "Spreadsheet"
+  },
+  {
+    "en": "Keyboard",
+    "ar": "لوحة مفاتيح",
+    "tr": "Lawhat mafatih",
+    "id": "Keyboard"
+  },
+  {
+    "en": "Mouse",
+    "ar": "فأرة",
+    "tr": "Fa'rah",
+    "id": "Mouse"
+  },
+  {
+    "en": "Chalk",
+    "ar": "طباشير",
+    "tr": "Tabashir",
+    "id": "Kapur tulis"
+  },
+  {
+    "en": "Correction",
+    "ar": "تصحيح",
+    "tr": "Tashih",
+    "id": "Koreksi"
+  },
+  {
+    "en": "Office hours",
+    "ar": "ساعات العمل",
+    "tr": "Sa'at al-'amal",
+    "id": "Jam kerja"
+  },
+  {
+    "en": "Break time",
+    "ar": "وقت الاستراحة",
+    "tr": "Waqt al-istirahah",
+    "id": "Waktu istirahat"
   }
 ]

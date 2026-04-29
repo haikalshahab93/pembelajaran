@@ -178,5 +178,65 @@
     "ar": "سلة المهملات",
     "tr": "Sallat al-muhmalat",
     "id": "Tempat sampah"
+  },
+  {
+    "en": "Mop",
+    "ar": "ممسحة",
+    "tr": "Mimsahah",
+    "id": "Pel lantai"
+  },
+  {
+    "en": "Detergent",
+    "ar": "منظف",
+    "tr": "Munazzif",
+    "id": "Deterjen"
+  },
+  {
+    "en": "Pillowcase",
+    "ar": "غطاء الوسادة",
+    "tr": "Ghita' al-wisadah",
+    "id": "Sarung bantal"
+  },
+  {
+    "en": "Mattress",
+    "ar": "مرتبة",
+    "tr": "Martabah",
+    "id": "Kasur"
+  },
+  {
+    "en": "Dining table",
+    "ar": "طاولة الطعام",
+    "tr": "Tawilat at-ta'am",
+    "id": "Meja makan"
+  },
+  {
+    "en": "Water dispenser",
+    "ar": "موزع المياه",
+    "tr": "Muwazzi' al-miyah",
+    "id": "Dispenser"
+  },
+  {
+    "en": "Washing machine",
+    "ar": "غسالة",
+    "tr": "Ghassalah",
+    "id": "Mesin cuci"
+  },
+  {
+    "en": "Laundry basket",
+    "ar": "سلة الغسيل",
+    "tr": "Sallat al-ghasil",
+    "id": "Keranjang cucian"
+  },
+  {
+    "en": "Doormat",
+    "ar": "ممسحة الباب",
+    "tr": "Mimsahat al-bab",
+    "id": "Keset"
+  },
+  {
+    "en": "Charger",
+    "ar": "شاحن",
+    "tr": "Shahin",
+    "id": "Pengisi daya"
   }
 ]

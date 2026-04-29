@@ -118,5 +118,65 @@
     "ar": "آيس كريم",
     "tr": "Ays كريم",
     "id": "Es krim"
+  },
+  {
+    "en": "Noodles",
+    "ar": "نودلز",
+    "tr": "Nudlz",
+    "id": "Mi"
+  },
+  {
+    "en": "Porridge",
+    "ar": "عصيدة",
+    "tr": "Asidah",
+    "id": "Bubur"
+  },
+  {
+    "en": "Sandwich",
+    "ar": "شطيرة",
+    "tr": "Shatirah",
+    "id": "Roti lapis"
+  },
+  {
+    "en": "Honey",
+    "ar": "عسل",
+    "tr": "Asal",
+    "id": "Madu"
+  },
+  {
+    "en": "Yogurt",
+    "ar": "زبادي",
+    "tr": "Zabadi",
+    "id": "Yogurt"
+  },
+  {
+    "en": "Mineral water",
+    "ar": "ماء معدني",
+    "tr": "Ma' ma'dani",
+    "id": "Air mineral"
+  },
+  {
+    "en": "Soft drink",
+    "ar": "مشروب غازي",
+    "tr": "Mashrub ghazi",
+    "id": "Minuman bersoda"
+  },
+  {
+    "en": "Snack",
+    "ar": "وجبة خفيفة",
+    "tr": "Wajbah khafifah",
+    "id": "Camilan"
+  },
+  {
+    "en": "Sauce",
+    "ar": "صلصة",
+    "tr": "Salsah",
+    "id": "Saus"
+  },
+  {
+    "en": "Jam",
+    "ar": "مربى",
+    "tr": "Murabba",
+    "id": "Selai"
   }
 ]

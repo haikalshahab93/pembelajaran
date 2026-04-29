@@ -118,5 +118,65 @@
     "ar": "راكب",
     "tr": "Rakib",
     "id": "Penumpang"
+  },
+  {
+    "en": "Seat belt",
+    "ar": "حزام الأمان",
+    "tr": "Hizam al-aman",
+    "id": "Sabuk pengaman"
+  },
+  {
+    "en": "Helmet",
+    "ar": "خوذة",
+    "tr": "Khudhah",
+    "id": "Helm"
+  },
+  {
+    "en": "Pedal",
+    "ar": "دواسة",
+    "tr": "Dawwasah",
+    "id": "Pedal"
+  },
+  {
+    "en": "Steering wheel",
+    "ar": "عجلة القيادة",
+    "tr": "Ajlat al-qiyadah",
+    "id": "Setir"
+  },
+  {
+    "en": "Engine",
+    "ar": "محرك",
+    "tr": "Muharrik",
+    "id": "Mesin"
+  },
+  {
+    "en": "Brake",
+    "ar": "فرامل",
+    "tr": "Faramil",
+    "id": "Rem"
+  },
+  {
+    "en": "License plate",
+    "ar": "لوحة الأرقام",
+    "tr": "Lawhat al-arqam",
+    "id": "Plat nomor"
+  },
+  {
+    "en": "Toll road",
+    "ar": "طريق برسوم",
+    "tr": "Tariq birusum",
+    "id": "Jalan tol"
+  },
+  {
+    "en": "Crosswalk",
+    "ar": "ممر المشاة",
+    "tr": "Mamarr al-mushah",
+    "id": "Zebra cross"
+  },
+  {
+    "en": "Public transport",
+    "ar": "وسائل النقل العام",
+    "tr": "Wasa'il an-naql al-'amm",
+    "id": "Transportasi umum"
   }
 ]

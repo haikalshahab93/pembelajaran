@@ -118,5 +118,65 @@
     "ar": "خمري",
     "tr": "Khamri",
     "id": "Merah marun"
+  },
+  {
+    "en": "Navy",
+    "ar": "كحلي",
+    "tr": "Kuhli",
+    "id": "Biru navy"
+  },
+  {
+    "en": "Olive",
+    "ar": "زيتي",
+    "tr": "Zayti",
+    "id": "Hijau zaitun"
+  },
+  {
+    "en": "Cream",
+    "ar": "كريمي",
+    "tr": "Karimi",
+    "id": "Krem muda"
+  },
+  {
+    "en": "Peach",
+    "ar": "خوخي",
+    "tr": "Khawkhi",
+    "id": "Warna persik"
+  },
+  {
+    "en": "Violet",
+    "ar": "بنفسجي غامق",
+    "tr": "Banafsaji ghamiq",
+    "id": "Ungu tua"
+  },
+  {
+    "en": "Sky blue",
+    "ar": "أزرق سماوي",
+    "tr": "Azraq samawi",
+    "id": "Biru langit"
+  },
+  {
+    "en": "Lime green",
+    "ar": "أخضر ليموني",
+    "tr": "Akhdar laymuni",
+    "id": "Hijau limau"
+  },
+  {
+    "en": "Coral",
+    "ar": "مرجاني",
+    "tr": "Marjani",
+    "id": "Korall"
+  },
+  {
+    "en": "Amber",
+    "ar": "كهرماني",
+    "tr": "Kahramani",
+    "id": "Amber"
+  },
+  {
+    "en": "Transparent",
+    "ar": "شفاف",
+    "tr": "Shafaf",
+    "id": "Transparan"
   }
 ]

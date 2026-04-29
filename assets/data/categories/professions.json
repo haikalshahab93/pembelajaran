@@ -118,5 +118,65 @@
     "ar": "ميكانيكي",
     "tr": "Mikaniki",
     "id": "Montir"
+  },
+  {
+    "en": "Accountant",
+    "ar": "محاسب",
+    "tr": "Muhasib",
+    "id": "Akuntan"
+  },
+  {
+    "en": "Cashier",
+    "ar": "أمين صندوق",
+    "tr": "Amin sunduq",
+    "id": "Kasir"
+  },
+  {
+    "en": "Receptionist",
+    "ar": "موظف استقبال",
+    "tr": "Muwazzaf istiqbal",
+    "id": "Resepsionis"
+  },
+  {
+    "en": "Translator",
+    "ar": "مترجم",
+    "tr": "Mutarjim",
+    "id": "Penerjemah"
+  },
+  {
+    "en": "Designer",
+    "ar": "مصمم",
+    "tr": "Musammim",
+    "id": "Desainer"
+  },
+  {
+    "en": "Cleaner",
+    "ar": "عامل نظافة",
+    "tr": "Amil nazafah",
+    "id": "Petugas kebersihan"
+  },
+  {
+    "en": "Security guard",
+    "ar": "حارس أمن",
+    "tr": "Haris amn",
+    "id": "Satpam"
+  },
+  {
+    "en": "Librarian",
+    "ar": "أمين مكتبة",
+    "tr": "Amin maktabah",
+    "id": "Pustakawan"
+  },
+  {
+    "en": "Researcher",
+    "ar": "باحث",
+    "tr": "Bahith",
+    "id": "Peneliti"
+  },
+  {
+    "en": "Entrepreneur",
+    "ar": "رائد أعمال",
+    "tr": "Ra'id a'mal",
+    "id": "Wirausaha"
   }
 ]

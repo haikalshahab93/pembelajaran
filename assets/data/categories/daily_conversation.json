@@ -178,5 +178,65 @@
     "ar": "أراك غدا",
     "tr": "Araka ghadan",
     "id": "Sampai besok"
+  },
+  {
+    "en": "Where are you now?",
+    "ar": "أين أنت الآن؟",
+    "tr": "Ayna anta al-an?",
+    "id": "Kamu sekarang di mana?"
+  },
+  {
+    "en": "I am on my way",
+    "ar": "أنا في الطريق",
+    "tr": "Ana fi at-tariq",
+    "id": "Saya sedang di jalan"
+  },
+  {
+    "en": "Please wait for me",
+    "ar": "انتظرني من فضلك",
+    "tr": "Intazirni min fadlik",
+    "id": "Tolong tunggu saya"
+  },
+  {
+    "en": "I forgot",
+    "ar": "نسيت",
+    "tr": "Nasitu",
+    "id": "Saya lupa"
+  },
+  {
+    "en": "I remember now",
+    "ar": "تذكرت الآن",
+    "tr": "Tadhakkartu al-an",
+    "id": "Sekarang saya ingat"
+  },
+  {
+    "en": "That is true",
+    "ar": "هذا صحيح",
+    "tr": "Hatha sahih",
+    "id": "Itu benar"
+  },
+  {
+    "en": "That is wrong",
+    "ar": "هذا خطأ",
+    "tr": "Hatha khata'",
+    "id": "Itu salah"
+  },
+  {
+    "en": "I will think about it",
+    "ar": "سأفكر في ذلك",
+    "tr": "Sa'ufakkir fi dhalik",
+    "id": "Saya akan pikirkan itu"
+  },
+  {
+    "en": "Maybe later",
+    "ar": "ربما لاحقا",
+    "tr": "Rubbama لاحقا",
+    "id": "Mungkin nanti"
+  },
+  {
+    "en": "Talk to you soon",
+    "ar": "سأتحدث معك قريبا",
+    "tr": "Sa'atahaddath ma'aka qariban",
+    "id": "Nanti saya hubungi lagi"
   }
 ]

@@ -118,5 +118,65 @@
     "ar": "في أي وقت",
     "tr": "Fi ayyi waqt",
     "id": "Jam berapa"
+  },
+  {
+    "en": "How far",
+    "ar": "كم يبعد",
+    "tr": "Kam yab'ud",
+    "id": "Seberapa jauh"
+  },
+  {
+    "en": "How old",
+    "ar": "كم عمرك",
+    "tr": "Kam 'umruka",
+    "id": "Berapa umur"
+  },
+  {
+    "en": "How high",
+    "ar": "كم الارتفاع",
+    "tr": "Kam al-irtifa'",
+    "id": "Seberapa tinggi"
+  },
+  {
+    "en": "How wide",
+    "ar": "كم العرض",
+    "tr": "Kam al-'ard",
+    "id": "Seberapa lebar"
+  },
+  {
+    "en": "What kind",
+    "ar": "أي نوع",
+    "tr": "Ayy naw'",
+    "id": "Jenis apa"
+  },
+  {
+    "en": "For what",
+    "ar": "لأي شيء",
+    "tr": "Li-ayy shay'",
+    "id": "Untuk apa"
+  },
+  {
+    "en": "By whom",
+    "ar": "بواسطة من",
+    "tr": "Biwasitat man",
+    "id": "Oleh siapa"
+  },
+  {
+    "en": "Under what",
+    "ar": "تحت ماذا",
+    "tr": "Taht madha",
+    "id": "Di bawah apa"
+  },
+  {
+    "en": "After what",
+    "ar": "بعد ماذا",
+    "tr": "Ba'da madha",
+    "id": "Setelah apa"
+  },
+  {
+    "en": "Before what",
+    "ar": "قبل ماذا",
+    "tr": "Qabla madha",
+    "id": "Sebelum apa"
   }
 ]

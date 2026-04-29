@@ -178,5 +178,65 @@
     "ar": "مشروب بارد",
     "tr": "Mashrub barid",
     "id": "Minuman dingin"
+  },
+  {
+    "en": "Can I see the menu?",
+    "ar": "هل يمكنني رؤية القائمة؟",
+    "tr": "Hal yumkinuni ru'yat al-qa'imah?",
+    "id": "Boleh saya lihat menu?"
+  },
+  {
+    "en": "I would like water",
+    "ar": "أود ماء",
+    "tr": "Uwiddu ma'an",
+    "id": "Saya ingin air"
+  },
+  {
+    "en": "No ice",
+    "ar": "بدون ثلج",
+    "tr": "Bidun thalj",
+    "id": "Tanpa es"
+  },
+  {
+    "en": "Less spicy",
+    "ar": "أقل حارة",
+    "tr": "Aqall hararah",
+    "id": "Kurang pedas"
+  },
+  {
+    "en": "Very tasty",
+    "ar": "لذيذ جدا",
+    "tr": "Ladhidh jiddan",
+    "id": "Sangat enak"
+  },
+  {
+    "en": "Please pack this",
+    "ar": "من فضلك غلف هذا",
+    "tr": "Min fadlik ghallif hatha",
+    "id": "Tolong bungkus ini"
+  },
+  {
+    "en": "Takeaway",
+    "ar": "سفري",
+    "tr": "Safri",
+    "id": "Bawa pulang"
+  },
+  {
+    "en": "Refill",
+    "ar": "إعادة تعبئة",
+    "tr": "I'adat ta'bi'ah",
+    "id": "Isi ulang"
+  },
+  {
+    "en": "Napkin",
+    "ar": "منديل",
+    "tr": "Mandil",
+    "id": "Tisu makan"
+  },
+  {
+    "en": "The food is ready",
+    "ar": "الطعام جاهز",
+    "tr": "At-ta'am jahiz",
+    "id": "Makanannya siap"
   }
 ]

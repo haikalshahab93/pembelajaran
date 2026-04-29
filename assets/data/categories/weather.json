@@ -178,5 +178,65 @@
     "ar": "تقرير الطقس",
     "tr": "Taqrir at-taqs",
     "id": "Laporan cuaca"
+  },
+  {
+    "en": "Air pressure",
+    "ar": "ضغط الهواء",
+    "tr": "Daght al-hawa'",
+    "id": "Tekanan udara"
+  },
+  {
+    "en": "Raincoat",
+    "ar": "معطف مطر",
+    "tr": "Mi'taf matar",
+    "id": "Jas hujan"
+  },
+  {
+    "en": "Umbrella",
+    "ar": "مظلة",
+    "tr": "Mazallah",
+    "id": "Payung"
+  },
+  {
+    "en": "Thunderstorm",
+    "ar": "عاصفة رعدية",
+    "tr": "Asifah ra'diyyah",
+    "id": "Badai petir"
+  },
+  {
+    "en": "Flood",
+    "ar": "فيضانات",
+    "tr": "Faydanaat",
+    "id": "Banjir"
+  },
+  {
+    "en": "Drought",
+    "ar": "جفاف",
+    "tr": "Jafaf",
+    "id": "Kekeringan"
+  },
+  {
+    "en": "Dust storm",
+    "ar": "عاصفة ترابية",
+    "tr": "Asifah turabiyyah",
+    "id": "Badai debu"
+  },
+  {
+    "en": "Misty",
+    "ar": "ضبابي",
+    "tr": "Dubabi",
+    "id": "Berkabut tipis"
+  },
+  {
+    "en": "Weather station",
+    "ar": "محطة الطقس",
+    "tr": "Mahattat at-taqs",
+    "id": "Stasiun cuaca"
+  },
+  {
+    "en": "Humidity level",
+    "ar": "مستوى الرطوبة",
+    "tr": "Mustawa ar-rutub ah",
+    "id": "Tingkat kelembapan"
   }
 ]

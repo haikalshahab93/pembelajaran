@@ -178,5 +178,65 @@
     "ar": "يأخذ قيلولة",
     "tr": "Ya'khudh qaylulah",
     "id": "Tidur siang"
+  },
+  {
+    "en": "Stretch",
+    "ar": "يتمدد",
+    "tr": "Yatamaddad",
+    "id": "Peregangan"
+  },
+  {
+    "en": "Make the bed",
+    "ar": "يرتب السرير",
+    "tr": "Yurattib as-sarir",
+    "id": "Merapikan tempat tidur"
+  },
+  {
+    "en": "Open the window",
+    "ar": "يفتح النافذة",
+    "tr": "Yaftah an-nafidhah",
+    "id": "Membuka jendela"
+  },
+  {
+    "en": "Check the phone",
+    "ar": "يفحص الهاتف",
+    "tr": "Yafhas al-hatif",
+    "id": "Mengecek ponsel"
+  },
+  {
+    "en": "Reply to messages",
+    "ar": "يرد على الرسائل",
+    "tr": "Yaruddu 'ala ar-rasa'il",
+    "id": "Membalas pesan"
+  },
+  {
+    "en": "Take medicine",
+    "ar": "يتناول الدواء",
+    "tr": "Yatanawal ad-dawa'",
+    "id": "Minum obat"
+  },
+  {
+    "en": "Pay the bill",
+    "ar": "يدفع الفاتورة",
+    "tr": "Yadfa' al-faturah",
+    "id": "Membayar tagihan"
+  },
+  {
+    "en": "Charge the phone",
+    "ar": "يشحن الهاتف",
+    "tr": "Yashhan al-hatif",
+    "id": "Mengisi daya ponsel"
+  },
+  {
+    "en": "Lock the door",
+    "ar": "يقفل الباب",
+    "tr": "Yuqfil al-bab",
+    "id": "Mengunci pintu"
+  },
+  {
+    "en": "Turn off the light",
+    "ar": "يطفئ الضوء",
+    "tr": "Yutfi' ad-daw'",
+    "id": "Mematikan lampu"
   }
 ]

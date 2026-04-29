@@ -178,5 +178,65 @@
     "ar": "نسل",
     "tr": "Nasl",
     "id": "Keturunan"
+  },
+  {
+    "en": "Stepfather",
+    "ar": "زوج الأم",
+    "tr": "Zawj al-umm",
+    "id": "Ayah tiri"
+  },
+  {
+    "en": "Stepmother",
+    "ar": "زوجة الأب",
+    "tr": "Zawjat al-ab",
+    "id": "Ibu tiri"
+  },
+  {
+    "en": "Stepbrother",
+    "ar": "أخ غير شقيق",
+    "tr": "Akh ghayr shaqiq",
+    "id": "Saudara tiri laki-laki"
+  },
+  {
+    "en": "Stepsister",
+    "ar": "أخت غير شقيقة",
+    "tr": "Ukht ghayr shaqiqah",
+    "id": "Saudara tiri perempuan"
+  },
+  {
+    "en": "Bride",
+    "ar": "عروس",
+    "tr": "Arus",
+    "id": "Pengantin perempuan"
+  },
+  {
+    "en": "Groom",
+    "ar": "عريس",
+    "tr": "Aris",
+    "id": "Pengantin laki-laki"
+  },
+  {
+    "en": "Orphan",
+    "ar": "يتيم",
+    "tr": "Yatim",
+    "id": "Yatim"
+  },
+  {
+    "en": "Household",
+    "ar": "أسرة",
+    "tr": "Usrah",
+    "id": "Rumah tangga"
+  },
+  {
+    "en": "Generation",
+    "ar": "جيل",
+    "tr": "Jil",
+    "id": "Generasi"
+  },
+  {
+    "en": "Surname",
+    "ar": "اسم العائلة",
+    "tr": "Ism al-'ailah",
+    "id": "Nama keluarga"
   }
 ]

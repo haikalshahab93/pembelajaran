@@ -118,5 +118,65 @@
     "ar": "متحف",
     "tr": "Mathaf",
     "id": "Museum"
+  },
+  {
+    "en": "Harbor",
+    "ar": "ميناء",
+    "tr": "Mina'",
+    "id": "Pelabuhan"
+  },
+  {
+    "en": "Bus stop",
+    "ar": "موقف الحافلات",
+    "tr": "Mawqif al-hafilat",
+    "id": "Halte bus"
+  },
+  {
+    "en": "Playground",
+    "ar": "ملعب",
+    "tr": "Mal'ab",
+    "id": "Taman bermain"
+  },
+  {
+    "en": "Apartment",
+    "ar": "شقة",
+    "tr": "Shaqqah",
+    "id": "Apartemen"
+  },
+  {
+    "en": "Hotel lobby",
+    "ar": "ردهة الفندق",
+    "tr": "Radhat al-funduq",
+    "id": "Lobi hotel"
+  },
+  {
+    "en": "Bakery",
+    "ar": "مخبز",
+    "tr": "Makhbaz",
+    "id": "Toko roti"
+  },
+  {
+    "en": "Butcher shop",
+    "ar": "محل جزارة",
+    "tr": "Mahall jazarah",
+    "id": "Toko daging"
+  },
+  {
+    "en": "Gas station",
+    "ar": "محطة وقود",
+    "tr": "Mahattat wuqud",
+    "id": "SPBU"
+  },
+  {
+    "en": "Hotel room",
+    "ar": "غرفة فندق",
+    "tr": "Ghurfat funduq",
+    "id": "Kamar hotel"
+  },
+  {
+    "en": "Stadium",
+    "ar": "ملعب كبير",
+    "tr": "Mal'ab kabir",
+    "id": "Stadion"
   }
 ]

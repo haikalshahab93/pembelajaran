@@ -178,5 +178,65 @@
     "ar": "وزن",
     "tr": "Wazn",
     "id": "Berat badan"
+  },
+  {
+    "en": "Blood type",
+    "ar": "فصيلة الدم",
+    "tr": "Fasilat ad-dam",
+    "id": "Golongan darah"
+  },
+  {
+    "en": "Emergency contact",
+    "ar": "جهة اتصال للطوارئ",
+    "tr": "Jihat ittisal lit-tawari'",
+    "id": "Kontak darurat"
+  },
+  {
+    "en": "ID number",
+    "ar": "رقم الهوية",
+    "tr": "Raqm al-huwiyyah",
+    "id": "Nomor identitas"
+  },
+  {
+    "en": "Passport number",
+    "ar": "رقم جواز السفر",
+    "tr": "Raqm jawaz as-safar",
+    "id": "Nomor paspor"
+  },
+  {
+    "en": "Marital status",
+    "ar": "الحالة الاجتماعية",
+    "tr": "Al-halah al-ijtima'iyyah",
+    "id": "Status pernikahan"
+  },
+  {
+    "en": "Education",
+    "ar": "التعليم",
+    "tr": "At-ta'lim",
+    "id": "Pendidikan"
+  },
+  {
+    "en": "Workplace",
+    "ar": "مكان العمل",
+    "tr": "Makan al-'amal",
+    "id": "Tempat kerja"
+  },
+  {
+    "en": "Residence",
+    "ar": "محل الإقامة",
+    "tr": "Mahall al-iqamah",
+    "id": "Tempat tinggal"
+  },
+  {
+    "en": "Citizenship",
+    "ar": "المواطنة",
+    "tr": "Al-muwatanah",
+    "id": "Kewarganegaraan"
+  },
+  {
+    "en": "Signature",
+    "ar": "توقيع",
+    "tr": "Tawqi'",
+    "id": "Tanda tangan"
   }
 ]

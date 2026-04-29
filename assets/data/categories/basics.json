@@ -178,5 +178,65 @@
     "ar": "وحدي",
     "tr": "Wahdi",
     "id": "Sendiri"
+  },
+  {
+    "en": "Sit down",
+    "ar": "اجلس",
+    "tr": "Ijlis",
+    "id": "Duduk"
+  },
+  {
+    "en": "Stand up",
+    "ar": "قف",
+    "tr": "Qif",
+    "id": "Berdiri"
+  },
+  {
+    "en": "Listen",
+    "ar": "استمع",
+    "tr": "Istami'",
+    "id": "Dengar"
+  },
+  {
+    "en": "Look",
+    "ar": "انظر",
+    "tr": "Unzur",
+    "id": "Lihat"
+  },
+  {
+    "en": "Follow me",
+    "ar": "اتبعني",
+    "tr": "Ittabi'ni",
+    "id": "Ikuti saya"
+  },
+  {
+    "en": "Leave it",
+    "ar": "اتركه",
+    "tr": "Utrukhu",
+    "id": "Biarkan itu"
+  },
+  {
+    "en": "Try again",
+    "ar": "حاول مرة أخرى",
+    "tr": "Hawil marrah ukhrah",
+    "id": "Coba lagi"
+  },
+  {
+    "en": "Keep going",
+    "ar": "استمر",
+    "tr": "Istamirr",
+    "id": "Lanjutkan"
+  },
+  {
+    "en": "Choose",
+    "ar": "اختر",
+    "tr": "Ikhtar",
+    "id": "Pilih"
+  },
+  {
+    "en": "Remember",
+    "ar": "تذكر",
+    "tr": "Tadhakkar",
+    "id": "Ingat"
   }
 ]

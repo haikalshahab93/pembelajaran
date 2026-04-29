@@ -118,5 +118,65 @@
     "ar": "زر",
     "tr": "Zirr",
     "id": "Kancing"
+  },
+  {
+    "en": "Pajamas",
+    "ar": "ملابس نوم",
+    "tr": "Malabis nawm",
+    "id": "Piyama"
+  },
+  {
+    "en": "Raincoat",
+    "ar": "معطف مطر",
+    "tr": "Mi'taf matar",
+    "id": "Jas hujan"
+  },
+  {
+    "en": "Slippers",
+    "ar": "شبشب",
+    "tr": "Shibshib",
+    "id": "Sandal rumah"
+  },
+  {
+    "en": "Handbag",
+    "ar": "حقيبة يد",
+    "tr": "Haqibat yad",
+    "id": "Tas tangan"
+  },
+  {
+    "en": "Watch",
+    "ar": "ساعة يد",
+    "tr": "Sa'at yad",
+    "id": "Jam tangan"
+  },
+  {
+    "en": "Earrings",
+    "ar": "أقراط",
+    "tr": "Aqrat",
+    "id": "Anting"
+  },
+  {
+    "en": "Necklace",
+    "ar": "قلادة",
+    "tr": "Qiladah",
+    "id": "Kalung"
+  },
+  {
+    "en": "Bracelet",
+    "ar": "سوار",
+    "tr": "Siwar",
+    "id": "Gelang"
+  },
+  {
+    "en": "Cap",
+    "ar": "طاقية",
+    "tr": "Taqiyyah",
+    "id": "Topi kecil"
+  },
+  {
+    "en": "Sleeve",
+    "ar": "كم",
+    "tr": "Kumm",
+    "id": "Lengan baju"
   }
 ]
