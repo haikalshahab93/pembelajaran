@@ -28,6 +28,7 @@ Default port: `8020`
 - `GET /api/health`
 - `GET /ai/status`
 - `POST /ai/translate`
+- `POST /ai/word-suggestion-draft`
 - `GET /tts`
 - `POST /upload`
 - `POST /import-animals`
@@ -86,3 +87,4 @@ window.PEMBELAJAR_CONFIG = Object.assign({
 - Untuk produksi publik, sebaiknya jangan expose database langsung; cukup expose Express/Nginx.
 - Fitur edit server seperti upload gambar, impor data server, dan update status saran memerlukan login admin.
 - Fitur `Bantu AI (Ollama)` berjalan lewat backend Express, bukan memanggil Ollama langsung dari browser.
+- Modal `Saran Kata` juga bisa memakai AI untuk merapikan draft `request/meaning/category/note` sebelum disimpan.

@@ -231,6 +231,24 @@ function buildOllamaTranslatePrompt(text, sourceLang) {
   ].join("\n")
 }
 
+function buildOllamaSuggestionDraftPrompt(input) {
+  const source = input && typeof input === "object" ? input : {}
+  return [
+    "You help draft word suggestion forms for a language-learning app.",
+    "Return strict JSON only with keys: kind, request, meaning, category, note.",
+    "Allowed kind values: word, phrase, topic.",
+    "Use Indonesian for meaning, category, and note.",
+    "Keep category short and practical.",
+    "Request text should be the cleaned main request from the user.",
+    `Current kind hint: ${String(source.kind || "").trim() || "word"}.`,
+    `Current request: ${String(source.request || "").trim()}.`,
+    `Current meaning: ${String(source.meaning || "").trim()}.`,
+    `Current category: ${String(source.category || "").trim()}.`,
+    `Current note: ${String(source.note || "").trim()}.`,
+    `Current selected study category: ${String(source.currentCategory || "").trim()}.`
+  ].join("\n")
+}
+
 function normalizeAiTranslationPayload(payload) {
   const data = payload && typeof payload === "object" ? payload : {}
   return {
@@ -238,6 +256,18 @@ function normalizeAiTranslationPayload(payload) {
     ar: String(data.ar || "").trim(),
     id: String(data.id || "").trim(),
     explanation: String(data.explanation || "").trim()
+  }
+}
+
+function normalizeAiSuggestionDraftPayload(payload) {
+  const data = payload && typeof payload === "object" ? payload : {}
+  const rawKind = String(data.kind || "word").trim().toLowerCase()
+  return {
+    kind: ["word", "phrase", "topic"].includes(rawKind) ? rawKind : "word",
+    request: String(data.request || "").trim(),
+    meaning: String(data.meaning || "").trim(),
+    category: String(data.category || "").trim(),
+    note: String(data.note || "").trim()
   }
 }
 
@@ -294,6 +324,27 @@ async function requestOllamaTranslation(config, text, sourceLang) {
   const normalized = normalizeAiTranslationPayload(parsed)
   if (!normalized.en && !normalized.ar && !normalized.id) {
     throw new Error("Ollama response missing translation fields")
+  }
+  return normalized
+}
+
+async function requestOllamaSuggestionDraft(config, input) {
+  const endpoint = new URL("api/generate", config.baseUrl).toString()
+  const json = await fetchOllamaJson(endpoint, {
+    model: config.model,
+    prompt: buildOllamaSuggestionDraftPrompt(input),
+    stream: false,
+    format: "json",
+    options: {
+      temperature: 0.2
+    }
+  })
+  const raw = String(json && json.response || "").trim()
+  if (!raw) throw new Error("Ollama returned empty response")
+  const parsed = JSON.parse(raw)
+  const normalized = normalizeAiSuggestionDraftPayload(parsed)
+  if (!normalized.request) {
+    throw new Error("Ollama response missing request field")
   }
   return normalized
 }
@@ -438,6 +489,39 @@ async function createApp() {
       })
     } catch (error) {
       logEvent("ai_translate_error", error.message)
+      sendError(res, 502, `Ollama error: ${error.message}`)
+    }
+  })
+
+  app.post("/ai/word-suggestion-draft", async (req, res) => {
+    try {
+      const source = req.body && typeof req.body === "object" ? req.body : {}
+      const config = resolveOllamaConfig(source)
+      if (!config.baseUrl) {
+        sendError(res, 503, "Ollama URL is not configured")
+        return
+      }
+      const draftInput = {
+        kind: String(source.kind || "word").trim(),
+        request: String(source.request || "").trim(),
+        meaning: String(source.meaning || "").trim(),
+        category: String(source.category || "").trim(),
+        note: String(source.note || "").trim(),
+        currentCategory: String(source.currentCategory || "").trim()
+      }
+      if (!draftInput.request && !draftInput.note && !draftInput.meaning) {
+        sendError(res, 400, "request, meaning, or note is required")
+        return
+      }
+      const result = await requestOllamaSuggestionDraft(config, draftInput)
+      res.json({
+        ok: true,
+        model: config.model,
+        baseUrl: config.baseUrl,
+        result
+      })
+    } catch (error) {
+      logEvent("ai_word_suggestion_draft_error", error.message)
       sendError(res, 502, `Ollama error: ${error.message}`)
     }
   })

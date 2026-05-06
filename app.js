@@ -4797,6 +4797,10 @@ self.onmessage = function (e) {
       ariaLabel: "Catatan tambahan saran",
       placeholder: "Tambahkan konteks, contoh kalimat, atau alasan kenapa kata ini dibutuhkan"
     })
+    const aiDraftBtn = ensureButton(formCard, {
+      id: "word-suggestion-ai-draft",
+      text: "Bantu AI"
+    })
     const saveBtn = ensureButton(formCard, {
       id: "word-suggestion-save",
       text: "Simpan Saran"
@@ -4817,6 +4821,10 @@ self.onmessage = function (e) {
       id: "word-suggestion-admin-note",
       className: "settings-note"
     })
+    const aiInfo = ensureSettingsNote(formCard, {
+      id: "word-suggestion-ai-info",
+      className: "settings-note settings-note-strong"
+    })
     let list = document.getElementById("word-suggestion-list")
     if (!list) {
       list = document.createElement("div")
@@ -4826,6 +4834,53 @@ self.onmessage = function (e) {
     }
     if (typeSel && !typeSel.value) typeSel.value = "word"
     if (categoryInput && !categoryInput.value) categoryInput.value = getCategoryLabel()
+    if (aiInfo) {
+      aiInfo.textContent = "AI bisa membantu merapikan permintaan menjadi draft yang lebih jelas sebelum dikirim."
+    }
+    if (aiDraftBtn) {
+      aiDraftBtn.onclick = async () => {
+        const request = String(requestInput && requestInput.value || "").trim()
+        const meaning = String(meaningInput && meaningInput.value || "").trim()
+        const category = String(categoryInput && categoryInput.value || "").trim()
+        const note = String(noteInput && noteInput.value || "").trim()
+        const kind = String(typeSel && typeSel.value || "word")
+        if (!request && !meaning && !note) {
+          notify("Isi minimal permintaan atau catatan dulu sebelum meminta bantuan AI", "info")
+          return
+        }
+        if (aiInfo) aiInfo.textContent = "Menghubungi Ollama untuk menyusun draft saran..."
+        aiDraftBtn.disabled = true
+        aiDraftBtn.textContent = "Memproses AI..."
+        try {
+          const draft = await runAiWordSuggestionDraft({
+            kind,
+            request,
+            meaning,
+            category,
+            note,
+            currentCategory: getCategoryLabel()
+          })
+          const result = draft && draft.result ? draft.result : {}
+          if (typeSel && result.kind) typeSel.value = result.kind
+          if (requestInput && result.request) requestInput.value = result.request
+          if (meaningInput && result.meaning) meaningInput.value = result.meaning
+          if (categoryInput) categoryInput.value = result.category || category || getCategoryLabel()
+          if (noteInput && result.note) noteInput.value = result.note
+          if (aiInfo) {
+            aiInfo.textContent = draft && draft.model
+              ? `Draft AI siap. Model: ${draft.model}`
+              : "Draft AI siap."
+          }
+          notify("Draft saran berhasil dibantu AI", "success")
+        } catch (error) {
+          if (aiInfo) aiInfo.textContent = `AI gagal: ${error.message}`
+          notify(`Draft AI gagal: ${error.message}`, "error")
+        } finally {
+          aiDraftBtn.disabled = false
+          aiDraftBtn.textContent = "Bantu AI"
+        }
+      }
+    }
     if (saveBtn) {
       saveBtn.onclick = async () => {
         const request = String(requestInput && requestInput.value || "").trim()
@@ -5272,6 +5327,39 @@ self.onmessage = function (e) {
         tAiBtn.disabled = false
         tAiBtn.textContent = "Bantu AI (Ollama)"
       }
+    }
+  }
+  async function runAiWordSuggestionDraft(fields) {
+    const ctx = fields && typeof fields === "object" ? fields : {}
+    const endpoint = apiUrl("ai/word-suggestion-draft")
+    if (!endpoint) {
+      notifyApiUnavailable("Draft saran AI")
+      return null
+    }
+    const body = {
+      kind: String(ctx.kind || "word").trim(),
+      request: String(ctx.request || "").trim(),
+      meaning: String(ctx.meaning || "").trim(),
+      category: String(ctx.category || "").trim(),
+      note: String(ctx.note || "").trim(),
+      currentCategory: String(ctx.currentCategory || "").trim()
+    }
+    const ollamaUrl = getStoredOllamaUrl()
+    const ollamaModel = getStoredOllamaModel()
+    if (ollamaUrl) body.ollamaUrl = ollamaUrl
+    if (ollamaModel) body.ollamaModel = ollamaModel
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body)
+    })
+    const json = await res.json().catch(() => ({}))
+    if (!res.ok || !json || !json.ok) {
+      throw new Error(json && json.error ? json.error : `HTTP ${res.status}`)
+    }
+    return {
+      model: String(json.model || ollamaModel || "").trim(),
+      result: json.result && typeof json.result === "object" ? json.result : {}
     }
   }
   function initTranslateControls() {
