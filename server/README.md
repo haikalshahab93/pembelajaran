@@ -20,10 +20,14 @@ Default port: `8020`
 - `CORS_ORIGINS`: daftar origin dipisah koma, default `*`
 - `ADMIN_USERNAME`: username login admin backend
 - `ADMIN_PASSWORD`: password login admin backend
+- `OLLAMA_BASE_URL`: URL server Ollama, default `http://127.0.0.1:11434`
+- `OLLAMA_MODEL`: model default untuk bantuan AI, contoh `qwen2.5:3b`
 
 ## Endpoint
 
 - `GET /api/health`
+- `GET /ai/status`
+- `POST /ai/translate`
 - `GET /tts`
 - `POST /upload`
 - `POST /import-animals`
@@ -56,6 +60,8 @@ API_BASE_URL=https://api.example.com/
 CORS_ORIGINS=https://haikalshahab93.github.io
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=ganti-password-aman
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+OLLAMA_MODEL=qwen2.5:3b
 ```
 
 ## Frontend GitHub Pages
@@ -76,5 +82,7 @@ window.PEMBELAJAR_CONFIG = Object.assign({
 - Static frontend tetap di-root project dan disajikan oleh Express.
 - Data dinamis saat ini tetap memakai file JSON lokal di server.
 - Frontend tetap bisa override URL API lewat pengaturan `Server Audio/API` di browser.
+- Frontend sekarang juga bisa override `URL Ollama` dan `Model Ollama` lewat Pengaturan jika backend ingin mem-proxy ke instance/model lain.
 - Untuk produksi publik, sebaiknya jangan expose database langsung; cukup expose Express/Nginx.
 - Fitur edit server seperti upload gambar, impor data server, dan update status saran memerlukan login admin.
+- Fitur `Bantu AI (Ollama)` berjalan lewat backend Express, bukan memanggil Ollama langsung dari browser.

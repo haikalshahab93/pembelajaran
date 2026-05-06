@@ -93,6 +93,23 @@
           <button id="translate-save" class="ghost">Simpan ke Riwayat</button>
           <button id="translate-space" class="ghost" aria-pressed="false">Spasi Kata</button>
         </div>
+        <div class="translate-row">
+          <button id="translate-ai" class="ghost">Bantu AI (Ollama)</button>
+          <button id="translate-ai-copy" class="ghost">Salin AI</button>
+        </div>
+        <div id="translate-ai-status" class="translate-info"></div>
+        <div id="translate-ai-output" class="translate-output ai-output">
+          <div class="translate-row">
+            <span class="chip"><span class="chip-tag">AI EN</span><span id="translate-ai-en"></span></span>
+          </div>
+          <div class="translate-row">
+            <span class="chip"><span class="chip-tag">AI AR</span><span id="translate-ai-ar"></span></span>
+          </div>
+          <div class="translate-row">
+            <span class="chip"><span class="chip-tag">AI ID</span><span id="translate-ai-id"></span></span>
+          </div>
+          <div id="translate-ai-note" class="settings-note settings-note-strong"></div>
+        </div>
         <div id="translate-add" class="add-lexicon"></div>
         <div class="translate-row">
           <div class="translate-info">Riwayat Terjemah</div>

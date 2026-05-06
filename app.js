@@ -42,6 +42,14 @@
   const tHistory = document.getElementById("translate-history")
   const tClear = document.getElementById("translate-clear")
   const tAdd = document.getElementById("translate-add")
+  const tAiBtn = document.getElementById("translate-ai")
+  const tAiCopyBtn = document.getElementById("translate-ai-copy")
+  const tAiStatus = document.getElementById("translate-ai-status")
+  const tAiOutput = document.getElementById("translate-ai-output")
+  const tAiOutEn = document.getElementById("translate-ai-en")
+  const tAiOutAr = document.getElementById("translate-ai-ar")
+  const tAiOutId = document.getElementById("translate-ai-id")
+  const tAiNote = document.getElementById("translate-ai-note")
   const viewer = document.getElementById("image-viewer")
   const viewerImg = document.getElementById("viewer-img")
   const viewerEdit = document.getElementById("viewer-edit")
@@ -196,6 +204,8 @@
   const APP_BASE_URL = new URL("./", window.location.href)
   const APP_BASE_PATH = APP_BASE_URL.pathname.endsWith("/") ? APP_BASE_URL.pathname : `${APP_BASE_URL.pathname}/`
   const API_BASE_STORAGE_KEY = "pembelajar_api_base"
+  const OLLAMA_URL_STORAGE_KEY = "pembelajar_ollama_url"
+  const OLLAMA_MODEL_STORAGE_KEY = "pembelajar_ollama_model"
   function normalizeBaseUrl(value) {
     const raw = String(value || "").trim()
     if (!raw) return ""
@@ -247,6 +257,42 @@
     const base = getApiBaseUrl()
     if (!base) return ""
     return new URL(String(path || "").replace(/^\/+/, ""), base).toString()
+  }
+  function getConfiguredOllamaUrl() {
+    return normalizeBaseUrl(window.PEMBELAJAR_CONFIG && window.PEMBELAJAR_CONFIG.ollamaUrl || "")
+  }
+  function getConfiguredOllamaModel() {
+    return String(window.PEMBELAJAR_CONFIG && window.PEMBELAJAR_CONFIG.ollamaModel || "").trim()
+  }
+  function getStoredOllamaUrl() {
+    try {
+      return normalizeBaseUrl(localStorage.getItem(OLLAMA_URL_STORAGE_KEY) || "") || getConfiguredOllamaUrl()
+    } catch {
+      return getConfiguredOllamaUrl()
+    }
+  }
+  function setStoredOllamaUrl(value) {
+    const normalized = normalizeBaseUrl(value)
+    try {
+      if (normalized) localStorage.setItem(OLLAMA_URL_STORAGE_KEY, normalized)
+      else localStorage.removeItem(OLLAMA_URL_STORAGE_KEY)
+    } catch {}
+    return normalized
+  }
+  function getStoredOllamaModel() {
+    try {
+      return String(localStorage.getItem(OLLAMA_MODEL_STORAGE_KEY) || "").trim() || getConfiguredOllamaModel()
+    } catch {
+      return getConfiguredOllamaModel()
+    }
+  }
+  function setStoredOllamaModel(value) {
+    const normalized = String(value || "").trim()
+    try {
+      if (normalized) localStorage.setItem(OLLAMA_MODEL_STORAGE_KEY, normalized)
+      else localStorage.removeItem(OLLAMA_MODEL_STORAGE_KEY)
+    } catch {}
+    return normalized
   }
   function notifyApiUnavailable(label) {
     notify(`${label} butuh server backend aktif. Atur URL Server Audio/API di Pengaturan.`, "info")
@@ -4612,6 +4658,97 @@ self.onmessage = function (e) {
     }
     updateApiSettingsStatus()
   }
+  async function updateAiSettingsStatus() {
+    const statusEl = document.getElementById("ai-status")
+    if (!statusEl) return
+    const endpoint = apiUrl("ai/status")
+    const configuredUrl = getStoredOllamaUrl()
+    const configuredModel = getStoredOllamaModel()
+    const lines = []
+    if (configuredUrl) lines.push(`Override Ollama: ${configuredUrl}`)
+    else lines.push("Override Ollama: pakai default backend")
+    lines.push(`Model: ${configuredModel || "pakai default backend"}`)
+    if (!endpoint) {
+      statusEl.textContent = `${lines.join(" • ")} • Backend belum aktif.`
+      return
+    }
+    try {
+      const res = await fetch(endpoint, { cache: "no-store" })
+      const json = await res.json().catch(() => ({}))
+      if (!res.ok || !json || !json.ok) throw new Error(json && json.error ? json.error : `HTTP ${res.status}`)
+      lines.push(json.available ? "Ollama terdeteksi." : "Ollama belum terjangkau dari backend.")
+      if (json.baseUrl) lines.push(`Backend target: ${json.baseUrl}`)
+      if (json.model) lines.push(`Model backend: ${json.model}`)
+      statusEl.textContent = lines.join(" • ")
+    } catch (error) {
+      statusEl.textContent = `${lines.join(" • ")} • Gagal cek AI: ${error.message}`
+    }
+  }
+  function initAiSettingsControls(parent) {
+    if (!parent) return
+    const urlInput = ensureTextInput(parent, {
+      id: "ollama-url-input",
+      ariaLabel: "URL Ollama",
+      placeholder: "http://127.0.0.1:11434/"
+    })
+    const modelInput = ensureTextInput(parent, {
+      id: "ollama-model-input",
+      ariaLabel: "Model Ollama",
+      placeholder: "qwen2.5:3b"
+    })
+    const saveBtn = ensureButton(parent, {
+      id: "ollama-save",
+      text: "Simpan AI"
+    })
+    const resetBtn = ensureButton(parent, {
+      id: "ollama-reset",
+      text: "Reset AI"
+    })
+    const testBtn = ensureButton(parent, {
+      id: "ollama-test",
+      text: "Tes Ollama"
+    })
+    const hint = ensureSettingsNote(parent, {
+      id: "ai-help",
+      className: "settings-note"
+    })
+    ensureSettingsNote(parent, {
+      id: "ai-status",
+      className: "settings-note settings-note-strong"
+    })
+    if (urlInput) urlInput.value = getStoredOllamaUrl()
+    if (modelInput) modelInput.value = getStoredOllamaModel()
+    if (hint) {
+      hint.textContent = "Opsional. Jika dikosongkan, backend akan memakai OLLAMA_BASE_URL dan OLLAMA_MODEL dari server. Cocok untuk backend lokal yang menjadi proxy ke Ollama."
+    }
+    if (saveBtn) {
+      saveBtn.onclick = () => {
+        const normalizedUrl = setStoredOllamaUrl(urlInput ? urlInput.value : "")
+        const normalizedModel = setStoredOllamaModel(modelInput ? modelInput.value : "")
+        if (urlInput) urlInput.value = normalizedUrl
+        if (modelInput) modelInput.value = normalizedModel
+        updateAiSettingsStatus()
+        notify("Konfigurasi AI lokal disimpan", "success")
+      }
+    }
+    if (resetBtn) {
+      resetBtn.onclick = () => {
+        setStoredOllamaUrl("")
+        setStoredOllamaModel("")
+        if (urlInput) urlInput.value = ""
+        if (modelInput) modelInput.value = ""
+        updateAiSettingsStatus()
+        notify("Override AI direset ke default backend", "info")
+      }
+    }
+    if (testBtn) {
+      testBtn.onclick = async () => {
+        await updateAiSettingsStatus()
+        notify("Status koneksi AI diperbarui", "info")
+      }
+    }
+    updateAiSettingsStatus()
+  }
   function initWordSuggestionControls(parent) {
     if (!parent) return
     parent.className = "suggestion-layout"
@@ -4808,7 +4945,8 @@ self.onmessage = function (e) {
     const studyGrid = ensureSettingsSection("settings-study", "Belajar")
     const dataGrid = ensureSettingsSection("settings-data", "Data")
     const apiGrid = ensureSettingsSection("settings-api", "Server Audio/API")
-    if (!quickGrid || !displayGrid || !studyGrid || !dataGrid || !apiGrid) return
+    const aiGrid = ensureSettingsSection("settings-ai", "AI Lokal (Ollama)")
+    if (!quickGrid || !displayGrid || !studyGrid || !dataGrid || !apiGrid || !aiGrid) return
     const speakBtn = ensureButton(quickGrid, {
       id: "speak",
       text: "Audio Kartu",
@@ -4912,6 +5050,7 @@ self.onmessage = function (e) {
         : "Mode user biasa aktif. Fitur edit, impor, dan upload disembunyikan."
     }
     initApiSettingsControls(apiGrid)
+    initAiSettingsControls(aiGrid)
     const fm = localStorage.getItem("pembelajar_focus") === "1"
     syncFocusModeUI(fm)
     if (focusBtn) {
@@ -5046,9 +5185,101 @@ self.onmessage = function (e) {
     setTranslateHistory(newArr)
     renderTranslateHistory()
   }
+  function clearAiTranslateOutput(statusText) {
+    if (tAiOutEn) tAiOutEn.textContent = ""
+    if (tAiOutAr) tAiOutAr.textContent = ""
+    if (tAiOutId) tAiOutId.textContent = ""
+    if (tAiNote) tAiNote.textContent = ""
+    if (tAiStatus) tAiStatus.textContent = statusText || ""
+    if (tAiOutput) tAiOutput.hidden = true
+  }
+  function setAiTranslateOutput(payload, meta) {
+    const result = payload && typeof payload === "object" ? payload : {}
+    if (tAiOutEn) tAiOutEn.textContent = String(result.en || "").trim()
+    if (tAiOutAr) tAiOutAr.textContent = String(result.ar || "").trim()
+    if (tAiOutId) tAiOutId.textContent = String(result.id || "").trim()
+    if (tAiNote) tAiNote.textContent = String(result.explanation || "").trim() || "AI tidak memberi catatan tambahan."
+    if (tAiStatus) {
+      const info = []
+      if (meta && meta.model) info.push(`Model: ${meta.model}`)
+      if (meta && meta.sourceLang) info.push(`Sumber: ${String(meta.sourceLang).toUpperCase()}`)
+      tAiStatus.textContent = info.length ? info.join(" • ") : "Hasil AI siap."
+    }
+    if (tAiOutput) tAiOutput.hidden = false
+  }
+  async function copyAiTranslateOutput() {
+    const txt = [
+      `AI EN: ${tAiOutEn ? tAiOutEn.textContent : ""}`,
+      `AI AR: ${tAiOutAr ? tAiOutAr.textContent : ""}`,
+      `AI ID: ${tAiOutId ? tAiOutId.textContent : ""}`,
+      `Catatan: ${tAiNote ? tAiNote.textContent : ""}`
+    ].join("\n")
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(txt)
+      return
+    }
+    const ta = document.createElement("textarea")
+    ta.value = txt
+    document.body.appendChild(ta)
+    ta.select()
+    try { document.execCommand("copy") } catch {}
+    document.body.removeChild(ta)
+  }
+  async function runAiTranslate() {
+    const text = String(tInput && tInput.value || "").trim()
+    if (!text) {
+      notify("Isi teks dulu sebelum meminta bantuan AI", "info")
+      return
+    }
+    const endpoint = apiUrl("ai/translate")
+    if (!endpoint) {
+      notifyApiUnavailable("Bantuan AI")
+      return
+    }
+    const body = {
+      text,
+      sourceLang: detectLang(text)
+    }
+    const ollamaUrl = getStoredOllamaUrl()
+    const ollamaModel = getStoredOllamaModel()
+    if (ollamaUrl) body.ollamaUrl = ollamaUrl
+    if (ollamaModel) body.ollamaModel = ollamaModel
+    if (tAiBtn) {
+      tAiBtn.disabled = true
+      tAiBtn.textContent = "Meminta AI..."
+    }
+    clearAiTranslateOutput("Menghubungi Ollama...")
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      })
+      const json = await res.json().catch(() => ({}))
+      if (!res.ok || !json || !json.ok) {
+        throw new Error(json && json.error ? json.error : `HTTP ${res.status}`)
+      }
+      setAiTranslateOutput(json.result || {}, {
+        model: json.model || ollamaModel || "",
+        sourceLang: json.sourceLang || body.sourceLang
+      })
+      notify("Hasil AI berhasil dimuat", "success")
+    } catch (error) {
+      clearAiTranslateOutput(`AI gagal: ${error.message}`)
+      notify(`Ollama belum merespons: ${error.message}`, "error")
+    } finally {
+      if (tAiBtn) {
+        tAiBtn.disabled = false
+        tAiBtn.textContent = "Bantu AI (Ollama)"
+      }
+    }
+  }
   function initTranslateControls() {
     if (tInput) {
-      tInput.oninput = e => translateText(e.target.value)
+      tInput.oninput = e => {
+        translateText(e.target.value)
+        clearAiTranslateOutput("")
+      }
       tInput.onkeydown = e => {
         if (e.key === "Enter") {
           e.preventDefault()
@@ -5061,12 +5292,15 @@ self.onmessage = function (e) {
     if (tSpeakId) tSpeakId.onclick = () => speakTranslateOutput(tOutId, "id-ID", false)
     if (tCopy) tCopy.onclick = () => copyTranslateOutput()
     if (tSave) tSave.onclick = () => saveTranslateEntry()
+    if (tAiBtn) tAiBtn.onclick = () => runAiTranslate()
+    if (tAiCopyBtn) tAiCopyBtn.onclick = () => copyAiTranslateOutput()
     if (tClear) {
       tClear.onclick = () => {
         setTranslateHistory([])
         renderTranslateHistory()
       }
     }
+    clearAiTranslateOutput("")
     renderTranslateHistory()
     const tSpace = document.getElementById("translate-space")
     if (tSpace) {
