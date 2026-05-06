@@ -1,63 +1,122 @@
 [
-    {
-        "en": "Book",
-        "ar": "كتاب",
-        "tr": "Kitāb",
-        "id": "Buku"
-    },
-    {
-        "en": "Pen",
-        "ar": "قلم",
-        "tr": "Qalam",
-        "id": "Pulpen"
-    },
-    {
-        "en": "Notebook",
-        "ar": "دفتر",
-        "tr": "Daftar",
-        "id": "Buku catatan"
-    },
-    {
-        "en": "Teacher",
-        "ar": "معلم",
-        "tr": "Muʿallim",
-        "id": "Guru"
-    },
-    {
-        "en": "Student",
-        "ar": "طالب",
-        "tr": "Ṭālib",
-        "id": "Siswa"
-    },
-    {
-        "en": "Lesson",
-        "ar": "درس",
-        "tr": "Dars",
-        "id": "Pelajaran"
-    },
-    {
-        "en": "Exam",
-        "ar": "امتحان",
-        "tr": "Imtiḥān",
-        "id": "Ujian"
-    },
-    {
-        "en": "Homework",
-        "ar": "واجب",
-        "tr": "Wājib",
-        "id": "PR"
-    },
-    {
-        "en": "Board",
-        "ar": "سبورة",
-        "tr": "Sabūrah",
-        "id": "Papan tulis"
-    },
-    {
-        "en": "Desk",
-        "ar": "طاولة",
-        "tr": "Ṭāwilah",
-        "id": "Meja"
-    }
+  {
+    "en": "Book",
+    "ar": "كتاب",
+    "tr": "Kitāb",
+    "id": "Buku"
+  },
+  {
+    "en": "Pen",
+    "ar": "قلم",
+    "tr": "Qalam",
+    "id": "Pulpen"
+  },
+  {
+    "en": "Notebook",
+    "ar": "دفتر",
+    "tr": "Daftar",
+    "id": "Buku catatan"
+  },
+  {
+    "en": "Teacher",
+    "ar": "معلم",
+    "tr": "Muʿallim",
+    "id": "Guru"
+  },
+  {
+    "en": "Student",
+    "ar": "طالب",
+    "tr": "Ṭālib",
+    "id": "Siswa"
+  },
+  {
+    "en": "Lesson",
+    "ar": "درس",
+    "tr": "Dars",
+    "id": "Pelajaran"
+  },
+  {
+    "en": "Exam",
+    "ar": "امتحان",
+    "tr": "Imtiḥān",
+    "id": "Ujian"
+  },
+  {
+    "en": "Homework",
+    "ar": "واجب",
+    "tr": "Wājib",
+    "id": "PR"
+  },
+  {
+    "en": "Board",
+    "ar": "سبورة",
+    "tr": "Sabūrah",
+    "id": "Papan tulis"
+  },
+  {
+    "en": "Desk",
+    "ar": "طاولة",
+    "tr": "Ṭāwilah",
+    "id": "Meja"
+  },
+  {
+    "en": "Chair",
+    "ar": "كرسي",
+    "tr": "Kursi",
+    "id": "Kursi"
+  },
+  {
+    "en": "Pencil",
+    "ar": "قلم رصاص",
+    "tr": "Qalam rasas",
+    "id": "Pensil"
+  },
+  {
+    "en": "Eraser",
+    "ar": "ممحاة",
+    "tr": "Mimhah",
+    "id": "Penghapus"
+  },
+  {
+    "en": "Ruler",
+    "ar": "مسطرة",
+    "tr": "Mistarah",
+    "id": "Penggaris"
+  },
+  {
+    "en": "Bag",
+    "ar": "حقيبة",
+    "tr": "Haqibah",
+    "id": "Tas"
+  },
+  {
+    "en": "Paper",
+    "ar": "ورقة",
+    "tr": "Waraqah",
+    "id": "Kertas"
+  },
+  {
+    "en": "Question",
+    "ar": "سؤال",
+    "tr": "Su'al",
+    "id": "Pertanyaan"
+  },
+  {
+    "en": "Answer",
+    "ar": "جواب",
+    "tr": "Jawab",
+    "id": "Jawaban"
+  },
+  {
+    "en": "Classmate",
+    "ar": "زميل الدراسة",
+    "tr": "Zamil ad-dirasah",
+    "id": "Teman sekelas"
+  },
+  {
+    "en": "Classroom",
+    "ar": "فصل",
+    "tr": "Fasl",
+    "id": "Ruang kelas"
+  }
 ]
-

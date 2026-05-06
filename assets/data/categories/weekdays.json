@@ -55,5 +55,65 @@
     "en": "Holiday",
     "ar": "عطلة",
     "id": "hari libur"
+  },
+  {
+    "en": "School day",
+    "ar": "يوم دراسي",
+    "tr": "Yawm dirasi",
+    "id": "Hari sekolah"
+  },
+  {
+    "en": "Work day",
+    "ar": "يوم عمل",
+    "tr": "Yawm 'amal",
+    "id": "Hari kerja"
+  },
+  {
+    "en": "Weekend plan",
+    "ar": "خطة عطلة نهاية الأسبوع",
+    "tr": "Khuttat 'utlat nihayat al-usbu'",
+    "id": "Rencana akhir pekan"
+  },
+  {
+    "en": "Public holiday",
+    "ar": "عطلة رسمية",
+    "tr": "'Utlah rasmiyyah",
+    "id": "Hari libur nasional"
+  },
+  {
+    "en": "Every Monday",
+    "ar": "كل يوم اثنين",
+    "tr": "Kulla yawm ithnayn",
+    "id": "Setiap Senin"
+  },
+  {
+    "en": "Every Friday",
+    "ar": "كل يوم جمعة",
+    "tr": "Kulla yawm jum'ah",
+    "id": "Setiap Jumat"
+  },
+  {
+    "en": "On weekdays",
+    "ar": "في أيام الأسبوع",
+    "tr": "Fi ayyām al-usbu'",
+    "id": "Pada hari kerja"
+  },
+  {
+    "en": "On weekends",
+    "ar": "في عطلة نهاية الأسبوع",
+    "tr": "Fi 'utlat nihayat al-usbu'",
+    "id": "Saat akhir pekan"
+  },
+  {
+    "en": "Day off",
+    "ar": "يوم إجازة",
+    "tr": "Yawm ijazah",
+    "id": "Hari libur"
+  },
+  {
+    "en": "Weekly schedule",
+    "ar": "جدول أسبوعي",
+    "tr": "Jadwal usbu'i",
+    "id": "Jadwal mingguan"
   }
 ]

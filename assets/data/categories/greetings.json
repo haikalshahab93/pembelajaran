@@ -58,5 +58,65 @@
     "ar": "أراك لاحقا",
     "tr": "Araka Lahiqan",
     "id": "Sampai nanti"
+  },
+  {
+    "en": "Good afternoon",
+    "ar": "مساء الخير",
+    "tr": "Masa' al-khayr",
+    "id": "Selamat sore"
+  },
+  {
+    "en": "Good night",
+    "ar": "تصبح على خير",
+    "tr": "Tusbih 'ala khayr",
+    "id": "Selamat tidur"
+  },
+  {
+    "en": "Nice to meet you",
+    "ar": "سعيد بلقائك",
+    "tr": "Sa'id biliqa'ik",
+    "id": "Senang bertemu denganmu"
+  },
+  {
+    "en": "Welcome",
+    "ar": "أهلا وسهلا",
+    "tr": "Ahlan wa sahlan",
+    "id": "Selamat datang"
+  },
+  {
+    "en": "Long time no see",
+    "ar": "من زمان",
+    "tr": "Min zaman",
+    "id": "Sudah lama tidak bertemu"
+  },
+  {
+    "en": "Have a nice day",
+    "ar": "أتمنى لك يوما سعيدا",
+    "tr": "Atamanna laka yawman sa'idan",
+    "id": "Semoga harimu menyenangkan"
+  },
+  {
+    "en": "Take care",
+    "ar": "اعتن بنفسك",
+    "tr": "I'tan binafsik",
+    "id": "Jaga diri"
+  },
+  {
+    "en": "See you tomorrow",
+    "ar": "أراك غدا",
+    "tr": "Araka ghadan",
+    "id": "Sampai besok"
+  },
+  {
+    "en": "Good luck",
+    "ar": "حظا سعيدا",
+    "tr": "Hazzan sa'idan",
+    "id": "Semoga beruntung"
+  },
+  {
+    "en": "Have a safe trip",
+    "ar": "رحلة آمنة",
+    "tr": "Rihlah aminah",
+    "id": "Semoga perjalananmu aman"
   }
 ]

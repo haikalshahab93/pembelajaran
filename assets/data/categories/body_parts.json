@@ -1,63 +1,122 @@
 [
-    {
-        "en": "Head",
-        "ar": "رأس",
-        "tr": "Raʾs",
-        "id": "Kepala"
-    },
-    {
-        "en": "Face",
-        "ar": "وجه",
-        "tr": "Wajh",
-        "id": "Wajah"
-    },
-    {
-        "en": "Eye",
-        "ar": "عين",
-        "tr": "ʿAyn",
-        "id": "Mata"
-    },
-    {
-        "en": "Ear",
-        "ar": "أذن",
-        "tr": "Udhun",
-        "id": "Telinga"
-    },
-    {
-        "en": "Nose",
-        "ar": "أنف",
-        "tr": "Anf",
-        "id": "Hidung"
-    },
-    {
-        "en": "Mouth",
-        "ar": "فم",
-        "tr": "Fam",
-        "id": "Mulut"
-    },
-    {
-        "en": "Hand",
-        "ar": "يد",
-        "tr": "Yad",
-        "id": "Tangan"
-    },
-    {
-        "en": "Foot",
-        "ar": "قدم",
-        "tr": "Qadam",
-        "id": "Kaki"
-    },
-    {
-        "en": "Leg",
-        "ar": "ساق",
-        "tr": "Sāq",
-        "id": "Tungkai"
-    },
-    {
-        "en": "Arm",
-        "ar": "ذراع",
-        "tr": "Dhirāʿ",
-        "id": "Lengan"
-    }
+  {
+    "en": "Head",
+    "ar": "رأس",
+    "tr": "Raʾs",
+    "id": "Kepala"
+  },
+  {
+    "en": "Face",
+    "ar": "وجه",
+    "tr": "Wajh",
+    "id": "Wajah"
+  },
+  {
+    "en": "Eye",
+    "ar": "عين",
+    "tr": "ʿAyn",
+    "id": "Mata"
+  },
+  {
+    "en": "Ear",
+    "ar": "أذن",
+    "tr": "Udhun",
+    "id": "Telinga"
+  },
+  {
+    "en": "Nose",
+    "ar": "أنف",
+    "tr": "Anf",
+    "id": "Hidung"
+  },
+  {
+    "en": "Mouth",
+    "ar": "فم",
+    "tr": "Fam",
+    "id": "Mulut"
+  },
+  {
+    "en": "Hand",
+    "ar": "يد",
+    "tr": "Yad",
+    "id": "Tangan"
+  },
+  {
+    "en": "Foot",
+    "ar": "قدم",
+    "tr": "Qadam",
+    "id": "Kaki"
+  },
+  {
+    "en": "Leg",
+    "ar": "ساق",
+    "tr": "Sāq",
+    "id": "Tungkai"
+  },
+  {
+    "en": "Arm",
+    "ar": "ذراع",
+    "tr": "Dhirāʿ",
+    "id": "Lengan"
+  },
+  {
+    "en": "Hair",
+    "ar": "شعر",
+    "tr": "Sha'r",
+    "id": "Rambut"
+  },
+  {
+    "en": "Forehead",
+    "ar": "جبهة",
+    "tr": "Jabhah",
+    "id": "Dahi"
+  },
+  {
+    "en": "Cheek",
+    "ar": "خد",
+    "tr": "Khadd",
+    "id": "Pipi"
+  },
+  {
+    "en": "Lips",
+    "ar": "شفاه",
+    "tr": "Shifah",
+    "id": "Bibir"
+  },
+  {
+    "en": "Teeth",
+    "ar": "أسنان",
+    "tr": "Asnan",
+    "id": "Gigi"
+  },
+  {
+    "en": "Tongue",
+    "ar": "لسان",
+    "tr": "Lisan",
+    "id": "Lidah"
+  },
+  {
+    "en": "Neck",
+    "ar": "رقبة",
+    "tr": "Raqabah",
+    "id": "Leher"
+  },
+  {
+    "en": "Shoulder",
+    "ar": "كتف",
+    "tr": "Katif",
+    "id": "Bahu"
+  },
+  {
+    "en": "Finger",
+    "ar": "إصبع",
+    "tr": "Isba'",
+    "id": "Jari tangan"
+  },
+  {
+    "en": "Knee",
+    "ar": "ركبة",
+    "tr": "Rukbah",
+    "id": "Lutut"
+  }
 ]
-

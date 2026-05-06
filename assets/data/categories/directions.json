@@ -1,74 +1,134 @@
 [
-    {
-        "en": "Right",
-        "ar": "يمين",
-        "tr": "Yamīn",
-        "id": "Kanan"
-    },
-    {
-        "en": "Left",
-        "ar": "يسار",
-        "tr": "Yasār",
-        "id": "Kiri"
-    },
-    {
-        "en": "Straight ahead",
-        "ar": "إلى الأمام",
-        "tr": "Ilā al-amām",
-        "id": "Lurus ke depan"
-    },
-    {
-        "en": "Near",
-        "ar": "قريب",
-        "tr": "Qarīb",
-        "id": "Dekat"
-    },
-    {
-        "en": "Far",
-        "ar": "بعيد",
-        "tr": "Baʿīd",
-        "id": "Jauh"
-    },
-    {
-        "en": "Next to",
-        "ar": "بجانب",
-        "tr": "Bijānib",
-        "id": "Di sebelah"
-    },
-    {
-        "en": "Behind",
-        "ar": "خلف",
-        "tr": "Khalf",
-        "id": "Di belakang"
-    },
-    {
-        "en": "In front of",
-        "ar": "أمام",
-        "tr": "Amām",
-        "id": "Di depan"
-    },
-    {
-        "en": "Cross the street",
-        "ar": "اعبر الشارع",
-        "tr": "Uʿbur ash-shāriʿ",
-        "id": "Seberangi jalan"
-    },
-    {
-        "en": "Turn right",
-        "ar": "انعطف يمينا",
-        "tr": "Inʿaṭif yamīnan",
-        "id": "Belok kanan"
-    },
-    {
-        "en": "Turn left",
-        "ar": "انعطف يسارا",
-        "tr": "Inʿaṭif yasāran",
-        "id": "Belok kiri"
-    },
-    {
-        "en": "Intersection",
-        "ar": "تقاطع",
-        "tr": "Taqāṭuʿ",
-        "id": "Persimpangan"
-    }
+  {
+    "en": "Right",
+    "ar": "يمين",
+    "tr": "Yamīn",
+    "id": "Kanan"
+  },
+  {
+    "en": "Left",
+    "ar": "يسار",
+    "tr": "Yasār",
+    "id": "Kiri"
+  },
+  {
+    "en": "Straight ahead",
+    "ar": "إلى الأمام",
+    "tr": "Ilā al-amām",
+    "id": "Lurus ke depan"
+  },
+  {
+    "en": "Near",
+    "ar": "قريب",
+    "tr": "Qarīb",
+    "id": "Dekat"
+  },
+  {
+    "en": "Far",
+    "ar": "بعيد",
+    "tr": "Baʿīd",
+    "id": "Jauh"
+  },
+  {
+    "en": "Next to",
+    "ar": "بجانب",
+    "tr": "Bijānib",
+    "id": "Di sebelah"
+  },
+  {
+    "en": "Behind",
+    "ar": "خلف",
+    "tr": "Khalf",
+    "id": "Di belakang"
+  },
+  {
+    "en": "In front of",
+    "ar": "أمام",
+    "tr": "Amām",
+    "id": "Di depan"
+  },
+  {
+    "en": "Cross the street",
+    "ar": "اعبر الشارع",
+    "tr": "Uʿbur ash-shāriʿ",
+    "id": "Seberangi jalan"
+  },
+  {
+    "en": "Turn right",
+    "ar": "انعطف يمينا",
+    "tr": "Inʿaṭif yamīnan",
+    "id": "Belok kanan"
+  },
+  {
+    "en": "Turn left",
+    "ar": "انعطف يسارا",
+    "tr": "Inʿaṭif yasāran",
+    "id": "Belok kiri"
+  },
+  {
+    "en": "Intersection",
+    "ar": "تقاطع",
+    "tr": "Taqāṭuʿ",
+    "id": "Persimpangan"
+  },
+  {
+    "en": "Go straight",
+    "ar": "اذهب مستقيما",
+    "tr": "Idhhab mustaqiman",
+    "id": "Jalan lurus"
+  },
+  {
+    "en": "Go back",
+    "ar": "ارجع",
+    "tr": "Irji'",
+    "id": "Kembali"
+  },
+  {
+    "en": "Across from",
+    "ar": "مقابل",
+    "tr": "Muqabil",
+    "id": "Berseberangan dengan"
+  },
+  {
+    "en": "At the corner",
+    "ar": "عند الزاوية",
+    "tr": "'Inda az-zawiyah",
+    "id": "Di pojok"
+  },
+  {
+    "en": "At the traffic light",
+    "ar": "عند الإشارة",
+    "tr": "'Inda al-isharah",
+    "id": "Di lampu merah"
+  },
+  {
+    "en": "Go upstairs",
+    "ar": "اصعد إلى الأعلى",
+    "tr": "Is'ad ila al-a'la",
+    "id": "Naik ke atas"
+  },
+  {
+    "en": "Go downstairs",
+    "ar": "انزل إلى الأسفل",
+    "tr": "Inzil ila al-asfal",
+    "id": "Turun ke bawah"
+  },
+  {
+    "en": "On your right",
+    "ar": "على يمينك",
+    "tr": "'Ala yaminik",
+    "id": "Di sebelah kananmu"
+  },
+  {
+    "en": "On your left",
+    "ar": "على يسارك",
+    "tr": "'Ala yasarik",
+    "id": "Di sebelah kirimu"
+  },
+  {
+    "en": "It is nearby",
+    "ar": "إنه قريب",
+    "tr": "Innahu qarib",
+    "id": "Itu dekat"
+  }
 ]
