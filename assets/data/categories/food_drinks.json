@@ -178,5 +178,65 @@
     "ar": "مربى",
     "tr": "Murabba",
     "id": "Selai"
+  },
+  {
+    "en": "Soup spoon",
+    "ar": "ملعقة شوربة",
+    "tr": "Mila'qat shurbah",
+    "id": "Sendok sup"
+  },
+  {
+    "en": "Fried rice",
+    "ar": "أرز مقلي",
+    "tr": "Aruzz maqli",
+    "id": "Nasi goreng"
+  },
+  {
+    "en": "Boiled egg",
+    "ar": "بيض مسلوق",
+    "tr": "Bayd masluq",
+    "id": "Telur rebus"
+  },
+  {
+    "en": "Fried egg",
+    "ar": "بيض مقلي",
+    "tr": "Bayd maqli",
+    "id": "Telur goreng"
+  },
+  {
+    "en": "Grilled fish",
+    "ar": "سمك مشوي",
+    "tr": "Samak mashwi",
+    "id": "Ikan bakar"
+  },
+  {
+    "en": "Fruit juice",
+    "ar": "عصير فواكه",
+    "tr": "Asir fawakih",
+    "id": "Jus buah"
+  },
+  {
+    "en": "Hot tea",
+    "ar": "شاي ساخن",
+    "tr": "Shay sakhin",
+    "id": "Teh panas"
+  },
+  {
+    "en": "Cold coffee",
+    "ar": "قهوة باردة",
+    "tr": "Qahwah baridah",
+    "id": "Kopi dingin"
+  },
+  {
+    "en": "Lunch box",
+    "ar": "علبة غداء",
+    "tr": "Ulbah ghada'",
+    "id": "Kotak makan"
+  },
+  {
+    "en": "Breakfast",
+    "ar": "فطور",
+    "tr": "Futur",
+    "id": "Sarapan"
   }
 ]

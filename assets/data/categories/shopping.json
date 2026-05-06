@@ -238,5 +238,65 @@
     "ar": "ضمان",
     "tr": "Daman",
     "id": "Garansi"
+  },
+  {
+    "en": "Shopping center",
+    "ar": "مركز التسوق",
+    "tr": "Markaz at-tasawwuq",
+    "id": "Pusat belanja"
+  },
+  {
+    "en": "Price tag",
+    "ar": "بطاقة السعر",
+    "tr": "Bitaqat as-si'r",
+    "id": "Label harga"
+  },
+  {
+    "en": "Online shop",
+    "ar": "متجر إلكتروني",
+    "tr": "Matjar iliktruni",
+    "id": "Toko online"
+  },
+  {
+    "en": "Order number",
+    "ar": "رقم الطلب",
+    "tr": "Raqm at-talab",
+    "id": "Nomor pesanan"
+  },
+  {
+    "en": "Delivery fee",
+    "ar": "رسوم التوصيل",
+    "tr": "Rusum at-tawsil",
+    "id": "Biaya kirim"
+  },
+  {
+    "en": "Coupon",
+    "ar": "قسيمة",
+    "tr": "Qasimah",
+    "id": "Kupon"
+  },
+  {
+    "en": "Member card",
+    "ar": "بطاقة عضوية",
+    "tr": "Bitaqat 'udwiyyah",
+    "id": "Kartu member"
+  },
+  {
+    "en": "Queue",
+    "ar": "طابور",
+    "tr": "Tabur",
+    "id": "Antrean"
+  },
+  {
+    "en": "Packaging",
+    "ar": "تغليف",
+    "tr": "Taghlif",
+    "id": "Kemasan"
+  },
+  {
+    "en": "Out of budget",
+    "ar": "خارج الميزانية",
+    "tr": "Kharij al-mizaniyyah",
+    "id": "Di luar anggaran"
   }
 ]

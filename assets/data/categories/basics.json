@@ -238,5 +238,65 @@
     "ar": "تذكر",
     "tr": "Tadhakkar",
     "id": "Ingat"
+  },
+  {
+    "en": "Ask",
+    "ar": "اسأل",
+    "tr": "Is'al",
+    "id": "Tanya"
+  },
+  {
+    "en": "Answer",
+    "ar": "أجب",
+    "tr": "Ajib",
+    "id": "Jawab"
+  },
+  {
+    "en": "Show me",
+    "ar": "أرني",
+    "tr": "Arini",
+    "id": "Tunjukkan saya"
+  },
+  {
+    "en": "Tell me",
+    "ar": "أخبرني",
+    "tr": "Akhbirni",
+    "id": "Beritahu saya"
+  },
+  {
+    "en": "Read",
+    "ar": "اقرأ",
+    "tr": "Iqra'",
+    "id": "Baca"
+  },
+  {
+    "en": "Write",
+    "ar": "اكتب",
+    "tr": "Uktub",
+    "id": "Tulis"
+  },
+  {
+    "en": "Practice",
+    "ar": "تدرب",
+    "tr": "Tadarab",
+    "id": "Berlatih"
+  },
+  {
+    "en": "Check",
+    "ar": "تحقق",
+    "tr": "Tahqqaq",
+    "id": "Periksa"
+  },
+  {
+    "en": "Fix",
+    "ar": "أصلح",
+    "tr": "Aslih",
+    "id": "Perbaiki"
+  },
+  {
+    "en": "Finish",
+    "ar": "أنهِ",
+    "tr": "Anhi",
+    "id": "Selesaikan"
   }
 ]

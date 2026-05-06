@@ -238,5 +238,35 @@
     "ar": "وقت الاستراحة",
     "tr": "Waqt al-istirahah",
     "id": "Waktu istirahat"
+  },
+  {
+    "en": "Score",
+    "ar": "درجة",
+    "tr": "Darajah",
+    "id": "Nilai"
+  },
+  {
+    "en": "Project",
+    "ar": "مشروع",
+    "tr": "Mashru'",
+    "id": "Proyek"
+  },
+  {
+    "en": "Office desk",
+    "ar": "مكتب العمل",
+    "tr": "Maktab al-'amal",
+    "id": "Meja kerja"
+  },
+  {
+    "en": "Report",
+    "ar": "تقرير",
+    "tr": "Taqrir",
+    "id": "Laporan"
+  },
+  {
+    "en": "Presentation slide",
+    "ar": "شريحة عرض",
+    "tr": "Sharihat 'ard",
+    "id": "Slide presentasi"
   }
 ]

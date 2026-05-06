@@ -238,5 +238,65 @@
     "ar": "سأتحدث معك قريبا",
     "tr": "Sa'atahaddath ma'aka qariban",
     "id": "Nanti saya hubungi lagi"
+  },
+  {
+    "en": "I am ready now",
+    "ar": "أنا جاهز الآن",
+    "tr": "Ana jahiz al-an",
+    "id": "Saya siap sekarang"
+  },
+  {
+    "en": "I need more time",
+    "ar": "أحتاج وقتا أكثر",
+    "tr": "Ahtaj waqtan akthar",
+    "id": "Saya butuh lebih banyak waktu"
+  },
+  {
+    "en": "Please explain again",
+    "ar": "من فضلك اشرح مرة أخرى",
+    "tr": "Min fadlik ishrah marrah ukhrah",
+    "id": "Tolong jelaskan lagi"
+  },
+  {
+    "en": "I understand a little",
+    "ar": "أفهم قليلا",
+    "tr": "Afham qalilan",
+    "id": "Saya paham sedikit"
+  },
+  {
+    "en": "I am still learning",
+    "ar": "ما زلت أتعلم",
+    "tr": "Ma ziltu ata'allam",
+    "id": "Saya masih belajar"
+  },
+  {
+    "en": "I will send it later",
+    "ar": "سأرسله لاحقا",
+    "tr": "Sa'ursiluhu لاحقا",
+    "id": "Nanti saya kirim"
+  },
+  {
+    "en": "Please be patient",
+    "ar": "كن صبورا من فضلك",
+    "tr": "Kun saburan min fadlik",
+    "id": "Tolong sabar"
+  },
+  {
+    "en": "I am almost there",
+    "ar": "أنا على وشك الوصول",
+    "tr": "Ana 'ala washk al-wusul",
+    "id": "Saya hampir sampai"
+  },
+  {
+    "en": "That sounds good",
+    "ar": "هذا يبدو جيدا",
+    "tr": "Hatha yabdu jayyidan",
+    "id": "Itu terdengar bagus"
+  },
+  {
+    "en": "Let us start",
+    "ar": "لنبدأ",
+    "tr": "Linabda'",
+    "id": "Mari mulai"
   }
 ]

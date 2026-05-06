@@ -238,5 +238,65 @@
     "ar": "يطفئ الضوء",
     "tr": "Yutfi' ad-daw'",
     "id": "Mematikan lampu"
+  },
+  {
+    "en": "Wake up early",
+    "ar": "يستيقظ مبكرا",
+    "tr": "Yastayqiz mubakkiran",
+    "id": "Bangun pagi"
+  },
+  {
+    "en": "Prepare breakfast",
+    "ar": "يحضر الفطور",
+    "tr": "Yuhaddir al-futur",
+    "id": "Menyiapkan sarapan"
+  },
+  {
+    "en": "Go shopping",
+    "ar": "يذهب للتسوق",
+    "tr": "Yadhhab lit-tasawwuq",
+    "id": "Pergi belanja"
+  },
+  {
+    "en": "Clean the room",
+    "ar": "ينظف الغرفة",
+    "tr": "Yunazzif al-ghurfah",
+    "id": "Membersihkan kamar"
+  },
+  {
+    "en": "Wash clothes",
+    "ar": "يغسل الملابس",
+    "tr": "Yaghsil al-malabis",
+    "id": "Mencuci baju"
+  },
+  {
+    "en": "Iron clothes",
+    "ar": "يكوي الملابس",
+    "tr": "Yakwi al-malabis",
+    "id": "Menyetrika baju"
+  },
+  {
+    "en": "Prepare for work",
+    "ar": "يستعد للعمل",
+    "tr": "Yasta'iddu lil-'amal",
+    "id": "Bersiap kerja"
+  },
+  {
+    "en": "Study at night",
+    "ar": "يدرس ليلا",
+    "tr": "Yadrus laylan",
+    "id": "Belajar malam"
+  },
+  {
+    "en": "Review notes",
+    "ar": "يراجع الملاحظات",
+    "tr": "Yuraji' al-mulahazat",
+    "id": "Meninjau catatan"
+  },
+  {
+    "en": "Sleep well",
+    "ar": "ينام جيدا",
+    "tr": "Yanam jayyidan",
+    "id": "Tidur nyenyak"
   }
 ]

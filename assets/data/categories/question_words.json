@@ -178,5 +178,65 @@
     "ar": "قبل ماذا",
     "tr": "Qabla madha",
     "id": "Sebelum apa"
+  },
+  {
+    "en": "Which direction",
+    "ar": "أي اتجاه",
+    "tr": "Ayy ittijah",
+    "id": "Arah mana"
+  },
+  {
+    "en": "How big",
+    "ar": "كم الحجم",
+    "tr": "Kam al-hajm",
+    "id": "Seberapa besar"
+  },
+  {
+    "en": "How small",
+    "ar": "كم الصغر",
+    "tr": "Kam as-sughr",
+    "id": "Seberapa kecil"
+  },
+  {
+    "en": "How deep",
+    "ar": "كم العمق",
+    "tr": "Kam al-'umq",
+    "id": "Seberapa dalam"
+  },
+  {
+    "en": "How fast",
+    "ar": "كم السرعة",
+    "tr": "Kam as-sur'ah",
+    "id": "Seberapa cepat"
+  },
+  {
+    "en": "How slow",
+    "ar": "كم البطء",
+    "tr": "Kam al-but'",
+    "id": "Seberapa lambat"
+  },
+  {
+    "en": "In what way",
+    "ar": "بأي طريقة",
+    "tr": "Bi-ayyi tariqah",
+    "id": "Dengan cara apa"
+  },
+  {
+    "en": "Under whose name",
+    "ar": "باسم من",
+    "tr": "Bismi man",
+    "id": "Atas nama siapa"
+  },
+  {
+    "en": "Near what",
+    "ar": "قرب ماذا",
+    "tr": "Qurb madha",
+    "id": "Dekat apa"
+  },
+  {
+    "en": "Between what",
+    "ar": "بين ماذا",
+    "tr": "Bayna madha",
+    "id": "Di antara apa"
   }
 ]

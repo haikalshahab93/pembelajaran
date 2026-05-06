@@ -238,5 +238,65 @@
     "ar": "اسم العائلة",
     "tr": "Ism al-'ailah",
     "id": "Nama keluarga"
+  },
+  {
+    "en": "Family tree",
+    "ar": "شجرة العائلة",
+    "tr": "Shajarat al-'ailah",
+    "id": "Silsilah keluarga"
+  },
+  {
+    "en": "Home visit",
+    "ar": "زيارة عائلية",
+    "tr": "Ziyarah 'ailiyyah",
+    "id": "Kunjungan keluarga"
+  },
+  {
+    "en": "Marriage",
+    "ar": "زواج",
+    "tr": "Zawaj",
+    "id": "Pernikahan"
+  },
+  {
+    "en": "Relatives",
+    "ar": "أقارب",
+    "tr": "Aqarib",
+    "id": "Kerabat"
+  },
+  {
+    "en": "Only child",
+    "ar": "الابن الوحيد",
+    "tr": "Al-ibn al-wahid",
+    "id": "Anak tunggal"
+  },
+  {
+    "en": "Adopted child",
+    "ar": "طفل متبنى",
+    "tr": "Tifl mutabanna",
+    "id": "Anak angkat"
+  },
+  {
+    "en": "Family name",
+    "ar": "اسم الأسرة",
+    "tr": "Ism al-usrah",
+    "id": "Nama marga"
+  },
+  {
+    "en": "Engagement",
+    "ar": "خطوبة",
+    "tr": "Khitubah",
+    "id": "Pertunangan"
+  },
+  {
+    "en": "Wedding",
+    "ar": "حفل زفاف",
+    "tr": "Hafl zafaf",
+    "id": "Pesta pernikahan"
+  },
+  {
+    "en": "Household chores",
+    "ar": "أعمال المنزل",
+    "tr": "A'mal al-manzil",
+    "id": "Pekerjaan rumah"
   }
 ]

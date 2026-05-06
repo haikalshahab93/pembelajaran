@@ -178,5 +178,65 @@
     "ar": "ملعب كبير",
     "tr": "Mal'ab kabir",
     "id": "Stadion"
+  },
+  {
+    "en": "Train station",
+    "ar": "محطة القطار",
+    "tr": "Mahattat al-qitar",
+    "id": "Stasiun kereta"
+  },
+  {
+    "en": "Police station",
+    "ar": "مركز الشرطة",
+    "tr": "Markaz ash-shurtah",
+    "id": "Kantor polisi"
+  },
+  {
+    "en": "Clinic",
+    "ar": "عيادة",
+    "tr": "Iyadah",
+    "id": "Klinik"
+  },
+  {
+    "en": "Coffee shop",
+    "ar": "مقهى",
+    "tr": "Maqha",
+    "id": "Kedai kopi"
+  },
+  {
+    "en": "Bookstore",
+    "ar": "مكتبة كتب",
+    "tr": "Maktabat kutub",
+    "id": "Toko buku"
+  },
+  {
+    "en": "Mall entrance",
+    "ar": "مدخل المركز التجاري",
+    "tr": "Madkhal al-markaz at-tijari",
+    "id": "Pintu masuk mal"
+  },
+  {
+    "en": "Parking area",
+    "ar": "موقف السيارات",
+    "tr": "Mawqif as-sayyarat",
+    "id": "Area parkir"
+  },
+  {
+    "en": "Public park",
+    "ar": "حديقة عامة",
+    "tr": "Hadiqah 'ammah",
+    "id": "Taman umum"
+  },
+  {
+    "en": "Residential area",
+    "ar": "منطقة سكنية",
+    "tr": "Mintaqah sakaniyyah",
+    "id": "Area perumahan"
+  },
+  {
+    "en": "Main road",
+    "ar": "شارع رئيسي",
+    "tr": "Shari' ra'isi",
+    "id": "Jalan utama"
   }
 ]

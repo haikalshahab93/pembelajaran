@@ -178,5 +178,65 @@
     "ar": "وسائل النقل العام",
     "tr": "Wasa'il an-naql al-'amm",
     "id": "Transportasi umum"
+  },
+  {
+    "en": "Driver license",
+    "ar": "رخصة القيادة",
+    "tr": "Rukhsat al-qiyadah",
+    "id": "SIM"
+  },
+  {
+    "en": "Ticket gate",
+    "ar": "بوابة التذاكر",
+    "tr": "Bawwabat at-tadhakir",
+    "id": "Gerbang tiket"
+  },
+  {
+    "en": "Traffic jam",
+    "ar": "ازدحام مروري",
+    "tr": "Izdiham mururi",
+    "id": "Macet"
+  },
+  {
+    "en": "Road sign",
+    "ar": "إشارة طريق",
+    "tr": "Isharat tariq",
+    "id": "Rambu jalan"
+  },
+  {
+    "en": "Parking ticket",
+    "ar": "تذكرة موقف",
+    "tr": "Tadhkirat mawqif",
+    "id": "Tiket parkir"
+  },
+  {
+    "en": "Fuel station",
+    "ar": "محطة الوقود",
+    "tr": "Mahattat al-wuqud",
+    "id": "Pom bensin"
+  },
+  {
+    "en": "Route map",
+    "ar": "خريطة المسار",
+    "tr": "Kharitat al-masar",
+    "id": "Peta rute"
+  },
+  {
+    "en": "Travel card",
+    "ar": "بطاقة سفر",
+    "tr": "Bitaqat safar",
+    "id": "Kartu perjalanan"
+  },
+  {
+    "en": "Rear seat",
+    "ar": "المقعد الخلفي",
+    "tr": "Al-maq'ad al-khalfi",
+    "id": "Kursi belakang"
+  },
+  {
+    "en": "Front seat",
+    "ar": "المقعد الأمامي",
+    "tr": "Al-maq'ad al-amami",
+    "id": "Kursi depan"
   }
 ]

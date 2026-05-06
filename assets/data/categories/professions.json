@@ -178,5 +178,65 @@
     "ar": "رائد أعمال",
     "tr": "Ra'id a'mal",
     "id": "Wirausaha"
+  },
+  {
+    "en": "Lecturer",
+    "ar": "محاضر",
+    "tr": "Muhadir",
+    "id": "Dosen"
+  },
+  {
+    "en": "Manager",
+    "ar": "مدير",
+    "tr": "Mudir",
+    "id": "Manajer"
+  },
+  {
+    "en": "Operator",
+    "ar": "مشغل",
+    "tr": "Mushaghghil",
+    "id": "Operator"
+  },
+  {
+    "en": "Barber",
+    "ar": "حلاق",
+    "tr": "Hallaq",
+    "id": "Tukang cukur"
+  },
+  {
+    "en": "Electrician",
+    "ar": "كهربائي",
+    "tr": "Kahraba'i",
+    "id": "Teknisi listrik"
+  },
+  {
+    "en": "Plumber",
+    "ar": "سباك",
+    "tr": "Sabbak",
+    "id": "Tukang ledeng"
+  },
+  {
+    "en": "Carpenter",
+    "ar": "نجار",
+    "tr": "Najjar",
+    "id": "Tukang kayu"
+  },
+  {
+    "en": "Courier",
+    "ar": "ساعي",
+    "tr": "Sa'i",
+    "id": "Kurir"
+  },
+  {
+    "en": "Salesperson",
+    "ar": "مندوب مبيعات",
+    "tr": "Mandub mabi'at",
+    "id": "Sales"
+  },
+  {
+    "en": "Consultant",
+    "ar": "مستشار",
+    "tr": "Mustashar",
+    "id": "Konsultan"
   }
 ]

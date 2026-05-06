@@ -238,5 +238,41 @@
     "ar": "مستوى الرطوبة",
     "tr": "Mustawa ar-rutub ah",
     "id": "Tingkat kelembapan"
+  },
+  {
+    "en": "Forecast",
+    "ar": "توقعات",
+    "tr": "Tawaqqu'at",
+    "id": "Prakiraan"
+  },
+  {
+    "en": "Breeze",
+    "ar": "نسيم",
+    "tr": "Nasim",
+    "id": "Angin sepoi"
+  },
+  {
+    "en": "Thunder",
+    "ar": "رعد",
+    "tr": "Ra'd",
+    "id": "Guntur"
+  },
+  {
+    "en": "Cool air",
+    "ar": "هواء بارد",
+    "tr": "Hawa' barid",
+    "id": "Udara sejuk"
+  },
+  {
+    "en": "Heavy rain",
+    "ar": "مطر غزير",
+    "tr": "Matar ghazir",
+    "id": "Hujan lebat"
+  },
+  {
+    "en": "Dry season",
+    "ar": "موسم الجفاف",
+    "tr": "Mawsim al-jafaf",
+    "id": "Musim kemarau"
   }
 ]

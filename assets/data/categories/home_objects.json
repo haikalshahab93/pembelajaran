@@ -238,5 +238,35 @@
     "ar": "شاحن",
     "tr": "Shahin",
     "id": "Pengisi daya"
+  },
+  {
+    "en": "Bed sheet",
+    "ar": "ملاءة سرير",
+    "tr": "Mila'ah sarir",
+    "id": "Seprai"
+  },
+  {
+    "en": "Air conditioner",
+    "ar": "مكيف",
+    "tr": "Mukayyif",
+    "id": "AC"
+  },
+  {
+    "en": "Remote control",
+    "ar": "جهاز التحكم",
+    "tr": "Jihaz at-tahakkum",
+    "id": "Remote"
+  },
+  {
+    "en": "Cooking pot",
+    "ar": "قدر",
+    "tr": "Qidr",
+    "id": "Panci"
+  },
+  {
+    "en": "Frying pan",
+    "ar": "مقلاة",
+    "tr": "Miqlah",
+    "id": "Wajan"
   }
 ]

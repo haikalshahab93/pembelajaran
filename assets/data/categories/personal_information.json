@@ -238,5 +238,59 @@
     "ar": "توقيع",
     "tr": "Tawqi'",
     "id": "Tanda tangan"
+  },
+  {
+    "en": "Date of issue",
+    "ar": "تاريخ الإصدار",
+    "tr": "Tarikh al-isdar",
+    "id": "Tanggal terbit"
+  },
+  {
+    "en": "Date of expiry",
+    "ar": "تاريخ الانتهاء",
+    "tr": "Tarikh al-intiha'",
+    "id": "Tanggal kedaluwarsa"
+  },
+  {
+    "en": "Gender",
+    "ar": "الجنس",
+    "tr": "Al-jins",
+    "id": "Jenis kelamin"
+  },
+  {
+    "en": "Date of birth",
+    "ar": "تاريخ الميلاد",
+    "tr": "Tarikh al-milad",
+    "id": "Tanggal lahir"
+  },
+  {
+    "en": "Occupation",
+    "ar": "المهنة",
+    "tr": "Al-mihnah",
+    "id": "Pekerjaan"
+  },
+  {
+    "en": "Office address",
+    "ar": "عنوان المكتب",
+    "tr": "Unwan al-maktab",
+    "id": "Alamat kantor"
+  },
+  {
+    "en": "Home address",
+    "ar": "عنوان المنزل",
+    "tr": "Unwan al-manzil",
+    "id": "Alamat rumah"
+  },
+  {
+    "en": "Nationality",
+    "ar": "الجنسية",
+    "tr": "Al-jinsiyyah",
+    "id": "Kebangsaan"
+  },
+  {
+    "en": "Religion",
+    "ar": "الديانة",
+    "tr": "Ad-diyanah",
+    "id": "Agama"
   }
 ]

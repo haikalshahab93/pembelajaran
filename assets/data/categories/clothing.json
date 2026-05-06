@@ -178,5 +178,65 @@
     "ar": "كم",
     "tr": "Kumm",
     "id": "Lengan baju"
+  },
+  {
+    "en": "Ring",
+    "ar": "خاتم",
+    "tr": "Khatam",
+    "id": "Cincin"
+  },
+  {
+    "en": "Wallet chain",
+    "ar": "سلسلة المحفظة",
+    "tr": "Silsilat al-mahfazah",
+    "id": "Rantai dompet"
+  },
+  {
+    "en": "Backpack",
+    "ar": "حقيبة ظهر",
+    "tr": "Haqibat zahr",
+    "id": "Tas punggung"
+  },
+  {
+    "en": "Sunglasses",
+    "ar": "نظارة شمسية",
+    "tr": "Nazzarah shamsiyyah",
+    "id": "Kacamata hitam"
+  },
+  {
+    "en": "Apron",
+    "ar": "مريلة",
+    "tr": "Mariylah",
+    "id": "Celemek"
+  },
+  {
+    "en": "Bathrobe",
+    "ar": "روب حمام",
+    "tr": "Ruwb hammam",
+    "id": "Jubah mandi"
+  },
+  {
+    "en": "Shawl",
+    "ar": "شال",
+    "tr": "Shal",
+    "id": "Selendang"
+  },
+  {
+    "en": "Sandals strap",
+    "ar": "رباط الصندل",
+    "tr": "Ribat as-sandal",
+    "id": "Tali sandal"
+  },
+  {
+    "en": "Collar",
+    "ar": "ياقة",
+    "tr": "Yaqah",
+    "id": "Kerah"
+  },
+  {
+    "en": "Zipper",
+    "ar": "سحاب",
+    "tr": "Sahhab",
+    "id": "Resleting"
   }
 ]

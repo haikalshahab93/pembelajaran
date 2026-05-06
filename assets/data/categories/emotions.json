@@ -178,5 +178,65 @@
     "ar": "راج",
     "tr": "Rajin",
     "id": "Berharap"
+  },
+  {
+    "en": "Cheerful",
+    "ar": "مبتهج",
+    "tr": "Mubtahij",
+    "id": "Ceria"
+  },
+  {
+    "en": "Upset",
+    "ar": "منزعج",
+    "tr": "Munza'ij",
+    "id": "Kesal"
+  },
+  {
+    "en": "Determined",
+    "ar": "مصمم",
+    "tr": "Musammim",
+    "id": "Bertekad"
+  },
+  {
+    "en": "Touched",
+    "ar": "متأثر",
+    "tr": "Muta'aththir",
+    "id": "Terharu"
+  },
+  {
+    "en": "Relaxed",
+    "ar": "مسترخ",
+    "tr": "Mustarkh",
+    "id": "Rileks"
+  },
+  {
+    "en": "Insecure",
+    "ar": "غير واثق",
+    "tr": "Ghayr wathiq",
+    "id": "Tidak percaya diri"
+  },
+  {
+    "en": "Excited for tomorrow",
+    "ar": "متحمس للغد",
+    "tr": "Mutaḥammis lil-ghad",
+    "id": "Antusias untuk besok"
+  },
+  {
+    "en": "Homesick",
+    "ar": "مشتاق إلى البيت",
+    "tr": "Mushtaq ila al-bayt",
+    "id": "Rindu rumah"
+  },
+  {
+    "en": "Inspired",
+    "ar": "ملهم",
+    "tr": "Mulham",
+    "id": "Terinspirasi"
+  },
+  {
+    "en": "Discouraged",
+    "ar": "مثبط",
+    "tr": "Muthabbat",
+    "id": "Patah semangat"
   }
 ]

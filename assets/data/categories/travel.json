@@ -238,5 +238,65 @@
     "ar": "خطة سفر",
     "tr": "Khuttat safar",
     "id": "Rencana perjalanan"
+  },
+  {
+    "en": "Boarding time",
+    "ar": "وقت الصعود",
+    "tr": "Waqt as-su'ud",
+    "id": "Waktu boarding"
+  },
+  {
+    "en": "Arrival time",
+    "ar": "وقت الوصول",
+    "tr": "Waqt al-wusul",
+    "id": "Waktu tiba"
+  },
+  {
+    "en": "Departure time",
+    "ar": "وقت المغادرة",
+    "tr": "Waqt al-mughadarah",
+    "id": "Waktu berangkat"
+  },
+  {
+    "en": "Travel document",
+    "ar": "وثيقة سفر",
+    "tr": "Wathiqat safar",
+    "id": "Dokumen perjalanan"
+  },
+  {
+    "en": "Travel agency",
+    "ar": "وكالة سفر",
+    "tr": "Wikalat safar",
+    "id": "Agen perjalanan"
+  },
+  {
+    "en": "Arrival hall",
+    "ar": "صالة الوصول",
+    "tr": "Salat al-wusul",
+    "id": "Area kedatangan"
+  },
+  {
+    "en": "Departure hall",
+    "ar": "صالة المغادرة",
+    "tr": "Salat al-mughadarah",
+    "id": "Area keberangkatan"
+  },
+  {
+    "en": "Border",
+    "ar": "حدود",
+    "tr": "Hudud",
+    "id": "Perbatasan"
+  },
+  {
+    "en": "Travel route",
+    "ar": "مسار الرحلة",
+    "tr": "Masar ar-rihlah",
+    "id": "Rute perjalanan"
+  },
+  {
+    "en": "Travel companion",
+    "ar": "رفيق السفر",
+    "tr": "Rafiq as-safar",
+    "id": "Teman perjalanan"
   }
 ]

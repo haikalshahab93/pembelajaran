@@ -238,5 +238,53 @@
     "ar": "الطعام جاهز",
     "tr": "At-ta'am jahiz",
     "id": "Makanannya siap"
+  },
+  {
+    "en": "Table for four",
+    "ar": "طاولة لأربعة",
+    "tr": "Tawilah li-arba'ah",
+    "id": "Meja untuk empat orang"
+  },
+  {
+    "en": "Please bring water",
+    "ar": "من فضلك أحضر الماء",
+    "tr": "Min fadlik ahdir al-ma'",
+    "id": "Tolong bawakan air"
+  },
+  {
+    "en": "No sugar",
+    "ar": "بدون سكر",
+    "tr": "Bidun sukkar",
+    "id": "Tanpa gula"
+  },
+  {
+    "en": "The soup is hot",
+    "ar": "الحساء ساخن",
+    "tr": "Al-hasa' sakhin",
+    "id": "Supnya panas"
+  },
+  {
+    "en": "I am full",
+    "ar": "أنا شبعان",
+    "tr": "Ana shab'an",
+    "id": "Saya kenyang"
+  },
+  {
+    "en": "Please clean the table",
+    "ar": "من فضلك نظف الطاولة",
+    "tr": "Min fadlik nazzif at-tawilah",
+    "id": "Tolong bersihkan meja"
+  },
+  {
+    "en": "Mineral water bottle",
+    "ar": "زجاجة ماء معدني",
+    "tr": "Zujajat ma' ma'dani",
+    "id": "Botol air mineral"
+  },
+  {
+    "en": "Order is complete",
+    "ar": "الطلب مكتمل",
+    "tr": "At-talab muktamil",
+    "id": "Pesanan lengkap"
   }
 ]

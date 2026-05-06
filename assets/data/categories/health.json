@@ -238,5 +238,29 @@
     "ar": "مريض",
     "tr": "Marid",
     "id": "Pasien"
+  },
+  {
+    "en": "Emergency room",
+    "ar": "غرفة الطوارئ",
+    "tr": "Ghurfat at-tawari'",
+    "id": "UGD"
+  },
+  {
+    "en": "Appointment",
+    "ar": "موعد",
+    "tr": "Maw'id",
+    "id": "Janji temu"
+  },
+  {
+    "en": "Medical checkup",
+    "ar": "فحص طبي",
+    "tr": "Fahs tibbi",
+    "id": "Pemeriksaan kesehatan"
+  },
+  {
+    "en": "Healthy food",
+    "ar": "طعام صحي",
+    "tr": "Ta'am sihhi",
+    "id": "Makanan sehat"
   }
 ]
