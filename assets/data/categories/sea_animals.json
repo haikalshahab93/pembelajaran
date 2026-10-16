@@ -1,0 +1,86 @@
+[
+    {
+        "en": "Shark",
+        "ar": "قرش",
+        "tr": "Qirsh",
+        "id": "hiu",
+        "emoji": "🦈"
+    },
+    {
+        "en": "Whale",
+        "ar": "حوت",
+        "tr": "Hut",
+        "id": "paus",
+        "emoji": "🐋"
+    },
+    {
+        "en": "Dolphin",
+        "ar": "دلفين",
+        "tr": "Dulfin",
+        "id": "lumba-lumba",
+        "emoji": "🐬"
+    },
+    {
+        "en": "Orca",
+        "ar": "أوركا",
+        "tr": "Uraka",
+        "id": "paus pembunuh",
+        "emoji": "🐬"
+    },
+    {
+        "en": "Tuna",
+        "ar": "تونا",
+        "tr": "Tuna",
+        "id": "tuna",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Salmon",
+        "ar": "سلمون",
+        "tr": "Salamun",
+        "id": "salmon",
+        "emoji": "🐟"
+    },
+    {
+        "en": "Octopus",
+        "ar": "أخطبوط",
+        "tr": "Ukhtubut",
+        "id": "gurita",
+        "emoji": "🐙"
+    },
+    {
+        "en": "Squid",
+        "ar": "حبار",
+        "tr": "Hibar",
+        "id": "cumi-cumi",
+        "emoji": "🦑"
+    },
+    {
+        "en": "Crab",
+        "ar": "سلطعون",
+        "tr": "Salta'un",
+        "id": "kepiting",
+        "emoji": "🦀"
+    },
+    {
+        "en": "Shrimp",
+        "ar": "روبيان",
+        "tr": "Rubin",
+        "id": "udang",
+        "emoji": "🦐"
+    },
+    {
+        "en": "Lobster",
+        "ar": "سرطان البحر",
+        "tr": "Sartan al-Bahr",
+        "id": "lobster",
+        "emoji": "🦞"
+    },
+    {
+        "en": "Starfish",
+        "ar": "نجم البحر",
+        "tr": "Najm al-Bahr",
+        "id": "bintang laut",
+        "emoji": "⭐"
+    }
+]

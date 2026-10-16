@@ -1,0 +1,266 @@
+[
+  {
+    "en": "Doctor",
+    "ar": "طبيب",
+    "tr": "Ṭabīb",
+    "id": "Dokter"
+  },
+  {
+    "en": "Nurse",
+    "ar": "ممرض",
+    "tr": "Mumarriḍ",
+    "id": "Perawat"
+  },
+  {
+    "en": "Medicine",
+    "ar": "دواء",
+    "tr": "Dawāʾ",
+    "id": "Obat"
+  },
+  {
+    "en": "Pharmacy",
+    "ar": "صيدلية",
+    "tr": "Ṣaydaliyyah",
+    "id": "Apotek"
+  },
+  {
+    "en": "Pain",
+    "ar": "ألم",
+    "tr": "Alam",
+    "id": "Nyeri"
+  },
+  {
+    "en": "Fever",
+    "ar": "حمى",
+    "tr": "Ḥummā",
+    "id": "Demam"
+  },
+  {
+    "en": "Cough",
+    "ar": "سعال",
+    "tr": "Suʿāl",
+    "id": "Batuk"
+  },
+  {
+    "en": "Clinic",
+    "ar": "عيادة",
+    "tr": "ʿIyādah",
+    "id": "Klinik"
+  },
+  {
+    "en": "Healthy",
+    "ar": "صحي",
+    "tr": "Ṣiḥḥī",
+    "id": "Sehat"
+  },
+  {
+    "en": "Sick",
+    "ar": "مريض",
+    "tr": "Marīḍ",
+    "id": "Sakit"
+  },
+  {
+    "en": "Appointment",
+    "ar": "موعد",
+    "tr": "Mawʿid",
+    "id": "Janji"
+  },
+  {
+    "en": "Emergency",
+    "ar": "طوارئ",
+    "tr": "Ṭawāriʾ",
+    "id": "Darurat"
+  },
+  {
+    "en": "Hospital",
+    "ar": "مستشفى",
+    "tr": "Mustashfa",
+    "id": "Rumah sakit"
+  },
+  {
+    "en": "Headache",
+    "ar": "صداع",
+    "tr": "Suda'",
+    "id": "Sakit kepala"
+  },
+  {
+    "en": "Stomachache",
+    "ar": "ألم المعدة",
+    "tr": "Alam al-mi'dah",
+    "id": "Sakit perut"
+  },
+  {
+    "en": "Allergy",
+    "ar": "حساسية",
+    "tr": "Hasasiyyah",
+    "id": "Alergi"
+  },
+  {
+    "en": "Blood pressure",
+    "ar": "ضغط الدم",
+    "tr": "Daght ad-dam",
+    "id": "Tekanan darah"
+  },
+  {
+    "en": "Thermometer",
+    "ar": "ميزان الحرارة",
+    "tr": "Mizan al-hararah",
+    "id": "Termometer"
+  },
+  {
+    "en": "Bandage",
+    "ar": "ضمادة",
+    "tr": "Dimadah",
+    "id": "Perban"
+  },
+  {
+    "en": "Injection",
+    "ar": "حقنة",
+    "tr": "Huqnah",
+    "id": "Suntikan"
+  },
+  {
+    "en": "Ambulance",
+    "ar": "سيارة إسعاف",
+    "tr": "Sayyarat is'af",
+    "id": "Ambulans"
+  },
+  {
+    "en": "Recovery",
+    "ar": "تعاف",
+    "tr": "Ta'afin",
+    "id": "Pemulihan"
+  },
+  {
+    "en": "Pulse",
+    "ar": "نبض",
+    "tr": "Nabd",
+    "id": "Nadi"
+  },
+  {
+    "en": "Breath",
+    "ar": "تنفس",
+    "tr": "Tanaffus",
+    "id": "Napas"
+  },
+  {
+    "en": "Checkup",
+    "ar": "فحص",
+    "tr": "Fahs",
+    "id": "Pemeriksaan"
+  },
+  {
+    "en": "Prescription",
+    "ar": "وصفة طبية",
+    "tr": "Wasfah tibbiyah",
+    "id": "Resep dokter"
+  },
+  {
+    "en": "Vitamin",
+    "ar": "فيتامين",
+    "tr": "Fitamin",
+    "id": "Vitamin"
+  },
+  {
+    "en": "Healing",
+    "ar": "شفاء",
+    "tr": "Shifa'",
+    "id": "Kesembuhan"
+  },
+  {
+    "en": "Wound",
+    "ar": "جرح",
+    "tr": "Jarh",
+    "id": "Luka"
+  },
+  {
+    "en": "Dizzy",
+    "ar": "دوخة",
+    "tr": "Dawkhah",
+    "id": "Pusing"
+  },
+  {
+    "en": "Sore throat",
+    "ar": "التهاب الحلق",
+    "tr": "Iltihab al-halq",
+    "id": "Sakit tenggorokan"
+  },
+  {
+    "en": "Flu",
+    "ar": "إنفلونزا",
+    "tr": "Influenza",
+    "id": "Flu"
+  },
+  {
+    "en": "Cold medicine",
+    "ar": "دواء البرد",
+    "tr": "Dawa' al-bard",
+    "id": "Obat flu"
+  },
+  {
+    "en": "Painkiller",
+    "ar": "مسكن ألم",
+    "tr": "Musakkin alam",
+    "id": "Obat pereda nyeri"
+  },
+  {
+    "en": "Recovery room",
+    "ar": "غرفة التعافي",
+    "tr": "Ghurfat at-ta'afi",
+    "id": "Ruang pemulihan"
+  },
+  {
+    "en": "Vaccination",
+    "ar": "تطعيم",
+    "tr": "Tat'im",
+    "id": "Vaksinasi"
+  },
+  {
+    "en": "Medical record",
+    "ar": "سجل طبي",
+    "tr": "Sijill tibbi",
+    "id": "Rekam medis"
+  },
+  {
+    "en": "Blood test",
+    "ar": "تحليل دم",
+    "tr": "Tahlil dam",
+    "id": "Tes darah"
+  },
+  {
+    "en": "Health insurance",
+    "ar": "تأمين صحي",
+    "tr": "Ta'min sihhi",
+    "id": "Asuransi kesehatan"
+  },
+  {
+    "en": "Patient",
+    "ar": "مريض",
+    "tr": "Marid",
+    "id": "Pasien"
+  },
+  {
+    "en": "Emergency room",
+    "ar": "غرفة الطوارئ",
+    "tr": "Ghurfat at-tawari'",
+    "id": "UGD"
+  },
+  {
+    "en": "Appointment",
+    "ar": "موعد",
+    "tr": "Maw'id",
+    "id": "Janji temu"
+  },
+  {
+    "en": "Medical checkup",
+    "ar": "فحص طبي",
+    "tr": "Fahs tibbi",
+    "id": "Pemeriksaan kesehatan"
+  },
+  {
+    "en": "Healthy food",
+    "ar": "طعام صحي",
+    "tr": "Ta'am sihhi",
+    "id": "Makanan sehat"
+  }
+]

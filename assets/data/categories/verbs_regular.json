@@ -1,0 +1,264 @@
+[
+    {
+        "en": "Walk",
+        "ar": "يمشي",
+        "tr": "Yamshī",
+        "v1": "walk",
+        "v2": "walked",
+        "v3": "walked",
+        "id": "Berjalan"
+    },
+    {
+        "en": "Talk",
+        "ar": "يتحدث",
+        "tr": "Yataḥaddath",
+        "v1": "talk",
+        "v2": "talked",
+        "v3": "talked",
+        "id": "Berbicara"
+    },
+    {
+        "en": "Play",
+        "ar": "يلعب",
+        "tr": "Yalʿab",
+        "v1": "play",
+        "v2": "played",
+        "v3": "played",
+        "id": "Bermain"
+    },
+    {
+        "en": "Work",
+        "ar": "يعمل",
+        "tr": "Yaʿmal",
+        "v1": "work",
+        "v2": "worked",
+        "v3": "worked",
+        "id": "Bekerja"
+    },
+    {
+        "en": "Call",
+        "ar": "يتصل",
+        "tr": "Yattaṣil",
+        "v1": "call",
+        "v2": "called",
+        "v3": "called",
+        "id": "Menelepon"
+    },
+    {
+        "en": "Live",
+        "ar": "يعيش",
+        "tr": "Yaʿīsh",
+        "v1": "live",
+        "v2": "lived",
+        "v3": "lived",
+        "id": "Tinggal"
+    },
+    {
+        "en": "Want",
+        "ar": "يريد",
+        "tr": "Yurīd",
+        "v1": "want",
+        "v2": "wanted",
+        "v3": "wanted",
+        "id": "Ingin"
+    },
+    {
+        "en": "Look",
+        "ar": "ينظر",
+        "tr": "Yanzur",
+        "v1": "look",
+        "v2": "looked",
+        "v3": "looked",
+        "id": "Melihat"
+    },
+    {
+        "en": "Need",
+        "ar": "يحتاج",
+        "tr": "Yaḥtāj",
+        "v1": "need",
+        "v2": "needed",
+        "v3": "needed",
+        "id": "Membutuhkan"
+    },
+    {
+        "en": "Like",
+        "ar": "يحب",
+        "tr": "Yuḥibb",
+        "v1": "like",
+        "v2": "liked",
+        "v3": "liked",
+        "id": "Suka"
+    },
+    {
+        "en": "Use",
+        "ar": "يستعمل",
+        "tr": "Yastaʿmil",
+        "v1": "use",
+        "v2": "used",
+        "v3": "used",
+        "id": "Menggunakan"
+    },
+    {
+        "en": "Try",
+        "ar": "يجرب",
+        "tr": "Yujarrib",
+        "v1": "try",
+        "v2": "tried",
+        "v3": "tried",
+        "id": "Mencoba"
+    },
+    {
+        "en": "Open",
+        "ar": "يفتح",
+        "tr": "Yaftaḥ",
+        "v1": "open",
+        "v2": "opened",
+        "v3": "opened",
+        "id": "Membuka"
+    },
+    {
+        "en": "Close",
+        "ar": "يغلق",
+        "tr": "Yughliq",
+        "v1": "close",
+        "v2": "closed",
+        "v3": "closed",
+        "id": "Menutup"
+    },
+    {
+        "en": "Clean",
+        "ar": "ينظف",
+        "tr": "Yunaẓẓif",
+        "v1": "clean",
+        "v2": "cleaned",
+        "v3": "cleaned",
+        "id": "Membersihkan"
+    },
+    {
+        "en": "Cook",
+        "ar": "يطبخ",
+        "tr": "Yaṭbukh",
+        "v1": "cook",
+        "v2": "cooked",
+        "v3": "cooked",
+        "id": "Memasak"
+    },
+    {
+        "en": "Help",
+        "ar": "يساعد",
+        "tr": "Yusāʿid",
+        "v1": "help",
+        "v2": "helped",
+        "v3": "helped",
+        "id": "Membantu"
+    },
+    {
+        "en": "Start",
+        "ar": "يبدأ",
+        "tr": "Yabdaʾ",
+        "v1": "start",
+        "v2": "started",
+        "v3": "started",
+        "id": "Memulai"
+    },
+    {
+        "en": "Stop",
+        "ar": "يتوقف",
+        "tr": "Yatawaqqaf",
+        "v1": "stop",
+        "v2": "stopped",
+        "v3": "stopped",
+        "id": "Berhenti"
+    },
+    {
+        "en": "Travel",
+        "ar": "يسافر",
+        "tr": "Yusāfir",
+        "v1": "travel",
+        "v2": "traveled",
+        "v3": "traveled",
+        "id": "Bepergian"
+    },
+    {
+        "en": "Watch",
+        "ar": "يشاهد",
+        "tr": "Yushāhid",
+        "v1": "watch",
+        "v2": "watched",
+        "v3": "watched",
+        "id": "Menonton"
+    },
+    {
+        "en": "Move",
+        "ar": "يتحرك",
+        "tr": "Yataḥarrak",
+        "v1": "move",
+        "v2": "moved",
+        "v3": "moved",
+        "id": "Bergerak"
+    },
+    {
+        "en": "Dance",
+        "ar": "يرقص",
+        "tr": "Yarquṣ",
+        "v1": "dance",
+        "v2": "danced",
+        "v3": "danced",
+        "id": "Menari"
+    },
+    {
+        "en": "Smile",
+        "ar": "يبتسم",
+        "tr": "Yabtassim",
+        "v1": "smile",
+        "v2": "smiled",
+        "v3": "smiled",
+        "id": "Tersenyum"
+    },
+    {
+        "en": "Study",
+        "ar": "يدرس",
+        "tr": "Yadrus",
+        "v1": "study",
+        "v2": "studied",
+        "v3": "studied",
+        "id": "Belajar"
+    },
+    {
+        "en": "Visit",
+        "ar": "يزور",
+        "tr": "Yazūr",
+        "v1": "visit",
+        "v2": "visited",
+        "v3": "visited",
+        "id": "Mengunjungi"
+    },
+    {
+        "en": "Wash",
+        "ar": "يغسل",
+        "tr": "Yaghsil",
+        "v1": "wash",
+        "v2": "washed",
+        "v3": "washed",
+        "id": "Mencuci"
+    },
+    {
+        "en": "Wait",
+        "ar": "ينتظر",
+        "tr": "Yantaẓir",
+        "v1": "wait",
+        "v2": "waited",
+        "v3": "waited",
+        "id": "Menunggu"
+    },
+    {
+        "en": "Learn",
+        "ar": "يتعلم",
+        "tr": "Yataʿallam",
+        "v1": "learn",
+        "v2": "learned",
+        "v3": "learned",
+        "id": "Belajar"
+    }
+]
+

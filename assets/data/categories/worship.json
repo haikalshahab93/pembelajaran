@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Prayer",
+        "ar": "صلاة",
+        "tr": "Ṣalāh",
+        "id": "Salat"
+    },
+    {
+        "en": "Ablution",
+        "ar": "وضوء",
+        "tr": "Wuḍūʾ",
+        "id": "Wudu"
+    },
+    {
+        "en": "Quran",
+        "ar": "قرآن",
+        "tr": "Qurʾān",
+        "id": "Al-Qur'an"
+    },
+    {
+        "en": "Supplication",
+        "ar": "دعاء",
+        "tr": "Duʿāʾ",
+        "id": "Doa"
+    },
+    {
+        "en": "Fasting",
+        "ar": "صيام",
+        "tr": "Ṣiyām",
+        "id": "Puasa"
+    },
+    {
+        "en": "Charity",
+        "ar": "صدقة",
+        "tr": "Ṣadaqah",
+        "id": "Sedekah"
+    },
+    {
+        "en": "Friday",
+        "ar": "الجمعة",
+        "tr": "Al-Jumuʿah",
+        "id": "Jumat"
+    },
+    {
+        "en": "Imam",
+        "ar": "إمام",
+        "tr": "Imām",
+        "id": "Imam"
+    },
+    {
+        "en": "Congregation",
+        "ar": "جماعة",
+        "tr": "Jamāʿah",
+        "id": "Jemaah"
+    },
+    {
+        "en": "Tasbih",
+        "ar": "تسبيح",
+        "tr": "Tasbīḥ",
+        "id": "Tasbih"
+    },
+    {
+        "en": "Remembrance",
+        "ar": "ذكر",
+        "tr": "Dhikr",
+        "id": "Zikir"
+    },
+    {
+        "en": "Sermon",
+        "ar": "خطبة",
+        "tr": "Khuṭbah",
+        "id": "Khutbah"
+    }
+]

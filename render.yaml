@@ -1,0 +1,39 @@
+# Blueprint Render untuk backend Express + Firestore.
+# Buka dashboard Render -> New -> Blueprint, lalu tunjuk file ini.
+#
+# Frontend React di-host di GitHub Pages (lihat .github/workflows/deploy-pages.yml).
+# Backend ini melayani /api/* dan juga bisa menyajikan client/dist bila di-build di Render.
+
+services:
+  - type: web
+    name: pembelajaran-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: HOST
+        value: "0.0.0.0"
+      # URL publik backend ini (setelah service pertama kali dibuat, isi sesuai domain Render)
+      - key: API_BASE_URL
+        value: ""
+      # Origin frontend React (GitHub Pages), dipisah koma bila lebih dari satu
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: ADMIN_USERNAME
+        value: "admin"
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      # --- Firebase Firestore (database sementara) ---
+      # Tempel isi file service account JSON (satu baris) sebagai rahasia.
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false
+      # --- Opsional: bantuan AI via Ollama ---
+      - key: OLLAMA_BASE_URL
+        sync: false
+      - key: OLLAMA_MODEL
+        value: "qwen2.5:3b"

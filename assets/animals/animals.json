@@ -1,0 +1,1609 @@
+[
+  {
+    "en": "Cat",
+    "ar": "قطة",
+    "tr": "Qittah",
+    "id": "kucing",
+    "emoji": "🐱"
+  },
+  {
+    "en": "Dog",
+    "ar": "كلب",
+    "tr": "Kalb",
+    "id": "anjing",
+    "emoji": "🐶"
+  },
+  {
+    "en": "Cow",
+    "ar": "بقرة",
+    "tr": "Baqarah",
+    "id": "sapi",
+    "emoji": "🐄"
+  },
+  {
+    "en": "Horse",
+    "ar": "حصان",
+    "tr": "Hisan",
+    "id": "kuda",
+    "emoji": "🐴"
+  },
+  {
+    "en": "Sheep",
+    "ar": "خروف",
+    "tr": "Kharuf",
+    "id": "domba",
+    "emoji": "🐑"
+  },
+  {
+    "en": "Goat",
+    "ar": "ماعز",
+    "tr": "Ma'iz",
+    "id": "kambing",
+    "emoji": "🐐"
+  },
+  {
+    "en": "Pig",
+    "ar": "خنزير",
+    "tr": "Khinzir",
+    "id": "babi",
+    "emoji": "🐷"
+  },
+  {
+    "en": "Donkey",
+    "ar": "حمار",
+    "tr": "Himar",
+    "id": "keledai",
+    "emoji": "🐴"
+  },
+  {
+    "en": "Buffalo",
+    "ar": "جاموس",
+    "tr": "Jamus",
+    "id": "kerbau",
+    "emoji": "🐃"
+  },
+  {
+    "en": "Camel",
+    "ar": "جمل",
+    "tr": "Jamal",
+    "id": "unta",
+    "emoji": "🐫"
+  },
+  {
+    "en": "Deer",
+    "ar": "غزال",
+    "tr": "Ghazal",
+    "id": "rusa",
+    "emoji": "🦌"
+  },
+  {
+    "en": "Moose",
+    "ar": "موظ",
+    "tr": "Muz",
+    "id": "moose",
+    "emoji": "🫎"
+  },
+  {
+    "en": "Elk",
+    "ar": "أيل",
+    "tr": "Il",
+    "id": "rusa besar",
+    "emoji": "🫎"
+  },
+  {
+    "en": "Reindeer",
+    "ar": "الرنة",
+    "tr": "ar-Ranah",
+    "id": "rusa kutub",
+    "emoji": "🦌"
+  },
+  {
+    "en": "Elephant",
+    "ar": "فيل",
+    "tr": "Fil",
+    "id": "gajah",
+    "emoji": "🐘"
+  },
+  {
+    "en": "Rhinoceros",
+    "ar": "وحيد القرن",
+    "tr": "Wahid al-Qarn",
+    "id": "badak",
+    "emoji": "🦏"
+  },
+  {
+    "en": "Hippopotamus",
+    "ar": "فرس النهر",
+    "tr": "Faras an-Nahr",
+    "id": "kuda nil",
+    "emoji": "🦛"
+  },
+  {
+    "en": "Lion",
+    "ar": "أسد",
+    "tr": "Asad",
+    "id": "singa",
+    "emoji": "🦁"
+  },
+  {
+    "en": "Tiger",
+    "ar": "نمر",
+    "tr": "Nimr",
+    "id": "harimau",
+    "emoji": "🐯"
+  },
+  {
+    "en": "Leopard",
+    "ar": "فهد مرقط",
+    "tr": "Fahd Maraqt",
+    "id": "macan tutul",
+    "emoji": "🐆"
+  },
+  {
+    "en": "Cheetah",
+    "ar": "فهد",
+    "tr": "Fahd",
+    "id": "cheetah",
+    "emoji": "🐆"
+  },
+  {
+    "en": "Jaguar",
+    "ar": "جاغوار",
+    "tr": "Jaghur",
+    "id": "jaguar",
+    "emoji": "🐆"
+  },
+  {
+    "en": "Snow Leopard",
+    "ar": "فهد ثلجي",
+    "tr": "Fahd Thalji",
+    "id": "macan tutul salju",
+    "emoji": "🐆"
+  },
+  {
+    "en": "Lynx",
+    "ar": "وشق",
+    "tr": "Wshq",
+    "id": "lynx",
+    "emoji": "🐈"
+  },
+  {
+    "en": "Fox",
+    "ar": "ثعلب",
+    "tr": "Tha'lab",
+    "id": "rubah",
+    "emoji": "🦊"
+  },
+  {
+    "en": "Wolf",
+    "ar": "ذئب",
+    "tr": "Dhi'b",
+    "id": "serigala",
+    "emoji": "🐺"
+  },
+  {
+    "en": "Bear",
+    "ar": "دب",
+    "tr": "Dubb",
+    "id": "beruang",
+    "emoji": "🐻"
+  },
+  {
+    "en": "Polar Bear",
+    "ar": "دب قطبي",
+    "tr": "Db Qatabi",
+    "id": "beruang kutub",
+    "emoji": "🐻‍❄️"
+  },
+  {
+    "en": "Panda",
+    "ar": "باندا",
+    "tr": "Banada",
+    "id": "panda",
+    "emoji": "🐼"
+  },
+  {
+    "en": "Koala",
+    "ar": "كوالا",
+    "tr": "Kula",
+    "id": "koala",
+    "emoji": "🐨"
+  },
+  {
+    "en": "Kangaroo",
+    "ar": "كنغر",
+    "tr": "Kanaghr",
+    "id": "kanguru",
+    "emoji": "🦘"
+  },
+  {
+    "en": "Wallaby",
+    "ar": "ولابي",
+    "tr": "Wlabi",
+    "id": "wallaby",
+    "emoji": "🦘"
+  },
+  {
+    "en": "Wombat",
+    "ar": "ومبت",
+    "tr": "Wmabt",
+    "id": "wombat",
+    "emoji": "🐻"
+  },
+  {
+    "en": "Sloth",
+    "ar": "كسلان",
+    "tr": "Kasalan",
+    "id": "kukang",
+    "emoji": "🦥"
+  },
+  {
+    "en": "Armadillo",
+    "ar": "أرماديلو",
+    "tr": "Aramadilu",
+    "id": "armadillo"
+  },
+  {
+    "en": "Anteater",
+    "ar": "آكل النمل",
+    "tr": "Akl an-Naml",
+    "id": "pemakan semut"
+  },
+  {
+    "en": "Raccoon",
+    "ar": "راكون",
+    "tr": "Rakun",
+    "id": "rakun",
+    "emoji": "🦝"
+  },
+  {
+    "en": "Skunk",
+    "ar": "ظربان",
+    "tr": "Zaraban",
+    "id": "sigung",
+    "emoji": "🦨"
+  },
+  {
+    "en": "Beaver",
+    "ar": "قندس",
+    "tr": "Qundus",
+    "id": "berang-berang",
+    "emoji": "🦫"
+  },
+  {
+    "en": "Otter",
+    "ar": "ثعلب الماء",
+    "tr": "Tha'lab al-Ma'",
+    "id": "berang laut",
+    "emoji": "🦦"
+  },
+  {
+    "en": "Weasel",
+    "ar": "ابن عرس",
+    "tr": "Abn 'ars",
+    "id": "musang",
+    "emoji": "🐾"
+  },
+  {
+    "en": "Badger",
+    "ar": "غرير",
+    "tr": "Gharir",
+    "id": "luwak",
+    "emoji": "🐾"
+  },
+  {
+    "en": "Hedgehog",
+    "ar": "قنفذ",
+    "tr": "Qunfudh",
+    "id": "landak",
+    "emoji": "🦔"
+  },
+  {
+    "en": "Porcupine",
+    "ar": "نيص",
+    "tr": "Nis",
+    "id": "landak berduri",
+    "emoji": "🦔"
+  },
+  {
+    "en": "Squirrel",
+    "ar": "سنجاب",
+    "tr": "Sanajab",
+    "id": "tupai",
+    "emoji": "🐿️"
+  },
+  {
+    "en": "Chipmunk",
+    "ar": "سنجاب مخطط",
+    "tr": "Sanajab Makhatt",
+    "id": "chipmunk",
+    "emoji": "🐿️"
+  },
+  {
+    "en": "Rabbit",
+    "ar": "أرنب",
+    "tr": "Arnab",
+    "id": "kelinci",
+    "emoji": "🐰"
+  },
+  {
+    "en": "Hare",
+    "ar": "أرنب بري",
+    "tr": "Aranb Bari",
+    "id": "kelinci liar",
+    "emoji": "🐇"
+  },
+  {
+    "en": "Mouse",
+    "ar": "فأر",
+    "tr": "Fa'r",
+    "id": "tikus",
+    "emoji": "🐭"
+  },
+  {
+    "en": "Rat",
+    "ar": "جرذ",
+    "tr": "Jardh",
+    "id": "tikus besar",
+    "emoji": "🐀"
+  },
+  {
+    "en": "Bat",
+    "ar": "خفاش",
+    "tr": "Khuffash",
+    "id": "kelelawar",
+    "emoji": "🦇"
+  },
+  {
+    "en": "Monkey",
+    "ar": "قرد",
+    "tr": "Qird",
+    "id": "monyet",
+    "emoji": "🐒"
+  },
+  {
+    "en": "Chimpanzee",
+    "ar": "شمبانزي",
+    "tr": "Shamabanazi",
+    "id": "simpanse",
+    "emoji": "🦍"
+  },
+  {
+    "en": "Gorilla",
+    "ar": "غوريلا",
+    "tr": "Ghurila",
+    "id": "gorila",
+    "emoji": "🦍"
+  },
+  {
+    "en": "Orangutan",
+    "ar": "أورانغوتان",
+    "tr": "Uranaghutan",
+    "id": "orangutan",
+    "emoji": "🦧"
+  },
+  {
+    "en": "Lemur",
+    "ar": "ليمور",
+    "tr": "Limur",
+    "id": "lemur"
+  },
+  {
+    "en": "Eagle",
+    "ar": "نسر",
+    "tr": "Nasr",
+    "id": "elang",
+    "emoji": "🦅"
+  },
+  {
+    "en": "Hawk",
+    "ar": "صقر",
+    "tr": "Saqr",
+    "id": "elang",
+    "emoji": "🦅"
+  },
+  {
+    "en": "Falcon",
+    "ar": "شاهين",
+    "tr": "Shahin",
+    "id": "elang peregrine",
+    "emoji": "🦅"
+  },
+  {
+    "en": "Owl",
+    "ar": "بومة",
+    "tr": "Bumah",
+    "id": "burung hantu",
+    "emoji": "🦉"
+  },
+  {
+    "en": "Vulture",
+    "ar": "نسر جارح",
+    "tr": "Nasr Jarh",
+    "id": "burung nasar",
+    "emoji": "🦅"
+  },
+  {
+    "en": "Parrot",
+    "ar": "ببغاء",
+    "tr": "Babagha'",
+    "id": "burung beo",
+    "emoji": "🦜"
+  },
+  {
+    "en": "Macaw",
+    "ar": "ببغاء مقو",
+    "tr": "Babagha' Maqu",
+    "id": "macaw",
+    "emoji": "🦜"
+  },
+  {
+    "en": "Cockatoo",
+    "ar": "كوكاتو",
+    "tr": "Kukatu",
+    "id": "kakatua",
+    "emoji": "🦜"
+  },
+  {
+    "en": "Sparrow",
+    "ar": "عصفور",
+    "tr": "'asafur",
+    "id": "burung gereja",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Pigeon",
+    "ar": "حمامة",
+    "tr": "Hamamah",
+    "id": "merpati",
+    "emoji": "🕊️"
+  },
+  {
+    "en": "Dove",
+    "ar": "يمامة",
+    "tr": "Ymamah",
+    "id": "merpati putih",
+    "emoji": "🕊️"
+  },
+  {
+    "en": "Peacock",
+    "ar": "طاووس",
+    "tr": "Tus",
+    "id": "merak",
+    "emoji": "🦚"
+  },
+  {
+    "en": "Flamingo",
+    "ar": "فلامنغو",
+    "tr": "Falamanaghu",
+    "id": "flamingo",
+    "emoji": "🦩"
+  },
+  {
+    "en": "Swan",
+    "ar": "بجعة",
+    "tr": "Baja'ah",
+    "id": "angsa",
+    "emoji": "🦢"
+  },
+  {
+    "en": "Goose",
+    "ar": "أوز",
+    "tr": "Uz",
+    "id": "angsa liar",
+    "emoji": "🪿"
+  },
+  {
+    "en": "Duck",
+    "ar": "بطة",
+    "tr": "Battah",
+    "id": "bebek",
+    "emoji": "🦆"
+  },
+  {
+    "en": "Turkey",
+    "ar": "ديك رومي",
+    "tr": "Dik Rumi",
+    "id": "kalkun",
+    "emoji": "🦃"
+  },
+  {
+    "en": "Chicken",
+    "ar": "دجاجة",
+    "tr": "Dajajah",
+    "id": "ayam",
+    "emoji": "🐔"
+  },
+  {
+    "en": "Rooster",
+    "ar": "ديك",
+    "tr": "Dik",
+    "id": "ayam jantan",
+    "emoji": "🐓"
+  },
+  {
+    "en": "Crane",
+    "ar": "كركي",
+    "tr": "Kurki",
+    "id": "bangau crane",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Stork",
+    "ar": "لقلق",
+    "tr": "Laqlaq",
+    "id": "bangau",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Heron",
+    "ar": "مالك الحزين",
+    "tr": "Malik al-Hazin",
+    "id": "kuntul",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Kingfisher",
+    "ar": "رفراف",
+    "tr": "Rafraf",
+    "id": "raja udang",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Woodpecker",
+    "ar": "نقار الخشب",
+    "tr": "Naqar al-Khashab",
+    "id": "pelatuk",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Hummingbird",
+    "ar": "طائر الطنان",
+    "tr": "Ta'ir at-Tannan",
+    "id": "burung kolibri",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Penguin",
+    "ar": "بطريق",
+    "tr": "Bitriq",
+    "id": "penguin",
+    "emoji": "🐧"
+  },
+  {
+    "en": "Albatross",
+    "ar": "القطرس",
+    "tr": "Al-Qutrus",
+    "id": "albatros",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Pelican",
+    "ar": "البجع",
+    "tr": "Al-Baja'",
+    "id": "pelikan",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Ostrich",
+    "ar": "نعامة",
+    "tr": "Na'amah",
+    "id": "burung unta",
+    "emoji": "🦤"
+  },
+  {
+    "en": "Emu",
+    "ar": "إيمو",
+    "tr": "Imu",
+    "id": "emu",
+    "emoji": "🦤"
+  },
+  {
+    "en": "Crocodile",
+    "ar": "تمساح",
+    "tr": "Tamasah",
+    "id": "buaya",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Alligator",
+    "ar": "التمساح الأمريكي",
+    "tr": "at-Tamasah al-Amriki",
+    "id": "aligator",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Caiman",
+    "ar": "كايمان",
+    "tr": "Kiman",
+    "id": "kaiman",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Gharial",
+    "ar": "غريال",
+    "tr": "Gharil",
+    "id": "gharial",
+    "emoji": "🐊"
+  },
+  {
+    "en": "Lizard",
+    "ar": "سحلية",
+    "tr": "Sahaliah",
+    "id": "cicak",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Gecko",
+    "ar": "وزغة",
+    "tr": "Wzaghah",
+    "id": "tokek",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Iguana",
+    "ar": "إغوانا",
+    "tr": "Ighuna",
+    "id": "iguana",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Chameleon",
+    "ar": "حرباء",
+    "tr": "Haraba'",
+    "id": "bunglon",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Komodo Dragon",
+    "ar": "تنين كومودو",
+    "tr": "Tanin Kumudu",
+    "id": "komodo",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Snake",
+    "ar": "ثعبان",
+    "tr": "Tha'aban",
+    "id": "ular",
+    "emoji": "🐍"
+  },
+  {
+    "en": "Cobra",
+    "ar": "كوبرا",
+    "tr": "Kubara",
+    "id": "kobra",
+    "emoji": "🐍"
+  },
+  {
+    "en": "Python",
+    "ar": "بايثون",
+    "tr": "Bithun",
+    "id": "piton",
+    "emoji": "🐍"
+  },
+  {
+    "en": "Viper",
+    "ar": "أفعى",
+    "tr": "Afa'a",
+    "id": "viper",
+    "emoji": "🐍"
+  },
+  {
+    "en": "Rattlesnake",
+    "ar": "أفعى الجرس",
+    "tr": "Af'a al-Jaras",
+    "id": "ular derik",
+    "emoji": "🐍"
+  },
+  {
+    "en": "Tortoise",
+    "ar": "سلحفاة برية",
+    "tr": "Sulhafah Barriyyah",
+    "id": "kura darat",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Turtle",
+    "ar": "سلحفاة",
+    "tr": "Sulhafah",
+    "id": "kura-kura",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Sea Turtle",
+    "ar": "سلحفاة بحرية",
+    "tr": "Sulhafah Bahriyyah",
+    "id": "penyu",
+    "emoji": "🐢"
+  },
+  {
+    "en": "Frog",
+    "ar": "ضفدع",
+    "tr": "Difda'",
+    "id": "katak",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Toad",
+    "ar": "علجوم",
+    "tr": "'alajum",
+    "id": "katak puru",
+    "emoji": "🐸"
+  },
+  {
+    "en": "Salamander",
+    "ar": "سمندر",
+    "tr": "Samandar",
+    "id": "salamander",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Newt",
+    "ar": "سمندر",
+    "tr": "Samandar",
+    "id": "newt",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Axolotl",
+    "ar": "أكسولوتل",
+    "tr": "Aksulutl",
+    "id": "axolotl",
+    "emoji": "🦎"
+  },
+  {
+    "en": "Shark",
+    "ar": "قرش",
+    "tr": "Qirsh",
+    "id": "hiu",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Great White Shark",
+    "ar": "قرش أبيض",
+    "tr": "Qarsh Abyadh",
+    "id": "hiu putih",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Hammerhead Shark",
+    "ar": "قرش مطرقة",
+    "tr": "Qarsh Mataraqah",
+    "id": "hiu martil",
+    "emoji": "🦈"
+  },
+  {
+    "en": "Whale",
+    "ar": "حوت",
+    "tr": "Hut",
+    "id": "paus",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Blue Whale",
+    "ar": "حوت أزرق",
+    "tr": "Hut Azarq",
+    "id": "paus biru",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Humpback Whale",
+    "ar": "حوت أحدب",
+    "tr": "Hut Ahdab",
+    "id": "paus bungkuk",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Dolphin",
+    "ar": "دلفين",
+    "tr": "Dulfin",
+    "id": "lumba-lumba",
+    "emoji": "🐬"
+  },
+  {
+    "en": "Orca",
+    "ar": "أوركا",
+    "tr": "Uraka",
+    "id": "paus pembunuh",
+    "emoji": "🐬"
+  },
+  {
+    "en": "Swordfish",
+    "ar": "سمكة أبو سيف",
+    "tr": "Samakah Abu Saif",
+    "id": "ikan pedang",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Tuna",
+    "ar": "تونا",
+    "tr": "Tuna",
+    "id": "tuna",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Salmon",
+    "ar": "سلمون",
+    "tr": "Salamun",
+    "id": "salmon",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Trout",
+    "ar": "تراوت",
+    "tr": "Tarut",
+    "id": "trout",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Carp",
+    "ar": "شبوط",
+    "tr": "Shabut",
+    "id": "ikan mas",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Catfish",
+    "ar": "قرموط",
+    "tr": "Qaramut",
+    "id": "lele",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Eel",
+    "ar": "ثعبان البحر",
+    "tr": "Tha'aban al-Bahr",
+    "id": "belut",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Seahorse",
+    "ar": "فرس البحر",
+    "tr": "Faras al-Bahr",
+    "id": "kuda laut",
+    "emoji": "🦄"
+  },
+  {
+    "en": "Jellyfish",
+    "ar": "قنديل البحر",
+    "tr": "Qindil al-Bahr",
+    "id": "ubur-ubur",
+    "emoji": "🎐"
+  },
+  {
+    "en": "Octopus",
+    "ar": "أخطبوط",
+    "tr": "Ukhtubut",
+    "id": "gurita",
+    "emoji": "🐙"
+  },
+  {
+    "en": "Squid",
+    "ar": "حبار",
+    "tr": "Hibar",
+    "id": "cumi-cumi",
+    "emoji": "🦑"
+  },
+  {
+    "en": "Manta Ray",
+    "ar": "سمكة مانتا",
+    "tr": "Samakah Manata",
+    "id": "pari manta",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Stingray",
+    "ar": "سمكة الراي",
+    "tr": "Samakat ar-Ray",
+    "id": "ikan pari",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Lobster",
+    "ar": "سرطان البحر",
+    "tr": "Sartan al-Bahr",
+    "id": "lobster",
+    "emoji": "🦞"
+  },
+  {
+    "en": "Crab",
+    "ar": "سلطعون",
+    "tr": "Salta'un",
+    "id": "kepiting",
+    "emoji": "🦀"
+  },
+  {
+    "en": "Shrimp",
+    "ar": "روبيان",
+    "tr": "Rubin",
+    "id": "udang",
+    "emoji": "🦐"
+  },
+  {
+    "en": "Starfish",
+    "ar": "نجم البحر",
+    "tr": "Najm al-Bahr",
+    "id": "bintang laut",
+    "emoji": "⭐"
+  },
+  {
+    "en": "Sea Urchin",
+    "ar": "قنفذ البحر",
+    "tr": "Qunfudh al-Bahr",
+    "id": "landak laut",
+    "emoji": "🌊"
+  },
+  {
+    "en": "Walrus",
+    "ar": "فظ",
+    "tr": "Fazz",
+    "id": "walrus",
+    "emoji": "🦭"
+  },
+  {
+    "en": "Seal",
+    "ar": "فقمة",
+    "tr": "Faqamah",
+    "id": "anjing laut",
+    "emoji": "🦭"
+  },
+  {
+    "en": "Sea Lion",
+    "ar": "أسد البحر",
+    "tr": "Asad al-Bahr",
+    "id": "singa laut",
+    "emoji": "🦭"
+  },
+  {
+    "en": "Ant",
+    "ar": "نملة",
+    "tr": "Namlah",
+    "id": "semut",
+    "emoji": "🐜"
+  },
+  {
+    "en": "Bee",
+    "ar": "نحلة",
+    "tr": "Nahlah",
+    "id": "lebah",
+    "emoji": "🐝"
+  },
+  {
+    "en": "Wasp",
+    "ar": "دبور",
+    "tr": "Dabur",
+    "id": "tawon",
+    "emoji": "🪰"
+  },
+  {
+    "en": "Hornet",
+    "ar": "زنبور",
+    "tr": "Zanabur",
+    "id": "lebah besar",
+    "emoji": "🪰"
+  },
+  {
+    "en": "Butterfly",
+    "ar": "فراشة",
+    "tr": "Farashah",
+    "id": "kupu-kupu",
+    "emoji": "🦋"
+  },
+  {
+    "en": "Moth",
+    "ar": "عثة",
+    "tr": "'athah",
+    "id": "ngengat",
+    "emoji": "🦋"
+  },
+  {
+    "en": "Caterpillar",
+    "ar": "يرقة",
+    "tr": "Yraqah",
+    "id": "ulat",
+    "emoji": "🐛"
+  },
+  {
+    "en": "Spider",
+    "ar": "عنكبوت",
+    "tr": "Ankabut",
+    "id": "laba-laba",
+    "emoji": "🕷️"
+  },
+  {
+    "en": "Scorpion",
+    "ar": "عقرب",
+    "tr": "Aqrab",
+    "id": "kalajengking",
+    "emoji": "🦂"
+  },
+  {
+    "en": "Centipede",
+    "ar": "مئينية",
+    "tr": "Ma'iniah",
+    "id": "lipan",
+    "emoji": "🐛"
+  },
+  {
+    "en": "Millipede",
+    "ar": "ألفية",
+    "tr": "Alafiah",
+    "id": "kelabang",
+    "emoji": "🐛"
+  },
+  {
+    "en": "Snail",
+    "ar": "حلزون",
+    "tr": "Halazun",
+    "id": "siput",
+    "emoji": "🐌"
+  },
+  {
+    "en": "Slug",
+    "ar": "بزاقة",
+    "tr": "Bazaqah",
+    "id": "bekicot tanpa cangkang",
+    "emoji": "🐌"
+  },
+  {
+    "en": "Earthworm",
+    "ar": "دودة الأرض",
+    "tr": "Dudat al-Ard",
+    "id": "cacing tanah",
+    "emoji": "🪱"
+  },
+  {
+    "en": "Bison",
+    "ar": "بيسون",
+    "tr": "Bisun",
+    "id": "bison",
+    "emoji": "🦬"
+  },
+  {
+    "en": "Antelope",
+    "ar": "ظبي",
+    "tr": "Zabi",
+    "id": "antelope",
+    "emoji": "🦌"
+  },
+  {
+    "en": "Gazelle",
+    "ar": "غزال",
+    "tr": "Ghazal",
+    "id": "gazel",
+    "emoji": "🦌"
+  },
+  {
+    "en": "Wildebeest",
+    "ar": "النو",
+    "tr": "An-Nu",
+    "id": "gnu",
+    "emoji": "🦌"
+  },
+  {
+    "en": "Okapi",
+    "ar": "أوكابي",
+    "tr": "Ukabi",
+    "id": "okapi",
+    "emoji": "🦒"
+  },
+  {
+    "en": "Tapir",
+    "ar": "تابير",
+    "tr": "Tabir",
+    "id": "tapir",
+    "emoji": "🐗"
+  },
+  {
+    "en": "Camel (Dromedary)",
+    "ar": "جمل عربي",
+    "tr": "Jaml Arabi",
+    "id": "unta arab",
+    "emoji": "🐪"
+  },
+  {
+    "en": "Camel (Bactrian)",
+    "ar": "جمل باكتري",
+    "tr": "Jaml Baktri",
+    "id": "unta baktria",
+    "emoji": "🐫"
+  },
+  {
+    "en": "Meerkat",
+    "ar": "ميركات",
+    "tr": "Mirakat",
+    "id": "meerkat",
+    "emoji": "🦝"
+  },
+  {
+    "en": "Prairie Dog",
+    "ar": "كلب المروج",
+    "tr": "Kalb al-Muruj",
+    "id": "anjing padang rumput",
+    "emoji": "🐿️"
+  },
+  {
+    "en": "Capybara",
+    "ar": "كابيبارا",
+    "tr": "Kabibara",
+    "id": "kapibara",
+    "emoji": "🦫"
+  },
+  {
+    "en": "Hamster",
+    "ar": "هامستر",
+    "tr": "Hamstar",
+    "id": "hamster",
+    "emoji": "🐹"
+  },
+  {
+    "en": "Guinea Pig",
+    "ar": "خنزير غيني",
+    "tr": "Khinzir Ghini",
+    "id": "tikus belanda",
+    "emoji": "🐹"
+  },
+  {
+    "en": "Bonobo",
+    "ar": "بونوبو",
+    "tr": "Bunubu",
+    "id": "bonobo",
+    "emoji": "🦍"
+  },
+  {
+    "en": "Gibbon",
+    "ar": "غيوبون",
+    "tr": "Ghibun",
+    "id": "gibbon",
+    "emoji": "🦍"
+  },
+  {
+    "en": "Mandrill",
+    "ar": "ماندريل",
+    "tr": "Manadaril",
+    "id": "mandrill",
+    "emoji": "🐒"
+  },
+  {
+    "en": "Baboon",
+    "ar": "بابون",
+    "tr": "Babun",
+    "id": "babun",
+    "emoji": "🐒"
+  },
+  {
+    "en": "Macaque",
+    "ar": "مكاك",
+    "tr": "Makak",
+    "id": "macaque",
+    "emoji": "🐒"
+  },
+  {
+    "en": "Quokka",
+    "ar": "كوكّا",
+    "tr": "Kuka",
+    "id": "quokka",
+    "emoji": "🦘"
+  },
+  {
+    "en": "Tasmanian Devil",
+    "ar": "شيطان تسمانيا",
+    "tr": "Shaitan Tasmania",
+    "id": "setan tasmania",
+    "emoji": "🦘"
+  },
+  {
+    "en": "Emperor Penguin",
+    "ar": "البطريق الإمبراطوري",
+    "tr": "Al-Bitriq al-Imbiraturi",
+    "id": "penguin kaisar",
+    "emoji": "🐧"
+  },
+  {
+    "en": "King Penguin",
+    "ar": "بطريق الملك",
+    "tr": "Bitriq al-Malik",
+    "id": "penguin raja",
+    "emoji": "🐧"
+  },
+  {
+    "en": "Beluga Whale",
+    "ar": "حوت بيلوجا",
+    "tr": "Hut Biluja",
+    "id": "paus beluga",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Narwhal",
+    "ar": "ناروال",
+    "tr": "Narul",
+    "id": "narwal",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Manatee",
+    "ar": "خروف البحر",
+    "tr": "Kharuf al-Bahr",
+    "id": "dugong/manatee",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Dugong",
+    "ar": "الأطوم",
+    "tr": "Al-Atum",
+    "id": "dugong",
+    "emoji": "🐋"
+  },
+  {
+    "en": "Sea Otter",
+    "ar": "قضاعة بحرية",
+    "tr": "Quda'ah Bahriyyah",
+    "id": "berang laut",
+    "emoji": "🦦"
+  },
+  {
+    "en": "Walrus",
+    "ar": "فظ",
+    "tr": "Fazz",
+    "id": "walrus",
+    "emoji": "🦭"
+  },
+  {
+    "en": "Caracal",
+    "ar": "كراكال",
+    "tr": "Karakal",
+    "id": "karakal",
+    "emoji": "🐈"
+  },
+  {
+    "en": "Serval",
+    "ar": "سيرفال",
+    "tr": "Sirafal",
+    "id": "serval",
+    "emoji": "🐈"
+  },
+  {
+    "en": "Ocelot",
+    "ar": "أوسيلوت",
+    "tr": "Usilut",
+    "id": "ocelot",
+    "emoji": "🐈"
+  },
+  {
+    "en": "Margay",
+    "ar": "مارجاي",
+    "tr": "Maraji",
+    "id": "margay",
+    "emoji": "🐈"
+  },
+  {
+    "en": "Llama",
+    "ar": "لاما",
+    "tr": "Lama",
+    "id": "lama",
+    "emoji": "🦙"
+  },
+  {
+    "en": "Alpaca",
+    "ar": "ألباكا",
+    "tr": "Alabaka",
+    "id": "alpaka",
+    "emoji": "🦙"
+  },
+  {
+    "en": "Vicuna",
+    "ar": "فيكونيا",
+    "tr": "Fikuni",
+    "id": "vikunya",
+    "emoji": "🦙"
+  },
+  {
+    "en": "Emu",
+    "ar": "إيمو",
+    "tr": "Imu",
+    "id": "emu",
+    "emoji": "🦤"
+  },
+  {
+    "en": "Cassowary",
+    "ar": "كاسواري",
+    "tr": "Kasuri",
+    "id": "kaswari",
+    "emoji": "🦤"
+  },
+  {
+    "en": "Kiwi (Bird)",
+    "ar": "كيواي",
+    "tr": "Ki",
+    "id": "kiwi burung",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Hornbill",
+    "ar": "أبو قرن",
+    "tr": "Abu Qarn",
+    "id": "rangkong",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Toucan",
+    "ar": "طائر الطوقان",
+    "tr": "Ta'ir at-Tuqan",
+    "id": "tukan",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Kingfisher",
+    "ar": "رفراف",
+    "tr": "Rafraf",
+    "id": "raja udang",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Blue Jay",
+    "ar": "أزرق جاي",
+    "tr": "Azraq Jay",
+    "id": "blue jay",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Cardinal",
+    "ar": "كاردينال",
+    "tr": "Karadinal",
+    "id": "kardinal",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Robin",
+    "ar": "روبين",
+    "tr": "Rubin",
+    "id": "robin",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Canary",
+    "ar": "كناري",
+    "tr": "Kanari",
+    "id": "kanari",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Finch",
+    "ar": "شرشور",
+    "tr": "Sharashur",
+    "id": "finch",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Crow",
+    "ar": "غراب",
+    "tr": "Gharab",
+    "id": "gagak",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Raven",
+    "ar": "غراب أسود",
+    "tr": "Gharab Asud",
+    "id": "gagak hitam",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Magpie",
+    "ar": "غراب العقعق",
+    "tr": "Ghurab al-'Aq'aq",
+    "id": "ekor panjang",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Nightingale",
+    "ar": "البلبل",
+    "tr": "Al-Bulbul",
+    "id": "burung cinta",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Cuckoo",
+    "ar": "الوقواق",
+    "tr": "Al-Waqwaq",
+    "id": "burung kutilang",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Swallow",
+    "ar": "السنونو",
+    "tr": "as-Sanunu",
+    "id": "walet",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Swift",
+    "ar": "السويفت",
+    "tr": "as-Suft",
+    "id": "kepodang swift",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Albatross",
+    "ar": "القطرس",
+    "tr": "Al-Qutrus",
+    "id": "albatros",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Cormorant",
+    "ar": "غراب البحر",
+    "tr": "Ghurab al-Bahr",
+    "id": "burung pecuk",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Heron",
+    "ar": "مالك الحزين",
+    "tr": "Malik al-Hazin",
+    "id": "kuntul",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Ibis",
+    "ar": "أبو منجل",
+    "tr": "Abu Minjal",
+    "id": "bangau ibis",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Stork",
+    "ar": "لقلق",
+    "tr": "Laqlaq",
+    "id": "bangau",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Crane",
+    "ar": "كركي",
+    "tr": "Kurki",
+    "id": "burung crane",
+    "emoji": "🐦"
+  },
+  {
+    "en": "Praying Mantis",
+    "ar": "فرس النبي",
+    "tr": "Faras an-Nabi",
+    "id": "belalang sembah",
+    "emoji": "🦗"
+  },
+  {
+    "en": "Grasshopper",
+    "ar": "جرادة",
+    "tr": "Jaradah",
+    "id": "belalang",
+    "emoji": "🦗"
+  },
+  {
+    "en": "Cricket",
+    "ar": "صرصار الليل",
+    "tr": "Sarsar al-Lail",
+    "id": "jangkrik",
+    "emoji": "🦗"
+  },
+  {
+    "en": "Locust",
+    "ar": "جراد",
+    "tr": "Jarad",
+    "id": "belalang besar",
+    "emoji": "🦗"
+  },
+  {
+    "en": "Ladybug",
+    "ar": "دعسوقة",
+    "tr": "Da'asuqah",
+    "id": "kumbang koksi",
+    "emoji": "🐞"
+  },
+  {
+    "en": "Firefly",
+    "ar": "يراعة",
+    "tr": "Yara'ah",
+    "id": "kunang-kunang",
+    "emoji": "🪲"
+  },
+  {
+    "en": "Dragonfly",
+    "ar": "يعسوب",
+    "tr": "Y'asub",
+    "id": "capung",
+    "emoji": "🐝"
+  },
+  {
+    "en": "Damselfly",
+    "ar": "يعسوب صغير",
+    "tr": "Y'asub Saghir",
+    "id": "capung jarum",
+    "emoji": "🐝"
+  },
+  {
+    "en": "Beetle",
+    "ar": "خنفساء",
+    "tr": "Khanafasa'",
+    "id": "kumbang",
+    "emoji": "🪲"
+  },
+  {
+    "en": "Stag Beetle",
+    "ar": "خنفساء الوعل",
+    "tr": "Khanafasa' al-Wa'l",
+    "id": "kumbang tanduk",
+    "emoji": "🪲"
+  },
+  {
+    "en": "Termite",
+    "ar": "نمل أبيض",
+    "tr": "Naml Abyadh",
+    "id": "rayap",
+    "emoji": "🪲"
+  },
+  {
+    "en": "Silverfish",
+    "ar": "سمكة فضية",
+    "tr": "Samakah Fadiah",
+    "id": "kutu buku",
+    "emoji": "🐟"
+  },
+  {
+    "en": "Tarantula",
+    "ar": "الرتيلاء",
+    "tr": "Ar-Rutayla'",
+    "id": "tarantula",
+    "emoji": "🕷️"
+  },
+  {
+    "en": "Wolf Spider",
+    "ar": "عنكبوت ذئبي",
+    "tr": "Ankabut Dhi'bi",
+    "id": "laba-laba serigala",
+    "emoji": "🕷️"
+  },
+  {
+    "en": "Black Widow",
+    "ar": "الأرملة السوداء",
+    "tr": "Al-Armalah as-Sawda'",
+    "id": "janda hitam",
+    "emoji": "🕷️"
+  },
+  {
+    "en": "Cave Spider",
+    "ar": "عنكبوت الكهوف",
+    "tr": "Ankabut al-Kuhuf",
+    "id": "laba-laba gua",
+    "emoji": "🕷️"
+  },
+  {
+    "en": "Giant Clam",
+    "ar": "محار عملاق",
+    "tr": "Mihar 'Imlaq",
+    "id": "kerang raksasa",
+    "emoji": "🐚"
+  },
+  {
+    "en": "Oyster",
+    "ar": "محار",
+    "tr": "Mihar",
+    "id": "tiram",
+    "emoji": "🐚"
+  },
+  {
+    "en": "Mussel",
+    "ar": "بلح البحر",
+    "tr": "Balah al-Bahr",
+    "id": "kerang hijau",
+    "emoji": "🐚"
+  },
+  {
+    "en": "Squid (Giant)",
+    "ar": "حبار عملاق",
+    "tr": "Hibar 'Imlaq",
+    "id": "cumi raksasa",
+    "emoji": "🦑"
+  }
+]

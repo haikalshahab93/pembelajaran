@@ -1,0 +1,86 @@
+[
+    {
+        "en": "Ant",
+        "ar": "نملة",
+        "tr": "Namlah",
+        "id": "semut",
+        "emoji": "🐜"
+    },
+    {
+        "en": "Bee",
+        "ar": "نحلة",
+        "tr": "Nahlah",
+        "id": "lebah",
+        "emoji": "🐝"
+    },
+    {
+        "en": "Wasp",
+        "ar": "دبور",
+        "tr": "Dabur",
+        "id": "tawon",
+        "emoji": "🪰"
+    },
+    {
+        "en": "Butterfly",
+        "ar": "فراشة",
+        "tr": "Farashah",
+        "id": "kupu-kupu",
+        "emoji": "🦋"
+    },
+    {
+        "en": "Moth",
+        "ar": "عثة",
+        "tr": "'athah",
+        "id": "ngengat",
+        "emoji": "🦋"
+    },
+    {
+        "en": "Caterpillar",
+        "ar": "يرقة",
+        "tr": "Yraqah",
+        "id": "ulat",
+        "emoji": "🐛"
+    },
+    {
+        "en": "Spider",
+        "ar": "عنكبوت",
+        "tr": "Ankabut",
+        "id": "laba-laba",
+        "emoji": "🕷️"
+    },
+    {
+        "en": "Scorpion",
+        "ar": "عقرب",
+        "tr": "Aqrab",
+        "id": "kalajengking",
+        "emoji": "🦂"
+    },
+    {
+        "en": "Centipede",
+        "ar": "مئينية",
+        "tr": "Ma'iniah",
+        "id": "lipan",
+        "emoji": "🐛"
+    },
+    {
+        "en": "Millipede",
+        "ar": "ألفية",
+        "tr": "Alafiah",
+        "id": "kelabang",
+        "emoji": "🐛"
+    },
+    {
+        "en": "Snail",
+        "ar": "حلزون",
+        "tr": "Halazun",
+        "id": "siput",
+        "emoji": "🐌"
+    },
+    {
+        "en": "Earthworm",
+        "ar": "دودة الأرض",
+        "tr": "Dudat al-Ard",
+        "id": "cacing tanah",
+        "emoji": "🪱"
+    }
+]

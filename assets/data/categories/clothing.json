@@ -1,0 +1,242 @@
+[
+  {
+    "en": "Shirt",
+    "ar": "قميص",
+    "tr": "Qamīṣ",
+    "id": "Kemeja"
+  },
+  {
+    "en": "Pants",
+    "ar": "بنطال",
+    "tr": "Binṭāl",
+    "id": "Celana"
+  },
+  {
+    "en": "Dress",
+    "ar": "فستان",
+    "tr": "Fustān",
+    "id": "Gaun"
+  },
+  {
+    "en": "Shoes",
+    "ar": "حذاء",
+    "tr": "Ḥidhāʾ",
+    "id": "Sepatu"
+  },
+  {
+    "en": "Hat",
+    "ar": "قبعة",
+    "tr": "Qubbaʿah",
+    "id": "Topi"
+  },
+  {
+    "en": "Coat",
+    "ar": "معطف",
+    "tr": "Miʿṭaf",
+    "id": "Mantel"
+  },
+  {
+    "en": "Socks",
+    "ar": "جوارب",
+    "tr": "Jawārib",
+    "id": "Kaos kaki"
+  },
+  {
+    "en": "Scarf",
+    "ar": "وشاح",
+    "tr": "Wishāḥ",
+    "id": "Syal"
+  },
+  {
+    "en": "Skirt",
+    "ar": "تنورة",
+    "tr": "Tanūrah",
+    "id": "Rok"
+  },
+  {
+    "en": "Jacket",
+    "ar": "سترة",
+    "tr": "Sutrah",
+    "id": "Jaket"
+  },
+  {
+    "en": "T-shirt",
+    "ar": "قميص قصير",
+    "tr": "Qamis qasir",
+    "id": "Kaos"
+  },
+  {
+    "en": "Sweater",
+    "ar": "كنزة",
+    "tr": "Kunzah",
+    "id": "Sweater"
+  },
+  {
+    "en": "Gloves",
+    "ar": "قفازات",
+    "tr": "Qaffazat",
+    "id": "Sarung tangan"
+  },
+  {
+    "en": "Belt",
+    "ar": "حزام",
+    "tr": "Hizam",
+    "id": "Ikat pinggang"
+  },
+  {
+    "en": "Sandals",
+    "ar": "صندل",
+    "tr": "Sandal",
+    "id": "Sandal"
+  },
+  {
+    "en": "Boots",
+    "ar": "جزمة",
+    "tr": "Jazmah",
+    "id": "Sepatu bot"
+  },
+  {
+    "en": "Tie",
+    "ar": "ربطة عنق",
+    "tr": "Ribtat 'unuq",
+    "id": "Dasi"
+  },
+  {
+    "en": "Uniform",
+    "ar": "زي موحد",
+    "tr": "Ziyy muwahhad",
+    "id": "Seragam"
+  },
+  {
+    "en": "Pocket",
+    "ar": "جيب",
+    "tr": "Jayb",
+    "id": "Saku"
+  },
+  {
+    "en": "Button",
+    "ar": "زر",
+    "tr": "Zirr",
+    "id": "Kancing"
+  },
+  {
+    "en": "Pajamas",
+    "ar": "ملابس نوم",
+    "tr": "Malabis nawm",
+    "id": "Piyama"
+  },
+  {
+    "en": "Raincoat",
+    "ar": "معطف مطر",
+    "tr": "Mi'taf matar",
+    "id": "Jas hujan"
+  },
+  {
+    "en": "Slippers",
+    "ar": "شبشب",
+    "tr": "Shibshib",
+    "id": "Sandal rumah"
+  },
+  {
+    "en": "Handbag",
+    "ar": "حقيبة يد",
+    "tr": "Haqibat yad",
+    "id": "Tas tangan"
+  },
+  {
+    "en": "Watch",
+    "ar": "ساعة يد",
+    "tr": "Sa'at yad",
+    "id": "Jam tangan"
+  },
+  {
+    "en": "Earrings",
+    "ar": "أقراط",
+    "tr": "Aqrat",
+    "id": "Anting"
+  },
+  {
+    "en": "Necklace",
+    "ar": "قلادة",
+    "tr": "Qiladah",
+    "id": "Kalung"
+  },
+  {
+    "en": "Bracelet",
+    "ar": "سوار",
+    "tr": "Siwar",
+    "id": "Gelang"
+  },
+  {
+    "en": "Cap",
+    "ar": "طاقية",
+    "tr": "Taqiyyah",
+    "id": "Topi kecil"
+  },
+  {
+    "en": "Sleeve",
+    "ar": "كم",
+    "tr": "Kumm",
+    "id": "Lengan baju"
+  },
+  {
+    "en": "Ring",
+    "ar": "خاتم",
+    "tr": "Khatam",
+    "id": "Cincin"
+  },
+  {
+    "en": "Wallet chain",
+    "ar": "سلسلة المحفظة",
+    "tr": "Silsilat al-mahfazah",
+    "id": "Rantai dompet"
+  },
+  {
+    "en": "Backpack",
+    "ar": "حقيبة ظهر",
+    "tr": "Haqibat zahr",
+    "id": "Tas punggung"
+  },
+  {
+    "en": "Sunglasses",
+    "ar": "نظارة شمسية",
+    "tr": "Nazzarah shamsiyyah",
+    "id": "Kacamata hitam"
+  },
+  {
+    "en": "Apron",
+    "ar": "مريلة",
+    "tr": "Mariylah",
+    "id": "Celemek"
+  },
+  {
+    "en": "Bathrobe",
+    "ar": "روب حمام",
+    "tr": "Ruwb hammam",
+    "id": "Jubah mandi"
+  },
+  {
+    "en": "Shawl",
+    "ar": "شال",
+    "tr": "Shal",
+    "id": "Selendang"
+  },
+  {
+    "en": "Sandals strap",
+    "ar": "رباط الصندل",
+    "tr": "Ribat as-sandal",
+    "id": "Tali sandal"
+  },
+  {
+    "en": "Collar",
+    "ar": "ياقة",
+    "tr": "Yaqah",
+    "id": "Kerah"
+  },
+  {
+    "en": "Zipper",
+    "ar": "سحاب",
+    "tr": "Sahhab",
+    "id": "Resleting"
+  }
+]

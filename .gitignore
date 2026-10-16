@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store
+node_modules/
+server/node_modules/
+server/.env
+client/node_modules/
+client/dist/
+client/public/data/
+assets/data/progress.json
+.freebuff/

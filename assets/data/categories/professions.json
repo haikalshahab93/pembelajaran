@@ -1,0 +1,242 @@
+[
+  {
+    "en": "Teacher",
+    "ar": "معلم",
+    "tr": "Muʿallim",
+    "id": "Guru"
+  },
+  {
+    "en": "Doctor",
+    "ar": "طبيب",
+    "tr": "Ṭabīb",
+    "id": "Dokter"
+  },
+  {
+    "en": "Engineer",
+    "ar": "مهندس",
+    "tr": "Muhandis",
+    "id": "Insinyur"
+  },
+  {
+    "en": "Student",
+    "ar": "طالب",
+    "tr": "Ṭālib",
+    "id": "Siswa"
+  },
+  {
+    "en": "Driver",
+    "ar": "سائق",
+    "tr": "Sāʾiq",
+    "id": "Sopir"
+  },
+  {
+    "en": "Farmer",
+    "ar": "مزارع",
+    "tr": "Muzāriʿ",
+    "id": "Petani"
+  },
+  {
+    "en": "Nurse",
+    "ar": "ممرضة",
+    "tr": "Mumarriḍah",
+    "id": "Perawat"
+  },
+  {
+    "en": "Police officer",
+    "ar": "شرطي",
+    "tr": "Shurṭī",
+    "id": "Polisi"
+  },
+  {
+    "en": "Cook",
+    "ar": "طباخ",
+    "tr": "Ṭabbākh",
+    "id": "Juru masak"
+  },
+  {
+    "en": "Seller",
+    "ar": "بائع",
+    "tr": "Bāʾiʿ",
+    "id": "Penjual"
+  },
+  {
+    "en": "Architect",
+    "ar": "مهندس معماري",
+    "tr": "Muhandis mi'mari",
+    "id": "Arsitek"
+  },
+  {
+    "en": "Programmer",
+    "ar": "مبرمج",
+    "tr": "Mubarmij",
+    "id": "Programer"
+  },
+  {
+    "en": "Journalist",
+    "ar": "صحفي",
+    "tr": "Sahafi",
+    "id": "Jurnalis"
+  },
+  {
+    "en": "Photographer",
+    "ar": "مصور",
+    "tr": "Musawwir",
+    "id": "Fotografer"
+  },
+  {
+    "en": "Lawyer",
+    "ar": "محام",
+    "tr": "Muhamin",
+    "id": "Pengacara"
+  },
+  {
+    "en": "Chef",
+    "ar": "طاه",
+    "tr": "Tahin",
+    "id": "Koki"
+  },
+  {
+    "en": "Pilot",
+    "ar": "طيار",
+    "tr": "Tayyar",
+    "id": "Pilot"
+  },
+  {
+    "en": "Dentist",
+    "ar": "طبيب أسنان",
+    "tr": "Tabib asnan",
+    "id": "Dokter gigi"
+  },
+  {
+    "en": "Tailor",
+    "ar": "خياط",
+    "tr": "Khayyat",
+    "id": "Penjahit"
+  },
+  {
+    "en": "Mechanic",
+    "ar": "ميكانيكي",
+    "tr": "Mikaniki",
+    "id": "Montir"
+  },
+  {
+    "en": "Accountant",
+    "ar": "محاسب",
+    "tr": "Muhasib",
+    "id": "Akuntan"
+  },
+  {
+    "en": "Cashier",
+    "ar": "أمين صندوق",
+    "tr": "Amin sunduq",
+    "id": "Kasir"
+  },
+  {
+    "en": "Receptionist",
+    "ar": "موظف استقبال",
+    "tr": "Muwazzaf istiqbal",
+    "id": "Resepsionis"
+  },
+  {
+    "en": "Translator",
+    "ar": "مترجم",
+    "tr": "Mutarjim",
+    "id": "Penerjemah"
+  },
+  {
+    "en": "Designer",
+    "ar": "مصمم",
+    "tr": "Musammim",
+    "id": "Desainer"
+  },
+  {
+    "en": "Cleaner",
+    "ar": "عامل نظافة",
+    "tr": "Amil nazafah",
+    "id": "Petugas kebersihan"
+  },
+  {
+    "en": "Security guard",
+    "ar": "حارس أمن",
+    "tr": "Haris amn",
+    "id": "Satpam"
+  },
+  {
+    "en": "Librarian",
+    "ar": "أمين مكتبة",
+    "tr": "Amin maktabah",
+    "id": "Pustakawan"
+  },
+  {
+    "en": "Researcher",
+    "ar": "باحث",
+    "tr": "Bahith",
+    "id": "Peneliti"
+  },
+  {
+    "en": "Entrepreneur",
+    "ar": "رائد أعمال",
+    "tr": "Ra'id a'mal",
+    "id": "Wirausaha"
+  },
+  {
+    "en": "Lecturer",
+    "ar": "محاضر",
+    "tr": "Muhadir",
+    "id": "Dosen"
+  },
+  {
+    "en": "Manager",
+    "ar": "مدير",
+    "tr": "Mudir",
+    "id": "Manajer"
+  },
+  {
+    "en": "Operator",
+    "ar": "مشغل",
+    "tr": "Mushaghghil",
+    "id": "Operator"
+  },
+  {
+    "en": "Barber",
+    "ar": "حلاق",
+    "tr": "Hallaq",
+    "id": "Tukang cukur"
+  },
+  {
+    "en": "Electrician",
+    "ar": "كهربائي",
+    "tr": "Kahraba'i",
+    "id": "Teknisi listrik"
+  },
+  {
+    "en": "Plumber",
+    "ar": "سباك",
+    "tr": "Sabbak",
+    "id": "Tukang ledeng"
+  },
+  {
+    "en": "Carpenter",
+    "ar": "نجار",
+    "tr": "Najjar",
+    "id": "Tukang kayu"
+  },
+  {
+    "en": "Courier",
+    "ar": "ساعي",
+    "tr": "Sa'i",
+    "id": "Kurir"
+  },
+  {
+    "en": "Salesperson",
+    "ar": "مندوب مبيعات",
+    "tr": "Mandub mabi'at",
+    "id": "Sales"
+  },
+  {
+    "en": "Consultant",
+    "ar": "مستشار",
+    "tr": "Mustashar",
+    "id": "Konsultan"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "en": "Father",
+    "ar": "أب",
+    "tr": "Ab",
+    "id": "Ayah"
+  },
+  {
+    "en": "Mother",
+    "ar": "أم",
+    "tr": "Umm",
+    "id": "Ibu"
+  },
+  {
+    "en": "Son",
+    "ar": "ابن",
+    "tr": "Ibn",
+    "id": "Anak laki-laki"
+  },
+  {
+    "en": "Daughter",
+    "ar": "بنت",
+    "tr": "Bint",
+    "id": "Anak perempuan"
+  },
+  {
+    "en": "Brother",
+    "ar": "أخ",
+    "tr": "Akh",
+    "id": "Saudara laki-laki"
+  },
+  {
+    "en": "Sister",
+    "ar": "أخت",
+    "tr": "Ukht",
+    "id": "Saudara perempuan"
+  },
+  {
+    "en": "Husband",
+    "ar": "زوج",
+    "tr": "Zawj",
+    "id": "Suami"
+  },
+  {
+    "en": "Wife",
+    "ar": "زوجة",
+    "tr": "Zawjah",
+    "id": "Istri"
+  },
+  {
+    "en": "Family",
+    "ar": "عائلة",
+    "tr": "ʿĀʾilah",
+    "id": "Keluarga"
+  },
+  {
+    "en": "Child",
+    "ar": "طفل",
+    "tr": "Ṭifl",
+    "id": "Anak"
+  },
+  {
+    "en": "Grandfather",
+    "ar": "جد",
+    "tr": "Jadd",
+    "id": "Kakek"
+  },
+  {
+    "en": "Grandmother",
+    "ar": "جدة",
+    "tr": "Jaddah",
+    "id": "Nenek"
+  },
+  {
+    "en": "Uncle",
+    "ar": "عم",
+    "tr": "'Amm",
+    "id": "Paman"
+  },
+  {
+    "en": "Aunt",
+    "ar": "عمة",
+    "tr": "'Ammah",
+    "id": "Bibi"
+  },
+  {
+    "en": "Cousin",
+    "ar": "ابن العم",
+    "tr": "Ibn al-'amm",
+    "id": "Sepupu"
+  },
+  {
+    "en": "Parents",
+    "ar": "والدان",
+    "tr": "Walidan",
+    "id": "Orang tua"
+  },
+  {
+    "en": "Relative",
+    "ar": "قريب",
+    "tr": "Qarib",
+    "id": "Kerabat"
+  },
+  {
+    "en": "Baby",
+    "ar": "رضيع",
+    "tr": "Radi'",
+    "id": "Bayi"
+  },
+  {
+    "en": "Nephew",
+    "ar": "ابن الأخ",
+    "tr": "Ibn al-akh",
+    "id": "Keponakan laki-laki"
+  },
+  {
+    "en": "Niece",
+    "ar": "ابنة الأخت",
+    "tr": "Ibnah al-ukht",
+    "id": "Keponakan perempuan"
+  },
+  {
+    "en": "Father-in-law",
+    "ar": "حمو",
+    "tr": "Hamu",
+    "id": "Mertua laki-laki"
+  },
+  {
+    "en": "Mother-in-law",
+    "ar": "حماة",
+    "tr": "Hamat",
+    "id": "Mertua perempuan"
+  },
+  {
+    "en": "Brother-in-law",
+    "ar": "صهر",
+    "tr": "Sihr",
+    "id": "Ipar laki-laki"
+  },
+  {
+    "en": "Sister-in-law",
+    "ar": "سلفة",
+    "tr": "Silfah",
+    "id": "Ipar perempuan"
+  },
+  {
+    "en": "Grandson",
+    "ar": "حفيد",
+    "tr": "Hafid",
+    "id": "Cucu laki-laki"
+  },
+  {
+    "en": "Granddaughter",
+    "ar": "حفيدة",
+    "tr": "Hafidah",
+    "id": "Cucu perempuan"
+  },
+  {
+    "en": "Twin",
+    "ar": "توأم",
+    "tr": "Taw'am",
+    "id": "Anak kembar"
+  },
+  {
+    "en": "Guardian",
+    "ar": "ولي",
+    "tr": "Waliyy",
+    "id": "Wali"
+  },
+  {
+    "en": "Ancestor",
+    "ar": "سلف",
+    "tr": "Salaf",
+    "id": "Leluhur"
+  },
+  {
+    "en": "Descendant",
+    "ar": "نسل",
+    "tr": "Nasl",
+    "id": "Keturunan"
+  },
+  {
+    "en": "Stepfather",
+    "ar": "زوج الأم",
+    "tr": "Zawj al-umm",
+    "id": "Ayah tiri"
+  },
+  {
+    "en": "Stepmother",
+    "ar": "زوجة الأب",
+    "tr": "Zawjat al-ab",
+    "id": "Ibu tiri"
+  },
+  {
+    "en": "Stepbrother",
+    "ar": "أخ غير شقيق",
+    "tr": "Akh ghayr shaqiq",
+    "id": "Saudara tiri laki-laki"
+  },
+  {
+    "en": "Stepsister",
+    "ar": "أخت غير شقيقة",
+    "tr": "Ukht ghayr shaqiqah",
+    "id": "Saudara tiri perempuan"
+  },
+  {
+    "en": "Bride",
+    "ar": "عروس",
+    "tr": "Arus",
+    "id": "Pengantin perempuan"
+  },
+  {
+    "en": "Groom",
+    "ar": "عريس",
+    "tr": "Aris",
+    "id": "Pengantin laki-laki"
+  },
+  {
+    "en": "Orphan",
+    "ar": "يتيم",
+    "tr": "Yatim",
+    "id": "Yatim"
+  },
+  {
+    "en": "Household",
+    "ar": "أسرة",
+    "tr": "Usrah",
+    "id": "Rumah tangga"
+  },
+  {
+    "en": "Generation",
+    "ar": "جيل",
+    "tr": "Jil",
+    "id": "Generasi"
+  },
+  {
+    "en": "Surname",
+    "ar": "اسم العائلة",
+    "tr": "Ism al-'ailah",
+    "id": "Nama keluarga"
+  },
+  {
+    "en": "Family tree",
+    "ar": "شجرة العائلة",
+    "tr": "Shajarat al-'ailah",
+    "id": "Silsilah keluarga"
+  },
+  {
+    "en": "Home visit",
+    "ar": "زيارة عائلية",
+    "tr": "Ziyarah 'ailiyyah",
+    "id": "Kunjungan keluarga"
+  },
+  {
+    "en": "Marriage",
+    "ar": "زواج",
+    "tr": "Zawaj",
+    "id": "Pernikahan"
+  },
+  {
+    "en": "Relatives",
+    "ar": "أقارب",
+    "tr": "Aqarib",
+    "id": "Kerabat"
+  },
+  {
+    "en": "Only child",
+    "ar": "الابن الوحيد",
+    "tr": "Al-ibn al-wahid",
+    "id": "Anak tunggal"
+  },
+  {
+    "en": "Adopted child",
+    "ar": "طفل متبنى",
+    "tr": "Tifl mutabanna",
+    "id": "Anak angkat"
+  },
+  {
+    "en": "Family name",
+    "ar": "اسم الأسرة",
+    "tr": "Ism al-usrah",
+    "id": "Nama marga"
+  },
+  {
+    "en": "Engagement",
+    "ar": "خطوبة",
+    "tr": "Khitubah",
+    "id": "Pertunangan"
+  },
+  {
+    "en": "Wedding",
+    "ar": "حفل زفاف",
+    "tr": "Hafl zafaf",
+    "id": "Pesta pernikahan"
+  },
+  {
+    "en": "Household chores",
+    "ar": "أعمال المنزل",
+    "tr": "A'mal al-manzil",
+    "id": "Pekerjaan rumah"
+  }
+]

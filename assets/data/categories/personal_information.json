@@ -1,0 +1,296 @@
+[
+  {
+    "en": "Name",
+    "ar": "اسم",
+    "tr": "Ism",
+    "id": "Nama"
+  },
+  {
+    "en": "Age",
+    "ar": "عمر",
+    "tr": "ʿUmr",
+    "id": "Umur"
+  },
+  {
+    "en": "Address",
+    "ar": "عنوان",
+    "tr": "ʿUnwān",
+    "id": "Alamat"
+  },
+  {
+    "en": "Phone number",
+    "ar": "رقم الهاتف",
+    "tr": "Raqm al-hātif",
+    "id": "Nomor telepon"
+  },
+  {
+    "en": "Nationality",
+    "ar": "جنسية",
+    "tr": "Jinsiyyah",
+    "id": "Kebangsaan"
+  },
+  {
+    "en": "Occupation",
+    "ar": "مهنة",
+    "tr": "Mihnah",
+    "id": "Pekerjaan"
+  },
+  {
+    "en": "Married",
+    "ar": "متزوج",
+    "tr": "Mutazawwij",
+    "id": "Menikah"
+  },
+  {
+    "en": "Single",
+    "ar": "أعزب",
+    "tr": "Aʿzab",
+    "id": "Lajang"
+  },
+  {
+    "en": "Male",
+    "ar": "ذكر",
+    "tr": "Dhakar",
+    "id": "Laki-laki"
+  },
+  {
+    "en": "Female",
+    "ar": "أنثى",
+    "tr": "Unthā",
+    "id": "Perempuan"
+  },
+  {
+    "en": "Country",
+    "ar": "بلد",
+    "tr": "Balad",
+    "id": "Negara"
+  },
+  {
+    "en": "City",
+    "ar": "مدينة",
+    "tr": "Madīnah",
+    "id": "Kota"
+  },
+  {
+    "en": "First name",
+    "ar": "الاسم الأول",
+    "tr": "Al-ism al-awwal",
+    "id": "Nama depan"
+  },
+  {
+    "en": "Last name",
+    "ar": "اسم العائلة",
+    "tr": "Ism al-'a'ilah",
+    "id": "Nama belakang"
+  },
+  {
+    "en": "Birthday",
+    "ar": "تاريخ الميلاد",
+    "tr": "Tarikh al-milad",
+    "id": "Tanggal lahir"
+  },
+  {
+    "en": "Place of birth",
+    "ar": "مكان الميلاد",
+    "tr": "Makan al-milad",
+    "id": "Tempat lahir"
+  },
+  {
+    "en": "Identity card",
+    "ar": "بطاقة الهوية",
+    "tr": "Bitaqat al-huwiyyah",
+    "id": "Kartu identitas"
+  },
+  {
+    "en": "Email address",
+    "ar": "البريد الإلكتروني",
+    "tr": "Al-barid al-iliktruni",
+    "id": "Alamat email"
+  },
+  {
+    "en": "Hobby",
+    "ar": "هواية",
+    "tr": "Hiwayah",
+    "id": "Hobi"
+  },
+  {
+    "en": "Language",
+    "ar": "لغة",
+    "tr": "Lughah",
+    "id": "Bahasa"
+  },
+  {
+    "en": "Religion",
+    "ar": "دين",
+    "tr": "Din",
+    "id": "Agama"
+  },
+  {
+    "en": "Contact person",
+    "ar": "جهة الاتصال",
+    "tr": "Jihat al-ittisal",
+    "id": "Kontak darurat"
+  },
+  {
+    "en": "Postal code",
+    "ar": "الرمز البريدي",
+    "tr": "Ar-ramz al-baridi",
+    "id": "Kode pos"
+  },
+  {
+    "en": "Province",
+    "ar": "محافظة",
+    "tr": "Muhafazah",
+    "id": "Provinsi"
+  },
+  {
+    "en": "District",
+    "ar": "منطقة",
+    "tr": "Mintaqah",
+    "id": "Kecamatan"
+  },
+  {
+    "en": "Village name",
+    "ar": "اسم القرية",
+    "tr": "Ism al-qaryah",
+    "id": "Nama desa"
+  },
+  {
+    "en": "Full name",
+    "ar": "الاسم الكامل",
+    "tr": "Al-ism al-kamil",
+    "id": "Nama lengkap"
+  },
+  {
+    "en": "Nickname",
+    "ar": "لقب",
+    "tr": "Laqab",
+    "id": "Nama panggilan"
+  },
+  {
+    "en": "Height",
+    "ar": "طول",
+    "tr": "Tul",
+    "id": "Tinggi badan"
+  },
+  {
+    "en": "Weight",
+    "ar": "وزن",
+    "tr": "Wazn",
+    "id": "Berat badan"
+  },
+  {
+    "en": "Blood type",
+    "ar": "فصيلة الدم",
+    "tr": "Fasilat ad-dam",
+    "id": "Golongan darah"
+  },
+  {
+    "en": "Emergency contact",
+    "ar": "جهة اتصال للطوارئ",
+    "tr": "Jihat ittisal lit-tawari'",
+    "id": "Kontak darurat"
+  },
+  {
+    "en": "ID number",
+    "ar": "رقم الهوية",
+    "tr": "Raqm al-huwiyyah",
+    "id": "Nomor identitas"
+  },
+  {
+    "en": "Passport number",
+    "ar": "رقم جواز السفر",
+    "tr": "Raqm jawaz as-safar",
+    "id": "Nomor paspor"
+  },
+  {
+    "en": "Marital status",
+    "ar": "الحالة الاجتماعية",
+    "tr": "Al-halah al-ijtima'iyyah",
+    "id": "Status pernikahan"
+  },
+  {
+    "en": "Education",
+    "ar": "التعليم",
+    "tr": "At-ta'lim",
+    "id": "Pendidikan"
+  },
+  {
+    "en": "Workplace",
+    "ar": "مكان العمل",
+    "tr": "Makan al-'amal",
+    "id": "Tempat kerja"
+  },
+  {
+    "en": "Residence",
+    "ar": "محل الإقامة",
+    "tr": "Mahall al-iqamah",
+    "id": "Tempat tinggal"
+  },
+  {
+    "en": "Citizenship",
+    "ar": "المواطنة",
+    "tr": "Al-muwatanah",
+    "id": "Kewarganegaraan"
+  },
+  {
+    "en": "Signature",
+    "ar": "توقيع",
+    "tr": "Tawqi'",
+    "id": "Tanda tangan"
+  },
+  {
+    "en": "Date of issue",
+    "ar": "تاريخ الإصدار",
+    "tr": "Tarikh al-isdar",
+    "id": "Tanggal terbit"
+  },
+  {
+    "en": "Date of expiry",
+    "ar": "تاريخ الانتهاء",
+    "tr": "Tarikh al-intiha'",
+    "id": "Tanggal kedaluwarsa"
+  },
+  {
+    "en": "Gender",
+    "ar": "الجنس",
+    "tr": "Al-jins",
+    "id": "Jenis kelamin"
+  },
+  {
+    "en": "Date of birth",
+    "ar": "تاريخ الميلاد",
+    "tr": "Tarikh al-milad",
+    "id": "Tanggal lahir"
+  },
+  {
+    "en": "Occupation",
+    "ar": "المهنة",
+    "tr": "Al-mihnah",
+    "id": "Pekerjaan"
+  },
+  {
+    "en": "Office address",
+    "ar": "عنوان المكتب",
+    "tr": "Unwan al-maktab",
+    "id": "Alamat kantor"
+  },
+  {
+    "en": "Home address",
+    "ar": "عنوان المنزل",
+    "tr": "Unwan al-manzil",
+    "id": "Alamat rumah"
+  },
+  {
+    "en": "Nationality",
+    "ar": "الجنسية",
+    "tr": "Al-jinsiyyah",
+    "id": "Kebangsaan"
+  },
+  {
+    "en": "Religion",
+    "ar": "الديانة",
+    "tr": "Ad-diyanah",
+    "id": "Agama"
+  }
+]

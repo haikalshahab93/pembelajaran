@@ -1,0 +1,302 @@
+[
+  {
+    "en": "Price",
+    "ar": "سعر",
+    "tr": "Siʿr",
+    "id": "Harga"
+  },
+  {
+    "en": "Cheap",
+    "ar": "رخيص",
+    "tr": "Rakhīṣ",
+    "id": "Murah"
+  },
+  {
+    "en": "Expensive",
+    "ar": "غالي",
+    "tr": "Ghālī",
+    "id": "Mahal"
+  },
+  {
+    "en": "Store",
+    "ar": "متجر",
+    "tr": "Matjar",
+    "id": "Toko"
+  },
+  {
+    "en": "Customer",
+    "ar": "زبون",
+    "tr": "Zabūn",
+    "id": "Pelanggan"
+  },
+  {
+    "en": "Seller",
+    "ar": "بائع",
+    "tr": "Bāʾiʿ",
+    "id": "Penjual"
+  },
+  {
+    "en": "Cash",
+    "ar": "نقد",
+    "tr": "Naqd",
+    "id": "Tunai"
+  },
+  {
+    "en": "Card",
+    "ar": "بطاقة",
+    "tr": "Biṭāqah",
+    "id": "Kartu"
+  },
+  {
+    "en": "Discount",
+    "ar": "خصم",
+    "tr": "Khaṣm",
+    "id": "Diskon"
+  },
+  {
+    "en": "Receipt",
+    "ar": "إيصال",
+    "tr": "Īṣāl",
+    "id": "Struk"
+  },
+  {
+    "en": "Buy",
+    "ar": "يشتري",
+    "tr": "Yashtarī",
+    "id": "Membeli"
+  },
+  {
+    "en": "Sell",
+    "ar": "يبيع",
+    "tr": "Yabīʿ",
+    "id": "Menjual"
+  },
+  {
+    "en": "Market",
+    "ar": "سوق",
+    "tr": "Suq",
+    "id": "Pasar"
+  },
+  {
+    "en": "Mall",
+    "ar": "مركز تجاري",
+    "tr": "Markaz tijari",
+    "id": "Mal"
+  },
+  {
+    "en": "Size",
+    "ar": "مقاس",
+    "tr": "Miqas",
+    "id": "Ukuran"
+  },
+  {
+    "en": "Fitting room",
+    "ar": "غرفة القياس",
+    "tr": "Ghurfat al-qiyas",
+    "id": "Kamar pas"
+  },
+  {
+    "en": "Refund",
+    "ar": "استرداد",
+    "tr": "Istirdad",
+    "id": "Pengembalian dana"
+  },
+  {
+    "en": "Exchange",
+    "ar": "استبدال",
+    "tr": "Istibdal",
+    "id": "Tukar barang"
+  },
+  {
+    "en": "Wallet",
+    "ar": "محفظة",
+    "tr": "Mahfazhah",
+    "id": "Dompet"
+  },
+  {
+    "en": "Coin",
+    "ar": "عملة معدنية",
+    "tr": "'Umlah ma'diniyyah",
+    "id": "Koin"
+  },
+  {
+    "en": "Basket",
+    "ar": "سلة",
+    "tr": "Sallah",
+    "id": "Keranjang"
+  },
+  {
+    "en": "Checkout",
+    "ar": "صندوق الدفع",
+    "tr": "Sunduq ad-daf'",
+    "id": "Kasir"
+  },
+  {
+    "en": "Barcode",
+    "ar": "باركود",
+    "tr": "Barkod",
+    "id": "Barcode"
+  },
+  {
+    "en": "Cashier",
+    "ar": "أمين الصندوق",
+    "tr": "Amin as-sunduq",
+    "id": "Kasir"
+  },
+  {
+    "en": "Wholesale",
+    "ar": "جملة",
+    "tr": "Jumlah",
+    "id": "Grosir"
+  },
+  {
+    "en": "Retail",
+    "ar": "تجزئة",
+    "tr": "Tajzi'ah",
+    "id": "Eceran"
+  },
+  {
+    "en": "In stock",
+    "ar": "متوفر",
+    "tr": "Mutawaffir",
+    "id": "Tersedia"
+  },
+  {
+    "en": "Out of stock",
+    "ar": "غير متوفر",
+    "tr": "Ghayr mutawaffir",
+    "id": "Stok habis"
+  },
+  {
+    "en": "Shopping bag",
+    "ar": "حقيبة تسوق",
+    "tr": "Haqibat tasawwuq",
+    "id": "Tas belanja"
+  },
+  {
+    "en": "Promotion",
+    "ar": "عرض ترويجي",
+    "tr": "Ard tarwiji",
+    "id": "Promosi"
+  },
+  {
+    "en": "Can I try this on?",
+    "ar": "هل يمكنني قياس هذا؟",
+    "tr": "Hal yumkinuni qiyas hatha?",
+    "id": "Boleh saya coba ini?"
+  },
+  {
+    "en": "Do you have a larger size?",
+    "ar": "هل لديك مقاس أكبر؟",
+    "tr": "Hal ladayka miqas akbar?",
+    "id": "Ada ukuran yang lebih besar?"
+  },
+  {
+    "en": "Do you have a smaller size?",
+    "ar": "هل لديك مقاس أصغر؟",
+    "tr": "Hal ladayka miqas asghar?",
+    "id": "Ada ukuran yang lebih kecil?"
+  },
+  {
+    "en": "Too expensive",
+    "ar": "غالي جدا",
+    "tr": "Ghali jiddan",
+    "id": "Terlalu mahal"
+  },
+  {
+    "en": "Can I pay by card?",
+    "ar": "هل يمكنني الدفع بالبطاقة؟",
+    "tr": "Hal yumkinuni ad-daf' bil-bitaqah?",
+    "id": "Bisa bayar pakai kartu?"
+  },
+  {
+    "en": "I am just looking",
+    "ar": "أنا فقط أنظر",
+    "tr": "Ana faqat anzur",
+    "id": "Saya hanya lihat-lihat"
+  },
+  {
+    "en": "Cashier counter",
+    "ar": "منضدة الدفع",
+    "tr": "Mindadat ad-daf'",
+    "id": "Meja kasir"
+  },
+  {
+    "en": "Shopping list",
+    "ar": "قائمة التسوق",
+    "tr": "Qa'imat at-tasawwuq",
+    "id": "Daftar belanja"
+  },
+  {
+    "en": "Brand",
+    "ar": "علامة تجارية",
+    "tr": "Allamah tijariyyah",
+    "id": "Merek"
+  },
+  {
+    "en": "Warranty",
+    "ar": "ضمان",
+    "tr": "Daman",
+    "id": "Garansi"
+  },
+  {
+    "en": "Shopping center",
+    "ar": "مركز التسوق",
+    "tr": "Markaz at-tasawwuq",
+    "id": "Pusat belanja"
+  },
+  {
+    "en": "Price tag",
+    "ar": "بطاقة السعر",
+    "tr": "Bitaqat as-si'r",
+    "id": "Label harga"
+  },
+  {
+    "en": "Online shop",
+    "ar": "متجر إلكتروني",
+    "tr": "Matjar iliktruni",
+    "id": "Toko online"
+  },
+  {
+    "en": "Order number",
+    "ar": "رقم الطلب",
+    "tr": "Raqm at-talab",
+    "id": "Nomor pesanan"
+  },
+  {
+    "en": "Delivery fee",
+    "ar": "رسوم التوصيل",
+    "tr": "Rusum at-tawsil",
+    "id": "Biaya kirim"
+  },
+  {
+    "en": "Coupon",
+    "ar": "قسيمة",
+    "tr": "Qasimah",
+    "id": "Kupon"
+  },
+  {
+    "en": "Member card",
+    "ar": "بطاقة عضوية",
+    "tr": "Bitaqat 'udwiyyah",
+    "id": "Kartu member"
+  },
+  {
+    "en": "Queue",
+    "ar": "طابور",
+    "tr": "Tabur",
+    "id": "Antrean"
+  },
+  {
+    "en": "Packaging",
+    "ar": "تغليف",
+    "tr": "Taghlif",
+    "id": "Kemasan"
+  },
+  {
+    "en": "Out of budget",
+    "ar": "خارج الميزانية",
+    "tr": "Kharij al-mizaniyyah",
+    "id": "Di luar anggaran"
+  }
+]

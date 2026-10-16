@@ -1,0 +1,86 @@
+[
+    {
+        "en": "Cat",
+        "ar": "قطة",
+        "tr": "Qittah",
+        "id": "kucing",
+        "emoji": "🐱"
+    },
+    {
+        "en": "Dog",
+        "ar": "كلب",
+        "tr": "Kalb",
+        "id": "anjing",
+        "emoji": "🐶"
+    },
+    {
+        "en": "Cow",
+        "ar": "بقرة",
+        "tr": "Baqarah",
+        "id": "sapi",
+        "emoji": "🐄"
+    },
+    {
+        "en": "Horse",
+        "ar": "حصان",
+        "tr": "Hisan",
+        "id": "kuda",
+        "emoji": "🐴"
+    },
+    {
+        "en": "Sheep",
+        "ar": "خروف",
+        "tr": "Kharuf",
+        "id": "domba",
+        "emoji": "🐑"
+    },
+    {
+        "en": "Goat",
+        "ar": "ماعز",
+        "tr": "Ma'iz",
+        "id": "kambing",
+        "emoji": "🐐"
+    },
+    {
+        "en": "Pig",
+        "ar": "خنزير",
+        "tr": "Khinzir",
+        "id": "babi",
+        "emoji": "🐷"
+    },
+    {
+        "en": "Donkey",
+        "ar": "حمار",
+        "tr": "Himar",
+        "id": "keledai",
+        "emoji": "🐴"
+    },
+    {
+        "en": "Buffalo",
+        "ar": "جاموس",
+        "tr": "Jamus",
+        "id": "kerbau",
+        "emoji": "🐃"
+    },
+    {
+        "en": "Camel",
+        "ar": "جمل",
+        "tr": "Jamal",
+        "id": "unta",
+        "emoji": "🐫"
+    },
+    {
+        "en": "Chicken",
+        "ar": "دجاجة",
+        "tr": "Dajajah",
+        "id": "ayam",
+        "emoji": "🐔"
+    },
+    {
+        "en": "Rooster",
+        "ar": "ديك",
+        "tr": "Dik",
+        "id": "ayam jantan",
+        "emoji": "🐓"
+    }
+]

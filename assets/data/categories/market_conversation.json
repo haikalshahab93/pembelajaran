@@ -1,0 +1,74 @@
+[
+    {
+        "en": "How much is this?",
+        "ar": "بكم هذا؟",
+        "tr": "Bikam hādhā?",
+        "id": "Berapa harga ini?"
+    },
+    {
+        "en": "It is expensive",
+        "ar": "إنه غال",
+        "tr": "Innahu ghālin",
+        "id": "Ini mahal"
+    },
+    {
+        "en": "It is cheap",
+        "ar": "إنه رخيص",
+        "tr": "Innahu rakhīṣ",
+        "id": "Ini murah"
+    },
+    {
+        "en": "I want one kilo",
+        "ar": "أريد كيلو واحدا",
+        "tr": "Urīdu kīlū wāḥidan",
+        "id": "Saya mau satu kilo"
+    },
+    {
+        "en": "Do you have fresh vegetables?",
+        "ar": "هل عندك خضروات طازجة؟",
+        "tr": "Hal ʿindaka khuḍrawāt ṭāzijah?",
+        "id": "Apakah ada sayur segar?"
+    },
+    {
+        "en": "Please reduce the price",
+        "ar": "خفف السعر من فضلك",
+        "tr": "Khaffif as-siʿr min faḍlik",
+        "id": "Tolong kurangi harganya"
+    },
+    {
+        "en": "I will buy this",
+        "ar": "سأشتري هذا",
+        "tr": "Sa-ashtarī hādhā",
+        "id": "Saya akan beli ini"
+    },
+    {
+        "en": "I am just looking",
+        "ar": "أنا فقط أنظر",
+        "tr": "Anā faqaṭ anẓur",
+        "id": "Saya hanya melihat-lihat"
+    },
+    {
+        "en": "Do you accept card?",
+        "ar": "هل تقبل البطاقة؟",
+        "tr": "Hal taqbal al-biṭāqah?",
+        "id": "Apakah menerima kartu?"
+    },
+    {
+        "en": "Please give me a receipt",
+        "ar": "أعطني إيصالا من فضلك",
+        "tr": "Aʿṭinī īṣālan min faḍlik",
+        "id": "Tolong beri saya struk"
+    },
+    {
+        "en": "Where is the cashier?",
+        "ar": "أين الصندوق؟",
+        "tr": "Ayna aṣ-ṣundūq?",
+        "id": "Di mana kasir?"
+    },
+    {
+        "en": "Thank you, goodbye",
+        "ar": "شكرا، إلى اللقاء",
+        "tr": "Shukran, ilā al-liqāʾ",
+        "id": "Terima kasih, sampai jumpa"
+    }
+]

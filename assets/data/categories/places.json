@@ -1,0 +1,242 @@
+[
+  {
+    "en": "House",
+    "ar": "بيت",
+    "tr": "Bayt",
+    "id": "Rumah"
+  },
+  {
+    "en": "School",
+    "ar": "مدرسة",
+    "tr": "Madrasah",
+    "id": "Sekolah"
+  },
+  {
+    "en": "Mosque",
+    "ar": "مسجد",
+    "tr": "Masjid",
+    "id": "Masjid"
+  },
+  {
+    "en": "Market",
+    "ar": "سوق",
+    "tr": "Sūq",
+    "id": "Pasar"
+  },
+  {
+    "en": "City",
+    "ar": "مدينة",
+    "tr": "Madīnah",
+    "id": "Kota"
+  },
+  {
+    "en": "Village",
+    "ar": "قرية",
+    "tr": "Qaryah",
+    "id": "Desa"
+  },
+  {
+    "en": "Street",
+    "ar": "شارع",
+    "tr": "Shāriʿ",
+    "id": "Jalan"
+  },
+  {
+    "en": "Hospital",
+    "ar": "مستشفى",
+    "tr": "Mustashfā",
+    "id": "Rumah sakit"
+  },
+  {
+    "en": "Office",
+    "ar": "مكتب",
+    "tr": "Maktab",
+    "id": "Kantor"
+  },
+  {
+    "en": "Library",
+    "ar": "مكتبة",
+    "tr": "Maktabah",
+    "id": "Perpustakaan"
+  },
+  {
+    "en": "Park",
+    "ar": "حديقة",
+    "tr": "Hadiqah",
+    "id": "Taman"
+  },
+  {
+    "en": "Bank",
+    "ar": "بنك",
+    "tr": "Bank",
+    "id": "Bank"
+  },
+  {
+    "en": "Restaurant",
+    "ar": "مطعم",
+    "tr": "Mat'am",
+    "id": "Restoran"
+  },
+  {
+    "en": "Airport",
+    "ar": "مطار",
+    "tr": "Matar",
+    "id": "Bandara"
+  },
+  {
+    "en": "Beach",
+    "ar": "شاطئ",
+    "tr": "Shati'",
+    "id": "Pantai"
+  },
+  {
+    "en": "Bridge",
+    "ar": "جسر",
+    "tr": "Jisr",
+    "id": "Jembatan"
+  },
+  {
+    "en": "Mountain",
+    "ar": "جبل",
+    "tr": "Jabal",
+    "id": "Gunung"
+  },
+  {
+    "en": "Garden",
+    "ar": "حديقة",
+    "tr": "Hadiqah",
+    "id": "Kebun"
+  },
+  {
+    "en": "Post office",
+    "ar": "مكتب البريد",
+    "tr": "Maktab al-barid",
+    "id": "Kantor pos"
+  },
+  {
+    "en": "Museum",
+    "ar": "متحف",
+    "tr": "Mathaf",
+    "id": "Museum"
+  },
+  {
+    "en": "Harbor",
+    "ar": "ميناء",
+    "tr": "Mina'",
+    "id": "Pelabuhan"
+  },
+  {
+    "en": "Bus stop",
+    "ar": "موقف الحافلات",
+    "tr": "Mawqif al-hafilat",
+    "id": "Halte bus"
+  },
+  {
+    "en": "Playground",
+    "ar": "ملعب",
+    "tr": "Mal'ab",
+    "id": "Taman bermain"
+  },
+  {
+    "en": "Apartment",
+    "ar": "شقة",
+    "tr": "Shaqqah",
+    "id": "Apartemen"
+  },
+  {
+    "en": "Hotel lobby",
+    "ar": "ردهة الفندق",
+    "tr": "Radhat al-funduq",
+    "id": "Lobi hotel"
+  },
+  {
+    "en": "Bakery",
+    "ar": "مخبز",
+    "tr": "Makhbaz",
+    "id": "Toko roti"
+  },
+  {
+    "en": "Butcher shop",
+    "ar": "محل جزارة",
+    "tr": "Mahall jazarah",
+    "id": "Toko daging"
+  },
+  {
+    "en": "Gas station",
+    "ar": "محطة وقود",
+    "tr": "Mahattat wuqud",
+    "id": "SPBU"
+  },
+  {
+    "en": "Hotel room",
+    "ar": "غرفة فندق",
+    "tr": "Ghurfat funduq",
+    "id": "Kamar hotel"
+  },
+  {
+    "en": "Stadium",
+    "ar": "ملعب كبير",
+    "tr": "Mal'ab kabir",
+    "id": "Stadion"
+  },
+  {
+    "en": "Train station",
+    "ar": "محطة القطار",
+    "tr": "Mahattat al-qitar",
+    "id": "Stasiun kereta"
+  },
+  {
+    "en": "Police station",
+    "ar": "مركز الشرطة",
+    "tr": "Markaz ash-shurtah",
+    "id": "Kantor polisi"
+  },
+  {
+    "en": "Clinic",
+    "ar": "عيادة",
+    "tr": "Iyadah",
+    "id": "Klinik"
+  },
+  {
+    "en": "Coffee shop",
+    "ar": "مقهى",
+    "tr": "Maqha",
+    "id": "Kedai kopi"
+  },
+  {
+    "en": "Bookstore",
+    "ar": "مكتبة كتب",
+    "tr": "Maktabat kutub",
+    "id": "Toko buku"
+  },
+  {
+    "en": "Mall entrance",
+    "ar": "مدخل المركز التجاري",
+    "tr": "Madkhal al-markaz at-tijari",
+    "id": "Pintu masuk mal"
+  },
+  {
+    "en": "Parking area",
+    "ar": "موقف السيارات",
+    "tr": "Mawqif as-sayyarat",
+    "id": "Area parkir"
+  },
+  {
+    "en": "Public park",
+    "ar": "حديقة عامة",
+    "tr": "Hadiqah 'ammah",
+    "id": "Taman umum"
+  },
+  {
+    "en": "Residential area",
+    "ar": "منطقة سكنية",
+    "tr": "Mintaqah sakaniyyah",
+    "id": "Area perumahan"
+  },
+  {
+    "en": "Main road",
+    "ar": "شارع رئيسي",
+    "tr": "Shari' ra'isi",
+    "id": "Jalan utama"
+  }
+]

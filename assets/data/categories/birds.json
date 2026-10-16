@@ -1,0 +1,86 @@
+[
+    {
+        "en": "Eagle",
+        "ar": "نسر",
+        "tr": "Nasr",
+        "id": "elang",
+        "emoji": "🦅"
+    },
+    {
+        "en": "Falcon",
+        "ar": "شاهين",
+        "tr": "Shahin",
+        "id": "elang peregrine",
+        "emoji": "🦅"
+    },
+    {
+        "en": "Owl",
+        "ar": "بومة",
+        "tr": "Bumah",
+        "id": "burung hantu",
+        "emoji": "🦉"
+    },
+    {
+        "en": "Parrot",
+        "ar": "ببغاء",
+        "tr": "Babagha'",
+        "id": "burung beo",
+        "emoji": "🦜"
+    },
+    {
+        "en": "Cockatoo",
+        "ar": "كوكاتو",
+        "tr": "Kukatu",
+        "id": "kakatua",
+        "emoji": "🦜"
+    },
+    {
+        "en": "Pigeon",
+        "ar": "حمامة",
+        "tr": "Hamamah",
+        "id": "merpati",
+        "emoji": "🕊️"
+    },
+    {
+        "en": "Peacock",
+        "ar": "طاووس",
+        "tr": "Tus",
+        "id": "merak",
+        "emoji": "🦚"
+    },
+    {
+        "en": "Flamingo",
+        "ar": "فلامنغو",
+        "tr": "Falamanaghu",
+        "id": "flamingo",
+        "emoji": "🦩"
+    },
+    {
+        "en": "Swan",
+        "ar": "بجعة",
+        "tr": "Baja'ah",
+        "id": "angsa",
+        "emoji": "🦢"
+    },
+    {
+        "en": "Duck",
+        "ar": "بطة",
+        "tr": "Battah",
+        "id": "bebek",
+        "emoji": "🦆"
+    },
+    {
+        "en": "Hummingbird",
+        "ar": "طائر الطنان",
+        "tr": "Ta'ir at-Tannan",
+        "id": "burung kolibri",
+        "emoji": "🐦"
+    },
+    {
+        "en": "Penguin",
+        "ar": "بطريق",
+        "tr": "Bitriq",
+        "id": "penguin",
+        "emoji": "🐧"
+    }
+]

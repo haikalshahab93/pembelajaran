@@ -1,0 +1,351 @@
+[
+    {
+        "en":  "Big",
+        "ar":  "كبير",
+        "tr":  "Kabīr",
+        "id":  "Besar"
+    },
+    {
+        "en":  "Small",
+        "ar":  "صغير",
+        "tr":  "Ṣaghīr",
+        "id":  "Kecil"
+    },
+    {
+        "en":  "New",
+        "ar":  "جديد",
+        "tr":  "Jadīd",
+        "id":  "Baru"
+    },
+    {
+        "en":  "Old",
+        "ar":  "قديم",
+        "tr":  "Qadīm",
+        "id":  "Tua"
+    },
+    {
+        "en":  "Beautiful",
+        "ar":  "جميل",
+        "tr":  "Jamīl",
+        "id":  "Indah"
+    },
+    {
+        "en":  "Ugly",
+        "ar":  "قبيح",
+        "tr":  "Qabīḥ",
+        "id":  "Jelek"
+    },
+    {
+        "en":  "Easy",
+        "ar":  "سهل",
+        "tr":  "Sahl",
+        "id":  "Mudah"
+    },
+    {
+        "en":  "Difficult",
+        "ar":  "صعب",
+        "tr":  "Ṣaʿb",
+        "id":  "Sulit"
+    },
+    {
+        "en":  "Fast",
+        "ar":  "سريع",
+        "tr":  "Sarīʿ",
+        "id":  "Cepat"
+    },
+    {
+        "en":  "Slow",
+        "ar":  "بطيء",
+        "tr":  "Baṭīʾ",
+        "id":  "Lambat"
+    },
+    {
+        "en":  "Hot",
+        "ar":  "حار",
+        "tr":  "Ḥār",
+        "id":  "Panas"
+    },
+    {
+        "en":  "Cold",
+        "ar":  "بارد",
+        "tr":  "Bārid",
+        "id":  "Dingin"
+    },
+    {
+        "en":  "Clean",
+        "ar":  "نظيف",
+        "tr":  "Naẓīf",
+        "id":  "Membersihkan"
+    },
+    {
+        "en":  "Dirty",
+        "ar":  "قذر",
+        "tr":  "Qadhar",
+        "id":  "Kotor"
+    },
+    {
+        "en":  "Happy",
+        "ar":  "سعيد",
+        "tr":  "Saʿīd",
+        "id":  "Bahagia"
+    },
+    {
+        "en":  "Sad",
+        "ar":  "حزين",
+        "tr":  "Ḥazīn",
+        "id":  "Sedih"
+    },
+    {
+        "en":  "Long",
+        "ar":  "طويل",
+        "tr":  "Ṭawīl",
+        "id":  "Panjang"
+    },
+    {
+        "en":  "Short",
+        "ar":  "قصير",
+        "tr":  "Qaṣīr",
+        "id":  "Pendek"
+    },
+    {
+        "en":  "Strong",
+        "ar":  "قوي",
+        "tr":  "Qawī",
+        "id":  "Kuat"
+    },
+    {
+        "en":  "Weak",
+        "ar":  "ضعيف",
+        "tr":  "Ḍaʿīf",
+        "id":  "Lemah"
+    },
+    {
+        "en":  "Clever",
+        "ar":  "ذكي",
+        "tr":  "Dhakī",
+        "id":  ""
+    },
+    {
+        "en":  "Friendly",
+        "ar":  "ودود",
+        "tr":  "Wadūd",
+        "id":  ""
+    },
+    {
+        "en":  "Polite",
+        "ar":  "مؤدب",
+        "tr":  "Muʾaddab",
+        "id":  ""
+    },
+    {
+        "en":  "Rude",
+        "ar":  "وقح",
+        "tr":  "Waqiḥ",
+        "id":  ""
+    },
+    {
+        "en":  "Busy",
+        "ar":  "مشغول",
+        "tr":  "Mashghūl",
+        "id":  ""
+    },
+    {
+        "en":  "Free",
+        "ar":  "فارغ",
+        "tr":  "Fārigh",
+        "id":  ""
+    },
+    {
+        "en":  "Noisy",
+        "ar":  "صاخب",
+        "tr":  "Ṣākhb",
+        "id":  ""
+    },
+    {
+        "en":  "Quiet",
+        "ar":  "هادئ",
+        "tr":  "Hādiʾ",
+        "id":  ""
+    },
+    {
+        "en":  "Warm",
+        "ar":  "دافئ",
+        "tr":  "Dāfiʾ",
+        "id":  ""
+    },
+    {
+        "en":  "Cool",
+        "ar":  "معتدل",
+        "tr":  "Muʿtadil",
+        "id":  ""
+    },
+    {
+        "en":  "Fresh",
+        "ar":  "طازج",
+        "tr":  "Ṭāzij",
+        "id":  ""
+    },
+    {
+        "en":  "Stale",
+        "ar":  "بايت",
+        "tr":  "Bāyit",
+        "id":  ""
+    },
+    {
+        "en":  "Sweet",
+        "ar":  "حلو",
+        "tr":  "Ḥulw",
+        "id":  ""
+    },
+    {
+        "en":  "Sour",
+        "ar":  "حامض",
+        "tr":  "Ḥāmiḍ",
+        "id":  ""
+    },
+    {
+        "en":  "Bitter",
+        "ar":  "مر",
+        "tr":  "Murr",
+        "id":  ""
+    },
+    {
+        "en":  "Spicy",
+        "ar":  "حار",
+        "tr":  "Ḥār",
+        "id":  ""
+    },
+    {
+        "en":  "Salty",
+        "ar":  "مالح",
+        "tr":  "Māliḥ",
+        "id":  ""
+    },
+    {
+        "en":  "Safe",
+        "ar":  "آمن",
+        "tr":  "Āmin",
+        "id":  ""
+    },
+    {
+        "en":  "Dangerous",
+        "ar":  "خطير",
+        "tr":  "Khaṭīr",
+        "id":  ""
+    },
+    {
+        "en":  "Healthy",
+        "ar":  "صحي",
+        "tr":  "Ṣiḥī",
+        "id":  ""
+    },
+    {
+        "en":  "Sick",
+        "ar":  "مريض",
+        "tr":  "Marīḍ",
+        "id":  ""
+    },
+    {
+        "en":  "Rich",
+        "ar":  "غني",
+        "tr":  "Ghanī",
+        "id":  ""
+    },
+    {
+        "en":  "Poor",
+        "ar":  "فقير",
+        "tr":  "Faqīr",
+        "id":  ""
+    },
+    {
+        "en":  "Expensive",
+        "ar":  "غالي",
+        "tr":  "Ghālī",
+        "id":  ""
+    },
+    {
+        "en":  "Cheap",
+        "ar":  "رخيص",
+        "tr":  "Rakhīṣ",
+        "id":  ""
+    },
+    {
+        "en":  "Early",
+        "ar":  "مبكر",
+        "tr":  "Mubakkir",
+        "id":  ""
+    },
+    {
+        "en":  "Late",
+        "ar":  "متأخر",
+        "tr":  "Mutaʾakhkhir",
+        "id":  ""
+    },
+    {
+        "en":  "Light",
+        "ar":  "خفيف",
+        "tr":  "Khafīf",
+        "id":  ""
+    },
+    {
+        "en":  "Heavy",
+        "ar":  "ثقيل",
+        "tr":  "Thaqīl",
+        "id":  ""
+    },
+    {
+        "en":  "Near",
+        "ar":  "قريب",
+        "tr":  "Qarīb",
+        "id":  "Dekat"
+    },
+    {
+        "en":  "Far",
+        "ar":  "بعيد",
+        "tr":  "Baʿīd",
+        "id":  ""
+    },
+    {
+        "en":  "Crowded",
+        "ar":  "مزدحم",
+        "tr":  "Muzdaḥam",
+        "id":  ""
+    },
+    {
+        "en":  "Empty",
+        "ar":  "فارغ",
+        "tr":  "Fārigh",
+        "id":  ""
+    },
+    {
+        "en":  "Full",
+        "ar":  "ممتلئ",
+        "tr":  "Mumtaliʾ",
+        "id":  ""
+    },
+    {
+        "en":  "Open",
+        "ar":  "مفتوح",
+        "tr":  "Maftūḥ",
+        "id":  "Membuka"
+    },
+    {
+        "en":  "Closed",
+        "ar":  "مغلق",
+        "tr":  "Mughlaq",
+        "id":  ""
+    },
+    {
+        "en":  "Bright",
+        "ar":  "ساطع",
+        "tr":  "Sāṭiʿ",
+        "id":  ""
+    },
+    {
+        "en":  "Dark",
+        "ar":  "مظلم",
+        "tr":  "Muẓlim",
+        "id":  ""
+    }
+]
+

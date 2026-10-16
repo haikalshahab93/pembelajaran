@@ -1,0 +1,278 @@
+[
+  {
+    "en": "Hot",
+    "ar": "حار",
+    "tr": "Ḥār",
+    "id": "Panas"
+  },
+  {
+    "en": "Cold",
+    "ar": "بارد",
+    "tr": "Bārid",
+    "id": "Dingin"
+  },
+  {
+    "en": "Rain",
+    "ar": "مطر",
+    "tr": "Maṭar",
+    "id": "Hujan"
+  },
+  {
+    "en": "Windy",
+    "ar": "رياح",
+    "tr": "Riyāḥ",
+    "id": "Berangin"
+  },
+  {
+    "en": "Snow",
+    "ar": "ثلج",
+    "tr": "Thalj",
+    "id": "Salju"
+  },
+  {
+    "en": "Cloudy",
+    "ar": "غائم",
+    "tr": "Ghāʾim",
+    "id": "Berawan"
+  },
+  {
+    "en": "Sunny",
+    "ar": "مشمس",
+    "tr": "Mushmis",
+    "id": "Cerah"
+  },
+  {
+    "en": "Storm",
+    "ar": "عاصفة",
+    "tr": "ʿĀṣifah",
+    "id": "Badai"
+  },
+  {
+    "en": "Temperature",
+    "ar": "درجة الحرارة",
+    "tr": "Darajat al-ḥarārah",
+    "id": "Suhu"
+  },
+  {
+    "en": "Season",
+    "ar": "فصل",
+    "tr": "Faṣl",
+    "id": "Musim"
+  },
+  {
+    "en": "Humid",
+    "ar": "رطب",
+    "tr": "Ratib",
+    "id": "Lembap"
+  },
+  {
+    "en": "Dry",
+    "ar": "جاف",
+    "tr": "Jaff",
+    "id": "Kering"
+  },
+  {
+    "en": "Fog",
+    "ar": "ضباب",
+    "tr": "Dubab",
+    "id": "Kabut"
+  },
+  {
+    "en": "Lightning",
+    "ar": "برق",
+    "tr": "Barq",
+    "id": "Petir"
+  },
+  {
+    "en": "Thunder",
+    "ar": "رعد",
+    "tr": "Ra'd",
+    "id": "Guruh"
+  },
+  {
+    "en": "Rainbow",
+    "ar": "قوس قزح",
+    "tr": "Qaws Quzah",
+    "id": "Pelangi"
+  },
+  {
+    "en": "Forecast",
+    "ar": "توقعات الطقس",
+    "tr": "Tawaqqu'at at-taqs",
+    "id": "Prakiraan cuaca"
+  },
+  {
+    "en": "Drizzle",
+    "ar": "رذاذ",
+    "tr": "Radhadh",
+    "id": "Gerimis"
+  },
+  {
+    "en": "Breeze",
+    "ar": "نسيم",
+    "tr": "Nasim",
+    "id": "Semilir angin"
+  },
+  {
+    "en": "Hail",
+    "ar": "بَرَد",
+    "tr": "Barad",
+    "id": "Hujan es"
+  },
+  {
+    "en": "Monsoon",
+    "ar": "موسم الأمطار",
+    "tr": "Mawsim al-amtar",
+    "id": "Musim hujan deras"
+  },
+  {
+    "en": "Heatwave",
+    "ar": "موجة حر",
+    "tr": "Mawjat harr",
+    "id": "Gelombang panas"
+  },
+  {
+    "en": "Climate",
+    "ar": "مناخ",
+    "tr": "Manakh",
+    "id": "Iklim"
+  },
+  {
+    "en": "Sunrise",
+    "ar": "شروق الشمس",
+    "tr": "Shuruq ash-shams",
+    "id": "Matahari terbit"
+  },
+  {
+    "en": "Sunset",
+    "ar": "غروب الشمس",
+    "tr": "Ghurub ash-shams",
+    "id": "Matahari terbenam"
+  },
+  {
+    "en": "Shade",
+    "ar": "ظل",
+    "tr": "Zill",
+    "id": "Teduh"
+  },
+  {
+    "en": "Freezing",
+    "ar": "متجمد",
+    "tr": "Mutajammid",
+    "id": "Membeku"
+  },
+  {
+    "en": "Warm",
+    "ar": "دافئ",
+    "tr": "Dafi'",
+    "id": "Hangat"
+  },
+  {
+    "en": "Wet",
+    "ar": "مبلل",
+    "tr": "Muballal",
+    "id": "Basah"
+  },
+  {
+    "en": "Weather report",
+    "ar": "تقرير الطقس",
+    "tr": "Taqrir at-taqs",
+    "id": "Laporan cuaca"
+  },
+  {
+    "en": "Air pressure",
+    "ar": "ضغط الهواء",
+    "tr": "Daght al-hawa'",
+    "id": "Tekanan udara"
+  },
+  {
+    "en": "Raincoat",
+    "ar": "معطف مطر",
+    "tr": "Mi'taf matar",
+    "id": "Jas hujan"
+  },
+  {
+    "en": "Umbrella",
+    "ar": "مظلة",
+    "tr": "Mazallah",
+    "id": "Payung"
+  },
+  {
+    "en": "Thunderstorm",
+    "ar": "عاصفة رعدية",
+    "tr": "Asifah ra'diyyah",
+    "id": "Badai petir"
+  },
+  {
+    "en": "Flood",
+    "ar": "فيضانات",
+    "tr": "Faydanaat",
+    "id": "Banjir"
+  },
+  {
+    "en": "Drought",
+    "ar": "جفاف",
+    "tr": "Jafaf",
+    "id": "Kekeringan"
+  },
+  {
+    "en": "Dust storm",
+    "ar": "عاصفة ترابية",
+    "tr": "Asifah turabiyyah",
+    "id": "Badai debu"
+  },
+  {
+    "en": "Misty",
+    "ar": "ضبابي",
+    "tr": "Dubabi",
+    "id": "Berkabut tipis"
+  },
+  {
+    "en": "Weather station",
+    "ar": "محطة الطقس",
+    "tr": "Mahattat at-taqs",
+    "id": "Stasiun cuaca"
+  },
+  {
+    "en": "Humidity level",
+    "ar": "مستوى الرطوبة",
+    "tr": "Mustawa ar-rutub ah",
+    "id": "Tingkat kelembapan"
+  },
+  {
+    "en": "Forecast",
+    "ar": "توقعات",
+    "tr": "Tawaqqu'at",
+    "id": "Prakiraan"
+  },
+  {
+    "en": "Breeze",
+    "ar": "نسيم",
+    "tr": "Nasim",
+    "id": "Angin sepoi"
+  },
+  {
+    "en": "Thunder",
+    "ar": "رعد",
+    "tr": "Ra'd",
+    "id": "Guntur"
+  },
+  {
+    "en": "Cool air",
+    "ar": "هواء بارد",
+    "tr": "Hawa' barid",
+    "id": "Udara sejuk"
+  },
+  {
+    "en": "Heavy rain",
+    "ar": "مطر غزير",
+    "tr": "Matar ghazir",
+    "id": "Hujan lebat"
+  },
+  {
+    "en": "Dry season",
+    "ar": "موسم الجفاف",
+    "tr": "Mawsim al-jafaf",
+    "id": "Musim kemarau"
+  }
+]

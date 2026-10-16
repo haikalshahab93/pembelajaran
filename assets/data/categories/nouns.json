@@ -1,0 +1,369 @@
+[
+    {
+        "en": "Table",
+        "ar": "طاولة",
+        "tr": "Ṭāwilah",
+        "id": "Meja"
+    },
+    {
+        "en": "Chair",
+        "ar": "كرسي",
+        "tr": "Kursī",
+        "id": "Kursi"
+    },
+    {
+        "en": "Window",
+        "ar": "نافذة",
+        "tr": "Nāfidhah",
+        "id": "Jendela"
+    },
+    {
+        "en": "Door",
+        "ar": "باب",
+        "tr": "Bāb",
+        "id": "Pintu"
+    },
+    {
+        "en": "Phone",
+        "ar": "هاتف",
+        "tr": "Hātif",
+        "id": "Telepon"
+    },
+    {
+        "en": "Computer",
+        "ar": "حاسوب",
+        "tr": "Ḥāsūb",
+        "id": "Komputer"
+    },
+    {
+        "en": "Book",
+        "ar": "كتاب",
+        "tr": "Kitāb",
+        "id": "Buku"
+    },
+    {
+        "en": "Bag",
+        "ar": "حقيبة",
+        "tr": "Ḥaqībah",
+        "id": "Tas"
+    },
+    {
+        "en": "Key",
+        "ar": "مفتاح",
+        "tr": "Miftāḥ",
+        "id": "Kunci"
+    },
+    {
+        "en": "Bottle",
+        "ar": "زجاجة",
+        "tr": "Zujājah",
+        "id": "Botol"
+    },
+    {
+        "en": "Money",
+        "ar": "مال",
+        "tr": "Māl",
+        "id": "Uang"
+    },
+    {
+        "en": "Ticket",
+        "ar": "تذكرة",
+        "tr": "Tadhkirah",
+        "id": "Tiket"
+    },
+    {
+        "en": "Room",
+        "ar": "غرفة",
+        "tr": "Ghurfah",
+        "id": "Kamar"
+    },
+    {
+        "en": "Bed",
+        "ar": "سرير",
+        "tr": "Sarīr",
+        "id": "Tempat tidur"
+    },
+    {
+        "en": "Kitchen",
+        "ar": "مطبخ",
+        "tr": "Maṭbakh",
+        "id": "Dapur"
+    },
+    {
+        "en": "Food",
+        "ar": "طعام",
+        "tr": "Ṭaʿām",
+        "id": "Makanan"
+    },
+    {
+        "en": "Water",
+        "ar": "ماء",
+        "tr": "Māʾ",
+        "id": "Air"
+    },
+    {
+        "en": "Car",
+        "ar": "سيارة",
+        "tr": "Sayyārah",
+        "id": "Mobil"
+    },
+    {
+        "en": "City",
+        "ar": "مدينة",
+        "tr": "Madīnah",
+        "id": "Kota"
+    },
+    {
+        "en": "Country",
+        "ar": "بلد",
+        "tr": "Balad",
+        "id": "Negara"
+    },
+    {
+        "en": "Mirror",
+        "ar": "مرآة",
+        "tr": "Mirʾāh",
+        "id": ""
+    },
+    {
+        "en": "Carpet",
+        "ar": "سجادة",
+        "tr": "Sajjādah",
+        "id": ""
+    },
+    {
+        "en": "Ceiling",
+        "ar": "سقف",
+        "tr": "Saqf",
+        "id": ""
+    },
+    {
+        "en": "Floor",
+        "ar": "أرضية",
+        "tr": "Arḍiyyah",
+        "id": ""
+    },
+    {
+        "en": "Wall",
+        "ar": "جدار",
+        "tr": "Jidār",
+        "id": ""
+    },
+    {
+        "en": "Picture",
+        "ar": "صورة",
+        "tr": "Ṣūrah",
+        "id": ""
+    },
+    {
+        "en": "Sofa",
+        "ar": "أريكة",
+        "tr": "Arīkah",
+        "id": ""
+    },
+    {
+        "en": "Television",
+        "ar": "تلفاز",
+        "tr": "Tilfāz",
+        "id": ""
+    },
+    {
+        "en": "Remote",
+        "ar": "ريموت",
+        "tr": "Rīmūt",
+        "id": ""
+    },
+    {
+        "en": "Lamp",
+        "ar": "مصباح",
+        "tr": "Miṣbāḥ",
+        "id": ""
+    },
+    {
+        "en": "Fan",
+        "ar": "مروحة",
+        "tr": "Marwaḥah",
+        "id": ""
+    },
+    {
+        "en": "Air conditioner",
+        "ar": "مكيف",
+        "tr": "Mukayyif",
+        "id": ""
+    },
+    {
+        "en": "Refrigerator",
+        "ar": "ثلاجة",
+        "tr": "Thallājah",
+        "id": ""
+    },
+    {
+        "en": "Oven",
+        "ar": "فرن",
+        "tr": "Furn",
+        "id": ""
+    },
+    {
+        "en": "Microwave",
+        "ar": "ميكروويف",
+        "tr": "Mīkrūwīf",
+        "id": ""
+    },
+    {
+        "en": "Dishwasher",
+        "ar": "غسالة صحون",
+        "tr": "Ghassālat ṣuḥūn",
+        "id": ""
+    },
+    {
+        "en": "Spoon",
+        "ar": "ملعقة",
+        "tr": "Milʿaqah",
+        "id": ""
+    },
+    {
+        "en": "Fork",
+        "ar": "شوكة",
+        "tr": "Shawkah",
+        "id": ""
+    },
+    {
+        "en": "Knife",
+        "ar": "سكين",
+        "tr": "Sikkīn",
+        "id": ""
+    },
+    {
+        "en": "Plate",
+        "ar": "صحن",
+        "tr": "Ṣaḥn",
+        "id": ""
+    },
+    {
+        "en": "Bowl",
+        "ar": "وعاء",
+        "tr": "Wiʿāʾ",
+        "id": ""
+    },
+    {
+        "en": "Cup",
+        "ar": "فنجان",
+        "tr": "Finjān",
+        "id": ""
+    },
+    {
+        "en": "Glass",
+        "ar": "كأس",
+        "tr": "Kaʾs",
+        "id": ""
+    },
+    {
+        "en": "Printer",
+        "ar": "طابعة",
+        "tr": "Ṭābiʿah",
+        "id": ""
+    },
+    {
+        "en": "Paper",
+        "ar": "ورق",
+        "tr": "Waraq",
+        "id": ""
+    },
+    {
+        "en": "Pencil",
+        "ar": "قلم رصاص",
+        "tr": "Qalam ruṣāṣ",
+        "id": ""
+    },
+    {
+        "en": "Ruler",
+        "ar": "مسطرة",
+        "tr": "Masṭarah",
+        "id": ""
+    },
+    {
+        "en": "Eraser",
+        "ar": "ممحاة",
+        "tr": "Mimḥāh",
+        "id": ""
+    },
+    {
+        "en": "Belt",
+        "ar": "حزام",
+        "tr": "Ḥizām",
+        "id": ""
+    },
+    {
+        "en": "Gloves",
+        "ar": "قفازات",
+        "tr": "Qaffāzāt",
+        "id": ""
+    },
+    {
+        "en": "Hammer",
+        "ar": "مطرقة",
+        "tr": "Miṭraqah",
+        "id": ""
+    },
+    {
+        "en": "Screwdriver",
+        "ar": "مفك",
+        "tr": "Mafakk",
+        "id": ""
+    },
+    {
+        "en": "Wrench",
+        "ar": "مفتاح ربط",
+        "tr": "Miftāḥ rabṭ",
+        "id": ""
+    },
+    {
+        "en": "Drill",
+        "ar": "مثقاب",
+        "tr": "Mithqāb",
+        "id": ""
+    },
+    {
+        "en": "Backpack",
+        "ar": "حقيبة ظهر",
+        "tr": "Ḥaqībat ẓahr",
+        "id": ""
+    },
+    {
+        "en": "Wallet",
+        "ar": "محفظة",
+        "tr": "Miḥfaẓah",
+        "id": ""
+    },
+    {
+        "en": "Calendar",
+        "ar": "تقويم",
+        "tr": "Taqwīm",
+        "id": ""
+    },
+    {
+        "en": "Watch",
+        "ar": "ساعة",
+        "tr": "Sāʿah",
+        "id": "Menonton"
+    },
+    {
+        "en": "Fence",
+        "ar": "سياج",
+        "tr": "Siyāj",
+        "id": ""
+    },
+    {
+        "en": "Garden",
+        "ar": "حديقة",
+        "tr": "Ḥadīqah",
+        "id": ""
+    },
+    {
+        "en": "Bridge",
+        "ar": "جسر",
+        "tr": "Jisr",
+        "id": ""
+    }
+]
+

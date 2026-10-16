@@ -1,0 +1,272 @@
+[
+  {
+    "en": "Teacher",
+    "ar": "معلم",
+    "tr": "Muʿallim",
+    "id": "Guru"
+  },
+  {
+    "en": "Student",
+    "ar": "طالب",
+    "tr": "Ṭālib",
+    "id": "Siswa"
+  },
+  {
+    "en": "Principal",
+    "ar": "مدير",
+    "tr": "Mudīr",
+    "id": "Kepala sekolah"
+  },
+  {
+    "en": "Meeting",
+    "ar": "اجتماع",
+    "tr": "Ijtimāʿ",
+    "id": "Rapat"
+  },
+  {
+    "en": "Computer",
+    "ar": "حاسوب",
+    "tr": "Ḥāsūb",
+    "id": "Komputer"
+  },
+  {
+    "en": "Notebook",
+    "ar": "دفتر",
+    "tr": "Daftar",
+    "id": "Buku catatan"
+  },
+  {
+    "en": "Pen",
+    "ar": "قلم",
+    "tr": "Qalam",
+    "id": "Pulpen"
+  },
+  {
+    "en": "Paper",
+    "ar": "ورقة",
+    "tr": "Waraqah",
+    "id": "Kertas"
+  },
+  {
+    "en": "Homework",
+    "ar": "واجب",
+    "tr": "Wājib",
+    "id": "Pekerjaan rumah"
+  },
+  {
+    "en": "Exam",
+    "ar": "امتحان",
+    "tr": "Imtiḥān",
+    "id": "Ujian"
+  },
+  {
+    "en": "Manager",
+    "ar": "مدير",
+    "tr": "Mudīr",
+    "id": "Manajer"
+  },
+  {
+    "en": "Employee",
+    "ar": "موظف",
+    "tr": "Muwazzaf",
+    "id": "Karyawan"
+  },
+  {
+    "en": "Classroom",
+    "ar": "فصل دراسي",
+    "tr": "Fasl dirasi",
+    "id": "Ruang kelas"
+  },
+  {
+    "en": "Office",
+    "ar": "مكتب",
+    "tr": "Maktab",
+    "id": "Kantor"
+  },
+  {
+    "en": "Lesson",
+    "ar": "درس",
+    "tr": "Dars",
+    "id": "Pelajaran"
+  },
+  {
+    "en": "Schedule",
+    "ar": "جدول",
+    "tr": "Jadwal",
+    "id": "Jadwal"
+  },
+  {
+    "en": "Projector",
+    "ar": "جهاز عرض",
+    "tr": "Jihaz 'ard",
+    "id": "Proyektor"
+  },
+  {
+    "en": "Whiteboard",
+    "ar": "سبورة بيضاء",
+    "tr": "Saburah bayda'",
+    "id": "Papan tulis putih"
+  },
+  {
+    "en": "Marker",
+    "ar": "قلم تحديد",
+    "tr": "Qalam tahdid",
+    "id": "Spidol"
+  },
+  {
+    "en": "Desk",
+    "ar": "مكتب",
+    "tr": "Maktab",
+    "id": "Meja kerja"
+  },
+  {
+    "en": "Printer",
+    "ar": "طابعة",
+    "tr": "Tabi'ah",
+    "id": "Printer"
+  },
+  {
+    "en": "Document",
+    "ar": "مستند",
+    "tr": "Mustanad",
+    "id": "Dokumen"
+  },
+  {
+    "en": "Attendance",
+    "ar": "حضور",
+    "tr": "Hudur",
+    "id": "Kehadiran"
+  },
+  {
+    "en": "Assignment",
+    "ar": "مهمة",
+    "tr": "Muhimmah",
+    "id": "Tugas"
+  },
+  {
+    "en": "Presentation",
+    "ar": "عرض",
+    "tr": "Ard",
+    "id": "Presentasi"
+  },
+  {
+    "en": "Colleague",
+    "ar": "زميل",
+    "tr": "Zamil",
+    "id": "Rekan kerja"
+  },
+  {
+    "en": "Supervisor",
+    "ar": "مشرف",
+    "tr": "Mushrif",
+    "id": "Supervisor"
+  },
+  {
+    "en": "Intern",
+    "ar": "متدرب",
+    "tr": "Mutadarrib",
+    "id": "Magang"
+  },
+  {
+    "en": "Deadline",
+    "ar": "موعد نهائي",
+    "tr": "Maw'id naha'i",
+    "id": "Batas waktu"
+  },
+  {
+    "en": "Meeting room",
+    "ar": "غرفة الاجتماعات",
+    "tr": "Ghurfat al-ijtima'at",
+    "id": "Ruang rapat"
+  },
+  {
+    "en": "Curriculum",
+    "ar": "منهج",
+    "tr": "Manhaj",
+    "id": "Kurikulum"
+  },
+  {
+    "en": "Certificate",
+    "ar": "شهادة",
+    "tr": "Shahadah",
+    "id": "Sertifikat"
+  },
+  {
+    "en": "File folder",
+    "ar": "ملف",
+    "tr": "Malaf",
+    "id": "Map berkas"
+  },
+  {
+    "en": "Spreadsheet",
+    "ar": "جدول بيانات",
+    "tr": "Jadwal bayanat",
+    "id": "Spreadsheet"
+  },
+  {
+    "en": "Keyboard",
+    "ar": "لوحة مفاتيح",
+    "tr": "Lawhat mafatih",
+    "id": "Keyboard"
+  },
+  {
+    "en": "Mouse",
+    "ar": "فأرة",
+    "tr": "Fa'rah",
+    "id": "Mouse"
+  },
+  {
+    "en": "Chalk",
+    "ar": "طباشير",
+    "tr": "Tabashir",
+    "id": "Kapur tulis"
+  },
+  {
+    "en": "Correction",
+    "ar": "تصحيح",
+    "tr": "Tashih",
+    "id": "Koreksi"
+  },
+  {
+    "en": "Office hours",
+    "ar": "ساعات العمل",
+    "tr": "Sa'at al-'amal",
+    "id": "Jam kerja"
+  },
+  {
+    "en": "Break time",
+    "ar": "وقت الاستراحة",
+    "tr": "Waqt al-istirahah",
+    "id": "Waktu istirahat"
+  },
+  {
+    "en": "Score",
+    "ar": "درجة",
+    "tr": "Darajah",
+    "id": "Nilai"
+  },
+  {
+    "en": "Project",
+    "ar": "مشروع",
+    "tr": "Mashru'",
+    "id": "Proyek"
+  },
+  {
+    "en": "Office desk",
+    "ar": "مكتب العمل",
+    "tr": "Maktab al-'amal",
+    "id": "Meja kerja"
+  },
+  {
+    "en": "Report",
+    "ar": "تقرير",
+    "tr": "Taqrir",
+    "id": "Laporan"
+  },
+  {
+    "en": "Presentation slide",
+    "ar": "شريحة عرض",
+    "tr": "Sharihat 'ard",
+    "id": "Slide presentasi"
+  }
+]

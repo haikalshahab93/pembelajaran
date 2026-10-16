@@ -1,0 +1,242 @@
+[
+  {
+    "en": "Red",
+    "ar": "أحمر",
+    "tr": "Aḥmar",
+    "id": "Merah"
+  },
+  {
+    "en": "Blue",
+    "ar": "أزرق",
+    "tr": "Azraq",
+    "id": "Biru"
+  },
+  {
+    "en": "Green",
+    "ar": "أخضر",
+    "tr": "Akhdar",
+    "id": "Hijau"
+  },
+  {
+    "en": "Yellow",
+    "ar": "أصفر",
+    "tr": "Aṣfar",
+    "id": "Kuning"
+  },
+  {
+    "en": "Black",
+    "ar": "أسود",
+    "tr": "Aswad",
+    "id": "Hitam"
+  },
+  {
+    "en": "White",
+    "ar": "أبيض",
+    "tr": "Abyad",
+    "id": "Putih"
+  },
+  {
+    "en": "Orange",
+    "ar": "برتقالي",
+    "tr": "Burtuqālī",
+    "id": "Oranye"
+  },
+  {
+    "en": "Purple",
+    "ar": "بنفسجي",
+    "tr": "Banafsajī",
+    "id": "Ungu"
+  },
+  {
+    "en": "Brown",
+    "ar": "بني",
+    "tr": "Bunnī",
+    "id": "Cokelat"
+  },
+  {
+    "en": "Pink",
+    "ar": "وردي",
+    "tr": "Wardī",
+    "id": "Merah muda"
+  },
+  {
+    "en": "Gray",
+    "ar": "رمادي",
+    "tr": "Ramadi",
+    "id": "Abu-abu"
+  },
+  {
+    "en": "Golden",
+    "ar": "ذهبي",
+    "tr": "Dhahabi",
+    "id": "Emas"
+  },
+  {
+    "en": "Silver",
+    "ar": "فضي",
+    "tr": "Fiddi",
+    "id": "Perak"
+  },
+  {
+    "en": "Dark blue",
+    "ar": "أزرق داكن",
+    "tr": "Azraq dakin",
+    "id": "Biru tua"
+  },
+  {
+    "en": "Light blue",
+    "ar": "أزرق فاتح",
+    "tr": "Azraq fatih",
+    "id": "Biru muda"
+  },
+  {
+    "en": "Dark green",
+    "ar": "أخضر داكن",
+    "tr": "Akhdar dakin",
+    "id": "Hijau tua"
+  },
+  {
+    "en": "Light green",
+    "ar": "أخضر فاتح",
+    "tr": "Akhdar fatih",
+    "id": "Hijau muda"
+  },
+  {
+    "en": "Beige",
+    "ar": "بيج",
+    "tr": "Beij",
+    "id": "Krem"
+  },
+  {
+    "en": "Turquoise",
+    "ar": "فيروزي",
+    "tr": "Fayruzi",
+    "id": "Turkuois"
+  },
+  {
+    "en": "Maroon",
+    "ar": "خمري",
+    "tr": "Khamri",
+    "id": "Merah marun"
+  },
+  {
+    "en": "Navy",
+    "ar": "كحلي",
+    "tr": "Kuhli",
+    "id": "Biru navy"
+  },
+  {
+    "en": "Olive",
+    "ar": "زيتي",
+    "tr": "Zayti",
+    "id": "Hijau zaitun"
+  },
+  {
+    "en": "Cream",
+    "ar": "كريمي",
+    "tr": "Karimi",
+    "id": "Krem muda"
+  },
+  {
+    "en": "Peach",
+    "ar": "خوخي",
+    "tr": "Khawkhi",
+    "id": "Warna persik"
+  },
+  {
+    "en": "Violet",
+    "ar": "بنفسجي غامق",
+    "tr": "Banafsaji ghamiq",
+    "id": "Ungu tua"
+  },
+  {
+    "en": "Sky blue",
+    "ar": "أزرق سماوي",
+    "tr": "Azraq samawi",
+    "id": "Biru langit"
+  },
+  {
+    "en": "Lime green",
+    "ar": "أخضر ليموني",
+    "tr": "Akhdar laymuni",
+    "id": "Hijau limau"
+  },
+  {
+    "en": "Coral",
+    "ar": "مرجاني",
+    "tr": "Marjani",
+    "id": "Korall"
+  },
+  {
+    "en": "Amber",
+    "ar": "كهرماني",
+    "tr": "Kahramani",
+    "id": "Amber"
+  },
+  {
+    "en": "Transparent",
+    "ar": "شفاف",
+    "tr": "Shafaf",
+    "id": "Transparan"
+  },
+  {
+    "en": "Indigo",
+    "ar": "نيلي",
+    "tr": "Nili",
+    "id": "Nila"
+  },
+  {
+    "en": "Bronze",
+    "ar": "برونزي",
+    "tr": "Burunzi",
+    "id": "Perunggu"
+  },
+  {
+    "en": "Ivory",
+    "ar": "عاجي",
+    "tr": "Aji",
+    "id": "Gading"
+  },
+  {
+    "en": "Charcoal",
+    "ar": "فحمي",
+    "tr": "Fahmi",
+    "id": "Abu arang"
+  },
+  {
+    "en": "Magenta",
+    "ar": "أرجواني",
+    "tr": "Urjuwani",
+    "id": "Magenta"
+  },
+  {
+    "en": "Mint",
+    "ar": "نعناعي",
+    "tr": "Na'na'i",
+    "id": "Hijau mint"
+  },
+  {
+    "en": "Lavender",
+    "ar": "لافندر",
+    "tr": "Lafandar",
+    "id": "Lavender"
+  },
+  {
+    "en": "Ruby",
+    "ar": "ياقوتي",
+    "tr": "Yaquti",
+    "id": "Merah ruby"
+  },
+  {
+    "en": "Emerald",
+    "ar": "زمردي",
+    "tr": "Zumurrudi",
+    "id": "Hijau zamrud"
+  },
+  {
+    "en": "Pearl white",
+    "ar": "أبيض لؤلؤي",
+    "tr": "Abyad lu'lu'i",
+    "id": "Putih mutiara"
+  }
+]

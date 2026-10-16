@@ -1,0 +1,20 @@
+{
+  "name": "pembelajar-client",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Frontend React untuk aplikasi Pembelajaran EN-AR-ID",
+  "scripts": {
+    "dev": "node scripts/copy-data.mjs && vite",
+    "build": "node scripts/copy-data.mjs && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.9"
+  }
+}

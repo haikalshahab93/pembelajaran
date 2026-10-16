@@ -1,0 +1,242 @@
+[
+  {
+    "en": "Happy",
+    "ar": "سعيد",
+    "tr": "Saʿīd",
+    "id": "Bahagia"
+  },
+  {
+    "en": "Sad",
+    "ar": "حزين",
+    "tr": "Ḥazīn",
+    "id": "Sedih"
+  },
+  {
+    "en": "Angry",
+    "ar": "غاضب",
+    "tr": "Ghāḍib",
+    "id": "Marah"
+  },
+  {
+    "en": "Tired",
+    "ar": "تعبان",
+    "tr": "Taʿbān",
+    "id": "Lelah"
+  },
+  {
+    "en": "Scared",
+    "ar": "خائف",
+    "tr": "Khāʾif",
+    "id": "Takut"
+  },
+  {
+    "en": "Excited",
+    "ar": "متحمس",
+    "tr": "Mutaḥammis",
+    "id": "Bersemangat"
+  },
+  {
+    "en": "Calm",
+    "ar": "هادئ",
+    "tr": "Hādiʾ",
+    "id": "Tenang"
+  },
+  {
+    "en": "Surprised",
+    "ar": "مندهش",
+    "tr": "Mundahish",
+    "id": "Terkejut"
+  },
+  {
+    "en": "Nervous",
+    "ar": "متوتر",
+    "tr": "Mutawattar",
+    "id": "Gugup"
+  },
+  {
+    "en": "Love",
+    "ar": "حب",
+    "tr": "Ḥubb",
+    "id": "Cinta"
+  },
+  {
+    "en": "Proud",
+    "ar": "فخور",
+    "tr": "Fakhur",
+    "id": "Bangga"
+  },
+  {
+    "en": "Ashamed",
+    "ar": "خجلان",
+    "tr": "Khajlan",
+    "id": "Malu"
+  },
+  {
+    "en": "Confused",
+    "ar": "مرتبك",
+    "tr": "Murtabik",
+    "id": "Bingung"
+  },
+  {
+    "en": "Lonely",
+    "ar": "وحيد",
+    "tr": "Wahid",
+    "id": "Kesepian"
+  },
+  {
+    "en": "Jealous",
+    "ar": "غيور",
+    "tr": "Ghayur",
+    "id": "Cemburu"
+  },
+  {
+    "en": "Hopeful",
+    "ar": "متفائل",
+    "tr": "Mutafa'il",
+    "id": "Penuh harapan"
+  },
+  {
+    "en": "Embarrassed",
+    "ar": "محرج",
+    "tr": "Muhraj",
+    "id": "Malu tersipu"
+  },
+  {
+    "en": "Relieved",
+    "ar": "مرتاح",
+    "tr": "Murtah",
+    "id": "Lega"
+  },
+  {
+    "en": "Curious",
+    "ar": "فضولي",
+    "tr": "Fuduli",
+    "id": "Penasaran"
+  },
+  {
+    "en": "Bored",
+    "ar": "ضجر",
+    "tr": "Dajar",
+    "id": "Bosan"
+  },
+  {
+    "en": "Grateful",
+    "ar": "ممتن",
+    "tr": "Mumtann",
+    "id": "Bersyukur"
+  },
+  {
+    "en": "Anxious",
+    "ar": "قلق",
+    "tr": "Qaliq",
+    "id": "Cemas"
+  },
+  {
+    "en": "Disappointed",
+    "ar": "محبط",
+    "tr": "Muhbat",
+    "id": "Kecewa"
+  },
+  {
+    "en": "Satisfied",
+    "ar": "راض",
+    "tr": "Radin",
+    "id": "Puas"
+  },
+  {
+    "en": "Motivated",
+    "ar": "متحفز",
+    "tr": "Mutahaffiz",
+    "id": "Termotivasi"
+  },
+  {
+    "en": "Shocked",
+    "ar": "مصدوم",
+    "tr": "Masdum",
+    "id": "Terkaget"
+  },
+  {
+    "en": "Peaceful",
+    "ar": "مطمئن",
+    "tr": "Mutma'inn",
+    "id": "Damai"
+  },
+  {
+    "en": "Frustrated",
+    "ar": "محبط",
+    "tr": "Muhbat",
+    "id": "Frustrasi"
+  },
+  {
+    "en": "Optimistic",
+    "ar": "متفائل",
+    "tr": "Mutafa'il",
+    "id": "Optimis"
+  },
+  {
+    "en": "Hopeful",
+    "ar": "راج",
+    "tr": "Rajin",
+    "id": "Berharap"
+  },
+  {
+    "en": "Cheerful",
+    "ar": "مبتهج",
+    "tr": "Mubtahij",
+    "id": "Ceria"
+  },
+  {
+    "en": "Upset",
+    "ar": "منزعج",
+    "tr": "Munza'ij",
+    "id": "Kesal"
+  },
+  {
+    "en": "Determined",
+    "ar": "مصمم",
+    "tr": "Musammim",
+    "id": "Bertekad"
+  },
+  {
+    "en": "Touched",
+    "ar": "متأثر",
+    "tr": "Muta'aththir",
+    "id": "Terharu"
+  },
+  {
+    "en": "Relaxed",
+    "ar": "مسترخ",
+    "tr": "Mustarkh",
+    "id": "Rileks"
+  },
+  {
+    "en": "Insecure",
+    "ar": "غير واثق",
+    "tr": "Ghayr wathiq",
+    "id": "Tidak percaya diri"
+  },
+  {
+    "en": "Excited for tomorrow",
+    "ar": "متحمس للغد",
+    "tr": "Mutaḥammis lil-ghad",
+    "id": "Antusias untuk besok"
+  },
+  {
+    "en": "Homesick",
+    "ar": "مشتاق إلى البيت",
+    "tr": "Mushtaq ila al-bayt",
+    "id": "Rindu rumah"
+  },
+  {
+    "en": "Inspired",
+    "ar": "ملهم",
+    "tr": "Mulham",
+    "id": "Terinspirasi"
+  },
+  {
+    "en": "Discouraged",
+    "ar": "مثبط",
+    "tr": "Muthabbat",
+    "id": "Patah semangat"
+  }
+]

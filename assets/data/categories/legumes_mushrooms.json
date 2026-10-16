@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Pea",
+        "ar": "بازلاء",
+        "tr": "Bazila'",
+        "id": "kacang polong"
+    },
+    {
+        "en": "Snow Pea",
+        "ar": "بازلاء الثلج",
+        "tr": "Bazila' ath-Thalj",
+        "id": "kacang kapri"
+    },
+    {
+        "en": "Green Bean",
+        "ar": "فاصوليا خضراء",
+        "tr": "Fasuliya Khadra'",
+        "id": "buncis"
+    },
+    {
+        "en": "Long Bean",
+        "ar": "فاصوليا طويلة",
+        "tr": "Fasuliya Tawilah",
+        "id": "kacang panjang"
+    },
+    {
+        "en": "Soybean",
+        "ar": "فول الصويا",
+        "tr": "Ful as-Suya",
+        "id": "kedelai"
+    },
+    {
+        "en": "Chickpea",
+        "ar": "حمص",
+        "tr": "Hummus",
+        "id": "kacang arab"
+    },
+    {
+        "en": "Lentil",
+        "ar": "عدس",
+        "tr": "'adas",
+        "id": "lentil"
+    },
+    {
+        "en": "Mung Bean",
+        "ar": "فول مونج",
+        "tr": "Ful Munj",
+        "id": "kacang hijau"
+    },
+    {
+        "en": "Enoki Mushroom",
+        "ar": "فطر إينوكي",
+        "tr": "Fitr Inuki",
+        "id": "jamur enoki"
+    },
+    {
+        "en": "Shiitake Mushroom",
+        "ar": "فطر شيتاكي",
+        "tr": "Fitr Shitaki",
+        "id": "jamur shiitake"
+    },
+    {
+        "en": "Button Mushroom",
+        "ar": "فطر الزر",
+        "tr": "Fitr az-Zir",
+        "id": "jamur kancing"
+    },
+    {
+        "en": "Oyster Mushroom",
+        "ar": "فطر المحار",
+        "tr": "Fitr al-Mahar",
+        "id": "jamur tiram"
+    }
+]

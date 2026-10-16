@@ -1,0 +1,24 @@
+[
+  {
+    "id": "007fd3a0-f35",
+    "kind": "word",
+    "request": "20 kata alat tulis sekolah",
+    "meaning": "",
+    "category": "",
+    "note": "",
+    "status": "pending",
+    "ts": 1792102642992,
+    "updated_at": 0
+  },
+  {
+    "id": "1776576122889-f434f6",
+    "kind": "word",
+    "request": "percakapan",
+    "meaning": "naga merah",
+    "category": "hewan",
+    "note": "",
+    "status": "pending",
+    "ts": 1776576122889,
+    "updated_at": 0
+  }
+]

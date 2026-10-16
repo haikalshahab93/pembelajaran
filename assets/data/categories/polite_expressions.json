@@ -1,0 +1,74 @@
+[
+    {
+        "en": "Please",
+        "ar": "من فضلك",
+        "tr": "Min faḍlik",
+        "id": "Tolong"
+    },
+    {
+        "en": "Thank you",
+        "ar": "شكرا",
+        "tr": "Shukran",
+        "id": "Terima kasih"
+    },
+    {
+        "en": "You are welcome",
+        "ar": "عفوا",
+        "tr": "ʿAfwan",
+        "id": "Sama-sama"
+    },
+    {
+        "en": "Excuse me",
+        "ar": "عذرا",
+        "tr": "ʿUdhran",
+        "id": "Permisi"
+    },
+    {
+        "en": "Sorry",
+        "ar": "آسف",
+        "tr": "Āsif",
+        "id": "Maaf"
+    },
+    {
+        "en": "No problem",
+        "ar": "لا مشكلة",
+        "tr": "Lā mushkilah",
+        "id": "Tidak masalah"
+    },
+    {
+        "en": "May I help you?",
+        "ar": "هل أستطيع مساعدتك؟",
+        "tr": "Hal astaṭīʿ musāʿadataka?",
+        "id": "Boleh saya bantu?"
+    },
+    {
+        "en": "Can you help me?",
+        "ar": "هل يمكنك مساعدتي؟",
+        "tr": "Hal yumkinuka musāʿadatī?",
+        "id": "Bisakah kamu membantu saya?"
+    },
+    {
+        "en": "After you",
+        "ar": "تفضل",
+        "tr": "Tafaḍḍal",
+        "id": "Silakan dulu"
+    },
+    {
+        "en": "Welcome",
+        "ar": "مرحبا بك",
+        "tr": "Marḥaban bik",
+        "id": "Selamat datang"
+    },
+    {
+        "en": "Good luck",
+        "ar": "بالتوفيق",
+        "tr": "Bi at-tawfīq",
+        "id": "Semoga berhasil"
+    },
+    {
+        "en": "Take care",
+        "ar": "اعتن بنفسك",
+        "tr": "Iʿtan binafsik",
+        "id": "Jaga diri baik-baik"
+    }
+]
