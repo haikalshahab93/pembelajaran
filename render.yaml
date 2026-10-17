@@ -9,6 +9,7 @@ services:
     name: pembelajaran-api
     runtime: node
     rootDir: server
+    plan: free
     buildCommand: npm install
     startCommand: node index.js
     healthCheckPath: /api/health
