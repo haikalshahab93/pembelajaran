@@ -15,6 +15,9 @@ function isFirestoreConfigured(env = process.env) {
   if (env.FIREBASE_SERVICE_ACCOUNT || env.FIREBASE_SERVICE_ACCOUNT_JSON) return true
   if (env.GOOGLE_APPLICATION_CREDENTIALS) return true
   if (env.GOOGLE_APPLICATION_CREDENTIALS_JSON && env.FIREBASE_PROJECT_ID) return true
+  // Di dalam Cloud Functions (dalam Google Cloud), credentials aplikasi bawaan (metadata)
+  // tersedia otomatis — tidak butuh file service account.
+  if (env.K_SERVICE || env.FUNCTION_TARGET || env.GCLOUD_PROJECT || env.GCP_PROJECT) return true
   return false
 }
 
@@ -160,6 +163,11 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
     return payload
   }
 
+  // Hapus cache in-memory (catalog & entries) — dipakai setelah seed data baru.
+  function reset() {
+    cache.clear()
+  }
+
   function healthInfo() {
     return {
       storage: "firestore",
@@ -177,6 +185,7 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
     saveSuggestions,
     getProgress,
     saveProgress,
+    reset,
     healthInfo
   }
 }

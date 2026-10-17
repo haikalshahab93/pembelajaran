@@ -6,7 +6,7 @@ const path = require("path")
 const { createLocalStore } = require("./local")
 const { createFirestoreStore, isFirestoreConfigured } = require("./firestore")
 
-const ROOT = path.resolve(__dirname, "..", "..")
+const ROOT = process.env.APP_ROOT ? path.resolve(process.env.APP_ROOT) : path.resolve(__dirname, "..", "..")
 const DATA_DIR = path.join(ROOT, "assets", "data")
 
 async function createStore(env = process.env) {

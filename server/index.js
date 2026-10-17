@@ -12,7 +12,9 @@ const googleTTS = require("google-tts-api")
 const { createStore } = require("./db")
 const { createLexiconCache } = require("./lib/lexicon")
 
-const ROOT = path.resolve(__dirname, "..")
+const ROOT = process.env.APP_ROOT ? path.resolve(process.env.APP_ROOT) : path.resolve(__dirname, "..")
+// Lokasi yang boleh ditulis: di Cloud Functions filesystem deployment read-only,
+// jadi file upload/impor ditulis ke WRITE_ROOT (default /tmp).
 const PORT = Math.max(1, Number(process.env.PORT || 8020) || 8020)
 const HOST = process.env.HOST || "0.0.0.0"
 const API_BASE_URL = process.env.API_BASE_URL || ""
@@ -25,11 +27,12 @@ const CORS_ORIGINS = String(process.env.CORS_ORIGINS || "*")
 const DEFAULT_OLLAMA_BASE_URL = String(process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434").trim()
 const DEFAULT_OLLAMA_MODEL = String(process.env.OLLAMA_MODEL || "qwen2.5:3b").trim() || "qwen2.5:3b"
 
-const UPLOAD_DIR = path.join(ROOT, "assets", "user-images")
-const MAP_PATH = path.join(UPLOAD_DIR, "user_images.json")
-const ANIMALS_DIR = path.join(ROOT, "assets", "animals")
+const WRITE_ROOT = process.env.WRITE_ROOT || ROOT
+const UPLOAD_DIR = path.join(WRITE_ROOT, "assets", "user-images")
+const MAP_PATH = path.join(WRITE_ROOT, "assets", "user-images", "user_images.json")
+const ANIMALS_DIR = path.join(WRITE_ROOT, "assets", "animals")
 const ANIMALS_PATH = path.join(ANIMALS_DIR, "animals.json")
-const VEGETABLES_DIR = path.join(ROOT, "assets", "vegetables")
+const VEGETABLES_DIR = path.join(WRITE_ROOT, "assets", "vegetables")
 const VEGETABLES_PATH = path.join(VEGETABLES_DIR, "vegetables.json")
 const DATA_DIR = path.join(ROOT, "assets", "data")
 const WORD_SUGGESTIONS_PATH = path.join(DATA_DIR, "word_suggestions.json")
@@ -439,6 +442,25 @@ async function createApp() {
     res.json({ ok: true, admin: true, token, username: ADMIN_USERNAME })
   })
 
+  // Seed dataset statis ke Firestore langsung dari Cloud Functions (tanpa service account lokal).
+  app.post("/admin/seed", requireAdmin, async (_req, res) => {
+    try {
+      if (store && store.kind !== "firestore") {
+        sendError(res, 400, "Storage aktif bukan Firestore — endpoint seed hanya untuk mode Firestore (di Firebase)")
+        return
+      }
+      const admin = require("firebase-admin")
+      const { seedFirestore } = require("./lib/seed")
+      const summary = await seedFirestore({ assetsRoot: path.join(ROOT, "assets"), db: admin.firestore() })
+      if (typeof store.reset === "function") store.reset()
+      logEvent("admin_seed_ok", JSON.stringify(summary))
+      res.json({ ok: true, ...summary })
+    } catch (error) {
+      logEvent("admin_seed_error", error.message)
+      sendError(res, 500, `Seed gagal: ${error.message}`)
+    }
+  })
+
   app.post("/admin/logout", (req, res) => {
     const token = readAdminToken(req)
     if (token) adminTokens.delete(token)
@@ -742,7 +764,7 @@ async function createApp() {
       await writeJsonFile(MAP_PATH, mapping)
       if (prev) {
         try {
-          const oldPath = path.normalize(path.join(ROOT, prev.replace(/^\/+/, "")))
+          const oldPath = path.normalize(path.join(WRITE_ROOT, prev.replace(/^\/+/, "")))
           if (oldPath.startsWith(UPLOAD_DIR) && oldPath !== outPath && fs.existsSync(oldPath)) {
             await fsp.unlink(oldPath)
           }
@@ -795,6 +817,12 @@ async function createApp() {
     app.use(express.static(CLIENT_DIST, { extensions: ["html"] }))
   }
 
+  // Upload user di-cache lama; folder lain dataset 1 jam.
+  app.use("/assets/user-images", express.static(UPLOAD_DIR, {
+    fallthrough: true,
+    maxAge: "7d"
+  }))
+
   app.use("/assets", express.static(path.join(ROOT, "assets"), {
     fallthrough: true,
     maxAge: "1h"
@@ -822,7 +850,13 @@ async function start() {
   })
 }
 
-start().catch(error => {
-  console.error(error)
-  process.exit(1)
-})
+module.exports = { createApp, start }
+
+// Hanya jalankan server berdiri sendiri bila file ini dieksekusi langsung (npm start / node index.js).
+// Bila dimuat sebagai modul (server/functions.js untuk Cloud Functions), start() tidak dipanggil.
+if (require.main === module) {
+  start().catch(error => {
+    console.error(error)
+    process.exit(1)
+  })
+}

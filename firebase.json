@@ -1,0 +1,29 @@
+{
+  "hosting": {
+    "public": "client/dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "predeploy": ["npm run build --prefix client"],
+    "rewrites": [
+      { "source": "/api/**", "function": "backend" },
+      { "source": "/tts", "function": "backend" },
+      { "source": "/ai/**", "function": "backend" },
+      { "source": "/admin/**", "function": "backend" },
+      { "source": "/word-suggestions", "function": "backend" },
+      { "source": "/word-suggestions-status", "function": "backend" },
+      { "source": "/upload", "function": "backend" },
+      { "source": "/import-animals", "function": "backend" },
+      { "source": "/import-vegetables", "function": "backend" },
+      { "source": "/assets/**", "function": "backend" }
+    ]
+  },
+  "functions": [
+    {
+      "source": "server",
+      "codebase": "backend",
+      "predeploy": ["node scripts/predeploy-firebase.mjs", "npm install --prefix server"]
+    }
+  ],
+  "firestore": {
+    "rules": "firestore.rules"
+  }
+}

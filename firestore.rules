@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Aplikasi hanya mengakses Firestore lewat backend (firebase-admin di Cloud Functions),
+    // yang melewati rules ini. Akses langsung dari browser/web ditolak semua.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

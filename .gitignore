@@ -5,6 +5,7 @@ Thumbs.db
 node_modules/
 server/node_modules/
 server/.env
+server/assets/
 client/node_modules/
 client/dist/
 client/public/data/
