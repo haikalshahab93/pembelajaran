@@ -234,6 +234,9 @@ export function AppProvider({ children }) {
         )].slice(0, 200)
       }
     })
+    // Kirim juga ke backend supaya kata tersimpan permanen di Firestore
+    // (mode offline/fallback backend tetap aman: hanya localStorage yang aktif).
+    api.saveCustomWord(entry, getDeviceId()).catch(() => {})
   }, [state.progress.customEntries])
 
   // ---------- aksi UI ----------

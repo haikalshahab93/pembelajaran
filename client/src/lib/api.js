@@ -135,6 +135,11 @@ export function fetchProgress(deviceId) {
   return getJson(`api/progress/${encodeURIComponent(deviceId)}`)
 }
 
+/** Simpan kata tambahan ke backend — selama berjalan, kata masuk Firestore (persemaran data) */
+export function saveCustomWord(word, deviceId) {
+  return sendJson("POST", "api/custom-words", { ...word, deviceId })
+}
+
 export function saveProgress(deviceId, payload) {
   return sendJson("PUT", `api/progress/${encodeURIComponent(deviceId)}`, payload)
 }

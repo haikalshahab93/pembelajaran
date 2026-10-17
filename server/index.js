@@ -192,20 +192,6 @@ function parseImportBuffer(buffer, filename) {
   return rows.map(normalizeImportedRecord).filter(Boolean)
 }
 
-async function mergeImportedData(filePath, importedItems) {
-  const existing = await readJsonFile(filePath, [])
-  const map = new Map()
-  for (const item of Array.isArray(existing) ? existing : []) {
-    const normalized = normalizeImportedRecord(item)
-    if (!normalized) continue
-    map.set(buildEntryKey(normalized), normalized)
-  }
-  for (const item of importedItems) map.set(buildEntryKey(item), item)
-  const merged = Array.from(map.values())
-  await writeJsonFile(filePath, merged)
-  return { imported: importedItems.length, total: merged.length }
-}
-
 function sendError(res, status, message) {
   res.status(status).json({ ok: false, error: message })
 }
@@ -546,18 +532,26 @@ async function createApp() {
     }
   })
 
-  app.put("/api/progress/:deviceId", async (req, res) => {
+  // ---------- kata custom (tambahan bahan dari aplikasi, tersimpan permanen di store aktif) ----------
+  app.get("/api/custom-words", async (_req, res) => {
     try {
-      const payload = req.body && typeof req.body === "object" ? req.body : null
-      if (!payload) {
-        sendError(res, 400, "progress payload is required")
-        return
-      }
-      await store.saveProgress(req.params.deviceId, payload)
-      res.json({ ok: true, storage: storeInfo.storage, updated_at: Date.now() })
+      const items = await store.listCustomWords()
+      res.json({ items })
     } catch (error) {
-      logEvent("progress_put_error", error.message)
-      sendError(res, 500, "Failed to save progress")
+      logEvent("custom_words_list_error", error.message)
+      sendError(res, 500, "Failed to list custom words")
+    }
+  })
+
+  app.post("/api/custom-words", async (req, res) => {
+    try {
+      const saved = await store.saveCustomWord(req.body || {})
+      lexiconCache.invalidate()
+      logEvent("custom_word_saved", `${saved.en} | ${saved.ar} | ${saved.id} storage=${store.kind}`)
+      res.json({ ok: true, word: saved, storage: store.kind })
+    } catch (error) {
+      logEvent("custom_word_error", error.message)
+      sendError(res, 400, error.message)
     }
   })
 
@@ -778,6 +772,27 @@ async function createApp() {
     }
   })
 
+  /**
+   * Gabungkan item impor dengan entri eksisting lalu tulis hasilnya lewat store aktif:
+   * mode Firestore -> tertulis PERMANEN ke Firestore (bahan baru tidak hilang saat deploy);
+   * mode JSON -> file kategori lokal. Selesai, lexicon invalidasi agar kata baru dikenali.
+   */
+  async function mergeIntoStore(categoryId, importedItems) {
+    const incoming = Array.isArray(importedItems) ? importedItems : []
+    const existing = await store.getEntries(categoryId)
+    const map = new Map()
+    for (const item of (Array.isArray(existing) ? existing : [])) {
+      const normalized = normalizeImportedRecord(item)
+      if (!normalized) continue
+      map.set(buildEntryKey(normalized), normalized)
+    }
+    for (const item of incoming) map.set(buildEntryKey(item), item)
+    const merged = Array.from(map.values())
+    await store.replaceCategoryEntries(categoryId, merged)
+    lexiconCache.invalidate()
+    return { imported: incoming.length, total: merged.length }
+  }
+
   app.post("/import-animals", requireAdmin, upload.single("file"), async (req, res) => {
     try {
       if (!req.file || !req.file.buffer) {
@@ -785,9 +800,9 @@ async function createApp() {
         return
       }
       const importedItems = parseImportBuffer(req.file.buffer, req.file.originalname)
-      const summary = await mergeImportedData(ANIMALS_PATH, importedItems)
-      logEvent("import_animals_ok", `count=${summary.imported} total=${summary.total}`)
-      res.json({ count: summary.imported, total: summary.total })
+      const summary = await mergeIntoStore("animals", importedItems)
+      logEvent("import_animals_ok", `count=${summary.imported} total=${summary.total} storage=${store.kind}`)
+      res.json({ count: summary.imported, total: summary.total, storage: store.kind })
     } catch (error) {
       logEvent("import_animals_error", error.message)
       sendError(res, 400, "Failed to import animals data")
@@ -801,9 +816,9 @@ async function createApp() {
         return
       }
       const importedItems = parseImportBuffer(req.file.buffer, req.file.originalname)
-      const summary = await mergeImportedData(VEGETABLES_PATH, importedItems)
-      logEvent("import_vegetables_ok", `count=${summary.imported} total=${summary.total}`)
-      res.json({ count: summary.imported, total: summary.total })
+      const summary = await mergeIntoStore("vegetables", importedItems)
+      logEvent("import_vegetables_ok", `count=${summary.imported} total=${summary.total} storage=${store.kind}`)
+      res.json({ count: summary.imported, total: summary.total, storage: store.kind })
     } catch (error) {
       logEvent("import_vegetables_error", error.message)
       sendError(res, 400, "Failed to import vegetables data")

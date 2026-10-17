@@ -2,7 +2,7 @@
   "hosting": {
     "public": "client/dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "predeploy": ["npm run build --prefix client"],
+    "predeploy": ["cd client && npm install && npm run build"],
     "rewrites": [
       { "source": "/api/**", "function": "backend" },
       { "source": "/tts", "function": "backend" },
@@ -20,7 +20,7 @@
     {
       "source": "server",
       "codebase": "backend",
-      "predeploy": ["node scripts/predeploy-firebase.mjs", "npm install --prefix server"]
+      "predeploy": ["node scripts/predeploy-firebase.mjs", "cd server && npm install"]
     }
   ],
   "firestore": {

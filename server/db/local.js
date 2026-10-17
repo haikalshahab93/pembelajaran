@@ -12,6 +12,10 @@ const path = require("path")
 function createLocalStore({ rootDir, dataDir }) {
   const cache = new Map()
 
+  function entryKey(item) {
+    return [String(item.en || "").toLowerCase(), String(item.ar || "").toLowerCase(), String(item.id || "").toLowerCase()].join("|")
+  }
+
   async function readJson(filePath, fallback) {
     const stat = await fsp.stat(filePath).catch(() => null)
     const cacheKey = stat ? `${filePath}:${stat.mtimeMs}:${stat.size}` : filePath
@@ -68,7 +72,53 @@ function createLocalStore({ rootDir, dataDir }) {
       const items = await loadCategoryItems(category.id)
       for (const item of items) out.push(item)
     }
+    for (const word of await listCustomWords()) out.push(word)
     return out
+  }
+
+  // ---------- tulis data (impor admin) ----------
+  /** Tulis ulang seluruh entri satu kategori ke file JSON-nya; kategori baru ikut terdaftar di catalog. */
+  async function replaceCategoryEntries(categoryId, items) {
+    const safe = String(categoryId || "").replace(/[^a-z0-9_]+/gi, "")
+    if (!safe || !Array.isArray(items)) throw new Error("categoryId dan items wajib")
+    if (safe === "animals") {
+      await fsp.writeFile(path.join(rootDir, "assets", "animals", "animals.json"), JSON.stringify(items, null, 2), "utf8")
+    } else if (safe === "vegetables") {
+      await fsp.writeFile(path.join(rootDir, "assets", "vegetables", "vegetables.json"), JSON.stringify(items, null, 2), "utf8")
+    } else {
+      await fsp.writeFile(path.join(dataDir, "categories", `${safe}.json`), JSON.stringify(items, null, 2), "utf8")
+    }
+    const catalogPath = path.join(dataDir, "catalog.json")
+    let catalog = {}
+    try { catalog = JSON.parse(await fsp.readFile(catalogPath, "utf8")) } catch { catalog = {} }
+    if (!Array.isArray(catalog.categories)) catalog.categories = []
+    if (!catalog.categories.some(category => category.id === safe)) {
+      catalog.categories = [...catalog.categories, { id: safe, name: safe, count: items.length, entry_files: { source: "json", path: `assets/data/categories/${safe}.json` } }]
+      await fsp.writeFile(catalogPath, JSON.stringify(catalog, null, 2), "utf8")
+    }
+    cache.clear()
+    return { category: safe, items: items.length }
+  }
+
+  // ---------- kata custom (tambah kata dari aplikasi) ----------
+  async function listCustomWords() {
+    const raw = await readJson(path.join(dataDir, "custom_words.json"), [])
+    return Array.isArray(raw) ? raw : []
+  }
+
+  async function saveCustomWord(item) {
+    const entry = {
+      en: String(item.en || "").trim(),
+      ar: String(item.ar || "").trim(),
+      id: String(item.id || "").trim()
+    }
+    if (!entry.en && !entry.ar && !entry.id) throw new Error("minimal satu bahasa harus terisi")
+    const words = await listCustomWords()
+    const key = entryKey(entry)
+    const merged = [Object.assign({}, entry, { deviceId: String(item.deviceId || "").slice(0, 80), created_at: Date.now() }), ...words.filter(word => entryKey(word) !== key)]
+    await fsp.writeFile(path.join(dataDir, "custom_words.json"), JSON.stringify(merged, null, 2), "utf8")
+    cache.clear()
+    return entry
   }
 
   // --- Saran kata (word suggestions) ---
@@ -115,6 +165,9 @@ function createLocalStore({ rootDir, dataDir }) {
     getCatalog,
     getEntries,
     getAllEntries,
+    replaceCategoryEntries,
+    listCustomWords,
+    saveCustomWord,
     listSuggestions,
     saveSuggestions,
     getProgress,

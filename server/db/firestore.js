@@ -6,8 +6,9 @@
  *   categories/{categoryId}      -> { id, name, order, count }
  *   entries/{categoryId}__{n}    -> { category, index, items: [...] }   (dibagi chunk agar < 1MB)
  *   word_suggestions/{id}        -> entri saran kata
+ *   custom_words/{key}           -> kata yang ditambahkan pengguna/admin dari aplikasi
  *   progress/{deviceId}          -> { deviceId, data, updated_at }
- *   meta/catalog                 -> ringkasan kategori (dibuat oleh seed)
+ *   meta/catalog                 -> ringkasan kategori (dibuat oleh seed, diperbarui saat impor)
  */
 
 function isFirestoreConfigured(env = process.env) {
@@ -30,6 +31,30 @@ function parseServiceAccount(env = process.env) {
   } catch (error) {
     throw new Error(`FIREBASE_SERVICE_ACCOUNT bukan JSON valid: ${error.message}`)
   }
+}
+
+/** Kunci dedupe antar entri kategori. */
+function entryKey(item) {
+  return [String(item.en || "").toLowerCase(), String(item.ar || "").toLowerCase(), String(item.id || "").toLowerCase()].join("|")
+}
+
+/** Bagi items ke chunk — aman di bawah limit dokumen Firestore 1MB. */
+function chunkItems(items, maxBytes = 700 * 1024) {
+  const chunks = []
+  let current = []
+  let size = 2
+  for (const item of items) {
+    const itemSize = Buffer.byteLength(JSON.stringify(item)) + 1
+    if (current.length && size + itemSize > maxBytes) {
+      chunks.push(current)
+      current = []
+      size = 2
+    }
+    current.push(item)
+    size += itemSize
+  }
+  if (current.length) chunks.push(current)
+  return chunks.length ? chunks : [[]]
 }
 
 function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
@@ -58,6 +83,7 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
     categories: "categories",
     entries: "entries",
     suggestions: "word_suggestions",
+    customWords: "custom_words",
     progress: "progress",
     meta: "meta"
   }
@@ -108,7 +134,88 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
       const items = await getEntries(category.id)
       for (const item of items) out.push(item)
     }
+    // kata custom ikut masuk leksikon
+    for (const word of await listCustomWords()) out.push(word)
     return out
+  }
+
+  // ---------- tulis data (impor admin / tambah bahan) ----------
+
+  /**
+   * Tulis ulang seluruh entri satu kategori ke Firestore, lalu perbarui
+   * jumlah kategori di doc categories + meta/catalog.
+   * Dipakai oleh fitur impor admin supaya tambahan bahan tersimpan permanen
+   * di Firestore (bukan file lokal/temp yang hilang saat deploy).
+   */
+  async function replaceCategoryEntries(categoryId, items) {
+    const safe = String(categoryId || "").replace(/[^a-z0-9_]+/gi, "")
+    if (!safe || !Array.isArray(items)) throw new Error("categoryId dan items wajib")
+
+    let batch_ = db.batch()
+    let ops = 0
+    const commit = async () => { await batch_.commit(); batch_ = db.batch(); ops = 0 }
+
+    // 1. hapus semua doc chunk lama kategori ini
+    const old = await db.collection(COLLECTIONS.entries).where("category", "==", safe).get()
+    for (const doc of old.docs) {
+      if (ops >= 400) await commit()
+      batch_.delete(doc.ref)
+      ops++
+    }
+
+    // 2. tulis chunk baru
+    const chunks = chunkItems(items)
+    for (let index = 0; index < chunks.length; index++) {
+      if (ops >= 400) await commit()
+      const docId = `${safe}__${String(index).padStart(3, "0")}`
+      batch_.set(db.collection(COLLECTIONS.entries).doc(docId), { category: safe, index, items: chunks[index] })
+      ops++
+    }
+
+    // 3. jumlah di doc categories/{id}
+    if (ops >= 400) await commit()
+    batch_.set(db.collection(COLLECTIONS.categories).doc(safe), { id: safe, count: items.length }, { merge: true })
+    await commit()
+
+    // 4. perbarui meta/catalog — jumlah kategori lama & daftarkan kategori baru
+    const metaRef = db.collection(COLLECTIONS.meta).doc("catalog")
+    const metaDoc = await metaRef.get()
+    if (metaDoc.exists) {
+      const meta = metaDoc.data()
+      const categories = (meta.categories || []).slice()
+      const hit = categories.find(category => category.id === safe)
+      if (hit) hit.count = items.length
+      else categories.push({ id: safe, name: safe, count: items.length })
+      meta.categories = categories
+      meta.total = categories.length
+      await metaRef.set(meta)
+    }
+    reset()
+    return { category: safe, items: items.length, chunks: chunks.length }
+  }
+
+  // ---------- kata custom (tambah kata dari aplikasi) ----------
+
+  async function listCustomWords() {
+    const snapshot = await db.collection(COLLECTIONS.customWords).orderBy("created_at", "desc").limit(1000).get()
+    return snapshot.docs.map(doc => doc.data())
+  }
+
+  async function saveCustomWord(item) {
+    const entry = {
+      en: String(item.en || "").trim(),
+      ar: String(item.ar || "").trim(),
+      id: String(item.id || "").trim()
+    }
+    if (!entry.en && !entry.ar && !entry.id) throw new Error("minimal satu bahasa harus terisi")
+    const key = [entry.en, entry.ar, entry.id].join("|")
+    await db.collection(COLLECTIONS.customWords).doc(key).set({
+      ...entry,
+      deviceId: String(item.deviceId || "").slice(0, 80),
+      created_at: Date.now()
+    }, { merge: true })
+    reset()
+    return entry
   }
 
   async function listSuggestions() {
@@ -163,7 +270,7 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
     return payload
   }
 
-  // Hapus cache in-memory (catalog & entries) — dipakai setelah seed data baru.
+  // Hapus cache in-memory (catalog & entries) — dipakai setelah seed/impor data baru.
   function reset() {
     cache.clear()
   }
@@ -181,6 +288,9 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
     getCatalog,
     getEntries,
     getAllEntries,
+    replaceCategoryEntries,
+    listCustomWords,
+    saveCustomWord,
     listSuggestions,
     saveSuggestions,
     getProgress,
@@ -190,4 +300,4 @@ function createFirestoreStore({ env = process.env, rootDir, dataDir } = {}) {
   }
 }
 
-module.exports = { createFirestoreStore, isFirestoreConfigured, parseServiceAccount }
+module.exports = { createFirestoreStore, isFirestoreConfigured, parseServiceAccount, entryKey }
